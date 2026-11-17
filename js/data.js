@@ -159,7 +159,7 @@
      Tools not listed keep their letter tile. Source logos from each
      vendor's official brand/press page and follow their usage guidelines.
      ------------------------------------------------------------------------ */
-  const TOOLS_WITH_LOGO = ['figma'];
+  const TOOLS_WITH_LOGO = ['figma', 'framer'];
   const LOGOS = Object.fromEntries(TOOLS_WITH_LOGO.map(slug => [slug, `logos/${slug}.svg`]));
 
   window.StackPilot = Object.freeze({ CATEGORIES, TOOLS, COMPARISONS, GUIDES, LOGOS });
