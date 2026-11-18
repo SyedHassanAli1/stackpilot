@@ -19,22 +19,54 @@
   const $ = (sel, root = document) => root.querySelector(sel);
   const SVG_NS = 'http://www.w3.org/2000/svg';
 
+  /* Optional-value handling — used by every renderer so that missing data
+     never reaches the page as text ("null", "undefined", "[object Object]").
+     isPresent: null, undefined, false, NaN, blank strings and empty arrays are
+     "missing". 0 is kept. */
+  const isPresent = v =>
+    v !== null && v !== undefined && v !== false &&
+    !(typeof v === 'number' && Number.isNaN(v)) &&
+    !(typeof v === 'string' && v.trim() === '') &&
+    !(Array.isArray(v) && v.length === 0);
+
+  // Flattens a child list and drops missing values. Only DOM nodes, strings and
+  // numbers can be rendered; anything else (e.g. a stray object) is skipped.
+  function cleanChildren(list) {
+    return list.flat(Infinity).filter(c =>
+      isPresent(c) && (c instanceof Node || typeof c === 'string' || typeof c === 'number'));
+  }
+
   function h(tag, props = {}, ...children) {
     const node = document.createElement(tag);
     for (const [key, value] of Object.entries(props)) {
       if (value == null || value === false) continue;
       if (key === 'class') node.className = value;
       else if (key === 'text') node.textContent = value;
-      else if (key === 'style') Object.entries(value).forEach(([p, v]) => node.style.setProperty(p, v));
+      else if (key === 'style') Object.entries(value).forEach(([p, v]) => { if (isPresent(v)) node.style.setProperty(p, v); });
       else if (key.startsWith('on')) node.addEventListener(key.slice(2), value);
       else node.setAttribute(key, value === true ? '' : value);
     }
-    for (const child of children.flat()) {
-      if (child == null || child === false) continue;
+    for (const child of cleanChildren(children)) {
       node.append(child instanceof Node ? child : document.createTextNode(String(child)));
     }
     return node;
   }
+
+  // Safe wrapper for replaceChildren(): the native method turns null into the
+  // text "null", which was the cause of the stray "null" in detail panels.
+  function setChildren(parent, ...children) {
+    parent.replaceChildren(...cleanChildren(children));
+  }
+
+  // Renders a titled panel section only when it has content.
+  function section(title, body) {
+    return isPresent(body) ? h('div', { class: 'panel-section' }, h('h3', {}, title), body) : null;
+  }
+
+  // Renders an element only when its main value is present.
+  const when = (value, render) => (isPresent(value) ? render(value) : null);
+
+  const isHttpUrl = v => typeof v === 'string' && /^https?:\/\//i.test(v);
 
   function icon(name, cls = '') {
     const svg = document.createElementNS(SVG_NS, 'svg');
@@ -47,10 +79,12 @@
   }
 
   function letterMark(tool, size = '') {
+    // Falls back to the name's first letter if a tool has no mark defined.
+    const glyph = isPresent(tool.mark) ? tool.mark : String(tool.name || '?').trim().charAt(0).toUpperCase();
     return h('span', {
       class: `mark ${size}`.trim(), 'aria-hidden': 'true',
-      style: { '--mark-bg': tool.bg, '--mark-fg': tool.fg, ...(tool.line ? { '--mark-line': tool.line } : {}) }
-    }, tool.mark);
+      style: { '--mark-bg': tool.bg, '--mark-fg': tool.fg, '--mark-line': tool.line }
+    }, glyph);
   }
 
   // Uses the tool's official logo file when `logo` is set (see LOGOS below);
@@ -65,9 +99,14 @@
     return wrap;
   }
 
-  const priceTag = p => h('span', { class: `tag tag--${p.toLowerCase().replace(/\s+/g, '-')}` }, p);
-  const formatDate = iso => new Date(`${iso}T00:00:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-  const catLabel = c => h('span', { class: 'cat', style: { '--cat-color': catColor[c] } }, c);
+  const priceTag = p => when(p, v => h('span', { class: `tag tag--${String(v).toLowerCase().replace(/\s+/g, '-')}` }, v));
+  // Returns a readable date, or null for missing/invalid dates (never "Invalid Date").
+  const formatDate = iso => {
+    if (!isPresent(iso)) return null;
+    const d = new Date(`${iso}T00:00:00`);
+    return Number.isNaN(d.getTime()) ? null : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  };
+  const catLabel = c => when(c, v => h('span', { class: 'cat', style: { '--cat-color': catColor[v] } }, v));
   const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
   /* ------------------------------------------------------------------------
@@ -161,7 +200,7 @@
       h('h3', {},
         h('button', { type: 'button', class: 'card-link', 'aria-haspopup': 'dialog', onclick: () => openTool(tool.slug) }, tool.name)
       ),
-      h('p', { class: 'tool-desc' }, tool.description),
+      when(tool.description, v => h('p', { class: 'tool-desc' }, v)),
       h('div', { class: 'tool-meta' }, catLabel(tool.category), priceTag(tool.pricing))
     );
   }
@@ -201,7 +240,7 @@
     const allShown = remaining <= 0;
     els.more.hidden = total <= PAGE_SIZE;
     els.more.setAttribute('aria-expanded', String(allShown));
-    els.more.replaceChildren(
+    setChildren(els.more,
       allShown ? 'Show fewer tools' : `Show ${Math.min(MORE_STEP, remaining)} more tools`,
       icon('i-chev-d', 'icon-chev')
     );
@@ -222,13 +261,13 @@
   function renderSearchHelp(total) {
     els.form.classList.toggle('has-value', Boolean(state.query));
     if (state.query) {
-      els.help.replaceChildren(
+      setChildren(els.help,
         h('span', {}, total ? `${plural(total, 'tool')} match your search.` : 'No matches yet.'),
         h('a', { class: 'jump', href: '#toolsTitle', onclick: e => { e.preventDefault(); scrollToResults(); } },
           total ? 'Jump to results' : 'See options', icon('i-arrow-d'))
       );
     } else {
-      els.help.replaceChildren(
+      setChildren(els.help,
         h('span', {}, 'Try:'),
         ...SUGGESTIONS.map(s => h('button', { type: 'button', class: 'suggest', onclick: () => setQuery(s, true) }, s))
       );
@@ -270,7 +309,7 @@
   function openPanel({ crumb, wide = false, content }) {
     els.panelCrumb.textContent = crumb;
     els.panel.classList.toggle('panel--wide', wide);
-    els.panelBody.replaceChildren(...content);
+    setChildren(els.panelBody, content);
     els.panelBody.scrollTop = 0;
     if (!els.panel.open) {
       els.panel.showModal();
@@ -284,49 +323,42 @@
   function openTool(slug) {
     const t = toolBySlug[slug];
     if (!t) return;
-    const comparisons = COMPARISONS.filter(c => c.a === slug || c.b === slug);
+    const comparisons = COMPARISONS.filter(c => (c.a === slug || c.b === slug) && toolBySlug[c.a] && toolBySlug[c.b]);
     const similar = TOOLS.filter(x => x.category === t.category && x.slug !== slug).slice(0, 4);
+    const tags = (Array.isArray(t.tags) ? t.tags : []).filter(isPresent);
+    const lastChecked = formatDate(t.verified);
 
     openPanel({
-      crumb: `Tool · ${t.category}`,
+      crumb: isPresent(t.category) ? `Tool · ${t.category}` : 'Tool',
       content: [
         h('div', { class: 'panel-head' }, mark(t, 'mark--lg'),
           h('div', {},
             h('h2', { id: 'panelTitle' }, t.name),
             h('div', { class: 'panel-sub' }, catLabel(t.category),
-              t.subcategory ? h('span', { class: 'meta-note' }, t.subcategory) : null,
+              when(t.subcategory, v => h('span', { class: 'meta-note' }, v)),
               priceTag(t.pricing))
           )
         ),
-        h('p', { class: 'panel-lede' }, t.about),
-        h('div', { class: 'panel-section' },
-          h('h3', {}, 'Good for'),
-          h('ul', { class: 'tag-list' }, t.tags.map(tag => h('li', { class: 'tag' }, tag)))
-        ),
-        h('div', { class: 'panel-actions' },
-          h('a', { class: 'btn btn-primary', href: t.url, target: '_blank', rel: 'noopener noreferrer' },
+        when(t.about || t.description, v => h('p', { class: 'panel-lede' }, v)),
+        section('Good for', when(tags, list => h('ul', { class: 'tag-list' }, list.map(tag => h('li', { class: 'tag' }, tag))))),
+        when(isHttpUrl(t.url) ? t.url : null, url => h('div', { class: 'panel-actions' },
+          h('a', { class: 'btn btn-primary', href: url, target: '_blank', rel: 'noopener noreferrer' },
             `Visit ${t.name}`, icon('i-arrow-ur', 'icon-arrow'), h('span', { class: 'sr-only' }, '(opens official site in a new tab)'))
-        ),
-        comparisons.length ? h('div', { class: 'panel-section' },
-          h('h3', {}, 'Compared in'),
-          h('ul', { class: 'mini-list' }, comparisons.map(c => h('li', {},
-            h('button', { type: 'button', class: 'mini-item', onclick: () => openComparison(c.slug) },
-              h('span', { class: 'grow' }, h('strong', {}, c.title), h('span', { class: 'mini-sub' }, c.subtitle)),
-              icon('i-chev-r'))
-          )))
-        ) : null,
-        similar.length ? h('div', { class: 'panel-section' },
-          h('h3', {}, `More in ${t.category}`),
-          h('ul', { class: 'mini-grid', style: { 'list-style': 'none' } }, similar.map(s => h('li', {},
-            h('button', { type: 'button', class: 'mini-item', onclick: () => openTool(s.slug) },
-              mark(s, 'mark--sm'),
-              h('span', { class: 'grow' }, h('strong', {}, s.name), h('span', { class: 'mini-sub' }, s.pricing)))
-          )))
-        ) : null,
+        )),
+        section('Compared in', when(comparisons, list => h('ul', { class: 'mini-list' }, list.map(c => h('li', {},
+          h('button', { type: 'button', class: 'mini-item', onclick: () => openComparison(c.slug) },
+            h('span', { class: 'grow' }, h('strong', {}, c.title), when(c.subtitle, v => h('span', { class: 'mini-sub' }, v))),
+            icon('i-chev-r'))
+        ))))),
+        section(`More in ${t.category}`, when(similar, list => h('ul', { class: 'mini-grid', style: { 'list-style': 'none' } }, list.map(s => h('li', {},
+          h('button', { type: 'button', class: 'mini-item', onclick: () => openTool(s.slug) },
+            mark(s, 'mark--sm'),
+            h('span', { class: 'grow' }, h('strong', {}, s.name), when(s.pricing, v => h('span', { class: 'mini-sub' }, v))))
+        ))))),
         h('p', { class: 'panel-note' },
-          t.startingPrice ? h('strong', {}, `Paid plans from ${t.startingPrice}. `) : null,
+          when(t.startingPrice, v => h('strong', {}, `Paid plans from ${v}. `)),
           'Prices are in USD, before tax, and change often. Check the official site for current plans.',
-          t.verified ? ` Last checked ${formatDate(t.verified)}.` : null)
+          when(lastChecked, v => ` Last checked ${v}.`))
       ]
     });
   }
@@ -335,27 +367,26 @@
     const c = COMPARISONS.find(x => x.slug === slug);
     if (!c) return;
     const A = toolBySlug[c.a], B = toolBySlug[c.b];
+    if (!A || !B) return; // a comparison that references a missing tool is not shown
     const col = (t, fit) => h('div', { class: 'versus-col' },
       h('div', { class: 'row' }, mark(t), priceTag(t.pricing)),
       h('h3', {}, t.name),
-      h('p', {}, t.description),
-      h('p', { class: 'fit' }, h('strong', {}, 'Consider it if'), fit),
+      when(t.description, v => h('p', {}, v)),
+      when(fit, v => h('p', { class: 'fit' }, h('strong', {}, 'Consider it if'), v)),
       h('div', { style: { 'margin-top': '14px' } },
         h('button', { type: 'button', class: 'btn btn-ghost', style: { height: '34px', padding: '0 10px', 'margin-left': '-10px' }, onclick: () => openTool(t.slug) },
           `About ${t.name}`, icon('i-arrow-r', 'icon-arrow')))
     );
 
     openPanel({
-      crumb: `Comparison · ${c.category}`,
+      crumb: isPresent(c.category) ? `Comparison · ${c.category}` : 'Comparison',
       wide: true,
       content: [
         h('h2', { id: 'panelTitle' }, c.title),
-        h('p', { class: 'panel-sub' }, c.subtitle),
+        when(c.subtitle, v => h('p', { class: 'panel-sub' }, v)),
         h('div', { class: 'versus' }, col(A, c.fitA), col(B, c.fitB)),
-        h('div', { class: 'panel-section' },
-          h('h3', {}, 'Key differences'),
-          h('ul', { class: 'diff-list' }, c.differences.map(d => h('li', {}, icon('i-check'), h('span', {}, d))))
-        ),
+        section('Key differences', when((c.differences || []).filter(isPresent), list =>
+          h('ul', { class: 'diff-list' }, list.map(d => h('li', {}, icon('i-check'), h('span', {}, d)))))),
         h('p', { class: 'panel-note' }, 'This is a short overview. A full side-by-side comparison page is planned for a later release.')
       ]
     });
@@ -364,24 +395,20 @@
   function openGuide(slug) {
     const g = GUIDES.find(x => x.slug === slug);
     if (!g) return;
+    const outline = (g.outline || []).filter(isPresent);
+    const related = (g.related || []).map(s => toolBySlug[s]).filter(Boolean);
     openPanel({
-      crumb: `Guide · ${g.category}`,
+      crumb: isPresent(g.category) ? `Guide · ${g.category}` : 'Guide',
       content: [
         h('span', { class: 'sample-badge' }, icon('i-info'), 'Sample preview · Not yet published'),
         h('h2', { id: 'panelTitle', style: { 'margin-top': '16px' } }, g.title),
-        h('p', { class: 'panel-lede' }, g.description),
-        h('div', { class: 'panel-section' },
-          h('h3', {}, 'Planned outline'),
-          h('ol', { class: 'outline' }, g.outline.map(item => h('li', {}, item)))
-        ),
-        h('div', { class: 'panel-section' },
-          h('h3', {}, 'Tools mentioned'),
-          h('ul', { class: 'mini-grid', style: { 'list-style': 'none' } }, g.related.map(s => toolBySlug[s]).filter(Boolean).map(t => h('li', {},
-            h('button', { type: 'button', class: 'mini-item', onclick: () => openTool(t.slug) },
-              mark(t, 'mark--sm'),
-              h('span', { class: 'grow' }, h('strong', {}, t.name), h('span', { class: 'mini-sub' }, t.category)))
-          )))
-        ),
+        when(g.description, v => h('p', { class: 'panel-lede' }, v)),
+        section('Planned outline', when(outline, list => h('ol', { class: 'outline' }, list.map(item => h('li', {}, item))))),
+        section('Tools mentioned', when(related, list => h('ul', { class: 'mini-grid', style: { 'list-style': 'none' } }, list.map(t => h('li', {},
+          h('button', { type: 'button', class: 'mini-item', onclick: () => openTool(t.slug) },
+            mark(t, 'mark--sm'),
+            h('span', { class: 'grow' }, h('strong', {}, t.name), when(t.category, v => h('span', { class: 'mini-sub' }, v))))
+        ))))),
         h('p', { class: 'panel-note' }, 'The full article is still being written. This preview shows the topics it will cover.')
       ]
     });
@@ -391,7 +418,8 @@
      Static sections — comparisons & guides
      ------------------------------------------------------------------------ */
   function renderComparisons() {
-    $('#compareGrid').replaceChildren(...COMPARISONS.map(c => {
+    // Only comparisons whose two tools both exist are shown.
+    setChildren($('#compareGrid'), COMPARISONS.filter(c => toolBySlug[c.a] && toolBySlug[c.b]).map(c => {
       const A = toolBySlug[c.a], B = toolBySlug[c.b];
       return h('article', { class: 'card compare-card' },
         h('div', { class: 'compare-top' },
@@ -399,7 +427,7 @@
           h('span', { class: 'card-arrow' }, icon('i-arrow-ur'))
         ),
         h('h3', {}, h('button', { type: 'button', class: 'card-link', 'aria-haspopup': 'dialog', onclick: () => openComparison(c.slug) }, c.title)),
-        h('p', {}, c.subtitle),
+        when(c.subtitle, v => h('p', {}, v)),
         h('div', { class: 'tool-meta' }, catLabel(c.category), h('span', { class: 'meta-note' }, 'Overview'))
       );
     }));
@@ -431,16 +459,16 @@
   const COVER_BG = { ai: '#F3F0FE', system: '#EEF7F1', code: '#EFF3F9' };
 
   function renderGuides() {
-    $('#guideGrid').replaceChildren(...GUIDES.map(g => {
+    setChildren($('#guideGrid'), GUIDES.map(g => {
       const cover = h('div', { class: 'guide-cover', style: { '--cover-bg': COVER_BG[g.cover] } });
-      cover.innerHTML = COVERS[g.cover]; // static, trusted markup defined above
+      cover.innerHTML = COVERS[g.cover] || ''; // static, trusted markup defined above
       return h('article', { class: 'card guide-card' },
         cover,
         h('div', { class: 'guide-body' },
           h('div', { class: 'guide-text' },
-            h('span', { class: 'eyebrow-label', style: { '--label': g.label } }, g.category),
+            when(g.category, v => h('span', { class: 'eyebrow-label', style: { '--label': g.label } }, v)),
             h('h3', {}, h('button', { type: 'button', class: 'card-link', 'aria-haspopup': 'dialog', onclick: () => openGuide(g.slug) }, g.title)),
-            h('p', {}, g.description)
+            when(g.description, v => h('p', {}, v))
           ),
           h('div', { class: 'tool-meta' }, h('span', { class: 'meta-note' }, 'Sample preview'), h('span', { class: 'card-arrow' }, icon('i-arrow-ur')))
         )

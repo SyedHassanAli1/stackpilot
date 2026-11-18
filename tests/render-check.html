@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>StackPilot — render check</title>
+<style>
+  body { font: 14px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; margin: 32px; color: #18181B; background: #FAFAF9; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p { margin: 0 0 16px; color: #52525B; }
+  #status { font-weight: 600; padding: 10px 14px; border-radius: 8px; display: inline-block; background: #F4F4F5; }
+  #status.pass { background: #ECFDF3; color: #067647; }
+  #status.fail { background: #FEF3F2; color: #B42318; }
+  ul { padding-left: 20px; }
+  li { margin: 2px 0; }
+  code { background: #F4F4F5; padding: 1px 5px; border-radius: 4px; }
+  iframe { position: absolute; left: -10000px; width: 1280px; height: 900px; border: 0; }
+</style>
+</head>
+<body>
+<h1>StackPilot render check</h1>
+<p>Opens every tool card, tool panel, comparison and guide on the real homepage and fails if any shows a raw value
+(<code>null</code>, <code>undefined</code>, <code>NaN</code>, <code>[object Object]</code>, <code>Invalid Date</code>),
+an empty element, or a link without a destination. Open it through a local server, e.g.
+<code>python3 -m http.server</code> → <code>http://localhost:8000/tests/render-check.html</code>.</p>
+<div id="status">Running…</div>
+<ul id="results"></ul>
+<iframe id="site" src="../index.html" title="StackPilot under test"></iframe>
+
+<script>
+(() => {
+  'use strict';
+  const RAW = /\b(null|undefined|NaN)\b|\[object Object\]|Invalid Date/;
+  const statusEl = document.getElementById('status');
+  const list = document.getElementById('results');
+  const frame = document.getElementById('site');
+  const problems = [];
+
+  const report = (where, msg) => problems.push(`${where}: ${msg}`);
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+
+  // Scans a rendered region for raw values, empty elements and dead links.
+  function scan(root, where) {
+    const doc = root.ownerDocument;
+    const walker = doc.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (RAW.test(node.nodeValue)) report(where, `raw value "${node.nodeValue.trim().slice(0, 50)}"`);
+    }
+    root.querySelectorAll('p, h2, h3, li, span, strong, ul, ol, a, button, div').forEach(el => {
+      if (el.closest('svg') || el.closest('.mark') || el.classList.contains('sr-only')) return;
+      if (el.matches('.guide-cover, .card-arrow, .pair, .row, .tool-top, .compare-top, .panel-head')) return;
+      if (!el.textContent.trim() && !el.querySelector('img, svg')) report(where, `empty <${el.tagName.toLowerCase()} class="${el.className}">`);
+    });
+    root.querySelectorAll('a').forEach(a => { if (!a.getAttribute('href')) report(where, `link without href ("${a.textContent.trim()}")`); });
+  }
+
+  async function run() {
+    const win = frame.contentWindow;
+    const doc = frame.contentDocument;
+    if (!win || !doc || !win.StackPilot) throw new Error('Could not read the site. Open this page through a local server (not file://).');
+    const { TOOLS, COMPARISONS, GUIDES } = win.StackPilot;
+    const panel = doc.getElementById('panel');
+    const body = doc.getElementById('panelBody');
+    const close = () => { if (panel.open) panel.close(); };
+
+    // Show every tool card.
+    doc.querySelector('.chip[data-category="All"]').click();
+    const more = doc.getElementById('toggleMore');
+    for (let i = 0; i < 20 && !more.hidden && /more/i.test(more.textContent); i++) more.click();
+
+    // Cards
+    doc.querySelectorAll('.tool-card, .compare-card, .guide-card').forEach(card => {
+      scan(card, `card "${card.querySelector('h3')?.textContent || '?'}"`);
+    });
+    const cardNames = new Set([...doc.querySelectorAll('.tool-card .card-link')].map(b => b.textContent));
+    TOOLS.forEach(t => { if (!cardNames.has(t.name)) report(`tool ${t.slug}`, 'has no card on the homepage'); });
+
+    // Tool panels
+    for (const t of TOOLS) {
+      const btn = [...doc.querySelectorAll('.tool-card .card-link')].find(b => b.textContent === t.name);
+      if (!btn) continue;
+      btn.click(); await wait(10);
+      if (!panel.open) { report(`tool ${t.slug}`, 'panel did not open'); continue; }
+      scan(body, `tool panel ${t.slug}`);
+      close();
+    }
+    // Comparison and guide panels
+    for (const [kind, selector] of [['comparison', '.compare-card .card-link'], ['guide', '.guide-card .card-link']]) {
+      doc.querySelectorAll(selector).forEach(b => {
+        const label = `${kind} panel "${b.textContent}"`;
+        b.click();
+        if (!panel.open) { report(label, 'panel did not open'); return; }
+        scan(body, label);
+        close();
+      });
+    }
+
+    const checked = TOOLS.length + COMPARISONS.length + GUIDES.length;
+    if (problems.length) {
+      statusEl.className = 'fail';
+      statusEl.textContent = `✗ FAIL — ${problems.length} problem(s) across ${checked} panels and their cards`;
+      problems.forEach(p => list.append(Object.assign(document.createElement('li'), { textContent: p })));
+    } else {
+      statusEl.className = 'pass';
+      statusEl.textContent = `✓ PASS — ${TOOLS.length} tools, ${COMPARISONS.length} comparisons, ${GUIDES.length} guides: no raw values, empty elements or dead links`;
+    }
+    document.title = `${problems.length ? 'FAIL' : 'PASS'} — StackPilot render check`;
+  }
+
+  frame.addEventListener('load', () => {
+    setTimeout(() => run().catch(err => {
+      statusEl.className = 'fail';
+      statusEl.textContent = `✗ ${err.message}`;
+      document.title = 'ERROR — StackPilot render check';
+    }), 300);
+  });
+})();
+</script>
+</body>
+</html>

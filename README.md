@@ -17,6 +17,9 @@ Plain HTML, CSS and vanilla JavaScript. No framework, no build step.
 │   ├── data.js         # Tools, categories, comparisons, guides (single source of truth)
 │   └── app.js          # Search, filters, sort, detail panels, menu, shortcuts
 ├── logos/              # Official tool logos, named <tool-slug>.svg
+├── tests/
+│   ├── validate-data.mjs  # Checks every record in js/data.js (Node, no dependencies)
+│   └── render-check.html  # Opens every card and panel; fails on raw/empty values
 ├── netlify.toml        # Netlify deploy config
 └── README.md
 ```
@@ -38,6 +41,20 @@ All content lives in `js/data.js`:
 - **Add a tool**: add an entry to `TOOLS` with a unique `slug`.
 - **Add a comparison**: add an entry to `COMPARISONS` referencing two tool slugs.
 - **Add a guide**: add an entry to `GUIDES`.
+
+## Testing
+
+Run both checks before pushing changes to tools, comparisons or guides:
+
+```bash
+node tests/validate-data.mjs          # data: required fields, valid links, prices, dates, references
+python3 -m http.server 8000           # then open http://localhost:8000/tests/render-check.html
+```
+
+`validate-data.mjs` exits with an error and lists each problem if a record is incomplete or
+inconsistent. `render-check.html` opens every tool card, tool panel, comparison and guide and
+fails if any shows `null`, `undefined`, `NaN`, `[object Object]`, `Invalid Date`, an empty element
+or a link without a destination. Test pages are not served on the live site.
 
 ## Logos
 
