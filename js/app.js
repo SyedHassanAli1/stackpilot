@@ -9,6 +9,7 @@
   const { CATEGORIES, TOOLS, COMPARISONS, GUIDES, LOGOS } = window.StackPilot;
 
   const PAGE_SIZE = 6;
+  const MORE_STEP = 12;
   const toolBySlug = Object.fromEntries(TOOLS.map(t => [t.slug, t]));
   const catColor = Object.fromEntries(CATEGORIES.map(c => [c.id, c.color]));
 
@@ -64,14 +65,15 @@
     return wrap;
   }
 
-  const priceTag = p => h('span', { class: `tag tag--${p.toLowerCase()}` }, p);
+  const priceTag = p => h('span', { class: `tag tag--${p.toLowerCase().replace(/\s+/g, '-')}` }, p);
+  const formatDate = iso => new Date(`${iso}T00:00:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
   const catLabel = c => h('span', { class: 'cat', style: { '--cat-color': catColor[c] } }, c);
   const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
 
   /* ------------------------------------------------------------------------
      State
      ------------------------------------------------------------------------ */
-  const state = { category: 'All', query: '', sort: 'featured', expanded: false };
+  const state = { category: 'All', query: '', sort: 'featured', limit: PAGE_SIZE };
 
   const els = {
     header: $('#siteHeader'),
@@ -97,7 +99,7 @@
   /* ------------------------------------------------------------------------
      Filtering
      ------------------------------------------------------------------------ */
-  const haystack = t => `${t.name} ${t.category} ${t.description} ${t.tags.join(' ')} ${t.pricing}`.toLowerCase();
+  const haystack = t => `${t.name} ${t.category} ${t.subcategory || ''} ${t.description} ${t.tags.join(' ')} ${t.pricing}`.toLowerCase();
   const HAY = new Map(TOOLS.map(t => [t.slug, haystack(t)]));
 
   function matchesQuery(tool, terms) {
@@ -182,7 +184,7 @@
     renderChips();
     const results = getResults();
     const total = results.length;
-    const visible = state.expanded ? results : results.slice(0, PAGE_SIZE);
+    const visible = results.slice(0, state.limit);
 
     const frag = document.createDocumentFragment();
     if (total) visible.forEach((t, i) => frag.append(toolCard(t, i)));
@@ -194,11 +196,13 @@
       ? `Showing ${visible.length} of ${total} tools`
       : plural(total, 'tool');
 
-    const hasMore = total > PAGE_SIZE;
-    els.more.hidden = !hasMore;
-    els.more.setAttribute('aria-expanded', String(state.expanded));
+    // Step-wise "show more": reveals MORE_STEP cards at a time, then offers "Show fewer".
+    const remaining = total - visible.length;
+    const allShown = remaining <= 0;
+    els.more.hidden = total <= PAGE_SIZE;
+    els.more.setAttribute('aria-expanded', String(allShown));
     els.more.replaceChildren(
-      state.expanded ? 'Show fewer tools' : `View all ${total} tools`,
+      allShown ? 'Show fewer tools' : `Show ${Math.min(MORE_STEP, remaining)} more tools`,
       icon('i-chev-d', 'icon-chev')
     );
 
@@ -254,7 +258,7 @@
   function resetFilters(focusSearch = false) {
     state.category = 'All';
     state.query = '';
-    state.expanded = false;
+    state.limit = PAGE_SIZE;
     els.input.value = '';
     render();
     if (focusSearch) els.input.focus({ preventScroll: true });
@@ -289,7 +293,9 @@
         h('div', { class: 'panel-head' }, mark(t, 'mark--lg'),
           h('div', {},
             h('h2', { id: 'panelTitle' }, t.name),
-            h('div', { class: 'panel-sub' }, catLabel(t.category), priceTag(t.pricing))
+            h('div', { class: 'panel-sub' }, catLabel(t.category),
+              t.subcategory ? h('span', { class: 'meta-note' }, t.subcategory) : null,
+              priceTag(t.pricing))
           )
         ),
         h('p', { class: 'panel-lede' }, t.about),
@@ -317,7 +323,10 @@
               h('span', { class: 'grow' }, h('strong', {}, s.name), h('span', { class: 'mini-sub' }, s.pricing)))
           )))
         ) : null,
-        h('p', { class: 'panel-note' }, 'The pricing label shows the vendor’s general model (Free, Freemium or Paid). Plans and prices change, so check the official site for current details.')
+        h('p', { class: 'panel-note' },
+          t.startingPrice ? h('strong', {}, `Paid plans from ${t.startingPrice}. `) : null,
+          'Prices are in USD, before tax, and change often. Check the official site for current plans.',
+          t.verified ? ` Last checked ${formatDate(t.verified)}.` : null)
       ]
     });
   }
@@ -534,14 +543,16 @@
   els.sort.addEventListener('change', () => { state.sort = els.sort.value; render(); });
 
   els.more.addEventListener('click', () => {
-    const collapsing = state.expanded;
-    state.expanded = !state.expanded;
+    const total = getResults().length;
+    const collapsing = state.limit >= total;
+    const firstNew = state.limit;
+    state.limit = collapsing ? PAGE_SIZE : state.limit + MORE_STEP;
     render({ animate: !collapsing });
     if (collapsing) {
       const top = els.grid.getBoundingClientRect().top;
       if (top < 0) els.grid.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' });
     } else {
-      const first = els.grid.children[PAGE_SIZE]?.querySelector('.card-link');
+      const first = els.grid.children[firstNew]?.querySelector('.card-link');
       if (first) first.focus({ preventScroll: true });
     }
   });

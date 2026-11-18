@@ -343,6 +343,7 @@ ul, ol { margin: 0; padding: 0; }
 .tag--free { background: #ECFDF3; color: #067647; }
 .tag--freemium { background: var(--accent-soft); color: var(--accent-ink); }
 .tag--paid { background: #FEF6EE; color: #B93815; }
+.tag--open-source { background: #F0FDF9; color: #107569; }
 
 /* ==========================================================================
    8. Tool grid
