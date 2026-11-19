@@ -1,0 +1,101 @@
+{
+  "slug": "google-analytics",
+  "verified": "2026-11-19",
+  "seoTitle": "Google Analytics: Features, Pricing & Alternatives",
+  "metaDescription": "Google Analytics is Google's free web and app analytics for traffic, user behaviour and conversions, with Analytics 360 for enterprises. See its features, pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Google Analytics measures how people find and use your websites and apps. It uses event-based tracking, with reports on acquisition, engagement and conversions, real-time reporting, and machine learning that surfaces insights and fills gaps in data you can observe.",
+    "The standard version is free and integrates with Google's advertising and publisher tools. Large enterprises can upgrade to Analytics 360, a paid version with higher limits for data collection, reporting, retention and BigQuery export, guaranteed data freshness and service-level agreements."
+  ],
+  "features": [
+    {
+      "title": "Event-based tracking",
+      "text": "Measure user interactions across websites and apps with events."
+    },
+    {
+      "title": "Real-time reporting",
+      "text": "Monitor activity on your site or app as it happens."
+    },
+    {
+      "title": "Acquisition and engagement",
+      "text": "See where users come from and how they engage with your content."
+    },
+    {
+      "title": "Conversions and attribution",
+      "text": "Track key actions, with data-driven attribution modelling."
+    },
+    {
+      "title": "Machine learning insights",
+      "text": "Proactive insights and privacy-safe modelling for a fuller picture of the customer journey."
+    },
+    {
+      "title": "Google integrations",
+      "text": "Connect to Google Ads and other Google tools, plus BigQuery export."
+    }
+  ],
+  "useCases": [
+    "Website traffic analysis",
+    "Measuring marketing campaigns",
+    "Conversion and funnel tracking",
+    "App analytics",
+    "Linking analytics with Google Ads"
+  ],
+  "strengths": [
+    "Free for businesses of every size.",
+    "Deep integration with Google Ads and other Google tools.",
+    "Covers both websites and apps.",
+    "Analytics 360 is available for large enterprises with SLAs."
+  ],
+  "limitations": [
+    "Data freshness isn't guaranteed on the free version.",
+    "The free version has lower limits for custom dimensions, metrics and audiences.",
+    "Funnel reporting is more basic than in Analytics 360.",
+    "Analytics 360 pricing isn't published; it's based on a base fee plus event volume."
+  ],
+  "pricing": {
+    "summary": "The standard version of Google Analytics is free. Analytics 360 is a paid contract with a fixed base fee that includes the first 25 million monthly events, plus a per-event fee above that.",
+    "plans": [
+      {
+        "name": "Google Analytics",
+        "price": "$0",
+        "note": "Free · websites and apps · real-time and standard reports"
+      },
+      {
+        "name": "Analytics 360",
+        "price": "Custom",
+        "note": "Higher limits · guaranteed data freshness · SLAs · enterprise support"
+      }
+    ],
+    "source": "https://marketingplatform.google.com/about/analytics/"
+  },
+  "platforms": [
+    "Web browser",
+    "Mobile app"
+  ],
+  "alternatives": [
+    "plausible",
+    "google-search-console"
+  ],
+  "sources": [
+    {
+      "label": "Google Analytics — Overview",
+      "url": "https://marketingplatform.google.com/about/analytics/"
+    },
+    {
+      "label": "Google — Compare Analytics and Analytics 360",
+      "url": "https://marketingplatform.google.com/intl/en_uk/about/analytics-360/compare/"
+    },
+    {
+      "label": "Google — Analytics 360",
+      "url": "https://marketingplatform.google.com/about/analytics-360/"
+    },
+    {
+      "label": "Google — Analytics 360 features",
+      "url": "https://marketingplatform.google.com/about/analytics-360/features/"
+    },
+    {
+      "label": "Google Marketing Platform Help — Billing and usage",
+      "url": "https://support.google.com/marketingplatform/answer/9013858"
+    }
+  ]
+}

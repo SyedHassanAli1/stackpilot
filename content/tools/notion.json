@@ -1,0 +1,120 @@
+{
+  "slug": "notion",
+  "verified": "2026-11-19",
+  "seoTitle": "Notion: Features, Pricing & Alternatives",
+  "metaDescription": "Notion is a connected workspace for docs, wikis, projects and databases, with Notion AI and Custom Agents built in. See its features, Free, Plus, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Notion is a connected workspace that brings docs, wikis, projects and databases together in one place. Teams write and plan in the same tool, with flexible databases, real-time collaboration, forms, sites you can publish to the web and Notion Calendar.",
+    "Notion AI is built in. The Business plan includes the full Notion Agent, AI Meeting Notes and Enterprise Search across connected apps, and Custom Agents can automate repetitive work such as reporting and follow-ups. The free plan is free forever for individuals; teams pay per seat on Plus, Business or Enterprise."
+  ],
+  "features": [
+    {
+      "title": "Docs and wikis",
+      "text": "Write pages and organise team knowledge with nested pages and teamspaces."
+    },
+    {
+      "title": "Databases",
+      "text": "Track projects and tasks with databases, including subtasks, dependencies and custom properties."
+    },
+    {
+      "title": "Notion AI and agents",
+      "text": "Notion Agent, AI Meeting Notes and Custom Agents that handle repetitive tasks."
+    },
+    {
+      "title": "Enterprise Search",
+      "text": "Search across connected apps like Slack and GitHub from Notion (beta, Business and up)."
+    },
+    {
+      "title": "Forms and sites",
+      "text": "Collect responses with forms and publish pages to the web as a site."
+    },
+    {
+      "title": "Notion Calendar",
+      "text": "Connect your calendars and manage work and time together."
+    }
+  ],
+  "useCases": [
+    "Team wikis and documentation",
+    "Project and task tracking",
+    "Personal notes and planning",
+    "Meeting notes and follow-ups with AI",
+    "Company knowledge bases"
+  ],
+  "strengths": [
+    "Docs, wikis, projects and databases in one workspace.",
+    "Free forever for individual use.",
+    "Notion AI and agents built in on the Business plan.",
+    "Available on the web, Mac, Windows, iOS and Android."
+  ],
+  "limitations": [
+    "Free workspaces with 2+ members are limited to 1,000 blocks in total.",
+    "Free plan file uploads are limited to 5 MB each, with 7 days of page history.",
+    "Free and Plus include only a trial of Notion AI; full AI needs Business ($20/seat).",
+    "Custom Agents cost extra after the trial, at $10 per 1,000 monthly Notion credits.",
+    "SAML SSO and private teamspaces need the Business plan."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per seat, and yearly billing saves up to 20%. Students and educators can get the Plus plan free for one member.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "For individuals · trial of Notion AI · 5 MB uploads · 7-day page history"
+      },
+      {
+        "name": "Plus",
+        "price": "$10/seat/mo",
+        "note": "Billed yearly, or $12 monthly · unlimited blocks · 30-day page history"
+      },
+      {
+        "name": "Business",
+        "price": "$20/seat/mo",
+        "note": "Notion Agent · AI Meeting Notes · Enterprise Search · SAML SSO · 90-day history"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "SCIM · audit log · zero data retention for AI · customer success manager"
+      }
+    ],
+    "source": "https://www.notion.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [
+    "obsidian",
+    "linear",
+    "todoist"
+  ],
+  "sources": [
+    {
+      "label": "Notion — Pricing",
+      "url": "https://www.notion.com/pricing"
+    },
+    {
+      "label": "Notion — What is Notion?",
+      "url": "https://www.notion.com/product/notion"
+    },
+    {
+      "label": "Notion Help — Change your plan",
+      "url": "https://www.notion.com/help/upgrade-or-downgrade-your-plan"
+    },
+    {
+      "label": "Notion Help — Understanding block usage",
+      "url": "https://www.notion.com/help/understanding-block-usage"
+    },
+    {
+      "label": "Notion — Plus plan pricing update",
+      "url": "https://www.notion.com/releases/2024-06-26"
+    },
+    {
+      "label": "Notion Help — Notion for desktop",
+      "url": "https://www.notion.com/help/notion-for-desktop"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "mailchimp",
+  "verified": "2026-11-19",
+  "seoTitle": "Mailchimp: Features, Pricing & Alternatives",
+  "metaDescription": "Mailchimp is an email marketing platform for campaigns, automations, signup forms and audience management. See its features, Free, Essentials, Standard and Premium pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Mailchimp is an email marketing platform for building campaigns, managing audiences, setting up automated customer journeys and tracking performance. It includes templates, signup forms and popups, A/B testing and reporting, with SMS available as an add-on.",
+    "Pricing is based on the number of contacts you store, so the price rises as your list grows. The free plan suits beginners with up to 250 contacts. Paid plans add more sends, automation and optimisation tools, and Premium adds unlimited seats and role-based access for teams."
+  ],
+  "features": [
+    {
+      "title": "Email campaigns",
+      "text": "Design and send campaigns with templates and a drag-and-drop editor."
+    },
+    {
+      "title": "Automations",
+      "text": "Set up automated customer journeys, with more advanced tools on Standard and up."
+    },
+    {
+      "title": "Signup forms",
+      "text": "Grow your list with embedded forms and popups."
+    },
+    {
+      "title": "Audience management",
+      "text": "Segment and tag contacts, with advanced segmentation on Premium."
+    },
+    {
+      "title": "Testing and analytics",
+      "text": "A/B testing on paid plans, multivariate testing on Premium, plus reporting."
+    },
+    {
+      "title": "SMS add-on",
+      "text": "Send SMS marketing alongside email, priced separately."
+    }
+  ],
+  "useCases": [
+    "Newsletters for small businesses",
+    "Ecommerce marketing emails",
+    "Automated welcome and follow-up emails",
+    "Growing an email list with signup forms",
+    "Marketing teams sending at high volume"
+  ],
+  "strengths": [
+    "A free plan for getting started with up to 250 contacts.",
+    "Templates, forms, automations and reporting in one tool.",
+    "A 14-day free trial on paid plans.",
+    "Premium includes unlimited seats and role-based access."
+  ],
+  "limitations": [
+    "The free plan is limited to 250 contacts and 500 sends a month.",
+    "Pricing is based on contacts, so costs rise as your list grows.",
+    "SMS is a separate add-on, not included in the base price.",
+    "Advanced segmentation and multivariate testing need Premium, from $350/mo.",
+    "Phone support is only on Premium."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plan prices depend on your number of contacts; prices below are starting prices for the smallest list. Paid plans have a 14-day free trial, and Mailchimp often runs introductory discounts.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Up to 250 contacts · 500 sends/mo · 250 sends a day"
+      },
+      {
+        "name": "Essentials",
+        "price": "From $13/mo",
+        "note": "500 contacts · A/B testing · 24/7 support"
+      },
+      {
+        "name": "Standard",
+        "price": "From $20/mo",
+        "note": "Advanced automations and insights · retargeting ads"
+      },
+      {
+        "name": "Premium",
+        "price": "From $350/mo",
+        "note": "Unlimited seats · advanced segmentation · multivariate testing · phone support"
+      }
+    ],
+    "source": "https://mailchimp.com/pricing/marketing/"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "kit",
+    "beehiiv"
+  ],
+  "sources": [
+    {
+      "label": "Mailchimp — Pricing plans",
+      "url": "https://mailchimp.com/pricing/marketing/"
+    },
+    {
+      "label": "Mailchimp Help — About Mailchimp pricing plans",
+      "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/"
+    },
+    {
+      "label": "Mailchimp — Premium plan details",
+      "url": "https://mailchimp.com/pricing/premium-details/"
+    },
+    {
+      "label": "Mailchimp — Signup forms (plan prices)",
+      "url": "https://mailchimp.com/signup-referrals/"
+    },
+    {
+      "label": "Mailchimp — Best omnichannel marketing platforms (plan prices)",
+      "url": "https://mailchimp.com/resources/best-omnichannel-marketing-platform/"
+    }
+  ]
+}

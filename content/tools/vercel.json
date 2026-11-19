@@ -1,0 +1,109 @@
+{
+  "slug": "vercel",
+  "verified": "2026-11-19",
+  "seoTitle": "Vercel: Features, Pricing & Alternatives",
+  "metaDescription": "Vercel is a cloud platform for deploying web apps and AI agents, with Git-based CI/CD, preview deployments, Fluid compute and a global CDN. See its features, Hobby, Pro and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Vercel is a cloud platform for deploying and scaling web applications. Import a Git repository and Vercel builds and deploys it automatically, with a preview URL for every push, a global CDN, automatic HTTPS and serverless functions. Vercel also maintains the Next.js framework.",
+    "Functions run on Fluid compute, which is billed by active CPU time and reuses instances to cut costs. Vercel also offers infrastructure for AI apps and agents, including the AI SDK, an AI Gateway to hundreds of models, sandboxes and v0, its AI app builder. The Hobby plan is free; Pro adds team collaboration and a monthly usage credit, with usage billed on demand after that."
+  ],
+  "features": [
+    {
+      "title": "Git-based deploys",
+      "text": "Automatic CI/CD from GitHub and other Git providers, with HTTPS on every deployment."
+    },
+    {
+      "title": "Preview deployments",
+      "text": "Every pull request gets its own URL on production-equivalent infrastructure."
+    },
+    {
+      "title": "Fluid compute",
+      "text": "Serverless functions billed by active CPU, with concurrency and minimal cold starts."
+    },
+    {
+      "title": "Global CDN and firewall",
+      "text": "A global CDN with DDoS mitigation and a Web Application Firewall."
+    },
+    {
+      "title": "AI infrastructure",
+      "text": "The AI SDK, an AI Gateway to hundreds of models, sandboxes and durable workflows."
+    },
+    {
+      "title": "v0",
+      "text": "Vercel's AI app builder that generates apps and deploys them to Vercel (paid add-on)."
+    }
+  ],
+  "useCases": [
+    "Hosting Next.js and other frontend frameworks",
+    "Preview environments for every pull request",
+    "Serverless APIs and backends",
+    "Deploying AI apps and agents",
+    "Marketing sites and ecommerce storefronts"
+  ],
+  "strengths": [
+    "Very fast setup: import a repo and deploy in seconds.",
+    "Preview URLs for every pull request.",
+    "Made by the team behind Next.js, with first-class support.",
+    "A free Hobby plan with 100 GB of Fast Data Transfer."
+  ],
+  "limitations": [
+    "Pro is $20/mo per seat, plus on-demand usage beyond the included $20 credit.",
+    "Usage-based pricing across many metrics can be harder to predict.",
+    "Hobby has fixed usage limits rather than on-demand billing.",
+    "Some features, such as v0, are paid add-ons.",
+    "Contractual SLAs and multi-region compute need Enterprise."
+  ],
+  "pricing": {
+    "summary": "Free Hobby plan. Pro includes a monthly usage credit, then bills usage on demand. Prices are in USD and exclude taxes. Pro has a 14-day free trial.",
+    "plans": [
+      {
+        "name": "Hobby",
+        "price": "$0",
+        "note": "Git deploys · previews · HTTPS · 100 GB Fast Data Transfer · included usage limits"
+      },
+      {
+        "name": "Pro",
+        "price": "$20/mo per seat",
+        "note": "$20 usage credit included · team collaboration · free viewer seats · spend management"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Contractual SLAs · multi-region compute · advanced access controls · dedicated support"
+      }
+    ],
+    "source": "https://vercel.com/pricing"
+  },
+  "platforms": [
+    "Web dashboard",
+    "Command line",
+    "Git integrations"
+  ],
+  "alternatives": [
+    "netlify",
+    "supabase",
+    "lovable"
+  ],
+  "sources": [
+    {
+      "label": "Vercel — Pricing",
+      "url": "https://vercel.com/pricing"
+    },
+    {
+      "label": "Vercel Docs — Account plans",
+      "url": "https://vercel.com/docs/plans"
+    },
+    {
+      "label": "Vercel Docs — Pricing",
+      "url": "https://vercel.com/docs/pricing"
+    },
+    {
+      "label": "Vercel Docs — Fluid compute",
+      "url": "https://vercel.com/docs/fluid-compute"
+    },
+    {
+      "label": "Vercel — Vercel vs Railway (plan summary)",
+      "url": "https://vercel.com/kb/guide/vercel-vs-railway"
+    }
+  ]
+}

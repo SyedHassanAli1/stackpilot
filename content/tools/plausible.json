@@ -1,0 +1,115 @@
+{
+  "slug": "plausible",
+  "verified": "2026-11-19",
+  "seoTitle": "Plausible Analytics: Features, Pricing & Alternatives",
+  "metaDescription": "Plausible is a lightweight, privacy-friendly web analytics tool that doesn't use cookies. See its features, Starter, Growth, Business and Enterprise pricing, the free self-hosted edition, strengths, limitations and alternatives.",
+  "overview": [
+    "Plausible is a lightweight, privacy-friendly web analytics tool and an alternative to Google Analytics. It shows all key metrics on one simple dashboard, such as top pages, referral sources and goals, without using cookies, so you don't need a cookie consent banner for it.",
+    "Plausible is a self-funded company that charges a subscription and doesn't sell data or run an ad business. Plans are priced by monthly pageviews rather than seats, with a 30-day free trial and no free plan. The open-source Community Edition can be self-hosted for free, though a few features are only on the cloud version."
+  ],
+  "features": [
+    {
+      "title": "Simple dashboard",
+      "text": "All key metrics on one page: visitors, top pages, sources, locations and devices."
+    },
+    {
+      "title": "No cookies",
+      "text": "Privacy-friendly tracking without cookies, so no consent banner is needed for it."
+    },
+    {
+      "title": "Goals and custom events",
+      "text": "Track conversions and custom events, with saved segments and annotations."
+    },
+    {
+      "title": "Google Analytics import",
+      "text": "Import your historical data from Google Analytics."
+    },
+    {
+      "title": "Funnels and revenue",
+      "text": "Funnels, user journeys and revenue tracking on the Business plan."
+    },
+    {
+      "title": "Stats API and sharing",
+      "text": "Share dashboards with clients, embed them, and pull data with the Stats API on Business."
+    }
+  ],
+  "useCases": [
+    "Privacy-friendly analytics for websites",
+    "Replacing Google Analytics with something simpler",
+    "Agencies sharing dashboards with clients",
+    "Blogs and content sites",
+    "Teams that want to avoid cookie banners"
+  ],
+  "strengths": [
+    "Privacy-friendly, with no cookies.",
+    "A simple dashboard that's easy for clients and teams to read.",
+    "Priced by pageviews, not seats; yearly billing gives 2 months free.",
+    "Open source, with a free self-hosted Community Edition."
+  ],
+  "limitations": [
+    "There's no free cloud plan, only a 30-day trial.",
+    "Starter covers one site only; Growth allows up to 3 sites and team members.",
+    "Funnels, revenue tracking and the Stats API need the Business plan.",
+    "Some features, such as funnels and SSO, aren't in the self-hosted edition."
+  ],
+  "pricing": {
+    "summary": "30-day free trial, no credit card required. Prices below are for up to 10,000 monthly pageviews, billed monthly, and rise with traffic. Yearly billing gives 2 months free. Business plans get 15% off for nonprofits, education and open-source projects on yearly billing.",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "$9/mo",
+        "note": "1 site · goals and custom events · Google Analytics import · email/Slack reports"
+      },
+      {
+        "name": "Growth",
+        "price": "$14/mo",
+        "note": "Up to 3 sites and 3 team members · shared links · embedded dashboards"
+      },
+      {
+        "name": "Business",
+        "price": "$19/mo",
+        "note": "Up to 10 sites · funnels · revenue tracking · Stats API"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "SSO · Sites API · raw data exports · higher limits"
+      },
+      {
+        "name": "Community Edition",
+        "price": "$0",
+        "note": "Self-hosted, open source · some cloud-only features not included"
+      }
+    ],
+    "source": "https://plausible.io/"
+  },
+  "platforms": [
+    "Web dashboard",
+    "Self-hosted"
+  ],
+  "alternatives": [
+    "google-analytics"
+  ],
+  "sources": [
+    {
+      "label": "Plausible — Home and pricing",
+      "url": "https://plausible.io/"
+    },
+    {
+      "label": "Plausible Docs — Subscription plans",
+      "url": "https://plausible.io/docs/subscription-plans"
+    },
+    {
+      "label": "Plausible Docs — Billing FAQ",
+      "url": "https://plausible.io/docs/billing"
+    },
+    {
+      "label": "Plausible — Contact and plan FAQ",
+      "url": "https://plausible.io/contact"
+    },
+    {
+      "label": "Plausible — Plausible, Umami, Fathom or Simple Analytics",
+      "url": "https://plausible.io/plausible-umami-fathom-simple-analytics"
+    }
+  ]
+}

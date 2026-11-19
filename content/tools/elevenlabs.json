@@ -1,0 +1,120 @@
+{
+  "slug": "elevenlabs",
+  "verified": "2026-11-19",
+  "seoTitle": "ElevenLabs: Features, Pricing & Alternatives",
+  "metaDescription": "ElevenLabs is an AI audio platform for text-to-speech, voice cloning, dubbing, sound effects, music and voice agents, with an API. See its features, Free to Business pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "ElevenLabs is an AI audio platform for realistic text-to-speech, speech-to-text, voice cloning, dubbing, sound effects and music. Creators use its web studio to voice videos, audiobooks and podcasts, and developers use its API to add voice to their apps.",
+    "ElevenLabs also offers voice agents for phone and chat, and image and video generation on paid plans. Usage is measured in monthly credits. The free plan includes 10,000 credits a month, about 10 minutes of audio, but doesn't include a commercial license; paid plans add commercial use, voice cloning and more credits."
+  ],
+  "features": [
+    {
+      "title": "Text to Speech",
+      "text": "Lifelike AI voices from the web studio or the API."
+    },
+    {
+      "title": "Voice cloning",
+      "text": "Instant Voice Cloning from Starter, and Professional Voice Cloning from Creator."
+    },
+    {
+      "title": "Voice Design",
+      "text": "Generate new voices from a text description of tone, accent and delivery."
+    },
+    {
+      "title": "Dubbing and Studio",
+      "text": "Translate and dub audio and video, and produce long-form projects in Studio."
+    },
+    {
+      "title": "Sound effects and music",
+      "text": "Generate sound effects and music, with commercial music use on paid plans."
+    },
+    {
+      "title": "Voice agents",
+      "text": "Build AI voice agents for calls and text, with included call minutes per plan."
+    }
+  ],
+  "useCases": [
+    "Voiceovers for videos and ads",
+    "Audiobooks and podcasts",
+    "Dubbing content into other languages",
+    "AI voice agents for customer support",
+    "Adding voice to apps via the API"
+  ],
+  "strengths": [
+    "Lifelike AI voices, from the web studio or the API.",
+    "A free plan with 10,000 credits a month.",
+    "One platform for speech, dubbing, sound effects, music and agents.",
+    "Paid plans start low, at $6/mo with a $1 first month."
+  ],
+  "limitations": [
+    "The free plan has no commercial license and requires crediting ElevenLabs.",
+    "Voice cloning isn't available on the free plan.",
+    "Video generation needs a paid plan.",
+    "Professional Voice Cloning needs the Creator plan or higher."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Plans include monthly credits for audio, image and video generation. Yearly billing gives 2 months free. Introductory first-month discounts apply to Starter and Creator.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "10k credits/mo · text to speech · sound effects · no commercial license"
+      },
+      {
+        "name": "Starter",
+        "price": "$6/mo",
+        "note": "$1 first month · 30k credits · commercial license · Instant Voice Cloning"
+      },
+      {
+        "name": "Creator",
+        "price": "$22/mo",
+        "note": "$11 first month · 121k credits · Professional Voice Cloning"
+      },
+      {
+        "name": "Pro",
+        "price": "$99/mo",
+        "note": "600k credits · higher-quality API audio output"
+      },
+      {
+        "name": "Scale",
+        "price": "$299/mo",
+        "note": "For businesses · 3 workspace seats"
+      },
+      {
+        "name": "Business",
+        "price": "$825/mo",
+        "note": "Billed yearly · higher limits · Enterprise priced on request"
+      }
+    ],
+    "source": "https://elevenlabs.io/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "API"
+  ],
+  "alternatives": [
+    "runway"
+  ],
+  "sources": [
+    {
+      "label": "ElevenLabs — Pricing",
+      "url": "https://elevenlabs.io/pricing"
+    },
+    {
+      "label": "ElevenLabs — Text to Speech",
+      "url": "https://elevenlabs.io/text-to-speech"
+    },
+    {
+      "label": "ElevenLabs Blog — Voice cloning for content creators",
+      "url": "https://elevenlabs.io/blog/voice-cloning-for-content-creators"
+    },
+    {
+      "label": "ElevenLabs — Agents pricing",
+      "url": "https://elevenlabs.io/pricing/agents"
+    },
+    {
+      "label": "ElevenLabs — AI video generator",
+      "url": "https://elevenlabs.io/video"
+    }
+  ]
+}

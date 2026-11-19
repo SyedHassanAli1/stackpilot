@@ -1,0 +1,115 @@
+{
+  "slug": "make",
+  "verified": "2026-11-19",
+  "seoTitle": "Make: Features, Pricing & Alternatives",
+  "metaDescription": "Make is a visual automation platform for connecting apps and building multi-step workflows and AI agents. See its features, credit-based Free, Core, Pro, Teams and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Make, formerly Integromat, is a visual automation platform. You connect apps and build multi-step workflows, called scenarios, on a drag-and-drop canvas, with routing, filters, data transformation and live execution logs.",
+    "Make connects to more than 3,000 apps and includes AI modules and Make AI Agents for autonomous tasks; paid plans can also use your own AI provider. Pricing is based on credits: most module actions use one credit, while some features, such as built-in AI tools, can use more. A free plan with 1,000 credits a month has no time limit."
+  ],
+  "features": [
+    {
+      "title": "Visual Scenario Builder",
+      "text": "Build multi-step workflows on a drag-and-drop canvas, with routes and filters."
+    },
+    {
+      "title": "3,000+ app integrations",
+      "text": "Connect a large catalogue of apps in your scenarios."
+    },
+    {
+      "title": "AI agents and modules",
+      "text": "Make AI Agents and AI modules, using Make's AI provider or your own on paid plans."
+    },
+    {
+      "title": "Scheduling",
+      "text": "Run scenarios on a schedule, down to the minute on paid plans."
+    },
+    {
+      "title": "Execution logs",
+      "text": "See each run in detail, with full-text log search on the Pro plan."
+    },
+    {
+      "title": "Teams and API",
+      "text": "Shared team workspaces and roles on Teams, plus the Make API on paid plans."
+    }
+  ],
+  "useCases": [
+    "Connecting apps without code",
+    "Automating marketing and sales workflows",
+    "Data syncing between tools",
+    "AI-powered workflows and agents",
+    "Operations automation for small and mid-sized teams"
+  ],
+  "strengths": [
+    "A visual builder that makes complex, multi-step workflows easier to follow.",
+    "More than 3,000 app integrations.",
+    "A free plan with 1,000 credits a month and no time limit.",
+    "Paid plans start low for 10,000 credits a month."
+  ],
+  "limitations": [
+    "Credits can run out faster when scenarios use AI tools or process lots of data.",
+    "The free plan is limited to 1,000 credits a month.",
+    "Priority execution and full-text log search need the Pro plan.",
+    "Shared team development needs the Teams plan.",
+    "Credit-based pricing needs monitoring at higher volumes."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced by monthly credit volume. Make's pricing page lists Core from $9/mo; Make's recent articles list the monthly-billing prices below, for 10,000 credits a month. Paying yearly in advance is cheaper.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "1,000 credits/mo · no time limit · no credit card"
+      },
+      {
+        "name": "Core",
+        "price": "$12/mo",
+        "note": "10,000 credits · unlimited active scenarios · minute scheduling · Make API"
+      },
+      {
+        "name": "Pro",
+        "price": "$21/mo",
+        "note": "10,000 credits · priority execution · custom variables · log search"
+      },
+      {
+        "name": "Teams",
+        "price": "$38/mo",
+        "note": "10,000 credits · shared team development · roles"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Advanced governance · invoice billing"
+      }
+    ],
+    "source": "https://www.make.com/en/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "zapier"
+  ],
+  "sources": [
+    {
+      "label": "Make — Pricing",
+      "url": "https://www.make.com/en/pricing"
+    },
+    {
+      "label": "Make Blog — Best AI agent platforms of 2026 (plan prices)",
+      "url": "https://www.make.com/blog/best-ai-agent-platforms"
+    },
+    {
+      "label": "Make Blog — Best marketing automation tools 2026",
+      "url": "https://www.make.com/blog/best-marketing-automation-tools"
+    },
+    {
+      "label": "Make — Make vs n8n",
+      "url": "https://www.make.com/compare/make-vs-n8n"
+    },
+    {
+      "label": "Make Apps Docs — Make AI Toolkit",
+      "url": "https://apps.make.com/ai-tools"
+    }
+  ]
+}

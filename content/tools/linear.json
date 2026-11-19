@@ -1,0 +1,115 @@
+{
+  "slug": "linear",
+  "verified": "2026-11-19",
+  "seoTitle": "Linear: Features, Pricing & Alternatives",
+  "metaDescription": "Linear is an issue tracker and product planning tool for software teams, with cycles, roadmaps, AI agents and GitHub integration. See its features, Free, Basic, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Linear is an issue tracker and planning tool for product and engineering teams. Teams track issues, run cycles, plan projects and roadmaps, and move quickly with keyboard-first navigation, light and dark themes, and integrations with GitHub and Slack.",
+    "Linear also includes AI features: Linear Agent and an agent platform are on every plan, and cloud coding sessions can work on issues, billed from prepaid AI credits that are opt-in. Business adds Triage Intelligence, Code Intelligence and Linear Insights. Linear runs in the browser, on Mac and Windows, and on iOS and Android."
+  ],
+  "features": [
+    {
+      "title": "Issue tracking",
+      "text": "Fast, keyboard-first issue tracking with custom workflows, labels and priorities."
+    },
+    {
+      "title": "Cycles and projects",
+      "text": "Plan work in cycles and projects, and track progress on roadmaps."
+    },
+    {
+      "title": "Linear Agent",
+      "text": "An AI agent and agent platform included on every plan."
+    },
+    {
+      "title": "Cloud coding sessions",
+      "text": "Let a coding agent work on issues in the cloud, billed from opt-in AI credits."
+    },
+    {
+      "title": "Triage and insights",
+      "text": "Triage Intelligence, Code Intelligence and Linear Insights on the Business plan."
+    },
+    {
+      "title": "Integrations",
+      "text": "Connect GitHub, Slack, Zendesk and Intercom, with an API for custom tools."
+    }
+  ],
+  "useCases": [
+    "Bug and issue tracking for software teams",
+    "Sprint planning with cycles",
+    "Product roadmaps and project tracking",
+    "Customer requests from support tools",
+    "Engineering teams at startups and enterprises"
+  ],
+  "strengths": [
+    "Fast and focused, with keyboard-first navigation.",
+    "A free plan with unlimited members.",
+    "Desktop apps for Mac and Windows, plus native mobile apps.",
+    "75% off Basic and Business for eligible non-profits."
+  ],
+  "limitations": [
+    "The free plan is limited to 2 teams and 250 issues.",
+    "Basic is limited to 5 teams; unlimited teams need Business.",
+    "AI coding sessions need prepaid AI credits on top of the plan.",
+    "SAML, SCIM and invoice billing need the Enterprise plan."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are billed per user, monthly or yearly; Enterprise is yearly only. AI coding sessions use opt-in, prepaid AI credits.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Unlimited members · 2 teams · 250 issues · Linear Agent"
+      },
+      {
+        "name": "Basic",
+        "price": "$10/user/mo",
+        "note": "Billed yearly · 5 teams · unlimited issues and uploads · admin roles"
+      },
+      {
+        "name": "Business",
+        "price": "$16/user/mo",
+        "note": "Billed yearly · unlimited teams · private teams and guests · Triage Intelligence"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Annual only · SAML and SCIM · advanced security · priority support"
+      }
+    ],
+    "source": "https://linear.app/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [
+    "github",
+    "notion",
+    "todoist"
+  ],
+  "sources": [
+    {
+      "label": "Linear — Pricing",
+      "url": "https://linear.app/pricing"
+    },
+    {
+      "label": "Linear Docs — Billing and plans",
+      "url": "https://linear.app/docs/billing-and-plans"
+    },
+    {
+      "label": "Linear Docs — AI credits",
+      "url": "https://linear.app/docs/ai-credits"
+    },
+    {
+      "label": "Linear Docs — Download Linear",
+      "url": "https://linear.app/docs/get-the-app"
+    },
+    {
+      "label": "Linear — Changelog",
+      "url": "https://linear.app/changelog"
+    }
+  ]
+}

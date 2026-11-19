@@ -1,0 +1,118 @@
+{
+  "slug": "obsidian",
+  "verified": "2026-11-19",
+  "seoTitle": "Obsidian: Features, Pricing & Alternatives",
+  "metaDescription": "Obsidian is a free note-taking app that stores notes as local Markdown files, with links, a graph view, Canvas and thousands of plugins. See its features, Sync and Publish pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Obsidian is a note-taking app that stores your notes privately on your device as plain-text Markdown files. You can link notes together, explore connections in a graph view and lay out ideas on Canvas, an infinite space for brainstorming and diagrams.",
+    "Obsidian is free for every use, including work, with no account required. With thousands of community plugins and themes, you can shape it to fit how you think. Optional paid services add encrypted sync across devices and publishing notes to the web, and an optional Commercial license lets organizations support development."
+  ],
+  "features": [
+    {
+      "title": "Local Markdown files",
+      "text": "Notes are stored on your device as plain-text Markdown, so you're never locked in."
+    },
+    {
+      "title": "Links and graph view",
+      "text": "Link notes together and explore how your ideas connect in a graph."
+    },
+    {
+      "title": "Canvas",
+      "text": "An infinite space to research, brainstorm, diagram and lay out ideas."
+    },
+    {
+      "title": "Plugins and themes",
+      "text": "Thousands of community plugins and themes to customise the app."
+    },
+    {
+      "title": "Obsidian Sync",
+      "text": "Optional end-to-end encrypted sync across devices, with version history."
+    },
+    {
+      "title": "Obsidian Publish",
+      "text": "Optional publishing of notes to the web, with no technical knowledge required."
+    }
+  ],
+  "useCases": [
+    "Personal knowledge management",
+    "Research notes and writing",
+    "Journals and daily notes",
+    "Linking ideas in a personal wiki",
+    "Private note-taking that works offline"
+  ],
+  "strengths": [
+    "Free for every use, with no account required.",
+    "Your notes are plain Markdown files you own and control.",
+    "Works offline, with notes stored on your device.",
+    "Available on Windows, macOS, Linux, iOS and Android."
+  ],
+  "limitations": [
+    "Syncing across devices needs paid Sync or a sync method you set up yourself.",
+    "Publishing notes to the web needs paid Publish, priced per site.",
+    "Collaborating on shared vaults needs Sync for each collaborator."
+  ],
+  "pricing": {
+    "summary": "The app is free for personal and commercial use. Sync and Publish are optional paid services, and the Commercial license is optional support for organizations.",
+    "plans": [
+      {
+        "name": "Obsidian app",
+        "price": "$0",
+        "note": "Free for all uses · no account required · all core features"
+      },
+      {
+        "name": "Sync Standard",
+        "price": "$4/user/mo",
+        "note": "Billed yearly, or $5 monthly · 1 vault · 1 GB storage · 1 month history"
+      },
+      {
+        "name": "Sync Plus",
+        "price": "$8/user/mo",
+        "note": "Billed yearly, or $10 monthly · 10 vaults · 10 GB storage · 12 months history"
+      },
+      {
+        "name": "Publish",
+        "price": "$8/site/mo",
+        "note": "Billed yearly, or $10 monthly · publish notes to the web"
+      },
+      {
+        "name": "Commercial license",
+        "price": "$50/user/yr",
+        "note": "Optional · supports development · doesn't include Sync or Publish"
+      }
+    ],
+    "source": "https://obsidian.md/pricing"
+  },
+  "platforms": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [
+    "notion",
+    "gemini-notebook"
+  ],
+  "sources": [
+    {
+      "label": "Obsidian — Pricing",
+      "url": "https://obsidian.md/pricing"
+    },
+    {
+      "label": "Obsidian — Sync",
+      "url": "https://obsidian.md/sync"
+    },
+    {
+      "label": "Obsidian — License overview",
+      "url": "https://obsidian.md/license"
+    },
+    {
+      "label": "Obsidian Blog — Obsidian is now free for work",
+      "url": "https://obsidian.md/blog/free-for-work/"
+    },
+    {
+      "label": "Obsidian — Download",
+      "url": "https://obsidian.md/download"
+    }
+  ]
+}

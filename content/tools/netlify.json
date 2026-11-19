@@ -1,0 +1,114 @@
+{
+  "slug": "netlify",
+  "verified": "2026-11-19",
+  "seoTitle": "Netlify: Features, Pricing & Alternatives",
+  "metaDescription": "Netlify builds and deploys websites and web apps from Git, AI or API, with deploy previews, functions, forms and AI agents. See its features, credit-based Free, Personal, Pro and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Netlify is a platform for building and deploying websites and web apps. You can deploy from Git, from an AI tool or through the API, and every change gets a free deploy preview before it goes live. Custom domains with SSL, a global CDN, serverless functions, forms and storage are built in.",
+    "Netlify also has AI features: Agent Runners let AI agents fix, update and ship code from the Netlify dashboard, and the AI Gateway connects your app to AI models without managing API keys. Plans are credit-based, so production deploys, compute and bandwidth all draw from one monthly credit balance."
+  ],
+  "features": [
+    {
+      "title": "Deploy from Git, AI or API",
+      "text": "Connect a repository or deploy from an AI tool, with private projects until you publish."
+    },
+    {
+      "title": "Deploy previews",
+      "text": "Unlimited deploy previews on every plan, using no credits."
+    },
+    {
+      "title": "Functions and storage",
+      "text": "Serverless, scheduled and background functions, plus Netlify Database and Blob storage."
+    },
+    {
+      "title": "Forms",
+      "text": "Built-in form handling, free and unlimited on credit-based plans."
+    },
+    {
+      "title": "Agent Runners",
+      "text": "Prompt AI agents to fix, update and ship code from your Netlify dashboard."
+    },
+    {
+      "title": "Security and CDN",
+      "text": "Custom domains with SSL, a global CDN, firewall traffic rules and secret detection."
+    }
+  ],
+  "useCases": [
+    "Static sites and Jamstack projects",
+    "Frontend apps built with modern frameworks",
+    "Marketing sites with forms",
+    "Preview environments for every change",
+    "Deploying apps built with AI tools"
+  ],
+  "strengths": [
+    "Unlimited deploy previews on every plan.",
+    "Pro includes unlimited team members with no per-seat charges.",
+    "Forms are free and unlimited on credit-based plans.",
+    "A simple credit system covers deploys, compute and bandwidth."
+  ],
+  "limitations": [
+    "The free plan has a hard limit of 300 credits a month; projects pause when it runs out.",
+    "Each production deploy uses 15 credits, which adds up on busy projects.",
+    "Credit costs vary by feature, so usage needs some monitoring.",
+    "Netlify's AI features are off by default on Enterprise plans.",
+    "Teams with more than 120 members need Enterprise."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Plans are credit-based: production deploys, compute, bandwidth and requests use credits. Personal and Pro can buy extra credits with auto recharge. Existing customers can stay on legacy plans.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "300 credits/mo, hard limit · unlimited deploy previews · custom domains with SSL"
+      },
+      {
+        "name": "Personal",
+        "price": "$9/mo",
+        "note": "1,000 credits/mo · auto recharge · secret detection · priority support"
+      },
+      {
+        "name": "Pro",
+        "price": "$20/mo",
+        "note": "From 3,000 credits/mo, tiers up to 20,000 · unlimited members · shared environments"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Billed annually · company-wide controls · 99.99% uptime guarantee"
+      }
+    ],
+    "source": "https://www.netlify.com/pricing/"
+  },
+  "platforms": [
+    "Web dashboard",
+    "Command line",
+    "Git integrations"
+  ],
+  "alternatives": [
+    "vercel",
+    "supabase",
+    "lovable"
+  ],
+  "sources": [
+    {
+      "label": "Netlify — Pricing",
+      "url": "https://www.netlify.com/pricing/"
+    },
+    {
+      "label": "Netlify Docs — Credit-based pricing plans",
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/"
+    },
+    {
+      "label": "Netlify Docs — How credits work",
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/"
+    },
+    {
+      "label": "Netlify — Pro vs Free",
+      "url": "https://www.netlify.com/pricing/pro-vs-free/"
+    },
+    {
+      "label": "Netlify Docs — Manage AI features",
+      "url": "https://docs.netlify.com/build/build-with-ai/manage-ai-for-your-team/manage-ai-features/"
+    }
+  ]
+}

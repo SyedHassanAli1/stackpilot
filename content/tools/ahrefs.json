@@ -1,0 +1,125 @@
+{
+  "slug": "ahrefs",
+  "verified": "2026-11-19",
+  "seoTitle": "Ahrefs: Features, Pricing & Alternatives",
+  "metaDescription": "Ahrefs is an SEO platform for keyword research, backlink analysis, rank tracking, site audits and AI visibility. See its features, Free, Starter, Lite, Standard, Advanced and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Ahrefs is an SEO platform for keyword research, backlink analysis, competitor research, rank tracking and technical site audits. It's powered by its own web crawler and more than 16 years of web-scale data.",
+    "Ahrefs also tracks visibility in AI search, with Brand Radar and AI prompt tracking for tools such as ChatGPT, Perplexity and Google's AI Overviews. A free account covers site audits, backlinks and basic rankings for websites you verify you own. Paid plans unlock competitor research and more data, from a $29 Starter plan up to Enterprise."
+  ],
+  "features": [
+    {
+      "title": "Site Explorer",
+      "text": "Analyse any website's backlinks, organic traffic and top pages."
+    },
+    {
+      "title": "Keywords Explorer",
+      "text": "Research keywords with search volumes, difficulty and ideas."
+    },
+    {
+      "title": "Site Audit",
+      "text": "Crawl your site to find technical SEO issues, free for verified sites."
+    },
+    {
+      "title": "Rank Tracker",
+      "text": "Track your keyword rankings over time."
+    },
+    {
+      "title": "AI visibility",
+      "text": "Track how your brand appears in AI search with Brand Radar and prompt tracking."
+    },
+    {
+      "title": "API and MCP",
+      "text": "Access Ahrefs data through an API and MCP, included from the Lite plan."
+    }
+  ],
+  "useCases": [
+    "Keyword research for content",
+    "Backlink analysis and link building",
+    "Competitor research",
+    "Technical SEO audits",
+    "Tracking visibility in AI search"
+  ],
+  "strengths": [
+    "Large backlink and keyword datasets from its own crawler.",
+    "A free account for site owners, with site audits and backlinks.",
+    "A low-cost Starter plan at $29/mo.",
+    "AI search visibility tracking alongside classic SEO."
+  ],
+  "limitations": [
+    "The free account only works for sites you verify you own.",
+    "Starter is limited to 200 credits a month and one month of history.",
+    "Paid plans use credits, and reports draw them down as you work.",
+    "Extra users cost more, and Starter can't add users or credits.",
+    "Plans above Starter range from $129 to $1,499 a month."
+  ],
+  "pricing": {
+    "summary": "Free account for verified sites. Starter is billed monthly only; other paid plans can be paid monthly or yearly, with 2 months free on yearly plans.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Verified sites only · site audits · backlinks · basic rankings"
+      },
+      {
+        "name": "Starter",
+        "price": "$29/mo",
+        "note": "Monthly only · 200 credits/mo · 1 month of history"
+      },
+      {
+        "name": "Lite",
+        "price": "$129/mo",
+        "note": "1,000 credits/mo · 6 months of history · API access"
+      },
+      {
+        "name": "Standard",
+        "price": "$249/mo",
+        "note": "More data, users and history for freelancers and consultants"
+      },
+      {
+        "name": "Advanced",
+        "price": "$449/mo",
+        "note": "For agencies and in-house teams · API and MCP access"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$1,499/mo",
+        "note": "From 3 users · unlimited additional users"
+      }
+    ],
+    "source": "https://ahrefs.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "semrush",
+    "google-search-console"
+  ],
+  "sources": [
+    {
+      "label": "Ahrefs — Plans & pricing",
+      "url": "https://ahrefs.com/pricing"
+    },
+    {
+      "label": "Ahrefs Blog — How to choose the right Ahrefs plan",
+      "url": "https://ahrefs.com/blog/ahrefs-pricing/"
+    },
+    {
+      "label": "Ahrefs Blog — The $29 Starter plan",
+      "url": "https://ahrefs.com/blog/starter-plan/"
+    },
+    {
+      "label": "Ahrefs Help — About the Starter plan",
+      "url": "https://help.ahrefs.com/en/articles/9419051-about-ahrefs-starter-plan"
+    },
+    {
+      "label": "Ahrefs — FAQ",
+      "url": "https://ahrefs.com/faq"
+    },
+    {
+      "label": "Ahrefs — SEO API",
+      "url": "https://ahrefs.com/seo-api"
+    }
+  ]
+}

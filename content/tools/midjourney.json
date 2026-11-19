@@ -1,0 +1,117 @@
+{
+  "slug": "midjourney",
+  "verified": "2026-11-19",
+  "seoTitle": "Midjourney: Features, Pricing & Alternatives",
+  "metaDescription": "Midjourney is an AI image generator known for its distinctive visual style, with video generation, an image editor and personalization. See its features, Basic, Standard, Pro and Mega pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Midjourney is an AI image generator known for its distinctive, high-quality visual style. You describe an image in a prompt and Midjourney generates four options, which you can vary, upscale, edit or turn into short videos. You can use it on midjourney.com or through Discord.",
+    "The current default model is V8.2, which focuses on aesthetics, image quality and personalization, and includes an Edit Model for editing images with instructions and up to four reference images. Personalization profiles learn the styles you like. There's no free plan: access starts with a paid subscription, and you own the images you create."
+  ],
+  "features": [
+    {
+      "title": "Image generation",
+      "text": "Turn text prompts into four images at a time, in Midjourney's distinctive style."
+    },
+    {
+      "title": "Edit Model",
+      "text": "Edit images with instructions, inpaint, outpaint and use up to 4 reference images."
+    },
+    {
+      "title": "Video generation",
+      "text": "Animate images into short videos, in SD on all plans and HD from Standard."
+    },
+    {
+      "title": "Personalization",
+      "text": "Profiles that learn your taste from images you like, plus style references and moodboards."
+    },
+    {
+      "title": "Web app and Discord",
+      "text": "Create on midjourney.com with the full Editor, or use Midjourney in Discord."
+    },
+    {
+      "title": "Relax and Stealth modes",
+      "text": "Unlimited slower generations from Standard; private creations on Pro and Mega."
+    }
+  ],
+  "useCases": [
+    "Concept art and illustration",
+    "Mood boards and visual exploration",
+    "Marketing and social media imagery",
+    "Short animated clips from images",
+    "Design inspiration and ideation"
+  ],
+  "strengths": [
+    "A distinctive, high-quality visual style.",
+    "You own the images and videos you create.",
+    "Personalization learns your aesthetic over time.",
+    "Yearly plans are 20% cheaper."
+  ],
+  "limitations": [
+    "There's no free plan or free trial.",
+    "Basic includes limited Fast generations and no unlimited Relax mode.",
+    "Keeping creations private with Stealth mode needs Pro or Mega.",
+    "Companies earning over $1M a year need Pro or Mega for commercial use.",
+    "No discounts for non-profits or education."
+  ],
+  "pricing": {
+    "summary": "No free plan. All plans are subscriptions, billed monthly or yearly; yearly billing saves 20%. Extra Fast hours can be bought on any plan.",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "$10/mo",
+        "note": "Or $8/mo yearly · about 200 image jobs a month · SD video"
+      },
+      {
+        "name": "Standard",
+        "price": "$30/mo",
+        "note": "Or $24/mo yearly · 15 Fast hours · unlimited Relax images · HD video"
+      },
+      {
+        "name": "Pro",
+        "price": "$60/mo",
+        "note": "Or $48/mo yearly · 30 Fast hours · Stealth mode · unlimited Relax video"
+      },
+      {
+        "name": "Mega",
+        "price": "$120/mo",
+        "note": "Or $96/mo yearly · 60 Fast hours · Stealth mode · unlimited Relax video"
+      }
+    ],
+    "source": "https://www.midjourney.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "Discord"
+  ],
+  "alternatives": [
+    "chatgpt",
+    "gemini",
+    "runway"
+  ],
+  "sources": [
+    {
+      "label": "Midjourney — Pricing",
+      "url": "https://www.midjourney.com/pricing"
+    },
+    {
+      "label": "Midjourney Docs — Comparing plans",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+    },
+    {
+      "label": "Midjourney Docs — Version (V8.2)",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+    },
+    {
+      "label": "Midjourney Docs — Using images and videos commercially",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/27870375276557-Using-Images-Videos-Commercially"
+    },
+    {
+      "label": "Midjourney Docs — Video",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video"
+    },
+    {
+      "label": "Midjourney Docs — Group plans",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/27870607078285-Group-Plans-Corporate-Billing"
+    }
+  ]
+}

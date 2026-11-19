@@ -1,0 +1,121 @@
+{
+  "slug": "github-copilot",
+  "verified": "2026-11-19",
+  "seoTitle": "GitHub Copilot: Features, Pricing & Alternatives",
+  "metaDescription": "GitHub Copilot is GitHub's AI coding assistant for code completions, chat, agent mode, code review and a cloud agent. See its features, Free, Pro, Pro+, Max, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "GitHub Copilot is an AI coding assistant from GitHub. It works inside VS Code and other editors, on GitHub.com and in the terminal, with code completions, chat and an agent mode that can plan and make changes across your project.",
+    "Paid plans add unlimited completions, Copilot cloud agent, code review on pull requests and a choice of models from several providers. Usage beyond completions is measured in GitHub AI Credits, which each plan includes every month. There's a free plan for individuals, free access for verified students, and Business and Enterprise plans for organizations."
+  ],
+  "features": [
+    {
+      "title": "Code completions",
+      "text": "Inline suggestions as you type: 2,000 a month on Free, unlimited on paid plans."
+    },
+    {
+      "title": "Chat and agent mode",
+      "text": "Ask questions about your code, or let an agent plan and edit across files. Free supports agent mode too."
+    },
+    {
+      "title": "Copilot cloud agent",
+      "text": "Assign tasks that Copilot works on in the cloud and returns as pull requests, from the Pro plan."
+    },
+    {
+      "title": "Code review",
+      "text": "AI review of pull requests on GitHub, included from the Pro plan."
+    },
+    {
+      "title": "Copilot CLI",
+      "text": "Use Copilot from the terminal, available on every plan including Free."
+    },
+    {
+      "title": "Model choice",
+      "text": "Choose from models across providers; Pro+ and Max add premium models."
+    }
+  ],
+  "useCases": [
+    "AI code completions in your existing editor",
+    "Explaining and refactoring code with chat",
+    "Delegating tasks to an agent that opens pull requests",
+    "AI review of pull requests on GitHub",
+    "Organizations standardising on GitHub's AI tools"
+  ],
+  "strengths": [
+    "Works in the editor you already use, including VS Code and JetBrains IDEs.",
+    "Deep integration with GitHub repositories, issues and pull requests.",
+    "A free plan, plus free access for verified students.",
+    "Pro is $10/mo, with unlimited completions and code review."
+  ],
+  "limitations": [
+    "The free plan has limited chat and agent usage and 2,000 completions a month.",
+    "Chat, agents and code review consume monthly AI credits; heavy use needs a higher plan.",
+    "Premium models need Pro+ ($39/mo) or Max ($100/mo).",
+    "Business and Enterprise are billed per user, at $19 and $39 a month.",
+    "Enterprise requires GitHub Enterprise Cloud."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans include a monthly allowance of GitHub AI Credits for chat, agents and code review. Prices are in USD. Verified students can use Copilot free.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "2,000 completions/mo · limited chat and agent usage · CLI"
+      },
+      {
+        "name": "Pro",
+        "price": "$10/mo",
+        "note": "Unlimited completions · cloud agent · code review · $15 in monthly AI credits"
+      },
+      {
+        "name": "Pro+",
+        "price": "$39/mo",
+        "note": "Premium models · more than 4x Pro usage · $70 in monthly AI credits"
+      },
+      {
+        "name": "Max",
+        "price": "$100/mo",
+        "note": "Priority access to new models · $200 in monthly AI credits"
+      },
+      {
+        "name": "Business",
+        "price": "$19/user/mo",
+        "note": "For organizations · 1,900 AI credits per user · admin controls"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$39/user/mo",
+        "note": "3,900 AI credits per user · GitHub Enterprise Cloud only"
+      }
+    ],
+    "source": "https://github.com/features/copilot/plans"
+  },
+  "platforms": [
+    "VS Code",
+    "JetBrains IDEs",
+    "GitHub.com",
+    "Command line"
+  ],
+  "alternatives": [
+    "cursor",
+    "claude",
+    "vscode"
+  ],
+  "sources": [
+    {
+      "label": "GitHub — Copilot plans & pricing",
+      "url": "https://github.com/features/copilot/plans"
+    },
+    {
+      "label": "GitHub Docs — Plans for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/get-started/plans"
+    },
+    {
+      "label": "GitHub Docs — Copilot billing for organizations",
+      "url": "https://docs.github.com/en/copilot/concepts/billing/billing-for-enterprises"
+    },
+    {
+      "label": "GitHub Docs — Choosing your enterprise's Copilot plan",
+      "url": "https://docs.github.com/en/copilot/rolling-out-github-copilot-at-scale/choosing-your-enterprises-plan-for-github-copilot"
+    }
+  ]
+}

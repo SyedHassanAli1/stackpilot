@@ -1,0 +1,106 @@
+{
+  "slug": "kit",
+  "verified": "2026-11-19",
+  "seoTitle": "Kit (ConvertKit): Features, Pricing & Alternatives",
+  "metaDescription": "Kit, formerly ConvertKit, is an email marketing platform for creators with landing pages, automations, paid newsletters and digital products. See its features, Newsletter, Creator and Pro pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Kit, formerly ConvertKit, is an email marketing platform built for creators. It includes unlimited landing pages and signup forms, email sequences, visual automations and a Creator Profile that turns your newsletter into a public home for your content.",
+    "Kit also lets you earn from your audience: you can sell digital products, courses and paid newsletter subscriptions, and use recommendations to grow your list. The free Newsletter plan covers up to 10,000 subscribers. Paid plans are priced by subscriber count and unlock unlimited automations, more team members and, on Pro, advanced reporting and engagement scoring."
+  ],
+  "features": [
+    {
+      "title": "Landing pages and forms",
+      "text": "Unlimited landing pages and opt-in forms on every plan, including Free."
+    },
+    {
+      "title": "Visual Automations",
+      "text": "Build automated subscriber journeys; unlimited on paid plans."
+    },
+    {
+      "title": "Email sequences",
+      "text": "Automated email series, such as welcome sequences, with one on the free plan."
+    },
+    {
+      "title": "Paid newsletters and products",
+      "text": "Sell paid newsletter subscriptions, digital products and courses on any plan."
+    },
+    {
+      "title": "Recommendations",
+      "text": "Grow your list by recommending other creators' newsletters, on paid plans."
+    },
+    {
+      "title": "Pro analytics",
+      "text": "Subscriber engagement scoring, revenue attribution and unlimited team seats on Pro."
+    }
+  ],
+  "useCases": [
+    "Newsletters for creators",
+    "Selling digital products and courses",
+    "Paid newsletter subscriptions",
+    "Automated welcome and nurture sequences",
+    "Growing an audience with recommendations"
+  ],
+  "strengths": [
+    "A free plan for up to 10,000 subscribers.",
+    "Built for creators, with commerce tools included.",
+    "Paid newsletters work on every plan, including Free.",
+    "Paid plans have a 14-day free trial with no credit card."
+  ],
+  "limitations": [
+    "The free plan includes only 1 basic automation, 1 sequence and 1 user.",
+    "Paid pricing rises with your subscriber count.",
+    "The Creator plan is limited to 2 users; unlimited users need Pro.",
+    "Selling products and paid newsletters adds Kit transaction fees plus card processing fees.",
+    "Advanced reporting and engagement scoring need Pro, from $79/mo."
+  ],
+  "pricing": {
+    "summary": "Free plan for up to 10,000 subscribers. Paid plan prices below are for up to 1,000 subscribers, billed monthly, and rise with your list size; yearly billing gives 2 months free. Kit is running a 25% discount on the first year of Pro yearly until November 30, 2026.",
+    "plans": [
+      {
+        "name": "Newsletter",
+        "price": "$0",
+        "note": "Up to 10,000 subscribers · 1 basic automation · 1 sequence · 1 user"
+      },
+      {
+        "name": "Creator",
+        "price": "$39/mo",
+        "note": "Or $33/mo billed yearly · unlimited automations and sequences · 2 users"
+      },
+      {
+        "name": "Pro",
+        "price": "$79/mo",
+        "note": "Engagement scoring · revenue attribution · advanced reporting · unlimited users"
+      }
+    ],
+    "source": "https://kit.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "mailchimp",
+    "beehiiv"
+  ],
+  "sources": [
+    {
+      "label": "Kit — Pricing",
+      "url": "https://kit.com/pricing"
+    },
+    {
+      "label": "Kit Help — Creator vs Pro",
+      "url": "https://help.kit.com/en/articles/4494683-creator-vs-pro-choose-the-right-plan"
+    },
+    {
+      "label": "Kit — Pro",
+      "url": "https://kit.com/pro"
+    },
+    {
+      "label": "Kit — Paid newsletters",
+      "url": "https://kit.com/features/commerce/paid-newsletter"
+    },
+    {
+      "label": "Kit — Commerce",
+      "url": "https://kit.com/features/commerce"
+    }
+  ]
+}

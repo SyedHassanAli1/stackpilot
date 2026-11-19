@@ -1,0 +1,110 @@
+{
+  "slug": "zapier",
+  "verified": "2026-11-19",
+  "seoTitle": "Zapier: Features, Pricing & Alternatives",
+  "metaDescription": "Zapier connects thousands of apps so you can automate workflows and AI agents without code, with Tables, Forms and Zapier Copilot. See its features, Free, Professional, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Zapier connects thousands of apps so you can automate work between them without code. You build Zap workflows that run when something happens in one app, such as a new order or form response, and take actions in others.",
+    "Zapier also includes Tables for storing data, Forms for collecting it, AI fields and Zapier Copilot, which helps you build workflows by describing them in plain language. You can also connect AI tools to Zapier through Zapier MCP. Pricing is based on completed tasks rather than seats, and built-in steps like Filter, Formatter and Paths don't count toward your task limit."
+  ],
+  "features": [
+    {
+      "title": "Zap workflows",
+      "text": "Automations that connect your apps, from two-step Zaps to multi-step workflows on paid plans."
+    },
+    {
+      "title": "Thousands of integrations",
+      "text": "Connect a very large catalogue of apps, with premium apps and webhooks on paid plans."
+    },
+    {
+      "title": "Zapier Copilot",
+      "text": "Build workflows by describing what you want in plain language."
+    },
+    {
+      "title": "Tables and Forms",
+      "text": "Store data in Tables and collect it with Forms, included on every plan."
+    },
+    {
+      "title": "AI fields and MCP",
+      "text": "Add AI steps to workflows, and connect AI tools to your apps through Zapier MCP."
+    },
+    {
+      "title": "Free logic steps",
+      "text": "Filter, Formatter and Paths steps don't count toward your monthly tasks."
+    }
+  ],
+  "useCases": [
+    "Connecting apps without code",
+    "Lead routing and CRM updates",
+    "Notifications between tools",
+    "AI-powered workflows",
+    "Teams automating shared processes"
+  ],
+  "strengths": [
+    "Connects a very large catalogue of apps.",
+    "A free plan with unlimited two-step Zaps, Tables and Forms.",
+    "Pricing is based on tasks, not seats.",
+    "Logic steps like Filter, Formatter and Paths are free to use."
+  ],
+  "limitations": [
+    "The free plan includes 100 tasks a month and two-step workflows only.",
+    "Multi-step workflows, premium apps and webhooks need a paid plan.",
+    "Extra tasks beyond your plan's allowance are billed per task.",
+    "SAML SSO, audit logs and roles need the Team plan; SCIM needs Enterprise.",
+    "Costs grow with task volume, so busy workflows need monitoring."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced by monthly task volume; prices below are starting prices, billed yearly. Paid plans have a 14-day free trial.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "100 tasks/mo · two-step Zaps · Tables and Forms · Zapier Copilot"
+      },
+      {
+        "name": "Professional",
+        "price": "From $19.99/mo",
+        "note": "Billed yearly · 750 tasks/mo · multi-step Zaps · premium apps · webhooks"
+      },
+      {
+        "name": "Team",
+        "price": "From $69/mo",
+        "note": "Billed yearly · 2,000 tasks/mo · up to 25 users · SAML SSO"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Unlimited users · SCIM · app and action restrictions"
+      }
+    ],
+    "source": "https://zapier.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "make"
+  ],
+  "sources": [
+    {
+      "label": "Zapier — Plans & pricing",
+      "url": "https://zapier.com/pricing"
+    },
+    {
+      "label": "Zapier Blog — What is a task in Zapier?",
+      "url": "https://zapier.com/blog/what-is-a-task-in-zapier/"
+    },
+    {
+      "label": "Zapier Blog — Zapier pricing",
+      "url": "https://zapier.com/blog/zapier-pricing/"
+    },
+    {
+      "label": "Zapier — Compare automation platforms",
+      "url": "https://zapier.com/compare"
+    },
+    {
+      "label": "Zapier — Zapier vs IFTTT (plan details)",
+      "url": "https://zapier.com/compare/zapier-vs-ifttt"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "lovable",
+  "verified": "2026-11-19",
+  "seoTitle": "Lovable: Features, Pricing & Alternatives",
+  "metaDescription": "Lovable is an AI app builder that turns chat prompts into full-stack web apps with hosting, a backend and GitHub sync. See its features, Free, Pro, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Lovable is an AI app builder. You describe what you want in chat, and it generates a full-stack web app, with the interface, backend, authentication and database, that you can keep refining with prompts or visual edits.",
+    "Apps can be published to a lovable.app address on every plan, and paid plans add custom domains, code editing and team features. Lovable is priced by the credits you get each month rather than per person, so paid plans include unlimited users. A free plan lets you build and publish without paying."
+  ],
+  "features": [
+    {
+      "title": "Chat to app",
+      "text": "Describe an app in plain English and Lovable generates a working full-stack web app."
+    },
+    {
+      "title": "Built-in backend",
+      "text": "Lovable Cloud handles the database, authentication and backend, with a monthly usage grant."
+    },
+    {
+      "title": "Visual edits",
+      "text": "Adjust layouts and styles visually, alongside prompting."
+    },
+    {
+      "title": "Publishing and domains",
+      "text": "Publish free to a lovable.app address; custom domains on paid plans."
+    },
+    {
+      "title": "GitHub sync and code",
+      "text": "Sync your project to GitHub, and edit the code directly on paid plans."
+    },
+    {
+      "title": "Team workspaces",
+      "text": "Unlimited users, roles and permissions, with SSO on the Business plan."
+    }
+  ],
+  "useCases": [
+    "MVPs and prototypes for startups",
+    "Internal tools and dashboards",
+    "Customer-facing web apps",
+    "Landing pages with a working backend",
+    "Non-technical founders building their first app"
+  ],
+  "strengths": [
+    "Generates full-stack apps, including the backend, from plain-English prompts.",
+    "Pricing is per workspace, not per person, with unlimited users.",
+    "Publishing to a lovable.app address is free on every plan.",
+    "Projects sync to GitHub, so you own the code."
+  ],
+  "limitations": [
+    "The free plan includes only 5 daily credits, up to 30 a month.",
+    "Credit use can rise quickly while debugging complex changes.",
+    "Custom domains and removing the Lovable badge need a paid plan.",
+    "SSO and role-based access need the Business plan."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced by monthly credits, not per user, and come in several credit tiers. Paid plans also get 5 daily credits and can top up credits on demand.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "5 daily credits, up to 30/mo · publish to lovable.app"
+      },
+      {
+        "name": "Pro",
+        "price": "$25/mo",
+        "note": "Or $21/mo billed yearly · 100 credits · custom domains · code editing · credit rollover"
+      },
+      {
+        "name": "Business",
+        "price": "$50/mo",
+        "note": "Or $42/mo billed yearly · SSO · role-based access · team workspace"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Dedicated support, onboarding and custom integrations"
+      }
+    ],
+    "source": "https://lovable.dev/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "cursor",
+    "framer",
+    "webflow"
+  ],
+  "sources": [
+    {
+      "label": "Lovable — Pricing",
+      "url": "https://lovable.dev/pricing"
+    },
+    {
+      "label": "Lovable FAQ — Plans, credits and billing",
+      "url": "https://lovable.dev/faq/billing/plans/lovable-pricing"
+    },
+    {
+      "label": "Lovable Docs — Credits and usage",
+      "url": "https://docs.lovable.dev/introduction/credits-and-usage"
+    },
+    {
+      "label": "Lovable Blog — Simplifying billing",
+      "url": "https://lovable.dev/blog/simplifying-billing"
+    },
+    {
+      "label": "Lovable Guides — Best AI app builders (plan details)",
+      "url": "https://lovable.dev/guides/best-ai-app-builders"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "vscode",
+  "verified": "2026-11-19",
+  "seoTitle": "Visual Studio Code: Features, Pricing & Alternatives",
+  "metaDescription": "Visual Studio Code is Microsoft's free, open-source code editor for Windows, macOS and Linux, with debugging, Git, extensions and built-in AI agents. See its features, pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Visual Studio Code is a free, open-source code editor from Microsoft for Windows, macOS and Linux. It includes IntelliSense, built-in debugging, integrated testing and Git, and supports JavaScript, TypeScript, HTML and CSS out of the box, with extensions adding hundreds of other languages.",
+    "AI is built in: GitHub Copilot comes with VS Code, and you can run agents locally or in the cloud with Copilot or third-party providers such as Claude and OpenAI. You can choose models from several providers or bring your own key. The editor itself is free; AI usage depends on your GitHub Copilot plan, which includes a free tier."
+  ],
+  "features": [
+    {
+      "title": "Smart editing",
+      "text": "IntelliSense code completion, multi-cursor editing, refactoring and rich code navigation."
+    },
+    {
+      "title": "Debugging and testing",
+      "text": "Set breakpoints and step through code, and run tests for major frameworks in the editor."
+    },
+    {
+      "title": "Built-in Git",
+      "text": "Stage, commit, branch and review changes from the Source Control view."
+    },
+    {
+      "title": "Extensions",
+      "text": "Add languages, linters, debuggers, themes and tools from a large extension marketplace."
+    },
+    {
+      "title": "AI agents and chat",
+      "text": "GitHub Copilot is built in, with agents from Copilot, Claude or Codex and a choice of models."
+    },
+    {
+      "title": "MCP support",
+      "text": "Install and manage MCP servers to give AI agents access to tools and data."
+    }
+  ],
+  "useCases": [
+    "Everyday coding in almost any language",
+    "Web development with JavaScript and TypeScript",
+    "Debugging and testing applications",
+    "AI-assisted coding with Copilot or other agents",
+    "A shared standard editor for teams"
+  ],
+  "strengths": [
+    "Free and open source.",
+    "Runs on Windows, macOS and Linux.",
+    "A huge extension marketplace for languages and tools.",
+    "AI agents and models from several providers, or bring your own key."
+  ],
+  "limitations": [
+    "AI features beyond the free Copilot tier need a paid GitHub Copilot plan.",
+    "Inline suggestions and semantic search need a GitHub sign-in; bring-your-own-key covers chat only.",
+    "Many features depend on extensions, which vary in quality and upkeep.",
+    "It's a code editor, not a full IDE for every language out of the box."
+  ],
+  "pricing": {
+    "summary": "VS Code is free. AI features use your GitHub Copilot plan, which has a free tier; you can also use chat with your own API key from another provider.",
+    "plans": [
+      {
+        "name": "VS Code",
+        "price": "$0",
+        "note": "Free and open source · Windows, macOS and Linux"
+      },
+      {
+        "name": "GitHub Copilot Free",
+        "price": "$0",
+        "note": "Built-in AI with limited usage · sign in with GitHub"
+      },
+      {
+        "name": "GitHub Copilot Pro",
+        "price": "$10/mo",
+        "note": "Optional · unlimited completions · more AI usage"
+      },
+      {
+        "name": "Bring your own key",
+        "price": "Varies",
+        "note": "Use chat with models from another provider, billed by that provider"
+      }
+    ],
+    "source": "https://code.visualstudio.com/"
+  },
+  "platforms": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "alternatives": [
+    "cursor",
+    "github-copilot"
+  ],
+  "sources": [
+    {
+      "label": "Visual Studio Code — Home",
+      "url": "https://code.visualstudio.com/"
+    },
+    {
+      "label": "VS Code — Code editing features",
+      "url": "https://code.visualstudio.com/features/code-editing"
+    },
+    {
+      "label": "VS Code — FAQ",
+      "url": "https://code.visualstudio.com/docs/supporting/faq"
+    },
+    {
+      "label": "VS Code — Release notes 1.116",
+      "url": "https://code.visualstudio.com/updates/v1_116"
+    },
+    {
+      "label": "GitHub — Copilot plans & pricing",
+      "url": "https://github.com/features/copilot/plans"
+    }
+  ]
+}

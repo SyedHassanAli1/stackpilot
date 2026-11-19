@@ -1,0 +1,118 @@
+{
+  "slug": "supabase",
+  "verified": "2026-11-19",
+  "seoTitle": "Supabase: Features, Pricing & Alternatives",
+  "metaDescription": "Supabase is an open-source Postgres development platform with a database, authentication, storage, edge functions and realtime. See its features, Free, Pro, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Supabase is an open-source backend platform built on Postgres. Every project gets a full Postgres database, plus auto-generated APIs, authentication and user management, file storage, Edge Functions and realtime subscriptions, so you don't have to stitch together separate services.",
+    "Security uses Postgres Row Level Security, enforced in the database rather than in app code, and vector embeddings support AI features. You can use the hosted platform or self-host Supabase with Docker. The free plan suits passion projects; paid plans are billed per organization, with compute billed separately for each project."
+  ],
+  "features": [
+    {
+      "title": "Postgres database",
+      "text": "A full, portable Postgres database for every project, with extensions and daily backups."
+    },
+    {
+      "title": "Authentication",
+      "text": "User sign-ups and logins with email, phone and social providers, secured with Row Level Security."
+    },
+    {
+      "title": "Data APIs",
+      "text": "Auto-generated APIs let you query your data without writing separate server code."
+    },
+    {
+      "title": "Storage",
+      "text": "Store user uploads and media, governed by the same kind of policies as your data."
+    },
+    {
+      "title": "Edge Functions",
+      "text": "Serverless TypeScript functions on Deno, distributed globally close to your users."
+    },
+    {
+      "title": "Realtime and vectors",
+      "text": "Listen to database changes and broadcast events, and store embeddings for AI features."
+    }
+  ],
+  "useCases": [
+    "Backends for web and mobile apps",
+    "User authentication and permissions",
+    "Realtime features such as chat and live updates",
+    "AI apps that need vector search",
+    "Teams that want a self-hostable, open-source backend"
+  ],
+  "strengths": [
+    "Open source, with the option to self-host using Docker.",
+    "Built on standard Postgres, so your data is portable.",
+    "Database, auth, storage, functions and realtime in one platform.",
+    "A free plan with unlimited API requests and 50,000 monthly active users."
+  ],
+  "limitations": [
+    "Free projects pause after 1 week of inactivity, with a limit of 2 active projects.",
+    "The free plan includes only a 500 MB database and 1 GB of file storage.",
+    "Compute is billed per project on top of the plan; extra projects start at $10/mo.",
+    "SSO and industry certifications need the Team plan, from $599/mo.",
+    "Usage beyond plan quotas is billed per metric, which needs some monitoring."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are per organization and include $10/mo in compute credits, which covers one Micro project; each extra project adds its own compute cost. Prices are in USD.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "500 MB database · 50,000 MAU · 1 GB storage · 5 GB egress · 2 active projects"
+      },
+      {
+        "name": "Pro",
+        "price": "From $25/mo",
+        "note": "100,000 MAU · 100 GB storage · 250 GB egress · no inactivity pausing"
+      },
+      {
+        "name": "Team",
+        "price": "From $599/mo",
+        "note": "Everything in Pro · SSO · backup controls · industry certifications"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Custom quotas, support and terms"
+      }
+    ],
+    "source": "https://supabase.com/pricing"
+  },
+  "platforms": [
+    "Web dashboard",
+    "Command line",
+    "Self-hosted (Docker)"
+  ],
+  "alternatives": [
+    "vercel",
+    "netlify",
+    "lovable"
+  ],
+  "sources": [
+    {
+      "label": "Supabase — Pricing",
+      "url": "https://supabase.com/pricing"
+    },
+    {
+      "label": "Supabase Docs — Platform",
+      "url": "https://supabase.com/docs/guides/platform"
+    },
+    {
+      "label": "Supabase Docs — Database",
+      "url": "https://supabase.com/docs/guides/database/overview"
+    },
+    {
+      "label": "Supabase Docs — Edge Functions",
+      "url": "https://supabase.com/docs/guides/functions"
+    },
+    {
+      "label": "Supabase Docs — Self-hosting with Docker",
+      "url": "https://supabase.com/docs/guides/self-hosting/docker"
+    },
+    {
+      "label": "Supabase Docs — Monthly active users pricing",
+      "url": "https://supabase.com/docs/guides/platform/manage-your-usage/monthly-active-users"
+    }
+  ]
+}
