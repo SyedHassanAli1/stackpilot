@@ -44,6 +44,7 @@ const SPRITE = between('<svg width="0" height="0"', '</svg>\n');
 const HEADER = toHomeLinks(between('<header class="site-header"', '</header>'));
 const FOOTER = toHomeLinks(between('<footer class="site-footer"', '</footer>'));
 const FAVICON = (home.match(/<link rel="icon"[^>]*>/) || [''])[0];
+const DIALOG = between('<dialog class="panel"', '</dialog>'); // shared tool/comparison popup
 
 /* Helpers ---------------------------------------------------------------- */
 const esc = v => String(v ?? '')
@@ -120,12 +121,24 @@ function renderToolPage(t, c, pageSlugs) {
             </tbody>
           </table></div>
           <p class="tp-fineprint">Prices in USD, before tax. Plans change often, so check the <a href="${esc(c.pricing.source || t.url)}" target="_blank" rel="noopener noreferrer">official pricing page</a> before buying.${verified ? ` Last checked ${esc(fmtDate(verified))}.` : ''}</p>` : ''),
-    section('alternatives', `Alternatives to ${t.name}`, alternatives.length ? `<ul class="tp-cards">${alternatives.map(a => `
-            <li><a class="mini-item" href="${toolHref(a.slug)}">${mark(a, 'mark--sm')}<span class="grow"><strong>${esc(a.name)}</strong><span class="mini-sub">${esc(a.description)}</span></span>${icon('i-chev-r')}</a></li>`).join('')}
+    section('alternatives', `Alternatives to ${t.name}`, alternatives.length ? `<ul class="tp-alts">${alternatives.map(a => `
+            <li><a class="tp-alt" href="${toolHref(a.slug)}"${pageSlugs.has(a.slug) ? '' : ` data-open-tool="${esc(a.slug)}" aria-haspopup="dialog"`}>
+              ${mark(a, 'mark--sm')}
+              <span class="tp-alt-text"><strong>${esc(a.name)}</strong><span class="tp-alt-desc">${esc(a.description)}</span></span>
+              ${icon('i-chev-r', 'tp-alt-chev')}
+            </a></li>`).join('')}
           </ul>` : ''),
-    section('comparisons', 'Comparisons', comparisons.length ? `<ul class="mini-list">${comparisons.map(x => `
-            <li><a class="mini-item" href="/#compare-${esc(x.slug)}"><span class="grow"><strong>${esc(x.title)}</strong><span class="mini-sub">${esc(x.subtitle)}</span></span>${icon('i-chev-r')}</a></li>`).join('')}
-          </ul>` : ''),
+    section('comparisons', 'Comparisons', comparisons.length ? `<div class="compare-grid">${comparisons.map(x => `
+            <article class="card compare-card">
+              <div class="compare-top">
+                <div class="pair">${mark(toolBySlug[x.a], 'mark--sm')}<span class="vs" aria-hidden="true">vs</span>${mark(toolBySlug[x.b], 'mark--sm')}</div>
+                <span class="card-arrow">${icon('i-arrow-ur')}</span>
+              </div>
+              <h3><a class="card-link" href="/#compare-${esc(x.slug)}" data-open-compare="${esc(x.slug)}" aria-haspopup="dialog">${esc(x.title)}</a></h3>
+              ${present(x.subtitle) ? `<p>${esc(x.subtitle)}</p>` : ''}
+              <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">Overview</span></div>
+            </article>`).join('')}
+          </div>` : ''),
     section('sources', 'Sources & verification', list(c.sources).length ? `<p>StackPilot writes its own descriptions and checks product details against official sources. We are not affiliated with ${esc(t.name)}, and links go to its official website.</p>
           <ul class="tp-sources">${list(c.sources).map(s => `
             <li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a></li>`).join('')}
@@ -178,7 +191,7 @@ ${HEADER}
     </div>
     <div class="tp-hero-actions">
       <a class="btn btn-primary" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">Visit ${esc(t.name)} ${icon('i-arrow-ur', 'icon-arrow')}<span class="sr-only">(opens official site in a new tab)</span></a>
-      ${firstCompare ? `<a class="btn btn-secondary" href="/#compare-${esc(firstCompare.slug)}">${esc(firstCompare.title)}</a>` : ''}
+      ${firstCompare ? `<a class="btn btn-secondary" href="/#compare-${esc(firstCompare.slug)}" data-open-compare="${esc(firstCompare.slug)}" aria-haspopup="dialog">${esc(firstCompare.title)}</a>` : ''}
     </div>
   </header>
 
@@ -207,10 +220,15 @@ ${HEADER}
 
 ${FOOTER}
 
+${DIALOG}
+
 <div class="toast" id="toast" role="status" aria-live="polite">
   ${icon('i-info')}
   <span id="toastText"></span>
 </div>
+<script src="/js/data.js" defer></script>
+<script src="/js/pages.js" defer></script>
+<script src="/js/panel.js" defer></script>
 <script src="/js/page.js" defer></script>
 </body>
 </html>

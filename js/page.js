@@ -58,6 +58,18 @@
     toastTimer = setTimeout(() => toastEl.classList.remove('is-visible'), 3200);
   }));
 
+  // Compare buttons and alternatives without their own page open the shared
+  // popup right here instead of leaving the page. If js/panel.js didn't load,
+  // the click falls through to the normal link (the homepage panel).
+  document.addEventListener('click', e => {
+    const link = e.target.closest('[data-open-compare], [data-open-tool]');
+    const ui = window.StackPilotUI;
+    if (!link || !ui || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    if (link.dataset.openCompare) ui.openComparison(link.dataset.openCompare);
+    else ui.openTool(link.dataset.openTool);
+  });
+
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 })();
