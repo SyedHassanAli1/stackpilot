@@ -1,0 +1,109 @@
+{
+  "slug": "slack",
+  "verified": "2026-11-19",
+  "seoTitle": "Slack: Features, Pricing & Alternatives",
+  "metaDescription": "Slack is a team messaging app with channels, huddles, workflows, AI and thousands of app integrations. See its features, Free, Pro, Business+ and Enterprise+ pricing, strengths and limitations.",
+  "overview": [
+    "Slack is a messaging app for teams, organised into channels, with direct messages, threads, audio and video huddles, and integrations with thousands of apps. Every message, file and conversation on paid plans is saved and fully searchable.",
+    "AI features are built into paid plans, including summaries, huddle notes, AI search and workflow generation, with more on Business+ and Enterprise+. The free plan keeps 90 days of message history and up to 10 app integrations; paid plans are billed only for active users."
+  ],
+  "features": [
+    {
+      "title": "Channels and DMs",
+      "text": "Organise conversations by topic, team or project, with threads and direct messages."
+    },
+    {
+      "title": "Huddles",
+      "text": "Quick audio and video calls, with group huddles on paid plans."
+    },
+    {
+      "title": "App integrations",
+      "text": "Connect thousands of apps, with up to 10 on the free plan."
+    },
+    {
+      "title": "Workflows",
+      "text": "Automate routine tasks with workflows, including AI workflow generation."
+    },
+    {
+      "title": "Slack AI",
+      "text": "Summaries, huddle notes, AI search and recaps on paid plans."
+    },
+    {
+      "title": "Slack Connect",
+      "text": "Collaborate with outside organizations and guests in shared channels."
+    }
+  ],
+  "useCases": [
+    "Team communication",
+    "Cross-functional project channels",
+    "Working with clients and partners",
+    "Automating routine requests",
+    "Remote and hybrid teams"
+  ],
+  "strengths": [
+    "A well-known, easy-to-use messaging app.",
+    "Thousands of app integrations.",
+    "AI features included on paid plans.",
+    "Fair billing: you only pay for active members."
+  ],
+  "limitations": [
+    "The free plan keeps only 90 days of message history.",
+    "Free workspaces are limited to 10 app integrations.",
+    "SAML SSO needs Business+ or higher.",
+    "Prices rose in 2025; Business+ is now $15 per user a month, billed yearly.",
+    "Enterprise+ pricing isn't published."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per active user. Prices below are US prices billed yearly; monthly billing costs more, and Slack sometimes runs introductory discounts.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "90 days of message history · up to 10 apps · 1:1 huddles"
+      },
+      {
+        "name": "Pro",
+        "price": "$7.25/user/mo",
+        "note": "Billed yearly, or $8.75 monthly · unlimited history · AI summaries"
+      },
+      {
+        "name": "Business+",
+        "price": "$15/user/mo",
+        "note": "Billed yearly, or $18 monthly · SAML SSO · advanced AI features"
+      },
+      {
+        "name": "Enterprise+",
+        "price": "Custom",
+        "note": "AI enterprise search · advanced security and compliance"
+      }
+    ],
+    "source": "https://app.slack.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows",
+    "Linux",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Slack — Pricing",
+      "url": "https://app.slack.com/pricing"
+    },
+    {
+      "label": "Slack — Business+ subscription",
+      "url": "https://slack.com/intl/en-in/pricing/businessplus"
+    },
+    {
+      "label": "Slack Blog — 2025 pricing and packaging update",
+      "url": "https://slack.com/blog/news/june-2025-pricing-and-packaging-announcement"
+    },
+    {
+      "label": "Slack Help — Fair Billing Policy",
+      "url": "https://slack.com/help/articles/218915077-Slacks-Fair-Billing-Policy"
+    }
+  ]
+}

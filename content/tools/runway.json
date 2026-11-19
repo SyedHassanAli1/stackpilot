@@ -1,0 +1,127 @@
+{
+  "slug": "runway",
+  "verified": "2026-11-19",
+  "seoTitle": "Runway: Features, Pricing & Alternatives",
+  "metaDescription": "Runway is a generative AI platform for creating and editing video and images with models like Gen-4.5 and Aleph 2.0. See its features, Free, Standard, Pro, Max, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Runway is a generative AI platform for creating and editing video and images. Its own models include Gen-4.5 for text-to-video and image-to-video, and Aleph 2.0 for editing existing videos with text prompts, alongside third-party models such as Kling, Seedance and Nano Banana Pro in the same workspace.",
+    "Usage is measured in credits: each model costs a set number of credits per second of video or per image. The free plan includes a one-time deposit of 125 credits to explore, and paid plans include a monthly allotment. Developers can use the Runway Dev API, which is billed separately with pay-as-you-go credits."
+  ],
+  "features": [
+    {
+      "title": "Gen-4.5 video",
+      "text": "Text-to-video and image-to-video generation, 2 to 10 seconds per clip."
+    },
+    {
+      "title": "Aleph 2.0 editing",
+      "text": "Edit existing videos with text prompts and keyframe images."
+    },
+    {
+      "title": "Image generation",
+      "text": "Create images with Runway and third-party image models."
+    },
+    {
+      "title": "Third-party models",
+      "text": "Kling, Seedance, Nano Banana Pro and more, with full access from Pro."
+    },
+    {
+      "title": "Upscaling and voice",
+      "text": "4K video upscaling, plus Text to Speech and Custom Voices from Pro."
+    },
+    {
+      "title": "Team workspaces",
+      "text": "Shared workspaces with pooled credits, commenting and free viewer seats on Team."
+    }
+  ],
+  "useCases": [
+    "Short AI video clips for social and ads",
+    "Editing and restyling existing footage",
+    "Concept videos and storyboards",
+    "Images for creative projects",
+    "Adding AI video to apps via the API"
+  ],
+  "strengths": [
+    "Several leading video and image models in one workspace.",
+    "Video editing as well as generation, with Aleph 2.0.",
+    "A free plan with credits that don't expire.",
+    "Yearly billing lowers the price of every paid plan."
+  ],
+  "limitations": [
+    "The free plan has only 125 one-time credits and a limited set of tools.",
+    "Credits can't be bought on the free plan.",
+    "Video uses credits quickly; Standard's 625 credits cover about 52 seconds of Gen-4.5.",
+    "Access to all models and 4K upscaling needs Pro or higher.",
+    "Standard, Pro and Max are single-user; inviting members needs Team."
+  ],
+  "pricing": {
+    "summary": "Free plan with a one-time credit deposit. Paid plans include monthly credits; prices below are billed monthly, with yearly billing cheaper. The API (Runway Dev) is billed separately at $0.01 per credit.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "125 one-time credits · limited models · 5 GB storage"
+      },
+      {
+        "name": "Standard",
+        "price": "$15/mo",
+        "note": "Or $12/mo yearly · 625 credits/mo · buy extra credits"
+      },
+      {
+        "name": "Pro",
+        "price": "$35/mo",
+        "note": "Or $28/mo yearly · 2,250 credits/mo · all models · 500 GB storage"
+      },
+      {
+        "name": "Max",
+        "price": "$95/mo",
+        "note": "Or $76/mo yearly · 9,500 credits/mo · credits roll over one month"
+      },
+      {
+        "name": "Team",
+        "price": "$69/seat/mo",
+        "note": "Or $55/seat yearly · 2–9 seats · 6,900 pooled credits per seat"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "For larger organizations"
+      }
+    ],
+    "source": "https://runwayml.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "API"
+  ],
+  "alternatives": [
+    "midjourney",
+    "gemini",
+    "elevenlabs"
+  ],
+  "sources": [
+    {
+      "label": "Runway — Pricing",
+      "url": "https://runwayml.com/pricing"
+    },
+    {
+      "label": "Runway Help — How do credits work?",
+      "url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work"
+    },
+    {
+      "label": "Runway Help — Free plan details",
+      "url": "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details"
+    },
+    {
+      "label": "Runway Help — Workspace members and roles",
+      "url": "https://help.runwayml.com/hc/en-us/articles/10312703076371-Workspace-members-roles"
+    },
+    {
+      "label": "Runway Help — Creating with Gen-4.5",
+      "url": "https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5"
+    },
+    {
+      "label": "Runway Dev — API pricing",
+      "url": "https://dev.runwayml.com/pricing"
+    }
+  ]
+}

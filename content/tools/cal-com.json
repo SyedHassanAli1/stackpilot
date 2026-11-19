@@ -1,0 +1,110 @@
+{
+  "slug": "cal-com",
+  "verified": "2026-11-19",
+  "seoTitle": "Cal.com: Features, Pricing & Alternatives",
+  "metaDescription": "Cal.com is a scheduling platform for booking links, team scheduling, routing and CRM sync, with a free plan for individuals. See its features, Free, Teams, Organizations and Enterprise pricing, strengths and limitations.",
+  "overview": [
+    "Cal.com is a scheduling platform for sharing booking links and running team meetings. The free plan gives one user unlimited links, calendar connections and meetings, with email and SMS notifications, 100+ integrations, payments through Stripe and PayPal and two-way Salesforce and HubSpot sync.",
+    "Team plans add round-robin scheduling, collective events, routing forms and workflows, and Organizations adds SAML, SCIM and advanced routing. Cal.com is API-first, with embeds and React components for building scheduling into your own product. The open-source community edition is now published separately as Cal.diy, under the MIT license."
+  ],
+  "features": [
+    {
+      "title": "Booking links",
+      "text": "Unlimited scheduling links and calendar connections on the free plan."
+    },
+    {
+      "title": "Team scheduling",
+      "text": "Round-robin, collective and managed events with shared availability on Teams."
+    },
+    {
+      "title": "Routing",
+      "text": "Routing forms and attribute-based routing to send bookings to the right person."
+    },
+    {
+      "title": "CRM sync",
+      "text": "Two-way Salesforce and HubSpot sync, available on the free plan."
+    },
+    {
+      "title": "Cal Video",
+      "text": "Built-in video meetings on every plan, plus Google Meet, Zoom and Teams."
+    },
+    {
+      "title": "API and embeds",
+      "text": "Build scheduling into your product with API v2, embeds and React Atoms."
+    }
+  ],
+  "useCases": [
+    "Personal booking links",
+    "Sales and demo scheduling",
+    "Routing leads to the right rep",
+    "Support and customer success calls",
+    "Embedding scheduling in your own app"
+  ],
+  "strengths": [
+    "A free plan with unlimited links, calendars and meetings.",
+    "CRM sync and payments included even on the free plan.",
+    "Teams is $12 per user a month, billed yearly.",
+    "API-first, with embeds for building scheduling into products."
+  ],
+  "limitations": [
+    "The free plan is for one user; teams need a paid plan.",
+    "SAML, SCIM and advanced routing need Organizations.",
+    "Cal.com itself is no longer open source; the community edition is Cal.diy.",
+    "Cal.diy is recommended for personal, non-production use.",
+    "Commercial self-hosting of the full product is part of Enterprise."
+  ],
+  "pricing": {
+    "summary": "Free for individuals. Team plans are priced per user; yearly billing saves 25%. Teams and Organizations have a 14-day free trial.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "1 user · unlimited links and calendars · 100+ integrations · CRM sync"
+      },
+      {
+        "name": "Teams",
+        "price": "$12/user/mo",
+        "note": "Billed yearly, or $16 monthly · round-robin · routing · workflows"
+      },
+      {
+        "name": "Organizations",
+        "price": "$28/user/mo",
+        "note": "Billed yearly, or $37 monthly · SAML and SCIM · advanced routing"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Billed yearly · includes commercial self-hosting"
+      }
+    ],
+    "source": "https://cal.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "Mobile app",
+    "Browser extension"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Cal.com — Pricing",
+      "url": "https://cal.com/pricing"
+    },
+    {
+      "label": "Cal.com — About",
+      "url": "https://cal.com/about"
+    },
+    {
+      "label": "Cal.com Blog — Best online calendars (plan prices)",
+      "url": "https://cal.com/blog/best-online-calendars"
+    },
+    {
+      "label": "Cal.com Blog — Self-hosted scheduling and Cal.diy",
+      "url": "https://cal.com/blog/self-hosted-scheduling-platforms-benefits-and-challenges"
+    },
+    {
+      "label": "Cal.com Blog — Cal.com vs Chili Piper",
+      "url": "https://cal.com/blog/why-choose-calcom-over-chili-piper"
+    }
+  ]
+}

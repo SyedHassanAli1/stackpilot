@@ -1,0 +1,100 @@
+{
+  "slug": "github",
+  "verified": "2026-11-19",
+  "seoTitle": "GitHub: Features, Pricing & Alternatives",
+  "metaDescription": "GitHub hosts Git repositories with pull requests, code review, issues, GitHub Actions CI/CD, Codespaces and Copilot. See its features, Free, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "GitHub is a platform for hosting Git repositories and building software together. Teams use pull requests, code review, issues and projects to plan and ship work, and GitHub Actions runs CI/CD workflows directly from your repositories.",
+    "GitHub also includes Codespaces cloud development environments, Dependabot security alerts, GitHub Packages and GitHub Pages, and integrates with GitHub Copilot for AI coding. The free plan includes unlimited public and private repositories; Team and Enterprise add collaboration, security and governance features."
+  ],
+  "features": [
+    {
+      "title": "Repositories",
+      "text": "Unlimited public and private Git repositories on every plan."
+    },
+    {
+      "title": "Pull requests and code review",
+      "text": "Review code with comments, required reviewers and code owners on Team."
+    },
+    {
+      "title": "GitHub Actions",
+      "text": "Automate builds, tests and deployments with CI/CD workflows."
+    },
+    {
+      "title": "Codespaces",
+      "text": "Cloud development environments, with monthly core hours included on Free."
+    },
+    {
+      "title": "Security",
+      "text": "Dependabot alerts and security features, with more on higher plans."
+    },
+    {
+      "title": "Copilot integration",
+      "text": "AI coding with GitHub Copilot; Enterprise now includes Copilot access."
+    }
+  ],
+  "useCases": [
+    "Hosting open-source projects",
+    "Team code review and collaboration",
+    "CI/CD with GitHub Actions",
+    "Project planning with issues and projects",
+    "Publishing sites with GitHub Pages"
+  ],
+  "strengths": [
+    "Unlimited public and private repositories for free.",
+    "The largest developer community, with deep tool integrations.",
+    "CI/CD, Codespaces and packages built in.",
+    "Team plan is affordable at $4 per user a month."
+  ],
+  "limitations": [
+    "Protected branches, code owners and required reviewers on private repos need Team.",
+    "SAML SSO and IP allow lists need Enterprise.",
+    "Actions, Codespaces and storage beyond included amounts are billed by usage.",
+    "Enterprise costs $21 per user a month.",
+    "Copilot's paid AI features are billed separately from Free and Team."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Team and Enterprise are billed per user. Usage of Actions, Codespaces, Packages and Git LFS beyond included amounts is billed separately.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Unlimited public and private repos · Dependabot · 120 Codespaces core hours/mo"
+      },
+      {
+        "name": "Team",
+        "price": "$4/user/mo",
+        "note": "Protected branches · code owners · required reviewers · 2 GB Packages"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$21/user/mo",
+        "note": "SAML SSO · IP allow list · includes GitHub Copilot access"
+      }
+    ],
+    "source": "https://github.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "Command line"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "GitHub — Pricing",
+      "url": "https://github.com/pricing"
+    },
+    {
+      "label": "GitHub — Team",
+      "url": "https://github.com/team"
+    },
+    {
+      "label": "GitHub Docs — GitHub's plans",
+      "url": "https://docs.github.com/en/enterprise-cloud@latest/get-started/learning-about-github/githubs-plans"
+    },
+    {
+      "label": "GitHub — Pricing calculator",
+      "url": "https://github.com/pricing/calculator"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "todoist",
+  "verified": "2026-11-19",
+  "seoTitle": "Todoist: Features, Pricing & Alternatives",
+  "metaDescription": "Todoist is a task manager for personal and team to-do lists, with projects, filters, list, board and calendar layouts. See its features, Beginner, Pro and Business pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Todoist is a task manager for personal and team to-do lists. You add tasks quickly with Quick Add, organise them into projects, sections and labels, set reminders and deadlines, and view them as lists, boards or, on Pro, a calendar.",
+    "Teams can share a workspace on the Business plan, with team projects, roles and permissions and shared templates. Todoist integrates with email, calendars and other tools, and runs on the web, Windows, macOS, iOS and Android. Prices for Pro and Business went up in December 2025."
+  ],
+  "features": [
+    {
+      "title": "Quick Add",
+      "text": "Add tasks fast with natural language for dates, projects and labels."
+    },
+    {
+      "title": "Projects and filters",
+      "text": "Organise work in projects and custom filter views; 150 filters on Pro."
+    },
+    {
+      "title": "Flexible layouts",
+      "text": "List and board layouts on every plan, plus calendar and table layouts on Pro."
+    },
+    {
+      "title": "Reminders and deadlines",
+      "text": "Task reminders for everyone, with custom reminders, deadlines and task duration on Pro."
+    },
+    {
+      "title": "Ramble",
+      "text": "Add tasks by speaking, with unlimited use on Pro."
+    },
+    {
+      "title": "Team workspace",
+      "text": "Shared team projects, roles and permissions, and shared templates on Business."
+    }
+  ],
+  "useCases": [
+    "Personal to-do lists",
+    "Planning projects and goals",
+    "Daily and weekly planning",
+    "Shared team task lists",
+    "Tracking deadlines across work and life"
+  ],
+  "strengths": [
+    "A free plan with 5 personal projects and list and board layouts.",
+    "Fast task capture with Quick Add.",
+    "Available on web, Windows, macOS, iOS and Android.",
+    "Business lets you create a team for free before paying."
+  ],
+  "limitations": [
+    "The free plan is limited to 5 personal projects and 3 filter views.",
+    "Calendar layout and full reporting history need Pro.",
+    "Pro and Business prices rose in December 2025.",
+    "Shared team workspaces with up to 500 team projects need Business."
+  ],
+  "pricing": {
+    "summary": "Free Beginner plan. Paid plans can be billed monthly or yearly; yearly billing saves about 30% on Pro. Pro has a 7-day free trial and Business a 14-day free trial.",
+    "plans": [
+      {
+        "name": "Beginner",
+        "price": "$0",
+        "note": "5 personal projects · list and board layouts · 3 filter views"
+      },
+      {
+        "name": "Pro",
+        "price": "$7/mo",
+        "note": "Or $5/mo billed yearly ($60) · 300 projects · calendar layout · 150 filters"
+      },
+      {
+        "name": "Business",
+        "price": "$10/user/mo",
+        "note": "Or $8/user/mo billed yearly · shared team workspace · roles and permissions"
+      }
+    ],
+    "source": "https://www.todoist.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "Windows",
+    "macOS",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [
+    "notion",
+    "linear"
+  ],
+  "sources": [
+    {
+      "label": "Todoist — Pricing",
+      "url": "https://www.todoist.com/pricing"
+    },
+    {
+      "label": "Todoist Help — Plans, pricing and billing FAQ",
+      "url": "https://www.todoist.com/help/account-and-billing/plans/todoist-plans-pricing-and-billing-faq-Vq2z0HWL6"
+    },
+    {
+      "label": "Todoist Help — Pro pricing update",
+      "url": "https://www.todoist.com/help/articles/todoist-pricing-and-plans-update-2025-everything-you-need-to-know-Tn6Pg1JKI"
+    },
+    {
+      "label": "Todoist Help — Business pricing update",
+      "url": "https://www.todoist.com/help/account-and-billing/plans/todoist-business-plan-pricing-update-dF5in65YM"
+    },
+    {
+      "label": "Todoist — Todoist vs Basecamp (platforms)",
+      "url": "https://www.todoist.com/inspiration/todoist-vs-basecamp"
+    }
+  ]
+}

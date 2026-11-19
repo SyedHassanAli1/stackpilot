@@ -1,0 +1,106 @@
+{
+  "slug": "docker",
+  "verified": "2026-11-19",
+  "seoTitle": "Docker: Features, Pricing & Alternatives",
+  "metaDescription": "Docker packages applications into containers that run the same way anywhere, with Docker Desktop, Docker Engine, Docker Hub and Docker Scout. See its features, Personal, Pro, Team and Business pricing, strengths and limitations.",
+  "overview": [
+    "Docker packages applications and their dependencies into containers that run the same way on any machine. Docker Desktop and Docker Engine cover building and running containers, including Kubernetes, while Docker Hub stores and shares container images.",
+    "Docker also includes Docker Scout for image security insights, Docker Debug and Testcontainers Cloud for running test containers. Docker Personal is free for individuals, education, open source and small businesses; larger companies need a paid subscription to use Docker Desktop commercially."
+  ],
+  "features": [
+    {
+      "title": "Docker Desktop",
+      "text": "Build and run containers locally, with Docker Engine and Kubernetes included."
+    },
+    {
+      "title": "Docker Engine",
+      "text": "The container runtime for building and running containers on servers."
+    },
+    {
+      "title": "Docker Hub",
+      "text": "Store, share and pull container images, with private repositories."
+    },
+    {
+      "title": "Docker Scout",
+      "text": "Security insights for your container images."
+    },
+    {
+      "title": "Testcontainers Cloud",
+      "text": "Run test containers in the cloud from Docker Desktop or CI, on paid plans."
+    },
+    {
+      "title": "Admin and security",
+      "text": "Role-based access and audit logs on Team; SSO and SCIM on Business."
+    }
+  ],
+  "useCases": [
+    "Consistent development environments",
+    "Packaging apps for deployment",
+    "Running services locally for development",
+    "Testing with real dependencies",
+    "Sharing images across teams"
+  ],
+  "strengths": [
+    "Docker Personal is free for individuals and small businesses.",
+    "A standard way to package and run applications.",
+    "Docker Desktop, Engine, Hub and Scout in one subscription.",
+    "Team supports up to 100 users with unlimited Hub pulls."
+  ],
+  "limitations": [
+    "Commercial use of Docker Desktop at companies with more than 250 employees or $10M in revenue needs a paid plan.",
+    "The free plan is limited to 100 Docker Hub pulls an hour and 1 private repo.",
+    "SSO and SCIM need the Business plan.",
+    "Testcontainers Cloud minutes beyond your plan cost extra.",
+    "Business is $24 per user a month, billed yearly."
+  ],
+  "pricing": {
+    "summary": "Docker Personal is free. Paid plans are priced per user; yearly billing is cheaper. Larger companies need a paid plan for commercial Docker Desktop use.",
+    "plans": [
+      {
+        "name": "Personal",
+        "price": "$0",
+        "note": "1 user · 100 Hub pulls/hr · 1 private repo · Docker Desktop"
+      },
+      {
+        "name": "Pro",
+        "price": "$11/user/mo",
+        "note": "Or $9 yearly · 1 user · unlimited Hub pulls · commercial Desktop use"
+      },
+      {
+        "name": "Team",
+        "price": "$16/user/mo",
+        "note": "Or $15 yearly · up to 100 users · unlimited private repos · audit logs"
+      },
+      {
+        "name": "Business",
+        "price": "$24/user/mo",
+        "note": "Billed yearly · no user cap · SSO and SCIM · Hardened Docker Desktop"
+      }
+    ],
+    "source": "https://www.docker.com/pricing/"
+  },
+  "platforms": [
+    "Docker Desktop",
+    "Docker Engine",
+    "Command line"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Docker — Pricing",
+      "url": "https://www.docker.com/pricing/"
+    },
+    {
+      "label": "Docker Docs — Docker plans",
+      "url": "https://docs.docker.com/subscription/plans/docker/"
+    },
+    {
+      "label": "Docker — Plans FAQ",
+      "url": "https://www.docker.com/pricing/faq/"
+    },
+    {
+      "label": "Docker — Docker Personal",
+      "url": "https://www.docker.com/products/personal/"
+    }
+  ]
+}

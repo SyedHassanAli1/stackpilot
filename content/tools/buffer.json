@@ -1,0 +1,103 @@
+{
+  "slug": "buffer",
+  "verified": "2026-11-19",
+  "seoTitle": "Buffer: Features, Pricing & Alternatives",
+  "metaDescription": "Buffer is a social media management tool for planning and scheduling posts, replying to comments and tracking performance, priced per channel. See its features, Free, Essentials and Team pricing, strengths and limitations.",
+  "overview": [
+    "Buffer is a social media management tool for planning and scheduling posts, engaging with your audience and tracking performance across channels. It connects to 11 platforms, including X, Bluesky, Mastodon and Google Business, with a queue and a visual content calendar.",
+    "Buffer is priced per connected channel rather than per user, with volume discounts as you add more. The free plan supports up to three channels with 10 scheduled posts each, plus an AI Assistant and API and MCP access. Essentials adds unlimited posts and deeper analytics, and Team adds unlimited users and approval workflows."
+  ],
+  "features": [
+    {
+      "title": "Scheduling and queue",
+      "text": "Plan posts in a queue and a visual content calendar."
+    },
+    {
+      "title": "Ideas and drafts",
+      "text": "Save ideas and drafts, with unlimited ideas on paid plans."
+    },
+    {
+      "title": "Community replies",
+      "text": "Reply to comments, with AI reply suggestions and saved replies."
+    },
+    {
+      "title": "Analytics",
+      "text": "Track performance, with deeper analytics on paid plans."
+    },
+    {
+      "title": "AI Assistant",
+      "text": "Generate and improve post ideas with AI, on every plan."
+    },
+    {
+      "title": "Approvals and teams",
+      "text": "Approval workflows and unlimited team members on the Team plan."
+    }
+  ],
+  "useCases": [
+    "Scheduling posts for creators",
+    "Small business social media",
+    "Managing several brands' channels",
+    "Team approval workflows",
+    "Agencies managing client accounts"
+  ],
+  "strengths": [
+    "A free plan for up to 3 channels.",
+    "Priced per channel, not per user.",
+    "Team includes unlimited users at no extra cost.",
+    "Volume discounts as you add more channels."
+  ],
+  "limitations": [
+    "The free plan allows only 10 scheduled posts per channel.",
+    "Essentials is for one user; collaboration needs Team.",
+    "Costs rise with the number of channels you connect.",
+    "AI replies are limited to 5 suggestions a week on Free.",
+    "Approval workflows need the Team plan."
+  ],
+  "pricing": {
+    "summary": "Free plan for up to 3 channels. Paid plans are priced per channel, with lower rates for more channels; prices below are for the first 10 channels, billed monthly, and yearly billing is cheaper.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Up to 3 channels · 10 scheduled posts per channel · AI Assistant"
+      },
+      {
+        "name": "Essentials",
+        "price": "$6/channel/mo",
+        "note": "Or $5 billed yearly · unlimited posts · analytics · 1 user"
+      },
+      {
+        "name": "Team",
+        "price": "$12/channel/mo",
+        "note": "Or $10 billed yearly · unlimited users · approval workflows"
+      }
+    ],
+    "source": "https://buffer.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Buffer — Pricing",
+      "url": "https://buffer.com/pricing"
+    },
+    {
+      "label": "Buffer Help — Pricing and features",
+      "url": "https://support.buffer.com/en-us/articles/buffer-pricing-and-features-6pJrOPuzIt"
+    },
+    {
+      "label": "Buffer — Buffer vs Later",
+      "url": "https://buffer.com/resources/buffer-vs-later/"
+    },
+    {
+      "label": "Buffer — Buffer vs Sprout Social",
+      "url": "https://buffer.com/resources/buffer-vs-sprout-social/"
+    },
+    {
+      "label": "Buffer — Buffer vs Loomly",
+      "url": "https://buffer.com/resources/buffer-vs-loomly/"
+    }
+  ]
+}

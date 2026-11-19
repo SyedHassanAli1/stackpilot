@@ -1,0 +1,87 @@
+{
+  "slug": "lucide",
+  "verified": "2026-11-19",
+  "seoTitle": "Lucide: Features, Pricing & Alternatives",
+  "metaDescription": "Lucide is a free, open-source icon library with 1,600+ consistent SVG icons and official packages for React, Vue, Svelte and more. See its features, license, strengths and limitations.",
+  "overview": [
+    "Lucide is an open-source icon library with more than 1,600 consistent SVG icons. It's a community-run fork of Feather Icons, and anyone can contribute new icons.",
+    "Lucide provides official packages for popular frameworks, including plain JavaScript, React, React Native, Vue, Svelte, Preact, Solid, Angular and Astro, plus static SVG files and an icon font. It's released under the ISC License, so you can use it for any purpose, including commercial projects, for free."
+  ],
+  "features": [
+    {
+      "title": "1,600+ icons",
+      "text": "A large set of consistent, clean SVG icons for interfaces."
+    },
+    {
+      "title": "Framework packages",
+      "text": "Official packages for React, Vue, Svelte, Solid, Angular, Astro and more."
+    },
+    {
+      "title": "Small file sizes",
+      "text": "SVG compression and a lean code structure keep icon assets small."
+    },
+    {
+      "title": "Icon pages with code",
+      "text": "Each icon has tags, contributors and ready-to-copy code for each framework."
+    },
+    {
+      "title": "Static SVGs and icon font",
+      "text": "Use plain SVG files or an icon font when you're not using a framework."
+    },
+    {
+      "title": "Community-driven",
+      "text": "Open for anyone to contribute and request icons."
+    }
+  ],
+  "useCases": [
+    "Icons for web and mobile app interfaces",
+    "Design systems and component libraries",
+    "Dashboards and admin panels",
+    "Marketing sites and landing pages",
+    "Prototypes and side projects"
+  ],
+  "strengths": [
+    "Free and open source under the ISC License.",
+    "Official packages for most popular frameworks.",
+    "A consistent visual style across the whole set.",
+    "Optimised for small file sizes."
+  ],
+  "limitations": [
+    "Some icons derived from Feather carry the MIT license instead of ISC.",
+    "It's an icon library, not an illustration or graphics tool."
+  ],
+  "pricing": {
+    "summary": "Lucide is completely free for personal and commercial use under the ISC License.",
+    "plans": [
+      {
+        "name": "Lucide",
+        "price": "$0",
+        "note": "Open source · ISC License · all icons and packages"
+      }
+    ],
+    "source": "https://lucide.dev/license"
+  },
+  "platforms": [
+    "Web",
+    "React",
+    "React Native",
+    "Vue",
+    "Svelte",
+    "Angular"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Lucide — What is Lucide?",
+      "url": "https://lucide.dev/guide/"
+    },
+    {
+      "label": "Lucide — Packages",
+      "url": "https://lucide.dev/packages"
+    },
+    {
+      "label": "Lucide — License",
+      "url": "https://lucide.dev/license"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "miro",
+  "verified": "2026-11-19",
+  "seoTitle": "Miro: Features, Pricing & Alternatives",
+  "metaDescription": "Miro is an online whiteboard for brainstorming, diagramming, workshops and planning, with templates, AI and integrations. See its features, Free, Starter, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Miro is an online collaborative whiteboard where teams brainstorm, diagram, run workshops and plan projects together. Boards combine sticky notes and shapes with Docs, Tables, Timelines, Kanban and Slides on the same canvas.",
+    "Miro includes more than 7,000 Miro and community-made templates, integrations with tools like Zoom, Slack and Google Drive, and Miro AI for generating images, docs, diagrams and slides using monthly AI credits. The free plan includes three editable boards; paid plans are charged per member."
+  ],
+  "features": [
+    {
+      "title": "Infinite canvas",
+      "text": "Brainstorm and diagram on an infinite whiteboard, together in real time."
+    },
+    {
+      "title": "Docs, Tables and Slides",
+      "text": "Docs, Tables, Timelines, Kanban and Slides right on the canvas."
+    },
+    {
+      "title": "7,000+ templates",
+      "text": "Start faster with Miro and community-made templates."
+    },
+    {
+      "title": "Miro AI",
+      "text": "Generate images, docs, diagrams and slides with monthly AI credits."
+    },
+    {
+      "title": "Meeting tools",
+      "text": "Timer, voting, video chat and estimation for workshops, from Starter."
+    },
+    {
+      "title": "Integrations and MCP",
+      "text": "Connect Zoom, Slack, Google Drive and more, with an MCP server on Business."
+    }
+  ],
+  "useCases": [
+    "Brainstorming and workshops",
+    "Diagrams and flowcharts",
+    "Agile planning and retrospectives",
+    "User journey and research mapping",
+    "Remote team collaboration"
+  ],
+  "strengths": [
+    "A free plan with unlimited members.",
+    "Thousands of ready-made templates.",
+    "Docs, tables and slides on the same canvas.",
+    "On paid plans, people can edit shared boards without signing up."
+  ],
+  "limitations": [
+    "The free plan has only 3 editable boards.",
+    "Starter and Business charge for every member added.",
+    "Multiple teams and private workspaces need the Business plan.",
+    "AI credits are limited: 25 a month on Free and Starter.",
+    "Enterprise starts at 30 members, with custom pricing."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are charged per member; prices below are billed yearly, with monthly billing costing more. Business has a 14-day free trial.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "3 editable boards · unlimited members · 25 AI credits/mo"
+      },
+      {
+        "name": "Starter",
+        "price": "$8/member/mo",
+        "note": "Billed yearly, or $10 monthly · unlimited boards · high-res exports"
+      },
+      {
+        "name": "Business",
+        "price": "$20/member/mo",
+        "note": "Billed yearly, or $25 monthly · multiple teams · AI workflows · MCP server"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "From 30 members · security and governance at scale"
+      }
+    ],
+    "source": "https://miro.com/pricing/"
+  },
+  "platforms": [
+    "Web browser",
+    "Desktop app",
+    "Mobile app"
+  ],
+  "alternatives": [
+    "canva"
+  ],
+  "sources": [
+    {
+      "label": "Miro — Pricing",
+      "url": "https://miro.com/pricing/"
+    },
+    {
+      "label": "Miro Help — Plans and features",
+      "url": "https://help.miro.com/hc/en-us/articles/360017730233-Plans-and-features-available"
+    },
+    {
+      "label": "Miro — Business plan",
+      "url": "https://miro.com/business-plan/"
+    },
+    {
+      "label": "Miro Help — AI credits",
+      "url": "https://help.miro.com/hc/en-us/articles/19756209116178-Miro-AI-credits"
+    },
+    {
+      "label": "Miro Help — Business plan free trial",
+      "url": "https://help.miro.com/hc/en-us/articles/15392587152786-Business-plan-14-day-free-trial"
+    }
+  ]
+}

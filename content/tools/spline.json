@@ -1,0 +1,109 @@
+{
+  "slug": "spline",
+  "verified": "2026-11-19",
+  "seoTitle": "Spline: Features, Pricing & Alternatives",
+  "metaDescription": "Spline is a browser-based 3D design tool for modelling, materials, animation and interactive scenes on the web and in apps. See its features, Free, Hobby, Pro, Max and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Spline is a 3D design tool that runs in your browser. You model with primitives, booleans and sculpting, add layered materials and lights, and bring scenes to life with states, keyframes, events and physics, then publish them to the web, iOS and Android.",
+    "Teams model, comment and review together in real time, and AI agents such as Claude, ChatGPT and Cursor can work in the same file through Spline MCP. The free plan includes the editor, the Spline Library and web exports with a watermark; paid plans add AI credits, unlimited files and more export options."
+  ],
+  "features": [
+    {
+      "title": "3D modelling",
+      "text": "Model with primitives, booleans and sculpting, plus 3D generation with AI."
+    },
+    {
+      "title": "Materials and lighting",
+      "text": "Layered materials, lights and post-processing for real-time scenes."
+    },
+    {
+      "title": "Animation and interaction",
+      "text": "States, keyframes, events and physics for interactive 3D experiences."
+    },
+    {
+      "title": "Real-time collaboration",
+      "text": "Model, comment and review together in live files, with unlimited viewers."
+    },
+    {
+      "title": "Spline MCP",
+      "text": "AI agents like Claude, ChatGPT and Cursor can work in your files over MCP."
+    },
+    {
+      "title": "Web and app exports",
+      "text": "Publish to the web, with Apple and Android exports on the Pro plan."
+    }
+  ],
+  "useCases": [
+    "Interactive 3D on websites",
+    "3D UI elements and product visuals",
+    "Landing pages with 3D scenes",
+    "3D assets for iOS and Android apps",
+    "Design teams prototyping in 3D"
+  ],
+  "strengths": [
+    "Runs in the browser, with no install needed.",
+    "A free plan with the full editor and unlimited viewers.",
+    "Real-time collaboration, including with AI agents.",
+    "Yearly billing gives 2 months free."
+  ],
+  "limitations": [
+    "Free web exports include a Spline watermark, and personal files are limited.",
+    "Apple and Android exports, video export and APIs need the Pro plan.",
+    "Code and self-hosted exports need Enterprise.",
+    "SAML SSO and version history are only on Enterprise.",
+    "AI features use credits, with extra credits sold as an add-on."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per seat and include monthly AI credits; yearly billing gives 2 months free. Every plan includes unlimited viewers.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Limited personal files · watermarked web exports · Spline Library"
+      },
+      {
+        "name": "Hobby",
+        "price": "$15/seat/mo",
+        "note": "Or $12 yearly · 2,000 AI credits · unlimited files · no watermark"
+      },
+      {
+        "name": "Pro",
+        "price": "$30/seat/mo",
+        "note": "Or $25 yearly · 3,000 AI credits · Apple and Android exports · APIs"
+      },
+      {
+        "name": "Max",
+        "price": "$70/seat/mo",
+        "note": "Or $60 yearly · 10,000 AI credits · more media generation"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "SAML SSO · code and self-hosted exports · version history"
+      }
+    ],
+    "source": "https://spline.design/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "rive",
+    "figma",
+    "framer"
+  ],
+  "sources": [
+    {
+      "label": "Spline — Pricing",
+      "url": "https://spline.design/pricing"
+    },
+    {
+      "label": "Spline — Home",
+      "url": "https://spline.design/"
+    },
+    {
+      "label": "Spline — 3D design editor",
+      "url": "https://spline.design/3d-design"
+    }
+  ]
+}

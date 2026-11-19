@@ -1,0 +1,106 @@
+{
+  "slug": "affinity",
+  "verified": "2026-11-19",
+  "seoTitle": "Affinity: Features, Pricing & Alternatives",
+  "metaDescription": "Affinity, by Canva, is a free professional design app that combines vector design, photo editing and page layout in one app for Mac, Windows and iPad. See its features, pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Affinity is a professional design app by Canva that brings vector design, photo editing and page layout together in one app and one file format. You can switch between vector, pixel and layout tools in the same document, without exporting or moving between apps.",
+    "Since Canva relaunched it in 2025, Affinity has been completely free for individuals: all vector, layout and pixel tools are available with a free Canva account. Optional Canva AI tools inside Affinity need a Canva premium plan. Affinity runs on Mac, Windows and iPad."
+  ],
+  "features": [
+    {
+      "title": "Vector design",
+      "text": "Warp shapes, build forms and edit paths node by node, with expressive brushes."
+    },
+    {
+      "title": "Photo editing",
+      "text": "Retouching, RAW development, compositing and creative edits."
+    },
+    {
+      "title": "Page layout",
+      "text": "Desktop publishing with full control of type and layout, ready for print."
+    },
+    {
+      "title": "One app, one file",
+      "text": "Vector, pixel and layout tools work together in a single .af file."
+    },
+    {
+      "title": "Affinity for iPad",
+      "text": "The same professional tools, built for touch and Apple Pencil."
+    },
+    {
+      "title": "Canva AI tools",
+      "text": "Optional AI features inside Affinity with a Canva premium plan."
+    }
+  ],
+  "useCases": [
+    "Logos and vector illustration",
+    "Photo editing and retouching",
+    "Brochures, magazines and print layouts",
+    "Posters and marketing graphics",
+    "Designers moving away from subscriptions"
+  ],
+  "strengths": [
+    "All professional tools are free for individuals.",
+    "Vector, photo and layout in one app.",
+    "No subscription needed for the core app.",
+    "Runs natively on Mac, including Apple silicon, as well as Windows and iPad."
+  ],
+  "limitations": [
+    "You need a free Canva account to use it.",
+    "Canva AI tools inside Affinity need a Canva premium plan.",
+    "Available on Mac, Windows and iPad only."
+  ],
+  "pricing": {
+    "summary": "Affinity is free for individuals with a free Canva account. Canva AI tools inside Affinity require a Canva premium plan.",
+    "plans": [
+      {
+        "name": "Affinity",
+        "price": "$0",
+        "note": "All vector, pixel and layout tools · Mac, Windows and iPad · free Canva account"
+      },
+      {
+        "name": "With Canva premium",
+        "price": "Canva plan price",
+        "note": "Adds Canva AI tools inside Affinity · Canva Pro from $12/mo"
+      }
+    ],
+    "source": "https://www.affinity.studio/download"
+  },
+  "platforms": [
+    "macOS",
+    "Windows",
+    "iPad"
+  ],
+  "alternatives": [
+    "canva",
+    "figma",
+    "sketch"
+  ],
+  "sources": [
+    {
+      "label": "Affinity — Download and FAQ",
+      "url": "https://www.affinity.studio/download"
+    },
+    {
+      "label": "Canva Newsroom — Introducing the all-new Affinity",
+      "url": "https://www.canva.com/newsroom/news/all-new-affinity/"
+    },
+    {
+      "label": "Canva Newsroom — Why we made Affinity free",
+      "url": "https://www.canva.com/newsroom/news/affinity-free/"
+    },
+    {
+      "label": "Canva Newsroom — Affinity for iPad",
+      "url": "https://www.canva.com/newsroom/news/affinity-for-ipad/"
+    },
+    {
+      "label": "Affinity — Graphic design",
+      "url": "https://www.affinity.studio/graphic-design-software"
+    },
+    {
+      "label": "Affinity — Photo editing",
+      "url": "https://www.affinity.studio/photo-editing-software"
+    }
+  ]
+}

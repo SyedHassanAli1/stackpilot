@@ -1,0 +1,121 @@
+{
+  "slug": "gemini-notebook",
+  "verified": "2026-11-19",
+  "seoTitle": "Gemini Notebook (NotebookLM): Features, Pricing & Alternatives",
+  "metaDescription": "Gemini Notebook, formerly NotebookLM, is Google's AI research assistant grounded in your own sources, with Audio Overviews, reports and flashcards. See its features, plans, limits, strengths and alternatives.",
+  "overview": [
+    "Gemini Notebook, formerly NotebookLM, is Google's AI research and learning tool. You add your own sources, such as PDFs, Google Docs and Slides, audio files and text, and it answers questions, summarises and creates study aids grounded in those sources.",
+    "It can turn your sources into reports, flashcards, infographics, slide decks, Audio Overviews and Video Overviews. Google renamed NotebookLM to Gemini Notebook in 2026, adding a secure cloud computer that can run code to analyse data. It's free to use, with higher limits through Google AI plans and Google Workspace."
+  ],
+  "features": [
+    {
+      "title": "Source-grounded answers",
+      "text": "Ask questions and get answers based on the sources you add to a notebook."
+    },
+    {
+      "title": "Audio and Video Overviews",
+      "text": "Turn your sources into podcast-style audio summaries and video overviews."
+    },
+    {
+      "title": "Study aids",
+      "text": "Generate reports, flashcards, infographics and slide decks from your sources."
+    },
+    {
+      "title": "Many source types",
+      "text": "Add PDFs, Google Docs, Slides and Sheets, audio files, images and pasted text."
+    },
+    {
+      "title": "Run code",
+      "text": "Analyse data by running code in your notebooks, rolling out to Pro users."
+    },
+    {
+      "title": "Sync with Gemini",
+      "text": "Notebooks sync across the Gemini app and Google Search."
+    }
+  ],
+  "useCases": [
+    "Studying and exam preparation",
+    "Research across many documents",
+    "Summarising long reports and books",
+    "Listening to sources as Audio Overviews",
+    "Team knowledge with Google Workspace"
+  ],
+  "strengths": [
+    "Free to use, with answers grounded in your own sources.",
+    "Audio and Video Overviews make sources easy to review.",
+    "Each source can be up to 500,000 words or 200 MB.",
+    "Included in Google AI plans and Google Workspace."
+  ],
+  "limitations": [
+    "Free users can add up to 50 sources per notebook.",
+    "Usage limits refresh every 5 hours, up to a weekly limit.",
+    "Higher limits and some features need a Google AI plan or Workspace.",
+    "Work and school accounts may need an admin to turn it on."
+  ],
+  "pricing": {
+    "summary": "Free with a Google Account. Higher limits and more features come with Google AI plans, Google Cloud or a qualifying Google Workspace plan.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Up to 50 sources per notebook · usage limits refresh every 5 hours"
+      },
+      {
+        "name": "Google AI Plus",
+        "price": "$4.99/mo",
+        "note": "Higher Gemini Notebook limits, as part of Google AI Plus"
+      },
+      {
+        "name": "Google AI Pro",
+        "price": "$19.99/mo",
+        "note": "Higher limits · run code in notebooks · more Audio Overviews"
+      },
+      {
+        "name": "Google AI Ultra",
+        "price": "From $99.99/mo",
+        "note": "Highest Gemini Notebook limits"
+      },
+      {
+        "name": "Workspace",
+        "price": "Varies",
+        "note": "Included as a core service for Workspace and Workspace for Education"
+      }
+    ],
+    "source": "https://support.google.com/gemininotebook/answer/16213268?hl=en"
+  },
+  "platforms": [
+    "Web browser",
+    "Mobile app"
+  ],
+  "alternatives": [
+    "perplexity",
+    "notion",
+    "obsidian"
+  ],
+  "sources": [
+    {
+      "label": "Google Blog — NotebookLM is now Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+    },
+    {
+      "label": "Gemini Notebook Help — Learn about plans",
+      "url": "https://support.google.com/gemininotebook/answer/16213268?hl=en"
+    },
+    {
+      "label": "Gemini Notebook Help — Usage limits",
+      "url": "https://support.google.com/gemininotebook/answer/17670842"
+    },
+    {
+      "label": "Gemini Notebook Help — Add sources",
+      "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en&co=GENIE.Platform%3DDesktop"
+    },
+    {
+      "label": "Gemini Notebook Help — Use with a work or school account",
+      "url": "https://support.google.com/notebooklm/answer/16337734?hl=en"
+    },
+    {
+      "label": "Google — Gemini subscriptions",
+      "url": "https://gemini.google/subscriptions/"
+    }
+  ]
+}

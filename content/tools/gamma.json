@@ -1,0 +1,125 @@
+{
+  "slug": "gamma",
+  "verified": "2026-11-19",
+  "seoTitle": "Gamma: Features, Pricing & Alternatives",
+  "metaDescription": "Gamma is an AI tool for creating presentations, documents and websites from a prompt, with an AI agent and editing tools. See its features, Free, Plus, Pro, Ultra and Business pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Gamma is a visual communication platform for presentations, documents and simple websites. You describe what you need, or paste notes or an outline, and Gamma's AI agent drafts the content and design, which you can then edit and share on the web.",
+    "AI features use credits, which refill monthly on paid plans and roll over up to twice your plan size. The free plan includes AI credits to get started; paid plans add more credits, larger presentations, advanced image models and, on Business, SSO and locked training opt-out."
+  ],
+  "features": [
+    {
+      "title": "AI generation",
+      "text": "Draft presentations, documents and websites from a prompt, notes or an outline."
+    },
+    {
+      "title": "AI agent",
+      "text": "An expert AI agent that edits and improves your content."
+    },
+    {
+      "title": "AI images",
+      "text": "Generate images with a range of models, from basic to advanced on higher plans."
+    },
+    {
+      "title": "Share on the web",
+      "text": "Share presentations, documents and sites with a link."
+    },
+    {
+      "title": "Credits that roll over",
+      "text": "Unused plan credits roll over, up to twice your monthly amount."
+    },
+    {
+      "title": "API",
+      "text": "Generate content through Gamma's API, with credits on every plan."
+    }
+  ],
+  "useCases": [
+    "Quick presentation drafts",
+    "Pitch decks and reports",
+    "Simple websites and landing pages",
+    "Turning notes into visual documents",
+    "Teams creating on-brand decks"
+  ],
+  "strengths": [
+    "Turns a prompt into a designed presentation in minutes.",
+    "A free plan with AI credits to get started.",
+    "Unused credits roll over on paid plans.",
+    "Covers presentations, documents and simple websites."
+  ],
+  "limitations": [
+    "Free users can't buy extra credits.",
+    "Content on Free, Plus, Pro and Ultra may be used to train AI by default; you can opt out.",
+    "Ultra is monthly only, at an introductory price.",
+    "SSO and locked training opt-out need the Business plan."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are per user, and yearly billing saves 28%. Gamma's guides list Plus from $8/mo and Pro from $18/mo; check the pricing page for monthly prices in your region.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "AI credits to get started · Free users can't buy extra credits"
+      },
+      {
+        "name": "Plus",
+        "price": "From $8/mo",
+        "note": "1,500 credits/mo · credits roll over up to 2x"
+      },
+      {
+        "name": "Pro",
+        "price": "From $18/mo",
+        "note": "4,000 credits/mo · larger presentations · advanced image models"
+      },
+      {
+        "name": "Ultra",
+        "price": "$100/mo",
+        "note": "Monthly only · introductory price · API access"
+      },
+      {
+        "name": "Business",
+        "price": "$40/member/mo",
+        "note": "Billed yearly · 10,000 credits per member · SSO · SOC 2"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Admin controls · SCIM · invoiced billing"
+      }
+    ],
+    "source": "https://gamma.app/"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "canva",
+    "notion",
+    "framer"
+  ],
+  "sources": [
+    {
+      "label": "Gamma — Home and FAQ",
+      "url": "https://gamma.app/"
+    },
+    {
+      "label": "Gamma Help — Upgrade your subscription",
+      "url": "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription"
+    },
+    {
+      "label": "Gamma Help — How credits work",
+      "url": "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma"
+    },
+    {
+      "label": "Gamma Help — Gamma for business",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business"
+    },
+    {
+      "label": "Gamma Help — Refund policy (plan credits)",
+      "url": "https://help.gamma.app/en/articles/11048496-what-is-gamma-s-refund-policy-and-how-do-i-request-a-refund"
+    },
+    {
+      "label": "Gamma — Best presentation templates (plan prices)",
+      "url": "https://gamma.app/explore/content/guides/best-presentation-templates-for-business"
+    }
+  ]
+}

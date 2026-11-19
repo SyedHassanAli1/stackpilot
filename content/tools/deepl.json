@@ -1,0 +1,119 @@
+{
+  "slug": "deepl",
+  "verified": "2026-11-19",
+  "seoTitle": "DeepL: Features, Pricing & Alternatives",
+  "metaDescription": "DeepL is an AI translator for text and documents, with writing help, speech translation and an API. See its features, Free, Individual, Team, Business and API pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "DeepL is an AI translation tool for text and whole documents. You can translate Word, PowerPoint, Excel and PDF files while keeping their original formatting, and use glossaries to keep terms consistent.",
+    "DeepL also offers DeepL Write for improving text, DeepL Voice for real-time speech translation, and an API for developers. The free web translator is limited; Pro plans add more characters, file translations and maximum data security, with Pro texts deleted after translation and never used for training."
+  ],
+  "features": [
+    {
+      "title": "Text translation",
+      "text": "Translate text in the web translator or desktop apps."
+    },
+    {
+      "title": "Document translation",
+      "text": "Translate Word, PowerPoint, Excel and PDF files while keeping their layout."
+    },
+    {
+      "title": "Glossaries",
+      "text": "Keep terminology consistent, with more glossaries on higher plans."
+    },
+    {
+      "title": "DeepL Voice",
+      "text": "Real-time speech translation, with 30 minutes per user each month on paid plans."
+    },
+    {
+      "title": "DeepL Write",
+      "text": "Improve and rephrase your writing, with Write Pro as an add-on."
+    },
+    {
+      "title": "DeepL API",
+      "text": "Add translation to your apps, with a free API plan for up to 500,000 characters a month."
+    }
+  ],
+  "useCases": [
+    "Translating business documents",
+    "Multilingual websites and content",
+    "Communicating with international teams",
+    "Professional translators' workflows",
+    "Adding translation to apps via the API"
+  ],
+  "strengths": [
+    "Document translation that keeps the original formatting.",
+    "Pro texts are deleted after translation and not used for training.",
+    "A free API plan with 500,000 characters a month.",
+    "Paid plans include a 30-day free trial."
+  ],
+  "limitations": [
+    "The free translator has a much lower character limit than paid plans.",
+    "Individual includes only 3 file translations a month.",
+    "Translator plans don't include API access; the API needs a separate plan.",
+    "SSO and team administration need the Team plan or higher.",
+    "Files on free accounts aren't editable after translation."
+  ],
+  "pricing": {
+    "summary": "Free version available. Translator plans are billed per user; prices below are billed yearly, which saves about 16%. API plans are separate. Paid plans have a 30-day free trial.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Limited characters · translated files not editable"
+      },
+      {
+        "name": "Individual",
+        "price": "$8.74/mo",
+        "note": "Billed yearly · 300,000 characters/mo · 3 file translations · 1 glossary"
+      },
+      {
+        "name": "Team",
+        "price": "$28.74/user/mo",
+        "note": "Billed yearly · 1M characters per user · 20 file translations · SSO"
+      },
+      {
+        "name": "Business & Enterprise",
+        "price": "Custom",
+        "note": "Unlimited characters · custom file sizes · translation memory"
+      },
+      {
+        "name": "API Free",
+        "price": "$0",
+        "note": "Up to 500,000 characters/mo for developers"
+      }
+    ],
+    "source": "https://www.deepl.com/en/pro"
+  },
+  "platforms": [
+    "Web browser",
+    "Desktop apps",
+    "API"
+  ],
+  "alternatives": [
+    "chatgpt",
+    "gemini",
+    "claude"
+  ],
+  "sources": [
+    {
+      "label": "DeepL — Pro plans",
+      "url": "https://www.deepl.com/en/pro"
+    },
+    {
+      "label": "DeepL Support — About DeepL plans",
+      "url": "https://support.deepl.com/hc/en-us/articles/360019924499-About-DeepL-plans"
+    },
+    {
+      "label": "DeepL Support — DeepL API plans",
+      "url": "https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans"
+    },
+    {
+      "label": "DeepL Support — DeepL Voice minutes",
+      "url": "https://support.deepl.com/hc/en-us/articles/30158527549596-DeepL-Voice-minutes-included-with-paid-DeepL-Translator-plans"
+    },
+    {
+      "label": "DeepL Support — File formats",
+      "url": "https://support.deepl.com/hc/en-us/articles/360020582359-File-formats"
+    }
+  ]
+}

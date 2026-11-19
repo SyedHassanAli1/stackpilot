@@ -1,0 +1,107 @@
+{
+  "slug": "beehiiv",
+  "verified": "2026-11-19",
+  "seoTitle": "beehiiv: Features, Pricing & Alternatives",
+  "metaDescription": "beehiiv is a newsletter platform with a website, growth tools, ad network and paid subscriptions. See its features, Launch, Scale, Max and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "beehiiv is a newsletter platform built for growth. It combines newsletters, a website and podcasts in one place, with unlimited email sends, campaign analytics, custom domains, an AI website builder and a recommendation network to grow your audience.",
+    "Paid plans add ways to earn, such as the ad network, paid subscriptions and boosts, plus referral programs, automations and advanced analytics. Prices rise with your subscriber count. The free Launch plan supports up to 2,500 subscribers, and Enterprise covers lists of 100,000 or more."
+  ],
+  "features": [
+    {
+      "title": "Newsletters and website",
+      "text": "Publish newsletters, a website and podcasts from one platform."
+    },
+    {
+      "title": "Unlimited sends",
+      "text": "Send as many emails as you like, with optimised deliverability, on every plan."
+    },
+    {
+      "title": "Growth tools",
+      "text": "A recommendation network on Free, plus referral programs and boosts on paid plans."
+    },
+    {
+      "title": "Monetisation",
+      "text": "Earn with the ad network and paid subscriptions, from the Scale plan."
+    },
+    {
+      "title": "Automations and analytics",
+      "text": "Automations, A/B testing and advanced analytics on paid plans."
+    },
+    {
+      "title": "API and MCP",
+      "text": "API access and beehiiv MCP, with read access on the free plan."
+    }
+  ],
+  "useCases": [
+    "Launching a newsletter",
+    "Growing a newsletter audience",
+    "Earning from ads and paid subscriptions",
+    "Running a newsletter website",
+    "Media brands with several publications"
+  ],
+  "strengths": [
+    "A free plan for up to 2,500 subscribers with unlimited sends.",
+    "Newsletter, website and podcast in one platform.",
+    "Built-in monetisation through ads and paid subscriptions.",
+    "A recommendation network to grow your list."
+  ],
+  "limitations": [
+    "The free plan is capped at 2,500 subscribers.",
+    "Monetisation, automations and advanced analytics need Scale or higher.",
+    "Prices rise with your subscriber count.",
+    "Removing beehiiv branding needs the Max plan.",
+    "Lists over 100,000 subscribers need Enterprise."
+  ],
+  "pricing": {
+    "summary": "Free Launch plan. Paid plan prices depend on your subscriber count; prices below are starting prices, billed monthly, with yearly billing cheaper (Scale $43/mo, Max $96/mo).",
+    "plans": [
+      {
+        "name": "Launch",
+        "price": "$0",
+        "note": "Up to 2,500 subscribers · unlimited sends · website · custom domains"
+      },
+      {
+        "name": "Scale",
+        "price": "From $49/mo",
+        "note": "Or $43/mo yearly · ad network · paid subscriptions · automations"
+      },
+      {
+        "name": "Max",
+        "price": "From $109/mo",
+        "note": "Or $96/mo yearly · remove beehiiv branding · 10 publications"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "100K+ subscribers · dedicated IPs · SSO · account manager"
+      }
+    ],
+    "source": "https://www.beehiiv.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "kit",
+    "mailchimp"
+  ],
+  "sources": [
+    {
+      "label": "beehiiv — Pricing",
+      "url": "https://www.beehiiv.com/pricing"
+    },
+    {
+      "label": "beehiiv — Pricing data (llms-full.txt)",
+      "url": "https://www.beehiiv.com/llms-full.txt"
+    },
+    {
+      "label": "beehiiv Blog — Pricing plans FAQ",
+      "url": "https://www.beehiiv.com/blog/pricing-faq-2024"
+    },
+    {
+      "label": "beehiiv Blog — beehiiv vs WordPress",
+      "url": "https://www.beehiiv.com/blog/beehiiv-vs-wordpress-a-no-fluff-comparison-for-creators-and-bloggers-05de"
+    }
+  ]
+}

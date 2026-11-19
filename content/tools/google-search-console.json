@@ -1,0 +1,101 @@
+{
+  "slug": "google-search-console",
+  "verified": "2026-11-19",
+  "seoTitle": "Google Search Console: Features, Pricing & Alternatives",
+  "metaDescription": "Google Search Console is Google's free tool for monitoring how your site performs in Google Search, with performance, indexing and URL inspection reports. See its features, strengths, limitations and alternatives.",
+  "overview": [
+    "Google Search Console is a free tool from Google that helps anyone with a website understand how it performs in Google Search. It shows how Google crawls, indexes and serves your site, and what you can do to improve how it appears in search results.",
+    "The Performance report shows the queries that bring visitors, with clicks, impressions and average position, and keeps 16 months of data. The Page indexing report and URL Inspection tool show which pages are indexed and why some aren't, and you can request indexing for a page. You need to verify that you own a site before you can see its data."
+  ],
+  "features": [
+    {
+      "title": "Performance report",
+      "text": "Queries, clicks, impressions and average position for web search, News and Discover."
+    },
+    {
+      "title": "Page indexing report",
+      "text": "See which pages Google has indexed or tried to index, and fix errors."
+    },
+    {
+      "title": "URL Inspection",
+      "text": "Check a page's index status, test a live URL and request indexing."
+    },
+    {
+      "title": "Sitemaps",
+      "text": "Submit sitemaps to help Google find your pages."
+    },
+    {
+      "title": "Experience reports",
+      "text": "Reports on page loading and user experience across your site."
+    },
+    {
+      "title": "Security and manual actions",
+      "text": "Get alerted to security issues and manual actions on your site."
+    }
+  ],
+  "useCases": [
+    "Seeing which searches bring visitors",
+    "Finding and fixing indexing problems",
+    "Checking a page after publishing or updating it",
+    "Monitoring site health in Google Search",
+    "SEO work alongside other tools"
+  ],
+  "strengths": [
+    "Free, and the data comes directly from Google.",
+    "16 months of search performance data.",
+    "Tools to request indexing and debug individual pages.",
+    "Alerts for security issues and manual actions."
+  ],
+  "limitations": [
+    "Only shows data for sites you verify you own.",
+    "Covers Google Search only, not other search engines.",
+    "Performance tables omit rare queries to protect user privacy.",
+    "Most reports use a representative sample of URLs rather than every page.",
+    "Doesn't show competitors' data or keyword ideas like paid SEO tools."
+  ],
+  "pricing": {
+    "summary": "Google Search Console is free.",
+    "plans": [
+      {
+        "name": "Search Console",
+        "price": "$0",
+        "note": "Free · all reports and tools · verify site ownership to access data"
+      }
+    ],
+    "source": "https://search.google.com/search-console/about"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "ahrefs",
+    "semrush",
+    "google-analytics"
+  ],
+  "sources": [
+    {
+      "label": "Google Search Central — Get started with Search Console",
+      "url": "https://developers.google.com/search/docs/monitor-debug/search-console-start"
+    },
+    {
+      "label": "Search Console Help — URL Inspection tool",
+      "url": "https://support.google.com/webmasters/answer/9012289?hl=en"
+    },
+    {
+      "label": "Search Console Help — Page indexing report",
+      "url": "https://support.google.com/webmasters/answer/7440203?hl=en"
+    },
+    {
+      "label": "Search Console Help — About Search Console data",
+      "url": "https://support.google.com/webmasters/answer/96568?hl=en"
+    },
+    {
+      "label": "Search Console Help — Getting started",
+      "url": "https://support.google.com/webmasters/answer/10267942?hl=en-GB"
+    },
+    {
+      "label": "Google Search Central Blog — Introducing the new Search Console",
+      "url": "https://developers.google.com/search/blog/2018/01/introducing-new-search-console"
+    }
+  ]
+}

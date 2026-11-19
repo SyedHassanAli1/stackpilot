@@ -1,0 +1,93 @@
+{
+  "slug": "playwright",
+  "verified": "2026-11-19",
+  "seoTitle": "Playwright: Features, Pricing & Alternatives",
+  "metaDescription": "Playwright is a free, open-source framework for end-to-end testing and browser automation across Chromium, Firefox and WebKit, for JavaScript, Python, .NET and Java. See its features, strengths and limitations.",
+  "overview": [
+    "Playwright is an open-source framework for web automation, testing and scripting. One API drives Chromium, Firefox and WebKit, as well as branded browsers like Google Chrome and Microsoft Edge, on Linux, macOS and Windows, headless or headed.",
+    "Playwright Test is a full test runner with auto-waiting, assertions, isolation, tracing and parallel runs. It's available for JavaScript and TypeScript, Python, .NET and Java, and includes a VS Code extension for running, debugging and generating tests. It's free to use."
+  ],
+  "features": [
+    {
+      "title": "Cross-browser testing",
+      "text": "Run tests on Chromium, Firefox and WebKit, plus Chrome and Edge."
+    },
+    {
+      "title": "Playwright Test",
+      "text": "A built-in test runner with assertions, isolation and parallel runs."
+    },
+    {
+      "title": "Auto-waiting",
+      "text": "Waits for elements to be ready before acting, reducing flaky tests."
+    },
+    {
+      "title": "Tracing and debugging",
+      "text": "Record traces and inspect every step of a test run."
+    },
+    {
+      "title": "Mobile emulation",
+      "text": "Emulate tablets and mobile devices, including Chrome on Android and Mobile Safari."
+    },
+    {
+      "title": "VS Code extension",
+      "text": "Run, debug and generate tests directly in the editor."
+    }
+  ],
+  "useCases": [
+    "End-to-end testing of web apps",
+    "Cross-browser regression testing",
+    "Testing in CI pipelines",
+    "Browser automation and scripting",
+    "Automation for AI agents"
+  ],
+  "strengths": [
+    "Free and open source.",
+    "One API for Chromium, Firefox and WebKit.",
+    "Available for JavaScript, Python, .NET and Java.",
+    "Runs on Linux, macOS and Windows, locally or in CI."
+  ],
+  "limitations": [
+    "Built for web browsers; native mobile apps aren't its focus.",
+    "Mobile testing uses device emulation rather than real devices.",
+    "Recent versions run Chromium by default; other browsers need to be enabled per project."
+  ],
+  "pricing": {
+    "summary": "Playwright is free and open source.",
+    "plans": [
+      {
+        "name": "Playwright",
+        "price": "$0",
+        "note": "Open source · all browsers and languages · test runner included"
+      }
+    ],
+    "source": "https://playwright.dev/"
+  },
+  "platforms": [
+    "Linux",
+    "macOS",
+    "Windows",
+    "JavaScript",
+    "Python",
+    ".NET",
+    "Java"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Playwright — Home",
+      "url": "https://playwright.dev/"
+    },
+    {
+      "label": "Playwright Docs — Installation",
+      "url": "https://playwright.dev/docs/intro"
+    },
+    {
+      "label": "Playwright Docs — Browsers",
+      "url": "https://playwright.dev/docs/browsers"
+    },
+    {
+      "label": "Playwright Docs — Release notes",
+      "url": "https://playwright.dev/docs/release-notes"
+    }
+  ]
+}

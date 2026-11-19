@@ -1,0 +1,113 @@
+{
+  "slug": "rive",
+  "verified": "2026-11-19",
+  "seoTitle": "Rive: Features, Pricing & Alternatives",
+  "metaDescription": "Rive is an interactive animation and UI tool with a state machine editor and open-source runtimes for web, mobile and games. See its features, Free, Cadet, Voyager and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Rive is a tool for building interactive animations and UI. You design and animate in the Rive Editor, then add interactivity with State Machines, Data Binding and Scripting, so animations respond to user input and app data.",
+    "Exported .riv files play in Rive's open-source runtimes, released under the MIT license, across web, mobile, desktop and games, with no runtime fees. The Editor is free to learn and create with; shipping exports without the Rive splash screen needs a paid plan, starting with Cadet."
+  ],
+  "features": [
+    {
+      "title": "Design and animation",
+      "text": "Design vector graphics and animate them in the Rive Editor."
+    },
+    {
+      "title": "State Machines",
+      "text": "Make animations interactive, responding to user input and events."
+    },
+    {
+      "title": "Data Binding and Scripting",
+      "text": "Connect animations to app data and add logic, on every plan."
+    },
+    {
+      "title": "Open-source runtimes",
+      "text": "Play .riv files on web, mobile, desktop and games, with no runtime fees."
+    },
+    {
+      "title": "AI Agent",
+      "text": "An AI agent in the Editor that helps you write code, design and animate."
+    },
+    {
+      "title": "Libraries",
+      "text": "Share components across files and scale collaboration on Voyager."
+    }
+  ],
+  "useCases": [
+    "Interactive UI animations for apps",
+    "Animated icons and micro-interactions",
+    "Game UI and characters",
+    "Animated onboarding and illustrations",
+    "Design-to-development handoff for motion"
+  ],
+  "strengths": [
+    "Free to learn and create with in the Editor.",
+    "Open-source MIT runtimes with no runtime fees.",
+    "Interactivity built in with State Machines and Data Binding.",
+    "Exported files keep working forever, whatever your plan."
+  ],
+  "limitations": [
+    "Free exports show a Rive splash screen, and Free allows 3 collaborative files.",
+    "Cadet is limited to 3 seats; larger teams need Voyager.",
+    "Libraries and embed URL hosting need Voyager.",
+    "Enterprise is for organizations with $10M+ annual revenue.",
+    "Monthly billing costs nearly twice the yearly rate on Cadet."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per seat; yearly billing is paid upfront and is cheaper. No runtime fees on any plan.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Exports with a Rive splash screen · 3 collaborative files · State Machines"
+      },
+      {
+        "name": "Cadet",
+        "price": "$17/seat/mo",
+        "note": "Or $9/seat/mo yearly ($108) · no splash screen · unlimited files · 3 seats max"
+      },
+      {
+        "name": "Voyager",
+        "price": "$49/seat/mo",
+        "note": "Or $32/seat/mo yearly ($384) · Libraries · $20/seat AI credits · 25 seats max"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$120/seat/mo",
+        "note": "Billed yearly ($1,440/seat) · for organizations with $10M+ revenue"
+      }
+    ],
+    "source": "https://rive.app/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "Runtimes: web, mobile, desktop, games"
+  ],
+  "alternatives": [
+    "spline",
+    "figma",
+    "framer"
+  ],
+  "sources": [
+    {
+      "label": "Rive — Pricing",
+      "url": "https://rive.app/pricing"
+    },
+    {
+      "label": "Rive Docs — Pricing",
+      "url": "https://rive.app/docs/account-admin/pricing"
+    },
+    {
+      "label": "Rive Blog — Rive's new $9/mo plan",
+      "url": "https://rive.app/blog/rive-s-new-9-mo-plan"
+    },
+    {
+      "label": "Rive Docs — AI Agent",
+      "url": "https://rive.app/docs/editor/ai-agent/ai-agent"
+    },
+    {
+      "label": "Rive — Rive vs Spine",
+      "url": "https://rive.app/rive-vs-spine"
+    }
+  ]
+}

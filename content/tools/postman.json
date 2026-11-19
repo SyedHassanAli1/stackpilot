@@ -1,0 +1,113 @@
+{
+  "slug": "postman",
+  "verified": "2026-11-19",
+  "seoTitle": "Postman: Features, Pricing & Alternatives",
+  "metaDescription": "Postman is an API platform for designing, sending, testing, documenting and monitoring APIs across HTTP, GraphQL, gRPC and more. See its features, Free, Solo, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Postman is a platform for building and testing APIs. Its API client lets you design, send, debug and test requests across HTTP, GraphQL, gRPC, WebSocket and MQTT, using collections, environments and scripts.",
+    "Postman also covers API specifications, mock servers, documentation and monitoring, and includes Postman AI, which uses monthly AI credits. It runs as a desktop app for Windows, macOS and Linux, on the web, in VS Code and from the command line with the Postman CLI. Free and Solo are single-user plans; Team and Enterprise add collaboration and governance."
+  ],
+  "features": [
+    {
+      "title": "Multi-protocol API client",
+      "text": "Send and debug requests across HTTP, GraphQL, gRPC, WebSocket and MQTT."
+    },
+    {
+      "title": "Collections and environments",
+      "text": "Organise requests and switch variables between environments."
+    },
+    {
+      "title": "Automated testing",
+      "text": "Write tests and run collections, with data-driven testing on Solo and up."
+    },
+    {
+      "title": "Specs and mock servers",
+      "text": "Create and version API specifications and mock servers."
+    },
+    {
+      "title": "Documentation and monitoring",
+      "text": "Publish API docs and monitor APIs, with custom branding on paid plans."
+    },
+    {
+      "title": "Postman AI and CLI",
+      "text": "AI help with monthly credits, plus the Postman CLI for CI/CD pipelines."
+    }
+  ],
+  "useCases": [
+    "Testing and debugging APIs",
+    "Documenting APIs for teams",
+    "Mocking APIs during development",
+    "Automated API tests in CI/CD",
+    "Sharing collections across a team"
+  ],
+  "strengths": [
+    "A free plan with the API client, specs and mock servers.",
+    "Supports many API protocols in one tool.",
+    "Available on desktop, web, VS Code and the command line.",
+    "Solo is affordable at $9 a month, billed yearly."
+  ],
+  "limitations": [
+    "Free and Solo are single-player plans; collaboration needs Team.",
+    "AI usage beyond monthly credits is billed per credit.",
+    "Role-based access control needs the Team plan.",
+    "Packages aren't available on the free plan.",
+    "The web app needs the Desktop Agent to reach local and private networks."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Prices below are billed yearly. Each plan includes monthly Postman AI credits, with pay-as-you-go credits on paid plans.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "API client · specs · mock servers · limited AI credits"
+      },
+      {
+        "name": "Solo",
+        "price": "$9/mo",
+        "note": "Billed yearly · 400 AI credits/mo · data-driven testing · custom docs"
+      },
+      {
+        "name": "Team",
+        "price": "$19/user/mo",
+        "note": "Billed yearly · team collaboration · RBAC · SDK generation"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$49/user/mo",
+        "note": "Billed yearly · 800 pooled AI credits per user · governance"
+      }
+    ],
+    "source": "https://www.postman.com/pricing/"
+  },
+  "platforms": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "Web browser",
+    "VS Code",
+    "Command line"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Postman — Pricing",
+      "url": "https://www.postman.com/pricing/"
+    },
+    {
+      "label": "Postman Docs — AI credits FAQ",
+      "url": "https://learning.postman.com/help/billing-and-payment/general/ai-credits-faq"
+    },
+    {
+      "label": "Postman Docs — Installation overview",
+      "url": "https://learning.postman.com/docs/getting-started/installation/overview"
+    },
+    {
+      "label": "Postman Docs — VS Code extension",
+      "url": "https://learning.postman.com/docs/developer/vs-code-extension/overview"
+    },
+    {
+      "label": "Postman Docs — Resource usage",
+      "url": "https://learning.postman.com/docs/billing/resource-usage"
+    }
+  ]
+}

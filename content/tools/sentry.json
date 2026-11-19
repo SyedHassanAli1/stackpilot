@@ -1,0 +1,109 @@
+{
+  "slug": "sentry",
+  "verified": "2026-11-19",
+  "seoTitle": "Sentry: Features, Pricing & Alternatives",
+  "metaDescription": "Sentry is an application monitoring platform for errors, performance tracing, session replays and logs. See its features, Developer, Team, Business and Enterprise pricing, strengths and limitations.",
+  "overview": [
+    "Sentry is an application monitoring platform that captures errors, performance traces, session replays and logs from your apps, then groups them so developers can find and fix problems faster. It supports most major languages and frameworks.",
+    "Pricing is event-based: each plan includes a base volume per data type, such as errors, replays and logs, and you can add more with discounted reserved volume or a pay-as-you-go budget. The Developer plan is free forever, and the Business plan has a 14-day free trial with no credit card."
+  ],
+  "features": [
+    {
+      "title": "Error monitoring",
+      "text": "Capture errors with stack traces and context, grouped into issues."
+    },
+    {
+      "title": "Tracing",
+      "text": "Follow requests across services to find slow code and bottlenecks."
+    },
+    {
+      "title": "Session Replay",
+      "text": "Watch replays of user sessions to see what led to an error."
+    },
+    {
+      "title": "Logs and metrics",
+      "text": "5 GB of logs and 5 GB of application metrics included on every plan."
+    },
+    {
+      "title": "Flexible volume",
+      "text": "Add reserved volume at a discount, or set a pay-as-you-go budget."
+    },
+    {
+      "title": "Many SDKs",
+      "text": "SDKs for most major languages and frameworks, web and mobile."
+    }
+  ],
+  "useCases": [
+    "Catching production errors",
+    "Debugging performance problems",
+    "Seeing what users did before a crash",
+    "Monitoring web and mobile apps",
+    "Engineering teams triaging issues"
+  ],
+  "strengths": [
+    "A free Developer plan, forever.",
+    "Errors, tracing, replays and logs in one place.",
+    "Pay only for the data you send, with reserved volume discounts.",
+    "A 14-day Business trial with unlimited event data."
+  ],
+  "limitations": [
+    "The Developer plan is limited in features and volume.",
+    "Event-based pricing needs monitoring as your traffic grows.",
+    "Extra logs and metrics beyond 5 GB cost $0.50/GB.",
+    "Advanced features need Business, at $80/mo or more.",
+    "Usage beyond plan quotas needs a pay-as-you-go budget."
+  ],
+  "pricing": {
+    "summary": "Free Developer plan. Paid plans include a base volume per data type; you can add reserved volume at a discount or set a pay-as-you-go budget. Prices below are billed yearly; monthly billing costs more.",
+    "plans": [
+      {
+        "name": "Developer",
+        "price": "$0",
+        "note": "Free forever · 5 GB logs and metrics"
+      },
+      {
+        "name": "Team",
+        "price": "$26/mo",
+        "note": "Billed yearly, or $29 monthly · base volume of errors, replays and more"
+      },
+      {
+        "name": "Business",
+        "price": "$80/mo",
+        "note": "Billed yearly, or $89 monthly · advanced features · 14-day free trial"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "For large organizations"
+      }
+    ],
+    "source": "https://sentry.io/pricing/"
+  },
+  "platforms": [
+    "Web dashboard",
+    "SDKs for web, mobile and server"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Sentry — Pricing",
+      "url": "https://sentry.io/pricing/"
+    },
+    {
+      "label": "Sentry Docs — Pricing and billing",
+      "url": "https://docs.sentry.io/pricing/"
+    },
+    {
+      "label": "Sentry Docs — Get started",
+      "url": "https://docs.sentry.io/get-started/"
+    },
+    {
+      "label": "Sentry Blog — Logs vs metrics",
+      "url": "https://blog.sentry.io/when-you-need-a-metric/"
+    },
+    {
+      "label": "Sentry Blog — Stripe Projects (monthly plan prices)",
+      "url": "https://blog.sentry.io/sentry-stripe-projects/"
+    }
+  ]
+}
