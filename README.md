@@ -15,11 +15,16 @@ Plain HTML, CSS and vanilla JavaScript. No framework, no build step.
 │   └── styles.css      # All styles; design tokens in :root
 ├── js/
 │   ├── data.js         # Tools, categories, comparisons, guides (single source of truth)
-│   └── app.js          # Search, filters, sort, detail panels, menu, shortcuts
+│   ├── app.js          # Homepage: search, filters, sort, detail panels, menu, shortcuts
+│   ├── page.js         # Header behaviour on generated pages
+│   └── pages.js        # Generated list of tools that have a page
 ├── logos/              # Official tool logos, named <tool-slug>.svg
 ├── tests/
 │   ├── validate-data.mjs  # Checks every record in js/data.js (Node, no dependencies)
 │   └── render-check.html  # Opens every card and panel; fails on raw/empty values
+├── content/tools/      # Full page content per tool: <tool-slug>.json
+├── scripts/build.mjs   # Builds tools/<slug>/index.html from data + content
+├── tools/              # Generated tool pages (don't edit by hand)
 ├── netlify.toml        # Netlify deploy config
 └── README.md
 ```
@@ -56,6 +61,18 @@ inconsistent. `render-check.html` opens every tool card, tool panel, comparison 
 fails if any shows `null`, `undefined`, `NaN`, `[object Object]`, `Invalid Date`, an empty element
 or a link without a destination. Test pages are not served on the live site.
 
+## Tool pages
+
+Each tool with a content file gets its own page at `/tools/<slug>/`.
+
+1. Add `content/tools/<slug>.json` (see `content/tools/figma.json` for the format).
+2. Run `node scripts/build.mjs`.
+3. Open `http://localhost:8000/tools/<slug>/` with a local server running.
+
+Netlify runs the build on every deploy, so pages always match the data. The header, footer and
+icons are copied from `index.html`, so edit them there. Pages use root-relative links (`/css/...`),
+so open them through a local server rather than by double-clicking the file.
+
 ## Logos
 
 Logo files follow one naming rule: `logos/<tool-slug>.svg`, for example
@@ -65,4 +82,5 @@ follow their usage guidelines.
 
 ## Deploy
 
-The site deploys to Netlify from the repository root. There is no build command.
+The site deploys to Netlify from the repository root. The build command (`node scripts/build.mjs`) needs
+only Node — no packages to install.

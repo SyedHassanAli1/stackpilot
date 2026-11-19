@@ -1,6 +1,7 @@
 [build]
   publish = "."
-  command = ""
+  # Generates tools/<slug>/index.html from js/data.js + content/tools/*.json (no dependencies).
+  command = "node scripts/build.mjs"
 
 [[headers]]
   for = "/*"
