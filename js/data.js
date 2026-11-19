@@ -10,13 +10,14 @@
      pricing reflects each vendor's general model (Free / Freemium / Paid),
      not specific prices.
      ------------------------------------------------------------------------ */
+  // slug = the category page URL: /categories/<slug>/
   const CATEGORIES = [
     { id: 'All',          label: 'All Tools',    color: '#A1A1AA' },
-    { id: 'AI Tools',     label: 'AI Tools',     color: '#7C3AED' },
-    { id: 'Design',       label: 'Design',       color: '#4F46E5' },
-    { id: 'Development',  label: 'Development',  color: '#0E9384' },
-    { id: 'Productivity', label: 'Productivity', color: '#DC6803' },
-    { id: 'Marketing',    label: 'Marketing',    color: '#DD2590' }
+    { id: 'AI Tools',     label: 'AI Tools',     color: '#7C3AED', slug: 'ai-tools' },
+    { id: 'Design',       label: 'Design',       color: '#4F46E5', slug: 'design' },
+    { id: 'Development',  label: 'Development',  color: '#0E9384', slug: 'development' },
+    { id: 'Productivity', label: 'Productivity', color: '#DC6803', slug: 'productivity' },
+    { id: 'Marketing',    label: 'Marketing',    color: '#DD2590', slug: 'marketing' }
   ];
 
   const TOOLS = [

@@ -83,9 +83,19 @@ The build also writes:
 - `/categories/`: one card per category.
 - `/categories/<slug>/`: the tools in that category, grouped by subcategory, plus its comparisons.
 
-Tools and categories come from `js/data.js`; each category's intro, page title and meta
-description come from `content/categories.json`. A new category in `js/data.js` needs an entry
-there, or the build stops with an error.
+Tools and categories come from `js/data.js`; each category's `slug` there sets its URL
+(`/categories/<slug>/`). Its intro, page title and meta description come from
+`content/categories.json`.
+
+Visitors reach these pages from the header: "Categories" opens a dropdown on desktop and lists
+the categories in the mobile menu. The homepage links to the selected category's page and to
+All Tools. The header links are written by hand in `index.html`, so a new category needs:
+
+1. an entry in `CATEGORIES` in `js/data.js`, with a `slug`;
+2. an entry in `content/categories.json`;
+3. a link in the header dropdown and the mobile menu in `index.html`.
+
+If any of these is missing, the build stops with an error.
 
 ## Logos
 

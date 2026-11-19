@@ -247,8 +247,48 @@
     panel.addEventListener('click', e => { if (e.target === panel) closePanel(); });
     panel.addEventListener('close', () => document.documentElement.classList.remove('is-locked'));
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initPanel);
-  else initPanel();
+  /* Header "Categories" dropdown (shared by every page). CSS opens it on hover
+     and focus; this adds tool counts, the current page, aria-expanded and
+     Escape to close. */
+  function initNav() {
+    const counts = {};
+    (window.StackPilot?.TOOLS || []).forEach(t => { counts[t.category] = (counts[t.category] || 0) + 1; });
+    document.querySelectorAll('[data-cat-count]').forEach(el => {
+      const n = counts[el.dataset.catCount];
+      el.textContent = n ? String(n) : '';
+    });
+    const here = location.pathname.replace(/index\.html$/, '');
+    document.querySelectorAll('.nav-dd-menu li a, .mobile-subnav a').forEach(a => {
+      if (a.getAttribute('href') === here) a.setAttribute('aria-current', 'page');
+    });
+
+    const dd = document.getElementById('catNav');
+    if (!dd || dd.dataset.ready) return;
+    dd.dataset.ready = 'true';
+    const trigger = dd.querySelector('.nav-dd-trigger');
+    const sync = () => {
+      const open = !dd.classList.contains('is-dismissed') && (dd.matches(':hover') || dd.contains(document.activeElement));
+      trigger.setAttribute('aria-expanded', String(open));
+    };
+    dd.addEventListener('mouseenter', sync);
+    dd.addEventListener('mouseleave', () => { dd.classList.remove('is-dismissed'); sync(); });
+    dd.addEventListener('focusin', sync);
+    dd.addEventListener('focusout', () => setTimeout(() => {
+      if (!dd.contains(document.activeElement)) dd.classList.remove('is-dismissed');
+      sync();
+    }));
+    dd.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      dd.classList.add('is-dismissed');
+      trigger.focus();
+      sync();
+      e.stopPropagation();
+    });
+  }
+
+  function init() { initPanel(); initNav(); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
 
   window.StackPilotUI = Object.freeze({
     $, h, icon, isPresent, setChildren, section, when, isHttpUrl,

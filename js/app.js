@@ -30,6 +30,8 @@
     count: $('#resultCount'),
     live: $('#liveRegion'),
     more: $('#toggleMore'),
+    catLink: $('#categoryLink'),
+    browseAll: $('#browseAll'),
     sort: $('#sortSelect'),
     form: $('#searchForm'),
     input: $('#searchInput'),
@@ -150,6 +152,15 @@
       allShown ? 'Show fewer tools' : `Show ${Math.min(MORE_STEP, remaining)} more tools`,
       icon('i-chev-d', 'icon-chev')
     );
+
+    // Links out to the full listing pages: the selected category's page, and All Tools.
+    const cat = CATEGORIES.find(c => c.id === state.category);
+    els.catLink.hidden = !cat?.slug;
+    if (cat?.slug) {
+      els.catLink.href = `/categories/${cat.slug}/`;
+      els.catLink.firstElementChild.textContent = `View all ${cat.label} tools`;
+    }
+    els.browseAll.firstChild.textContent = `Browse all ${TOOLS.length} tools `;
 
     renderSearchHelp(total);
 

@@ -52,7 +52,19 @@
 
     <nav class="nav-links" aria-label="Primary">
       <a href="/#tools" data-spy="tools">Explore</a>
-      <a href="/#categories" data-spy="categories">Categories</a>
+      <div class="nav-dd" id="catNav">
+        <a href="/categories/" class="nav-dd-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="catNavMenu">Categories <svg class="icon" aria-hidden="true"><use href="#i-chev-d"/></svg></a>
+        <div class="nav-dd-menu" id="catNavMenu">
+          <ul>
+            <li><a href="/categories/ai-tools/" style="--cat-color:#7C3AED"><span class="cat">AI Tools</span><span class="nav-dd-count" data-cat-count="AI Tools"></span></a></li>
+            <li><a href="/categories/design/" style="--cat-color:#4F46E5"><span class="cat">Design</span><span class="nav-dd-count" data-cat-count="Design"></span></a></li>
+            <li><a href="/categories/development/" style="--cat-color:#0E9384"><span class="cat">Development</span><span class="nav-dd-count" data-cat-count="Development"></span></a></li>
+            <li><a href="/categories/productivity/" style="--cat-color:#DC6803"><span class="cat">Productivity</span><span class="nav-dd-count" data-cat-count="Productivity"></span></a></li>
+            <li><a href="/categories/marketing/" style="--cat-color:#DD2590"><span class="cat">Marketing</span><span class="nav-dd-count" data-cat-count="Marketing"></span></a></li>
+          </ul>
+          <a class="nav-dd-all" href="/categories/">All categories <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
+        </div>
+      </div>
       <a href="/#comparisons" data-spy="comparisons">Comparisons</a>
       <a href="/#guides" data-spy="guides">Guides</a>
     </nav>
@@ -75,7 +87,14 @@
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
     <a href="/#tools">Explore <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
-    <a href="/#categories">Categories <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
+    <a href="/categories/">Categories <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
+    <ul class="mobile-subnav" aria-label="Categories">
+      <li><a href="/categories/ai-tools/" style="--cat-color:#7C3AED"><span class="cat">AI Tools</span></a></li>
+      <li><a href="/categories/design/" style="--cat-color:#4F46E5"><span class="cat">Design</span></a></li>
+      <li><a href="/categories/development/" style="--cat-color:#0E9384"><span class="cat">Development</span></a></li>
+      <li><a href="/categories/productivity/" style="--cat-color:#DC6803"><span class="cat">Productivity</span></a></li>
+      <li><a href="/categories/marketing/" style="--cat-color:#DD2590"><span class="cat">Marketing</span></a></li>
+    </ul>
     <a href="/#comparisons">Comparisons <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
     <a href="/#guides">Guides <svg class="icon" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
   </nav>

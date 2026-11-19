@@ -133,6 +133,45 @@ ul, ol { margin: 0; padding: 0; }
   border-radius: 2px; background: var(--accent);
 }
 
+/* Categories dropdown. Opens on hover or keyboard focus with CSS alone;
+   panel.js adds counts, Escape and aria-expanded. Without JS the trigger
+   still links to /categories/. */
+.nav-dd { position: relative; }
+.nav-links .nav-dd-trigger { display: inline-flex; align-items: center; gap: 4px; }
+.nav-dd-trigger .icon { width: 14px; height: 14px; color: var(--ink-4); transition: transform var(--t-fast); }
+.nav-dd-menu {
+  position: absolute; top: 100%; left: 50%; z-index: 50;
+  width: 248px; margin-left: -124px; padding-top: 8px;  /* padding bridges the hover gap */
+  visibility: hidden; opacity: 0; transform: translateY(-4px);
+  transition: opacity var(--t-fast), transform var(--t-fast), visibility 0s linear var(--t-fast);
+}
+.nav-dd-menu > ul, .nav-dd-all { background: var(--surface); }
+.nav-dd-menu > ul {
+  list-style: none; margin: 0; padding: 6px;
+  border: 1px solid var(--line); border-bottom: 0; border-radius: var(--r-md) var(--r-md) 0 0;
+  box-shadow: 0 12px 32px -12px rgba(24,24,27,.18);
+}
+.nav-dd:hover:not(.is-dismissed) .nav-dd-menu,
+.nav-dd:focus-within:not(.is-dismissed) .nav-dd-menu {
+  visibility: visible; opacity: 1; transform: none; transition-delay: 0s;
+}
+.nav-dd:hover:not(.is-dismissed) .nav-dd-trigger .icon,
+.nav-dd:focus-within:not(.is-dismissed) .nav-dd-trigger .icon { transform: rotate(180deg); }
+.nav-links .nav-dd-menu li a {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s-3);
+  padding: 9px 10px; color: var(--ink);
+}
+.nav-dd-menu li a[aria-current="page"] { background: var(--accent-soft); }
+.nav-dd-menu .cat { font-size: var(--fs-sm); color: inherit; }
+.nav-dd-count { font-size: var(--fs-xs); color: var(--ink-4); font-variant-numeric: tabular-nums; }
+.nav-links .nav-dd-all {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 16px; border: 1px solid var(--line); border-radius: 0 0 var(--r-md) var(--r-md);
+  background: var(--surface-muted); color: var(--ink-2); font-weight: 600;
+}
+.nav-links .nav-dd-all:hover { color: var(--accent); background: var(--surface-muted); }
+.nav-dd-all .icon { width: 14px; height: 14px; }
+
 .nav-actions { display: flex; align-items: center; gap: var(--s-2); }
 .search-trigger {
   display: inline-flex; align-items: center; gap: 10px; height: 38px; padding: 0 8px 0 12px;
@@ -171,6 +210,11 @@ ul, ol { margin: 0; padding: 0; }
 }
 .mobile-nav a:last-child { border-bottom: 0; }
 .mobile-nav a .icon { color: var(--ink-4); width: 16px; height: 16px; }
+.mobile-subnav { list-style: none; margin: 0 0 var(--s-1); padding: 0 0 var(--s-2) var(--s-4); border-bottom: 1px solid var(--line-soft); }
+.mobile-nav .mobile-subnav a { padding: 10px 4px; border-bottom: 0; font-size: var(--fs-sm); color: var(--ink-2); }
+.mobile-nav .mobile-subnav a[aria-current="page"] { color: var(--accent); }
+.mobile-subnav .cat { font-size: inherit; color: inherit; gap: 10px; }
+.mobile-nav a:has(+ .mobile-subnav) { border-bottom: 0; }
 @keyframes drop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 
 /* ==========================================================================
@@ -366,7 +410,9 @@ ul, ol { margin: 0; padding: 0; }
 .cat { display: inline-flex; align-items: center; gap: 7px; font-size: var(--fs-xs); font-weight: 500; color: var(--ink-2); }
 .cat::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cat-color, var(--ink-4)); }
 
-.grid-footer { display: flex; justify-content: center; margin-top: var(--s-8); }
+.grid-footer { display: flex; flex-direction: column; align-items: center; gap: var(--s-4); margin-top: var(--s-8); }
+.section-link { margin-top: var(--s-3); }
+.section-link[hidden] { display: none; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   height: 42px; padding: 0 18px; border-radius: var(--r-md);

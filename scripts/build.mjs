@@ -48,8 +48,9 @@ const DIALOG = between('<dialog class="panel"', '</dialog>'); // shared tool/com
 
 /* Category pages: intro and SEO text per category (content/categories.json) */
 const CAT_CONTENT = JSON.parse(read('content/categories.json'));
-const LISTED_CATS = CATEGORIES.filter(c => c.id !== 'All' && CAT_CONTENT[c.id]);
-const catHref = id => (CAT_CONTENT[id] ? `/categories/${CAT_CONTENT[id].slug}/` : '/tools/');
+const LISTED_CATS = CATEGORIES.filter(c => c.id !== 'All' && c.slug && CAT_CONTENT[c.id]);
+const catSlug = Object.fromEntries(CATEGORIES.filter(c => c.slug).map(c => [c.id, c.slug]));
+const catHref = id => (catSlug[id] ? `/categories/${catSlug[id]}/` : '/tools/');
 
 /* Helpers ---------------------------------------------------------------- */
 const esc = v => String(v ?? '')
@@ -324,9 +325,9 @@ function renderAllToolsPage(pageSlugs) {
     <p class="result-count" id="listCount" aria-live="polite">${plural(TOOLS.length, 'tool')}</p>
   </div>
 ${groups.map(([c, ts]) => `
-  <section class="lp-group" aria-labelledby="group-${CAT_CONTENT[c.id].slug}">
+  <section class="lp-group" aria-labelledby="group-${c.slug}">
     <div class="lp-group-head">
-      <h2 id="group-${CAT_CONTENT[c.id].slug}">${esc(c.label)}</h2>
+      <h2 id="group-${c.slug}">${esc(c.label)}</h2>
       <a class="lp-more" href="${catHref(c.id)}">View ${esc(c.label)} ${icon('i-arrow-r')}</a>
     </div>
     <div class="tool-grid">${ts.map(t => toolCard(t, pageSlugs)).join('')}
@@ -466,7 +467,12 @@ for (const { t, c } of pages) {
   writeFileSync(join(outDir, t.slug, 'index.html'), renderToolPage(t, c, pageSlugs));
 }
 // /tools/ (All Tools), /categories/ and one page per category.
-for (const c of CATEGORIES) if (c.id !== 'All' && !CAT_CONTENT[c.id]) errors.push(`content/categories.json: missing "${c.id}"`);
+for (const c of CATEGORIES) {
+  if (c.id === 'All') continue;
+  if (c.slug && home.split(`href="/categories/${c.slug}/"`).length < 3) errors.push(`index.html: "${c.label}" needs a link in both the header dropdown and the mobile menu`);
+  if (!c.slug) errors.push(`js/data.js: category "${c.id}" has no slug`);
+  if (!CAT_CONTENT[c.id]) errors.push(`content/categories.json: missing "${c.id}"`);
+}
 if (errors.length) { console.error(`✗ Build failed:\n  - ${errors.join('\n  - ')}`); process.exit(1); }
 writeFileSync(join(outDir, 'index.html'), renderAllToolsPage(pageSlugs));
 const catDir = join(root, 'categories');
@@ -474,8 +480,8 @@ rmSync(catDir, { recursive: true, force: true });
 mkdirSync(catDir, { recursive: true });
 writeFileSync(join(catDir, 'index.html'), renderCategoriesPage());
 for (const c of LISTED_CATS) {
-  mkdirSync(join(catDir, CAT_CONTENT[c.id].slug), { recursive: true });
-  writeFileSync(join(catDir, CAT_CONTENT[c.id].slug, 'index.html'), renderCategoryPage(c, pageSlugs));
+  mkdirSync(join(catDir, c.slug), { recursive: true });
+  writeFileSync(join(catDir, c.slug, 'index.html'), renderCategoryPage(c, pageSlugs));
 }
 
 writeFileSync(join(root, 'js/pages.js'),
