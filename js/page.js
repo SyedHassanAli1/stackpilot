@@ -70,6 +70,38 @@
     else ui.openTool(link.dataset.openTool);
   });
 
+  // Category pages: on narrow screens the chip row scrolls sideways, so bring
+  // the current category's chip into view (without scrolling the page itself).
+  const chipRow = document.querySelector('.lp-chips .chips');
+  const currentChip = chipRow?.querySelector('[aria-current="page"]');
+  if (chipRow && currentChip && chipRow.scrollWidth > chipRow.clientWidth) {
+    chipRow.scrollLeft = currentChip.offsetLeft - (chipRow.clientWidth - currentChip.offsetWidth) / 2;
+  }
+
+  // All Tools page: filter the cards in place as you type.
+  const listSearch = $('#listSearch');
+  if (listSearch) {
+    const cards = [...document.querySelectorAll('.tool-card[data-search]')];
+    const groups = [...document.querySelectorAll('.lp-group')];
+    const count = $('#listCount');
+    const empty = $('#listEmpty');
+    const total = cards.length;
+    const apply = () => {
+      const terms = listSearch.value.toLowerCase().split(/\s+/).filter(Boolean);
+      let shown = 0;
+      cards.forEach(card => {
+        const match = terms.every(term => card.dataset.search.includes(term));
+        card.hidden = !match;
+        if (match) shown++;
+      });
+      groups.forEach(g => { g.hidden = !g.querySelector('.tool-card:not([hidden])'); });
+      if (count) count.textContent = terms.length ? `${shown} of ${total} tools` : `${total} tools`;
+      if (empty) empty.hidden = shown > 0;
+    };
+    listSearch.addEventListener('input', apply);
+    apply();
+  }
+
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 })();

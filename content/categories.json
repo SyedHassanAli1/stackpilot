@@ -1,0 +1,32 @@
+{
+  "AI Tools": {
+    "slug": "ai-tools",
+    "seoTitle": "AI Tools: Assistants, Research, Image, Video & Voice",
+    "metaDescription": "Compare AI tools for chat, research, image and video generation, voice, translation, presentations and app building. Each tool has a sourced page with features, pricing and alternatives.",
+    "intro": "AI assistants, research tools and generators for images, video, voice and presentations. Each tool has its own page with features, current pricing from the official site, and alternatives."
+  },
+  "Design": {
+    "slug": "design",
+    "seoTitle": "Design Tools: UI/UX, Website Builders, Graphics & 3D",
+    "metaDescription": "Compare design tools for interface design, website building, graphic design, 3D and motion, and icons. Each tool has a sourced page with features, pricing and alternatives.",
+    "intro": "Tools for designing interfaces, building websites, making graphics, and creating 3D and interactive animation. Each tool has its own page with features, current pricing from the official site, and alternatives."
+  },
+  "Development": {
+    "slug": "development",
+    "seoTitle": "Development Tools: Editors, AI Coding, Hosting & Testing",
+    "metaDescription": "Compare developer tools for AI coding, code editing, version control, hosting, backends, API testing, containers and monitoring. Each tool has a sourced page with features and pricing.",
+    "intro": "Tools for writing, testing, shipping and running software, from code editors and AI coding assistants to hosting, backends and monitoring. Each tool has its own page with features, current pricing from the official site, and alternatives."
+  },
+  "Productivity": {
+    "slug": "productivity",
+    "seoTitle": "Productivity Tools: Docs, Tasks, Automation & Collaboration",
+    "metaDescription": "Compare productivity tools for docs and notes, project and task management, workflow automation, team chat, whiteboards and scheduling. Each tool has a sourced page with features and pricing.",
+    "intro": "Tools for organising knowledge, planning work, automating repetitive tasks and collaborating as a team. Each tool has its own page with features, current pricing from the official site, and alternatives."
+  },
+  "Marketing": {
+    "slug": "marketing",
+    "seoTitle": "Marketing Tools: SEO, Email, Analytics & Social Media",
+    "metaDescription": "Compare marketing tools for SEO, email newsletters, web analytics and social media scheduling. Each tool has a sourced page with features, pricing and alternatives.",
+    "intro": "Tools for getting found in search, growing an email list, measuring your website and scheduling social posts. Each tool has its own page with features, current pricing from the official site, and alternatives."
+  }
+}

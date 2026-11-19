@@ -23,8 +23,10 @@ Plain HTML, CSS and vanilla JavaScript. No framework, no build step.
 │   ├── validate-data.mjs  # Checks every record in js/data.js (Node, no dependencies)
 │   └── render-check.html  # Opens every card and panel; fails on raw/empty values
 ├── content/tools/      # Full page content per tool: <tool-slug>.json
-├── scripts/build.mjs   # Builds tools/<slug>/index.html from data + content
-├── tools/              # Generated tool pages (don't edit by hand)
+├── content/categories.json  # Intro and SEO text for each category page
+├── scripts/build.mjs   # Builds the tool, All Tools and category pages from data + content
+├── tools/              # Generated tool pages and the All Tools page (don't edit by hand)
+├── categories/         # Generated category pages (don't edit by hand)
 ├── netlify.toml        # Netlify deploy config
 └── README.md
 ```
@@ -72,6 +74,18 @@ Each tool with a content file gets its own page at `/tools/<slug>/`.
 Netlify runs the build on every deploy, so pages always match the data. The header, footer and
 icons are copied from `index.html`, so edit them there. Pages use root-relative links (`/css/...`),
 so open them through a local server rather than by double-clicking the file.
+
+## All Tools and category pages
+
+The build also writes:
+
+- `/tools/`: every tool, grouped by category, with a filter box.
+- `/categories/`: one card per category.
+- `/categories/<slug>/`: the tools in that category, grouped by subcategory, plus its comparisons.
+
+Tools and categories come from `js/data.js`; each category's intro, page title and meta
+description come from `content/categories.json`. A new category in `js/data.js` needs an entry
+there, or the build stops with an error.
 
 ## Logos
 
