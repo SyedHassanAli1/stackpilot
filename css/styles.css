@@ -190,24 +190,38 @@ ul, ol { margin: 0; padding: 0; }
 .menu-toggle[aria-expanded="true"] .icon-open { display: none; }
 .menu-toggle[aria-expanded="true"] .icon-close { display: block; }
 
+/* Mobile menu: drops down over the page (no layout shift) and fades/slides
+   both when opening and closing. visibility keeps closed links out of the
+   tab order. Hidden entirely above 760px. */
 .mobile-nav {
-  display: none; border-top: 1px solid var(--line); background: var(--canvas);
+  display: none;
+  position: absolute; top: 100%; left: 0; right: 0;
+  max-height: calc(100dvh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background: var(--canvas); box-shadow: 0 16px 32px -16px rgba(24,24,27,.18);
   padding: var(--s-2) var(--gutter) var(--s-4);
+  visibility: hidden; opacity: 0; transform: translateY(-8px);
+  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease), visibility 0s linear var(--t-med);
 }
-.mobile-nav.is-open { display: block; animation: drop var(--t-med) var(--ease); }
+.mobile-nav.is-open { visibility: visible; opacity: 1; transform: none; transition-delay: 0s; }
 .mobile-nav a {
   display: flex; align-items: center; justify-content: space-between;
   padding: 14px 4px; border-bottom: 1px solid var(--line-soft);
   font-size: var(--fs-base); font-weight: 500; color: var(--ink);
 }
+/* The chevron marks links that open a dedicated page. Add data-page to a
+   menu link (e.g. once /comparisons/ exists) and its chevron appears. */
+.mobile-nav > a[data-page]::after {
+  content: ""; width: 16px; height: 16px; flex: none; background: var(--ink-4);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m9 18 6-6-6-6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
 .mobile-nav a:last-child { border-bottom: 0; }
-.mobile-nav a .icon { color: var(--ink-4); width: 16px; height: 16px; }
 .mobile-subnav { list-style: none; margin: 0 0 var(--s-1); padding: 0 0 var(--s-2) var(--s-4); border-bottom: 1px solid var(--line-soft); }
 .mobile-nav .mobile-subnav a { padding: 10px 4px; border-bottom: 0; font-size: var(--fs-sm); color: var(--ink-2); }
 .mobile-nav .mobile-subnav a[aria-current="page"] { color: var(--accent); }
 .mobile-subnav .cat { font-size: inherit; color: inherit; gap: 10px; }
 .mobile-nav a:has(+ .mobile-subnav) { border-bottom: 0; }
-@keyframes drop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 
 /* ==========================================================================
    4. Hero & search
@@ -615,6 +629,7 @@ ul, ol { margin: 0; padding: 0; }
 @media (max-width: 760px) {
   :root { --header-h: 64px; }
   .nav-links, .search-trigger { display: none; }
+  .mobile-nav { display: block; }
   .icon-btn { display: grid; }
   .nav-actions { margin-left: auto; gap: 2px; }
   .section-head { flex-direction: column; align-items: flex-start; gap: var(--s-4); }

@@ -97,6 +97,10 @@ All Tools. The header links are written by hand in `index.html`, so a new catego
 
 If any of these is missing, the build stops with an error.
 
+In the mobile menu, a chevron (›) marks links that open a page of their own. It comes from the
+`data-page` attribute, so when a page such as `/comparisons/` exists, change that link's `href`
+and add `data-page` to show its chevron.
+
 ## Logos
 
 Logo files follow one naming rule: `logos/<tool-slug>.svg`, for example
