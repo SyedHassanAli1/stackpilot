@@ -1,0 +1,120 @@
+{
+  "slug": "framer",
+  "verified": "2026-11-19",
+  "seoTitle": "Framer: Features, Pricing & Alternatives",
+  "metaDescription": "Framer is a no-code website builder with a design canvas, AI agents, CMS, localization and hosting. See its features, site plans, editor pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Framer is a no-code website builder for designers and marketing teams. You design pages on a free-form visual canvas, with components, breakpoints and styles, and publish them as fast, server-rendered websites without handing the work to an engineer.",
+    "Hosting, a CMS, SEO controls, analytics and localization are built in, and AI agents can generate, edit and translate pages while keeping everything editable on the canvas. Framer is built for websites: it isn't a design file tool for app interfaces, and it doesn't generate application code. Plans are priced per site, with a free plan for publishing on a Framer domain."
+  ],
+  "features": [
+    {
+      "title": "Visual canvas",
+      "text": "Design responsive pages with components, breakpoints and styles, then publish directly from the canvas."
+    },
+    {
+      "title": "AI agents",
+      "text": "Generate, edit and maintain pages with AI. Every plan includes monthly AI credits."
+    },
+    {
+      "title": "Built-in CMS",
+      "text": "Collections for articles, careers, events or directories, with conditional visibility based on content."
+    },
+    {
+      "title": "Localization",
+      "text": "Translate pages and CMS content manually or with AI, with locale-specific slugs and redirects."
+    },
+    {
+      "title": "SEO and performance",
+      "text": "Server-rendered pages with metadata, sitemaps and structured data; redirects on the Pro plan."
+    },
+    {
+      "title": "Hosting and analytics",
+      "text": "Managed hosting and built-in analytics, plus staging and branch previews on the Pro plan."
+    }
+  ],
+  "useCases": [
+    "Marketing sites and landing pages",
+    "Portfolios and personal websites",
+    "Startup and product websites",
+    "CMS-driven blogs, directories and careers pages",
+    "Multilingual websites"
+  ],
+  "strengths": [
+    "Design and publish from one visual canvas, without a developer handoff.",
+    "Hosting, CMS, SEO controls and analytics are included in one platform.",
+    "Built-in localization, with AI translation that keeps locales in sync as you edit.",
+    "A free plan lets you build and publish a site on a Framer domain."
+  ],
+  "limitations": [
+    "Free sites use a Framer domain and show a “Made in Framer” banner; a custom domain needs a paid plan.",
+    "Each site needs its own plan, and extra editors cost $20/mo each (the workspace owner is free).",
+    "The Basic plan includes only 2 CMS collections; Pro raises this to 10.",
+    "Some features are paid add-ons, including localization on Basic, A/B testing and advanced hosting.",
+    "Built for websites — not for app interface design files or generating application code."
+  ],
+  "pricing": {
+    "summary": "Free plan; paid plans are priced per site. The workspace owner is free, extra editors cost $20/mo and Content Editors $10/mo, and viewers are free.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Framer domain · 1 GB bandwidth · “Made in Framer” banner · 500 AI credits/mo"
+      },
+      {
+        "name": "Basic",
+        "price": "$10/mo per site",
+        "note": "Billed yearly · custom domain · 2 CMS collections · 50 GB bandwidth · localization add-on"
+      },
+      {
+        "name": "Pro",
+        "price": "$30/mo per site",
+        "note": "10 CMS collections · 100 GB bandwidth · redirects · staging · branch previews"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Unlimited editors · SSO and SCIM · uptime guarantee · custom limits"
+      }
+    ],
+    "source": "https://www.framer.com/pricing"
+  },
+  "platforms": [
+    "Web browser"
+  ],
+  "alternatives": [
+    "webflow",
+    "figma",
+    "lovable"
+  ],
+  "sources": [
+    {
+      "label": "Framer — Pricing",
+      "url": "https://www.framer.com/pricing"
+    },
+    {
+      "label": "Framer Help — Subscription pricing and charges",
+      "url": "https://www.framer.com/help/articles/subscriptions-and-charges/"
+    },
+    {
+      "label": "Framer Help — Site plans explained",
+      "url": "https://www.framer.com/help/articles/site-plans-explained/"
+    },
+    {
+      "label": "Framer Help — Best use cases for each plan",
+      "url": "https://www.framer.com/help/articles/best-use-cases-for-each-framer-plan/"
+    },
+    {
+      "label": "Framer — CMS",
+      "url": "https://www.framer.com/cms/"
+    },
+    {
+      "label": "Framer — Localization update",
+      "url": "https://www.framer.com/updates/localization-update"
+    },
+    {
+      "label": "Framer — Framer vs Webflow",
+      "url": "https://www.framer.com/compare/framer-vs-webflow"
+    }
+  ]
+}
