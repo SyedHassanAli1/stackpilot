@@ -1,0 +1,58 @@
+{
+  "slug": "sketch",
+  "verified": "2026-11-19",
+  "seoTitle": "Sketch: Features, Pricing & Alternatives",
+  "metaDescription": "Sketch is a native Mac design app for interfaces and prototypes, with a web Workspace for collaboration and developer handoff. See its features, subscription and Mac-only license pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Sketch is a native macOS design app for interfaces, icons and prototypes. You design with Symbols, styles, color variables and component Libraries, and the app works offline with documents you can keep locally.",
+    "A subscription adds a shared Workspace with real-time collaboration, a web app where anyone can view, comment and inspect designs, free developer handoff, and an iOS app for previewing. If you don't need collaboration, a one-off Mac-only license lets you keep the app forever. Both options include a free MCP server for AI tools."
+  ],
+  "features": [
+    { "title": "Native Mac app", "text": "A fast macOS design app that works offline, with documents you can save locally." },
+    { "title": "Symbols and Libraries", "text": "Build scalable design systems with Symbols, overrides, styles, color variables and shared Libraries." },
+    { "title": "Prototyping", "text": "Link artboards into interactive prototypes and preview them on the web or an iOS device." },
+    { "title": "Real-time collaboration", "text": "Work on the same document together in the Mac app, with comments and version history." },
+    { "title": "Developer handoff", "text": "Free handoff in the web app, so developers can inspect designs and export assets." },
+    { "title": "MCP server", "text": "A free MCP server lets AI tools work with your Sketch documents, with no AI credits or add-ons." }
+  ],
+  "useCases": [
+    "UI design for web and mobile apps on a Mac",
+    "Design systems with Symbols and Libraries",
+    "Icon and interface illustration",
+    "Interactive prototypes for user testing",
+    "Designers who prefer working offline in a native app"
+  ],
+  "strengths": [
+    "A native Mac app that works offline and stores files locally if you prefer.",
+    "Unlimited free viewers and free developer handoff on every subscription.",
+    "A one-time Mac-only license option for people who don't want a subscription.",
+    "Free for students, teachers and educational institutions."
+  ],
+  "limitations": [
+    "Editing requires a Mac; there's no Windows or Linux app.",
+    "No free plan — only a 30-day free trial.",
+    "The Mac-only license has no collaboration, online sharing or iOS previews.",
+    "SSO needs the Professional plan, and SCIM provisioning needs Enterprise.",
+    "Updates on the Mac-only license are included for one year only."
+  ],
+  "pricing": {
+    "summary": "No free plan, but a 30-day free trial with no credit card. Subscriptions are billed per Editor, and viewers are free. Prices exclude VAT and other taxes; Sketch is free for education, and qualifying non-profits get 50% off.",
+    "plans": [
+      { "name": "Standard", "price": "$12/editor/mo", "note": "Billed yearly · real-time collaboration · unlimited viewers · developer handoff · 50 GB per Editor" },
+      { "name": "Professional", "price": "$24/editor/mo", "note": "Billed yearly · everything in Standard · SSO · project archiving · permission groups" },
+      { "name": "Enterprise", "price": "$44/editor/mo", "note": "Billed yearly · SCIM · BYOK encryption · unlimited storage · dedicated support for 15+ Editors" },
+      { "name": "Private Cloud", "price": "Custom", "note": "Isolated AWS environment · choice of hosting location · one-time setup fee" },
+      { "name": "Mac-only license", "price": "$120 per seat", "note": "One-time purchase · keep the app forever · one year of updates · no collaboration" }
+    ],
+    "source": "https://www.sketch.com/pricing/"
+  },
+  "platforms": ["macOS", "Web browser (viewing and handoff)", "iOS (previews)"],
+  "alternatives": ["figma", "penpot", "affinity"],
+  "sources": [
+    { "label": "Sketch — Pricing", "url": "https://www.sketch.com/pricing/" },
+    { "label": "Sketch Help — Mac-only license vs subscription", "url": "https://help.sketch.com/general-questions/account-differences" },
+    { "label": "Sketch Docs — Setting up Sketch", "url": "https://www.sketch.com/docs/getting-started/setting-up-sketch/" },
+    { "label": "Sketch — License overview", "url": "https://www.sketch.com/license/" },
+    { "label": "Sketch Support — Non-profit discounts", "url": "https://www.sketch.com/support/subscriptions/nonprofit-organizations/" }
+  ]
+}

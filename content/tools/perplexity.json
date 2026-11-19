@@ -1,0 +1,58 @@
+{
+  "slug": "perplexity",
+  "verified": "2026-11-19",
+  "seoTitle": "Perplexity: Features, Pricing & Alternatives",
+  "metaDescription": "Perplexity is an AI answer engine that researches the web in real time and returns cited answers, with Deep Research, the Comet browser and Computer. See its features, pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Perplexity is an AI answer engine. It researches the open web in real time and returns concise answers with in-line citations, so you can check where each claim comes from and ask follow-up questions.",
+    "Behind the scenes it routes each question to the model best suited for it. Beyond search, Deep Research writes in-depth reports and can create presentations, spreadsheets and dashboards, Comet is Perplexity's AI-powered browser, and Computer runs multi-step tasks. Free users get core search and chat; paid plans unlock Pro Search, advanced models, file uploads, image generation and higher limits."
+  ],
+  "features": [
+    { "title": "Cited answers", "text": "Real-time web search with concise answers and in-line citations for every response." },
+    { "title": "Deep Research", "text": "In-depth reports with more sources and charts, plus presentations, spreadsheets and dashboards." },
+    { "title": "Comet browser", "text": "An AI browser that summarises pages, extracts information and completes tasks on the web." },
+    { "title": "Computer", "text": "An assistant for multi-step tasks that researches, analyses, creates and codes from start to finish." },
+    { "title": "Spaces and files", "text": "Organise research in Spaces and ask questions about uploaded files and documents." },
+    { "title": "Model choice", "text": "Perplexity picks a model for you, and paid plans can use advanced models from several providers." }
+  ],
+  "useCases": [
+    "Quick, cited answers to research questions",
+    "In-depth reports and market research",
+    "Comparing sources, documents and data",
+    "Browsing and web tasks with the Comet browser",
+    "Team knowledge search on Enterprise plans"
+  ],
+  "strengths": [
+    "Answers include in-line citations, so you can check sources.",
+    "Practically unlimited basic searches on the free plan.",
+    "Research and creation in one place, from reports to spreadsheets and dashboards.",
+    "Available on the web, in iOS and Android apps, and through the Comet browser."
+  ],
+  "limitations": [
+    "The free plan has very limited Pro Searches and no advanced models or image generation.",
+    "Max costs $200/mo for the highest access to advanced models and file and app creation.",
+    "Enterprise is billed per seat: $40/mo for Enterprise Pro and $325/mo for Enterprise Max.",
+    "Computer usage on paid plans is limited by credits that reset over time.",
+    "Answers are only as reliable as the sources it finds, so citations are worth checking."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Prices are in USD. Students and educators can get Education Pro for $10/mo with verification.",
+    "plans": [
+      { "name": "Free", "price": "$0", "note": "Practically unlimited basic searches · very limited Pro Searches · limited file uploads" },
+      { "name": "Pro", "price": "$20/mo", "note": "Or $200/year · Pro Search · advanced models · file uploads · image generation" },
+      { "name": "Max", "price": "$200/mo", "note": "Highest access to advanced models · extended file and app creation · early access" },
+      { "name": "Enterprise Pro", "price": "$40/seat/mo", "note": "Or $400/seat/year · seat management · shared Projects · file connectors" },
+      { "name": "Enterprise Max", "price": "$325/seat/mo", "note": "Or $3,250/seat/year · highest limits · more Computer credits" }
+    ],
+    "source": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"
+  },
+  "platforms": ["Web browser", "iOS", "Android", "Comet browser (macOS, Windows)"],
+  "alternatives": ["chatgpt", "claude", "gemini"],
+  "sources": [
+    { "label": "Perplexity Help — Which plan is right for you?", "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you" },
+    { "label": "Perplexity Help — Enterprise pricing and billing", "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions" },
+    { "label": "Perplexity — Hub and FAQ", "url": "https://www.perplexity.ai/hub" },
+    { "label": "Perplexity Blog — AI costs: what teams pay", "url": "https://www.perplexity.ai/hub/blog/ai-costs" },
+    { "label": "Perplexity Changelog — Comet iOS and Deep Research updates", "url": "https://www.perplexity.ai/changelog/what-we-shipped--march-27-2026" }
+  ]
+}

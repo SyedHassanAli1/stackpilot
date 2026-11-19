@@ -1,0 +1,60 @@
+{
+  "slug": "penpot",
+  "verified": "2026-11-19",
+  "seoTitle": "Penpot: Features, Pricing & Alternatives",
+  "metaDescription": "Penpot is an open-source design and prototyping platform that runs in the browser or on your own servers. See its features, cloud and self-host pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Penpot is an open-source design and prototyping platform for product teams. Designers and developers work in the same browser-based workspace, with components, variants, shared libraries and interactive prototypes, and designs are built on open standards such as SVG, CSS and HTML.",
+    "You can use Penpot in the cloud or self-host it on your own infrastructure, including air-gapped environments. Layouts use CSS Flex and Grid, design tokens are built in, and the Inspect tab gives developers ready-to-use code. A free, open MCP server lets AI agents read and edit Penpot files."
+  ],
+  "features": [
+    { "title": "Design and prototyping", "text": "Design interfaces in the browser and link screens into interactive prototypes to test flows." },
+    { "title": "Components and variants", "text": "Build design systems with components, variants and shared libraries, without plugins." },
+    { "title": "Native design tokens", "text": "Built-in tokens in the open W3C DTCG format, with token sets and themes." },
+    { "title": "CSS Flex and Grid layouts", "text": "Responsive layouts that follow the same rules as CSS, so designs map directly to code." },
+    { "title": "Inspect mode", "text": "Developers get SVG, CSS and HTML for any element from the Inspect tab, on every plan." },
+    { "title": "MCP server and plugins", "text": "A free, open MCP server connects AI agents to your files, alongside a plugin system and open API." }
+  ],
+  "useCases": [
+    "UI and UX design for web and mobile products",
+    "Interactive prototypes and user flows",
+    "Design systems with tokens, components and variants",
+    "Design-to-code handoff for developers",
+    "Teams that need self-hosting or data control"
+  ],
+  "strengths": [
+    "Open source, with the option to self-host on your own servers.",
+    "The free cloud plan includes all core design and prototyping features.",
+    "Built on open standards (SVG, CSS, HTML), so designs are close to production code.",
+    "Paid cloud pricing is predictable: the Unlimited plan is capped at $175/mo."
+  ],
+  "limitations": [
+    "The free cloud plan is limited to 8 team members (viewers are unlimited) and 10 GB of storage.",
+    "Self-hosting requires a Linux server, Docker knowledge and managing the deployment yourself.",
+    "Free self-hosting comes with community support only.",
+    "SSO, a central admin console and audit logs need the Enterprise plan.",
+    "Runs in the browser only; there's no official desktop app."
+  ],
+  "pricing": {
+    "summary": "The cloud version has a free plan, and self-hosting the open-source version is free for unlimited users. Prices are in USD; discounts are available for non-profits, education and open-source projects.",
+    "plans": [
+      { "name": "Professional", "price": "$0", "note": "Cloud · up to 8 team members, unlimited viewers · 10 GB storage · all core features" },
+      { "name": "Unlimited", "price": "$7/editor/mo", "note": "Cloud · capped at $175/mo for any team size · more storage · longer version history" },
+      { "name": "Enterprise", "price": "$25/member/mo", "note": "Cloud or self-host · SSO · central admin console · audit logs" },
+      { "name": "Private Server", "price": "$50k/year", "note": "Dedicated infrastructure · custom hosting · enterprise-grade support" },
+      { "name": "Self-host", "price": "$0", "note": "Unlimited users, teams and files · community support · you run the server" }
+    ],
+    "source": "https://penpot.app/pricing"
+  },
+  "platforms": ["Web browser", "Self-hosted (Docker)"],
+  "alternatives": ["figma", "sketch", "canva"],
+  "sources": [
+    { "label": "Penpot — Pricing (cloud)", "url": "https://penpot.app/pricing" },
+    { "label": "Penpot — Pricing (self-host)", "url": "https://penpot.app/pricing/self-host" },
+    { "label": "Penpot — Enterprise", "url": "https://penpot.app/penpot-enterprise" },
+    { "label": "Penpot — Code and inspect mode", "url": "https://penpot.app/code" },
+    { "label": "Penpot Help — MCP server", "url": "https://help.penpot.app/mcp/" },
+    { "label": "Penpot Blog — Declarative design with Penpot", "url": "https://penpot.app/blog/declarative-design-with-penpot/" },
+    { "label": "Penpot Blog — Sketch alternatives (plan details)", "url": "https://penpot.app/blog/sketch-alternatives/" }
+  ]
+}

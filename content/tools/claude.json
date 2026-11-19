@@ -1,0 +1,59 @@
+{
+  "slug": "claude",
+  "verified": "2026-11-19",
+  "seoTitle": "Claude: Features, Pricing & Alternatives",
+  "metaDescription": "Claude is an AI assistant by Anthropic for writing, analysis, research and coding, with Projects, Artifacts, connectors and Claude Code. See its features, Free, Pro, Max, Ultra, Team and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Claude is an AI assistant made by Anthropic. It helps with writing, analysis, research and coding, and can search the web, create files and run code. You can use it on the web, in desktop apps and on mobile.",
+    "Beyond chat, Claude can remember context across conversations, organise work in Projects, connect to apps and tools you already use, and create Artifacts, docs and slides. Paid plans add more usage, more models, Claude Code for software development, and the ability to hand off and schedule longer tasks. Usage is limited per 5-hour window and per week, with higher limits on higher plans."
+  ],
+  "features": [
+    { "title": "Chat, search and files", "text": "Ask questions, search the web, create files and run code in conversation." },
+    { "title": "Projects and memory", "text": "Group chats and documents into Projects, with memory that carries context across conversations." },
+    { "title": "Artifacts and docs", "text": "Create Artifacts, docs and slides you can keep editing and share." },
+    { "title": "Connectors", "text": "Connect Claude to apps and tools you already use, available on every plan including Free." },
+    { "title": "Claude Code", "text": "An agentic coding tool for writing, debugging and shipping code, included from the Pro plan." },
+    { "title": "Tasks and Claude in Chrome", "text": "Hand off and schedule longer tasks, and use Claude in Chrome and Microsoft 365 on paid plans." }
+  ],
+  "useCases": [
+    "Writing, editing and summarising long documents",
+    "Research and analysis with web search",
+    "Software development with Claude Code",
+    "Working across your apps with connectors",
+    "Team knowledge work with shared Projects"
+  ],
+  "strengths": [
+    "The free plan includes web search, file creation, memory, connectors and Artifacts.",
+    "Claude Code is included from the Pro plan for software development.",
+    "Available on the web, on desktop and on mobile.",
+    "Team and Enterprise plans add SSO, central admin and security controls."
+  ],
+  "limitations": [
+    "Every plan has usage limits that reset every 5 hours and every week.",
+    "The free plan has limited usage and doesn't include Claude Code.",
+    "Max and Ultra are billed monthly only, with no annual discount.",
+    "On Pro, the Fable model is paid for with usage credits.",
+    "Enterprise needs at least 20 seats, with usage billed at API rates on top of seats."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans add more usage and features. Prices are in USD and may vary by region; mobile app pricing can differ.",
+    "plans": [
+      { "name": "Free", "price": "$0", "note": "Limited usage · web search, files and code · memory · connectors · Artifacts" },
+      { "name": "Pro", "price": "$17/mo", "note": "Billed yearly ($200 up front), or $20 monthly · more usage · Claude Code · Projects · more models" },
+      { "name": "Max", "price": "$100/mo", "note": "Monthly only · 5x Pro usage · Fable included · $100/mo in API credits" },
+      { "name": "Ultra", "price": "$200/mo", "note": "Monthly only · 10x Pro weekly usage · $200/mo in API credits" },
+      { "name": "Team", "price": "$20/seat/mo", "note": "Billed yearly, or $25 monthly · 2–150 seats · SSO · central admin · Premium seats $100/mo" },
+      { "name": "Enterprise", "price": "$20/seat/mo + usage", "note": "Billed yearly · usage at API rates · 20-seat minimum · SCIM · audit logs" }
+    ],
+    "source": "https://claude.com/pricing"
+  },
+  "platforms": ["Web browser", "macOS", "Windows", "iOS", "Android"],
+  "alternatives": ["chatgpt", "gemini", "perplexity"],
+  "sources": [
+    { "label": "Claude — Plans & pricing", "url": "https://claude.com/pricing" },
+    { "label": "Claude Help — What is the Pro plan?", "url": "https://support.claude.com/en/articles/8325606-what-is-the-pro-plan" },
+    { "label": "Claude Help — What is the Max plan?", "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan" },
+    { "label": "Claude Help — What is the Team plan?", "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan" },
+    { "label": "Claude Docs — API credits for Max, Ultra and Team", "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers" }
+  ]
+}

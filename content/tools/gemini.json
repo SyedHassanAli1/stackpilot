@@ -1,0 +1,59 @@
+{
+  "slug": "gemini",
+  "verified": "2026-11-19",
+  "seoTitle": "Google Gemini: Features, Pricing & Alternatives",
+  "metaDescription": "Gemini is Google's AI assistant for chat, research, writing, images and video, connected to Gmail, Docs and other Google apps. See its features, Google AI Plus, Pro and Ultra pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Gemini is Google's AI assistant. It helps with chat, research, writing and coding, creates and edits images, and can hold spoken conversations with Gemini Live. It's available on the web, in Android and iOS apps, and in desktop apps for Windows and macOS.",
+    "Gemini connects with Google services: on paid plans it works inside Gmail, Docs and other Google apps, and it's built into Chrome. Google AI plans bundle higher Gemini usage with extra Google One storage and other benefits, such as video generation, Google Flow credits and Google Antigravity for coding. Business users can get Gemini through Google Workspace or Gemini Enterprise."
+  ],
+  "features": [
+    { "title": "Chat and Deep Research", "text": "Everyday help in chat, plus Deep Research for in-depth reports, available on the free plan." },
+    { "title": "Images and video", "text": "Generate and edit images for free; video generation comes with Google AI plans." },
+    { "title": "Gemini Live and Canvas", "text": "Talk to Gemini by voice, and draft documents and code together in Canvas." },
+    { "title": "Gemini in Google apps", "text": "Use Gemini in Gmail, Docs, Vids and Chrome on paid plans." },
+    { "title": "Gemini Notebook", "text": "A research and writing assistant for your sources, with Audio Overviews." },
+    { "title": "Google Antigravity", "text": "Build apps and prototype ideas with a coding agent, built into the Gemini macOS app." }
+  ],
+  "useCases": [
+    "Everyday questions, writing and brainstorming",
+    "Research reports with Deep Research",
+    "Working in Gmail, Docs and other Google apps",
+    "Creating images and short videos",
+    "Coding and prototyping with Google Antigravity"
+  ],
+  "strengths": [
+    "A capable free plan with Deep Research, image generation, Gemini Live and Canvas.",
+    "Works inside Gmail, Docs, Chrome and other Google apps on paid plans.",
+    "Plans include Google One storage, from 400 GB on Plus to 5 TB on Pro.",
+    "Available on the web, Android, iOS, Windows and macOS."
+  ],
+  "limitations": [
+    "The free plan uses a lighter model and has the lowest usage limits.",
+    "Gemini in Gmail, Docs and other Google apps needs a paid plan.",
+    "Ultra costs $99.99/mo or $199.99/mo for the highest limits.",
+    "Prices and some features vary by country.",
+    "Work and school accounts need an admin to enable Gemini, or a Workspace plan."
+  ],
+  "pricing": {
+    "summary": "Free with a Google Account. Google AI plans add higher usage, storage and extra benefits. Prices below are US prices; plans are priced in local currency elsewhere. Eligible students can get a plan free for a year.",
+    "plans": [
+      { "name": "Free", "price": "$0", "note": "Deep Research · image generation · Gemini Live · Canvas · 15 GB storage" },
+      { "name": "Google AI Plus", "price": "$4.99/mo", "note": "2x Free usage · video generation · Gemini in Gmail and Vids · 400 GB storage" },
+      { "name": "Google AI Pro", "price": "$19.99/mo", "note": "4x Free usage · Pro model · Gemini in Gmail and Docs · Chrome auto browse · 5 TB storage" },
+      { "name": "Google AI Ultra", "price": "$99.99/mo", "note": "5x Pro usage · highest model access · YouTube Premium · 20 TB storage" },
+      { "name": "Google AI Ultra (top tier)", "price": "$199.99/mo", "note": "20x Pro usage · more Flow and Antigravity limits · 20 TB storage" },
+      { "name": "Workspace & Enterprise", "price": "From $14/seat/mo", "note": "Gemini with Google Workspace from $14 · Gemini Enterprise from $30 per seat" }
+    ],
+    "source": "https://gemini.google/subscriptions/"
+  },
+  "platforms": ["Web browser", "Android", "iOS", "Windows", "macOS"],
+  "alternatives": ["chatgpt", "claude", "perplexity"],
+  "sources": [
+    { "label": "Google — Gemini subscriptions", "url": "https://gemini.google/subscriptions/" },
+    { "label": "Google Blog — Google AI subscriptions from I/O 2026", "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/" },
+    { "label": "Gemini — Release notes", "url": "https://gemini.google/release-notes/" },
+    { "label": "Gemini — Desktop app for Windows and macOS", "url": "https://gemini.google/desktop/" },
+    { "label": "Gemini Help — Use the Gemini app on Mac", "url": "https://support.google.com/gemini/answer/17011627?hl=en" }
+  ]
+}

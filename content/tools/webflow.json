@@ -1,0 +1,59 @@
+{
+  "slug": "webflow",
+  "verified": "2026-11-19",
+  "seoTitle": "Webflow: Features, Pricing & Alternatives",
+  "metaDescription": "Webflow is a visual website platform with a CSS-based designer, CMS, GSAP-powered interactions and managed hosting. See its features, Site and Workspace plans, strengths, limitations and alternatives.",
+  "overview": [
+    "Webflow is a visual website platform for designers, marketers and developers. Its Designer maps directly to real HTML and CSS, so you build layouts with classes, flexbox and grid visually, then publish to Webflow's managed hosting without writing code.",
+    "A structured CMS, GSAP-powered interactions, SEO controls and form handling are built in, and Webflow AI and an MCP server let AI agents build and edit sites. Pricing has two parts: a Site plan for each published site, and a Workspace plan for your team's seats and features. Add-on products such as Localize, Analyze and Optimize are priced separately."
+  ],
+  "features": [
+    { "title": "Visual Designer", "text": "Build responsive layouts visually with classes, flexbox and grid that map to real HTML and CSS." },
+    { "title": "Webflow CMS", "text": "Structured content collections for blogs, directories and resources, available from the Premium plan." },
+    { "title": "Interactions with GSAP", "text": "Design animations visually, including scroll triggers, text splitting and timelines, powered by GSAP." },
+    { "title": "Webflow AI and MCP", "text": "AI credits in every Workspace, plus an MCP server that lets AI agents build pages, CMS content and interactions." },
+    { "title": "Hosting and forms", "text": "Managed hosting with custom domains on paid Site plans, form handling and password protection." },
+    { "title": "Code components and Cloud", "text": "Bring in code components on Premium, and host full apps with Webflow Cloud." }
+  ],
+  "useCases": [
+    "Marketing and company websites",
+    "CMS-driven blogs, resource hubs and directories",
+    "Animated, interaction-rich landing pages",
+    "Agency and freelance client sites",
+    "Sites that marketing teams update without developers"
+  ],
+  "strengths": [
+    "Fine-grained visual control over real HTML and CSS layout.",
+    "A structured CMS with up to 20,000 items on the Premium plan.",
+    "Built-in animations powered by GSAP, with presets you can reuse.",
+    "Hosting, CMS, forms and SEO controls in one platform."
+  ],
+  "limitations": [
+    "The free Starter plan is limited to a webflow.io domain, 2 static pages and 50 form submissions.",
+    "The Basic plan has no CMS; you need Premium for CMS collections.",
+    "Costs have two parts: a Site plan per site, plus Workspace plans and seats for your team.",
+    "Localize, Analyze and Optimize are separate paid add-ons.",
+    "Its CSS-based Designer suits people comfortable with web layout concepts."
+  ],
+  "pricing": {
+    "summary": "Free Starter plan. Each published site needs a Site plan, and teams also pay for a Workspace plan and seats. Prices below are billed yearly; monthly billing costs more (Basic $25/mo, Premium $39/mo).",
+    "plans": [
+      { "name": "Starter", "price": "$0", "note": "webflow.io domain · 2 static pages · limited CMS · 1 GB bandwidth · 50 form submissions" },
+      { "name": "Basic", "price": "$15/mo per site", "note": "Billed yearly · custom domain · 300 static pages · 10 GB bandwidth · no CMS" },
+      { "name": "Premium", "price": "$25/mo per site", "note": "Billed yearly · 20,000 CMS items · 40 collections · 50 GB+ bandwidth · site search" },
+      { "name": "Workspace plans", "price": "From $19/mo", "note": "Core $19/mo, Growth $49/mo (billed yearly) · Full seats $39/mo, Limited seats $15/mo" },
+      { "name": "Team & Enterprise", "price": "Custom", "note": "For larger organizations; Team is sold on an annual contract" }
+    ],
+    "source": "https://webflow.com/pricing"
+  },
+  "platforms": ["Web browser"],
+  "alternatives": ["framer", "lovable", "canva"],
+  "sources": [
+    { "label": "Webflow — Pricing", "url": "https://webflow.com/pricing" },
+    { "label": "Webflow Help — Updated pricing and simplified plans for May 2026", "url": "https://help.webflow.com/hc/en-us/articles/51059955082387-Updated-pricing-and-simplified-plans-for-May-2026" },
+    { "label": "Webflow Blog — Simplified plans and updated pricing", "url": "https://webflow.com/blog/simplified-plans-and-updated-pricing-2026" },
+    { "label": "Webflow — Interactions with GSAP", "url": "https://webflow.com/feature/interactions-animations" },
+    { "label": "Webflow Blog — MCP updates: interactions, CMS and Cloud", "url": "https://webflow.com/blog/mcp-interactions" },
+    { "label": "Webflow Blog — Optimizely alternatives (add-on pricing)", "url": "https://webflow.com/blog/optimizely-alternatives" }
+  ]
+}

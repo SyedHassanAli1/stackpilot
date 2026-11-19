@@ -1,0 +1,58 @@
+{
+  "slug": "canva",
+  "verified": "2026-11-19",
+  "seoTitle": "Canva: Features, Pricing & Alternatives",
+  "metaDescription": "Canva is an online design platform for social posts, presentations, docs, videos, websites and print, with Canva AI built in. See its features, Free, Pro, Business and Enterprise pricing, strengths, limitations and alternatives.",
+  "overview": [
+    "Canva is an online design platform built for non-designers as well as teams. A drag-and-drop editor and millions of templates cover social posts, presentations, docs, whiteboards, sheets, videos, websites and print, all in one place.",
+    "Canva AI lets you create and edit designs, docs and images by chatting, and can see and change the design you're working on. The free plan includes core tools with limited AI use, while paid plans add premium templates and stock content, Brand Kits, more AI usage and team features. Canva runs in the browser, with desktop and mobile apps."
+  ],
+  "features": [
+    { "title": "Templates and editor", "text": "A drag-and-drop editor with millions of templates across 1,000+ design types." },
+    { "title": "Canva AI", "text": "Create and edit designs, docs and images by chatting; free users get limited monthly AI uses." },
+    { "title": "Visual Suite", "text": "Presentations, Docs, Sheets, Whiteboards, websites and a PDF editor alongside graphic design." },
+    { "title": "Video editor", "text": "Edit, trim and animate videos, with AI tools such as text-to-video generation." },
+    { "title": "Brand Kits", "text": "Store brand colours, fonts and logos; Pro includes 5 Brand Kits and Business up to 100." },
+    { "title": "Print", "text": "Order printed business cards, flyers, invitations and merchandise from your designs." }
+  ],
+  "useCases": [
+    "Social media graphics and short videos",
+    "Presentations and visual docs",
+    "Marketing materials and print designs",
+    "On-brand content for small businesses and teams",
+    "Classroom and student projects"
+  ],
+  "strengths": [
+    "Easy for non-designers, with a very large template library.",
+    "Covers graphics, video, presentations, docs, websites and print in one tool.",
+    "A free plan that's useful on its own, including some AI tools.",
+    "Available in the browser, on Windows and Mac, and on iOS and Android."
+  ],
+  "limitations": [
+    "The free plan has limited monthly AI uses, 5 GB of storage and 1 Brand Kit.",
+    "Pro is for one person only; teams need Business, priced per person.",
+    "Premium templates and stock content need a paid plan.",
+    "SSO, advanced admin controls and audit logs are only on Enterprise.",
+    "Not built for detailed product UI design or developer handoff."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Prices below are US prices; Canva's pricing varies by country, so check the official page for your region. Pro and Business have a 30-day free trial.",
+    "plans": [
+      { "name": "Free", "price": "$0", "note": "Templates and editor · limited monthly AI uses · 5 GB storage · 1 Brand Kit" },
+      { "name": "Pro", "price": "$12/mo", "note": "One person · billed yearly ($144/yr) or $18 month-to-month · premium content · 5 Brand Kits · 100 GB storage" },
+      { "name": "Business", "price": "$20.83/mo per person", "note": "Billed yearly ($250/yr) or $25 month-to-month · team admin tools · up to 100 Brand Kits · 500 GB per person" },
+      { "name": "Enterprise", "price": "Custom", "note": "For organizations of 100+ people · SSO and SCIM · advanced admin controls · audit logs" }
+    ],
+    "source": "https://www.canva.com/pricing/"
+  },
+  "platforms": ["Web browser", "Windows", "macOS", "iOS", "Android"],
+  "alternatives": ["affinity", "figma", "penpot"],
+  "sources": [
+    { "label": "Canva — Pricing", "url": "https://www.canva.com/pricing/" },
+    { "label": "Canva — Enterprise vs Business vs Pro", "url": "https://www.canva.com/learn/canva-pro-vs-canva-enterprise/" },
+    { "label": "Canva Help — What's new in Canva AI", "url": "https://www.canva.com/help/new-canva-ai/" },
+    { "label": "Canva Help — Canva Desktop App", "url": "https://www.canva.com/help/canva-desktop-app/" },
+    { "label": "Canva Help — Technical requirements", "url": "https://www.canva.com/help/technical-requirements/" },
+    { "label": "Canva — Visual Suite", "url": "https://www.canva.com/visual-suite/" }
+  ]
+}
