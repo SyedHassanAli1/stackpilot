@@ -84,17 +84,25 @@
     </div>
   </div>
 
-  <!-- Mobile menu. data-page = the link opens its own page (shows a chevron). -->
+  <!-- Mobile menu. data-page on a link = it opens its own page (shows a › chevron).
+       .mobile-group + .mobile-collapse = a section that expands and collapses. -->
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
     <a href="/#tools">Explore</a>
-    <a href="/categories/" data-page>Categories</a>
-    <ul class="mobile-subnav" aria-label="Categories">
-      <li><a href="/categories/ai-tools/" style="--cat-color:#7C3AED"><span class="cat">AI Tools</span></a></li>
-      <li><a href="/categories/design/" style="--cat-color:#4F46E5"><span class="cat">Design</span></a></li>
-      <li><a href="/categories/development/" style="--cat-color:#0E9384"><span class="cat">Development</span></a></li>
-      <li><a href="/categories/productivity/" style="--cat-color:#DC6803"><span class="cat">Productivity</span></a></li>
-      <li><a href="/categories/marketing/" style="--cat-color:#DD2590"><span class="cat">Marketing</span></a></li>
-    </ul>
+    <div class="mobile-group">
+      <a href="/categories/">Categories</a>
+      <button type="button" class="mobile-group-toggle" aria-expanded="false" aria-controls="mobileCats" aria-label="Show categories">
+        <svg class="icon" aria-hidden="true"><use href="#i-chev-d"/></svg>
+      </button>
+    </div>
+    <div class="mobile-collapse" id="mobileCats">
+      <ul class="mobile-subnav" aria-label="Categories">
+        <li><a href="/categories/ai-tools/" style="--cat-color:#7C3AED"><span class="cat">AI Tools</span></a></li>
+        <li><a href="/categories/design/" style="--cat-color:#4F46E5"><span class="cat">Design</span></a></li>
+        <li><a href="/categories/development/" style="--cat-color:#0E9384"><span class="cat">Development</span></a></li>
+        <li><a href="/categories/productivity/" style="--cat-color:#DC6803"><span class="cat">Productivity</span></a></li>
+        <li><a href="/categories/marketing/" style="--cat-color:#DD2590"><span class="cat">Marketing</span></a></li>
+      </ul>
+    </div>
     <a href="/#comparisons">Comparisons</a>
     <a href="/#guides">Guides</a>
   </nav>

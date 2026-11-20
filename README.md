@@ -101,6 +101,12 @@ In the mobile menu, a chevron (›) marks links that open a page of their own. I
 `data-page` attribute, so when a page such as `/comparisons/` exists, change that link's `href`
 and add `data-page` to show its chevron.
 
+Categories in the mobile menu is a section that expands and collapses: the word "Categories" opens
+`/categories/`, and the arrow button beside it shows or hides the category list (collapsed by
+default; the arrow points down when collapsed and up when expanded). Another section can use the
+same markup: a `.mobile-group` row with a `.mobile-group-toggle` button whose `aria-controls`
+names a `.mobile-collapse` panel.
+
 ## Logos
 
 Logo files follow one naming rule: `logos/<tool-slug>.svg`, for example

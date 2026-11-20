@@ -286,7 +286,27 @@
     });
   }
 
-  function init() { initPanel(); initNav(); }
+  /* Mobile menu sections that expand and collapse (e.g. Categories).
+     Collapsed on every page load; the button toggles aria-expanded and the
+     panel, and CSS turns the arrow down/up. */
+  function initMenuGroups() {
+    document.querySelectorAll('.mobile-group-toggle').forEach(btn => {
+      if (btn.dataset.ready) return;
+      btn.dataset.ready = 'true';
+      const panel = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!panel) return;
+      const name = btn.previousElementSibling?.textContent.trim().toLowerCase() || 'section';
+      const set = open => {
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', `${open ? 'Hide' : 'Show'} ${name}`);
+        panel.classList.toggle('is-open', open);
+      };
+      set(false);
+      btn.addEventListener('click', () => set(btn.getAttribute('aria-expanded') !== 'true'));
+    });
+  }
+
+  function init() { initPanel(); initNav(); initMenuGroups(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 
