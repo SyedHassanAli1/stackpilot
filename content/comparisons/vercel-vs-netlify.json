@@ -1,0 +1,151 @@
+{
+  "slug": "vercel-vs-netlify",
+  "verified": "2026-11-21",
+  "seoTitle": "Vercel vs Netlify: Features, Pricing & Differences",
+  "metaDescription": "Vercel vs Netlify compared side by side: free plans and commercial use, Pro pricing per seat vs unlimited members, credit-based vs usage-based billing, previews, functions and AI features, checked against official sources.",
+  "intro": [
+    "Vercel and Netlify are two of the best-known platforms for deploying websites and web apps. Both connect to your Git repository, build and deploy every push, give each change its own preview URL, and serve your site from a global CDN with HTTPS and serverless functions.",
+    "Where they differ most is in how they charge and what the free plan allows. Vercel bills Pro per seat with a monthly usage credit and on-demand usage after it; Netlify puts everything on one monthly credit balance and charges a flat Pro price for unlimited members. This page sets the details side by side using each company's own pricing pages and docs."
+  ],
+  "chooseA": [
+    "You build with Next.js and want hosting from the team that maintains it.",
+    "You want Fluid compute, billed by active CPU time, for serverless functions.",
+    "You're building AI apps and want the AI SDK, AI Gateway and sandboxes in one place.",
+    "Your free project is personal and non-commercial, which is what the Hobby plan allows."
+  ],
+  "chooseB": [
+    "You want a free plan you can use for commercial projects.",
+    "You want a low-cost paid plan: Personal is $9 a month.",
+    "Your team is growing and you'd rather pay a flat $20 a month for unlimited members.",
+    "You need built-in form handling, free and unlimited on credit-based plans."
+  ],
+  "glance": [
+    {
+      "label": "Free plan",
+      "a": "Hobby · personal, non-commercial use only",
+      "b": "Free · 300 credits a month, hard limit"
+    },
+    {
+      "label": "Commercial use on free",
+      "a": "No · needs Pro or Enterprise",
+      "b": "Yes, according to Netlify"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Pro · $20/mo per seat",
+      "b": "Personal · $9/mo, one owner"
+    },
+    {
+      "label": "Team plan",
+      "a": "Pro · $20/mo per seat, free viewer seats",
+      "b": "Pro · $20/mo for unlimited members"
+    },
+    {
+      "label": "How usage is billed",
+      "a": "$20 usage credit on Pro, then on demand",
+      "b": "Monthly credits; buy more with auto recharge"
+    },
+    {
+      "label": "When free limits run out",
+      "a": "Usually wait until 30 days have passed",
+      "b": "Projects pause when credits run out"
+    },
+    {
+      "label": "Preview deploys",
+      "a": "A preview URL for every pull request",
+      "b": "Unlimited, using no credits"
+    },
+    {
+      "label": "AI features",
+      "a": "AI SDK, AI Gateway, sandboxes, v0 (paid add-on)",
+      "b": "Agent Runners, AI Gateway"
+    },
+    {
+      "label": "Enterprise",
+      "a": "Custom · contractual SLAs",
+      "b": "Custom · 99.99% uptime guarantee"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Commercial use on free",
+      "text": "Vercel's Hobby plan is restricted to personal, non-commercial use; any commercial project needs Pro or Enterprise. Netlify says its Free plan can be used for commercial projects as well as personal ones."
+    },
+    {
+      "title": "Team pricing",
+      "text": "Vercel Pro is $20 a month per seat, and viewer seats are free. Netlify Pro is $20 a month for unlimited members, with higher tiers for more credits; teams of more than 120 members need Enterprise."
+    },
+    {
+      "title": "Billing model",
+      "text": "Vercel Pro includes a $20 monthly usage credit, then bills usage on demand across many metrics. Netlify uses one credit balance for deploys, compute, bandwidth and requests, and you can buy more credits with auto recharge."
+    },
+    {
+      "title": "A plan in between",
+      "text": "Netlify has a $9 Personal plan for one owner with 1,000 credits a month. Vercel goes straight from the free Hobby plan to Pro."
+    },
+    {
+      "title": "Running out on free",
+      "text": "On Vercel Hobby, if you exceed a usage limit you usually wait until 30 days have passed to use that feature again. On Netlify Free, projects pause when the 300 monthly credits run out."
+    },
+    {
+      "title": "Deploys",
+      "text": "Netlify charges 15 credits for each production deploy, while deploy previews and branch deploys use no credits. On Vercel, every pull request gets its own preview deployment."
+    },
+    {
+      "title": "Frameworks and compute",
+      "text": "Vercel maintains Next.js and runs functions on Fluid compute, billed by active CPU time. Netlify offers serverless, scheduled and background functions, plus its own database and Blob storage."
+    }
+  ],
+  "similarities": [
+    "Deploys from Git with a preview URL for each change",
+    "Custom domains with automatic HTTPS",
+    "A global CDN and serverless functions",
+    "An AI Gateway to connect apps to AI models",
+    "A web dashboard and a command-line tool",
+    "A $20/month Pro plan and custom Enterprise pricing"
+  ],
+  "faq": [
+    {
+      "q": "Can I use the free plan for a business site?",
+      "a": "On Vercel, no: the Hobby plan is for personal, non-commercial use, and commercial projects need Pro or Enterprise. Netlify says its Free plan can be used for commercial projects, within its 300 monthly credits."
+    },
+    {
+      "q": "Which is cheaper for a team?",
+      "a": "It depends on team size. Vercel Pro is $20 a month per seat, so the cost grows with each member who deploys, while viewer seats are free. Netlify Pro is $20 a month for unlimited members, up to 120. Usage beyond what's included is billed separately on both."
+    },
+    {
+      "q": "Do preview deployments cost extra?",
+      "a": "Both platforms create a preview for each change. On Netlify, deploy previews are unlimited and use no credits, while each production deploy uses 15 credits. Vercel creates a preview deployment for every pull request."
+    },
+    {
+      "q": "What happens if I go over the free limits?",
+      "a": "On Vercel Hobby, you usually wait until 30 days have passed before using that feature again. On Netlify Free, projects pause when the monthly credits run out."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vercel — Pricing",
+      "url": "https://vercel.com/pricing"
+    },
+    {
+      "label": "Vercel Docs — Hobby plan",
+      "url": "https://vercel.com/docs/plans/hobby"
+    },
+    {
+      "label": "Vercel Docs — Fair use guidelines (commercial usage)",
+      "url": "https://vercel.com/docs/limits/fair-use-guidelines"
+    },
+    {
+      "label": "Netlify — Pricing",
+      "url": "https://www.netlify.com/pricing/"
+    },
+    {
+      "label": "Netlify Docs — How credits work",
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/"
+    },
+    {
+      "label": "Netlify — Introducing Netlify's Free plan (commercial projects)",
+      "url": "https://www.netlify.com/blog/introducing-netlify-free-plan/"
+    }
+  ]
+}

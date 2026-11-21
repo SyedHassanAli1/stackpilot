@@ -283,6 +283,15 @@
         'ChatGPT includes Codex with limits on Free; Claude Code is included from Pro.',
         'OpenAI has said ads may appear on ChatGPT Free and Go; Anthropic has said Claude will stay ad-free.'
       ] },
+    { slug: 'vercel-vs-netlify', a: 'vercel', b: 'netlify', category: 'Development', title: 'Vercel vs Netlify',
+      subtitle: 'Hosting & deployment for web apps',
+      fitA: 'You build with Next.js, want Fluid compute for functions, or are building AI apps with the AI SDK.',
+      fitB: 'You want a free plan you can use commercially, a $9 Personal plan, or flat Pro pricing for unlimited members.',
+      differences: [
+        'Vercel’s free Hobby plan is for personal, non-commercial use; Netlify says its Free plan can be used for commercial projects.',
+        'Vercel Pro is $20/mo per seat; Netlify Pro is $20/mo for unlimited members.',
+        'Netlify bills everything from one monthly credit balance; Vercel Pro includes a $20 usage credit, then bills on demand.'
+      ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',
       fitA: 'Your team wants the most widely adopted tool, a large plugin and community ecosystem, and built-in developer handoff.',
