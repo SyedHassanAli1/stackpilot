@@ -301,6 +301,15 @@
         'Semrush has a 7-day free trial; Ahrefs doesn’t list one.',
         'Ahrefs includes API and MCP from Lite; Semrush has MCP from Starter and API on Advanced.'
       ] },
+    { slug: 'mailchimp-vs-kit', a: 'mailchimp', b: 'kit', category: 'Marketing', title: 'Mailchimp vs Kit',
+      subtitle: 'Email marketing for businesses and creators',
+      fitA: 'You run a small business or store and want email, SMS and ads together, from $13/mo for a small list.',
+      fitB: 'You’re a creator who wants a free plan for 10,000 subscribers and paid newsletters or products.',
+      differences: [
+        'Kit’s free plan covers up to 10,000 subscribers; Mailchimp’s covers 250 contacts and 500 sends a month.',
+        'Mailchimp Essentials starts at $13/mo; Kit Creator starts at $39/mo, or $33/mo billed yearly.',
+        'Kit charges by subscribers; Mailchimp plans also include a monthly send limit.'
+      ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',
       fitA: 'Your team wants the most widely adopted tool, a large plugin and community ecosystem, and built-in developer handoff.',

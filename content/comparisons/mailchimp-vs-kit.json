@@ -1,0 +1,164 @@
+{
+  "slug": "mailchimp-vs-kit",
+  "verified": "2026-11-21",
+  "seoTitle": "Mailchimp vs Kit: Features, Pricing & Differences",
+  "metaDescription": "Mailchimp vs Kit (formerly ConvertKit) compared side by side: free plans for 250 contacts vs 10,000 subscribers, paid plans from $13 and $39 a month, send limits, automations, team seats, paid newsletters and SMS, checked against official sources.",
+  "intro": [
+    "Mailchimp and Kit (formerly ConvertKit) are both email marketing platforms with free plans, signup forms, automations and pricing that grows with your list. Mailchimp is built for small businesses and ecommerce brands, with SMS and ads alongside email. Kit is built for creators, with landing pages, paid newsletters and digital products in the same account.",
+    "The biggest differences are how far the free plan goes, how sends are limited, where automations start, and how many people can use the account. This page sets them side by side using each company's own pricing pages and help docs."
+  ],
+  "chooseA": [
+    "You run a small business or online store and want email, SMS and ads in one place.",
+    "Your list is small and you want a low-cost paid plan: Essentials starts at $13 a month for 500 contacts.",
+    "You have a larger team: Premium includes unlimited seats and role-based access.",
+    "You want SMS marketing alongside email, as an add-on."
+  ],
+  "chooseB": [
+    "You're a creator and want a free plan for up to 10,000 subscribers.",
+    "You want to sell paid newsletters, digital products or courses from the same account.",
+    "You'd rather pay by subscriber count without a monthly send limit on your plan.",
+    "You want unlimited landing pages and opt-in forms, even on the free plan."
+  ],
+  "glance": [
+    {
+      "label": "Built for",
+      "a": "Small businesses and ecommerce brands",
+      "b": "Creators"
+    },
+    {
+      "label": "Free plan",
+      "a": "Up to 250 contacts · 500 sends a month",
+      "b": "Up to 10,000 subscribers"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Essentials · from $13/mo for 500 contacts",
+      "b": "Creator · $39/mo for 1,000 subscribers, or $33/mo yearly"
+    },
+    {
+      "label": "Priced by",
+      "a": "Contacts, with a monthly send limit per plan",
+      "b": "Subscribers"
+    },
+    {
+      "label": "Automations",
+      "a": "Multi-step journeys from Standard ($20/mo)",
+      "b": "1 basic automation free · unlimited on paid plans"
+    },
+    {
+      "label": "Team seats",
+      "a": "3 on Essentials · unlimited on Premium",
+      "b": "1 free · 2 on Creator · unlimited on Pro"
+    },
+    {
+      "label": "Free trial",
+      "a": "14 days on paid plans",
+      "b": "14 days, no credit card"
+    },
+    {
+      "label": "Paid newsletters and products",
+      "a": "Not listed in Mailchimp's plans",
+      "b": "On every plan, with transaction fees"
+    },
+    {
+      "label": "SMS",
+      "a": "Add-on, priced separately",
+      "b": "Not listed in Kit's plans"
+    },
+    {
+      "label": "Top plan",
+      "a": "Premium · from $350/mo",
+      "b": "Pro · from $79/mo"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Free plan",
+      "text": "Kit's free Newsletter plan covers up to 10,000 subscribers, with one basic automation, one sequence and one user. Mailchimp's Free plan covers up to 250 contacts and 500 sends a month, with a daily limit of 250."
+    },
+    {
+      "title": "Entry price",
+      "text": "Mailchimp Essentials starts at $13 a month for 500 contacts. Kit Creator starts at $39 a month for up to 1,000 subscribers, or $33 a month billed yearly. Both rise as your list grows."
+    },
+    {
+      "title": "Send limits",
+      "text": "Mailchimp plans include a monthly send limit that rises with the plan and contact count. Kit charges by subscriber count, so sending more emails doesn't raise the price."
+    },
+    {
+      "title": "Automations",
+      "text": "Kit includes one basic automation on the free plan and unlimited Visual Automations and sequences on paid plans. Mailchimp's multi-step customer journeys start on Standard, from $20 a month."
+    },
+    {
+      "title": "Earning from your list",
+      "text": "Kit lets creators sell paid newsletter subscriptions, digital products and courses on every plan, with transaction fees. Mailchimp's platform centres on marketing channels: email, SMS as an add-on, social posts and ads, and landing pages."
+    },
+    {
+      "title": "Teams",
+      "text": "Mailchimp Essentials includes 3 seats and Premium has unlimited seats with role-based access. Kit includes 1 user on the free plan, 2 on Creator and unlimited users on Pro."
+    }
+  ],
+  "similarities": [
+    "Free plans to get started",
+    "Pricing that rises with list size",
+    "Landing pages and signup forms",
+    "Automated emails and customer journeys",
+    "A 14-day free trial on paid plans",
+    "A/B testing and reporting on paid plans"
+  ],
+  "faq": [
+    {
+      "q": "Which is cheaper, Mailchimp or Kit?",
+      "a": "For a small list, Mailchimp's paid plans start lower: Essentials is $13 a month for 500 contacts, while Kit Creator is $39 a month for up to 1,000 subscribers ($33 billed yearly). For a free plan, Kit goes much further: up to 10,000 subscribers, compared with 250 contacts on Mailchimp Free."
+    },
+    {
+      "q": "Is Kit the same as ConvertKit?",
+      "a": "Yes. Kit is the new name of ConvertKit, the email marketing platform for creators."
+    },
+    {
+      "q": "Can I sell products or paid newsletters?",
+      "a": "Kit lets you sell paid newsletter subscriptions, digital products and courses on every plan, including Free, with transaction fees. Mailchimp's plans centre on email, SMS, social and ads marketing, and its pricing pages don't list paid newsletters."
+    },
+    {
+      "q": "Do both have a free trial?",
+      "a": "Yes. Both offer a 14-day free trial on paid plans. Kit's trial doesn't need a credit card; on Mailchimp's Standard trial, you add a payment method to unlock the full send allowance."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Mailchimp — Pricing plans",
+      "url": "https://mailchimp.com/pricing/marketing/"
+    },
+    {
+      "label": "Mailchimp Help — About Mailchimp pricing plans",
+      "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/"
+    },
+    {
+      "label": "Mailchimp — Essentials plan",
+      "url": "https://mailchimp.com/landers/upgrade-to-essentials/"
+    },
+    {
+      "label": "Mailchimp — Marketing platform",
+      "url": "https://mailchimp.com/marketing-platform/"
+    },
+    {
+      "label": "Mailchimp — Premium plan details",
+      "url": "https://mailchimp.com/pricing/premium-details/"
+    },
+    {
+      "label": "Kit — Pricing",
+      "url": "https://kit.com/pricing"
+    },
+    {
+      "label": "Kit Help — Creator vs Pro",
+      "url": "https://help.kit.com/en/articles/4494683-creator-vs-pro-choose-the-right-plan"
+    },
+    {
+      "label": "Kit — Paid newsletters",
+      "url": "https://kit.com/features/commerce/paid-newsletter"
+    },
+    {
+      "label": "Kit Blog — Newsletter platforms (pricing by subscribers)",
+      "url": "https://kit.com/resources/blog/email-newsletter-tools"
+    }
+  ]
+}
