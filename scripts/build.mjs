@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /* StackPilot — static page builder (no dependencies)
 
-   Generates a plain-HTML page for every tool that has a content file:
-     content/tools/<slug>.json  →  tools/<slug>/index.html
+   Generates a plain-HTML page for every tool and comparison that has a content file:
+     content/tools/<slug>.json        →  tools/<slug>/index.html
+     content/comparisons/<slug>.json  →  comparisons/<slug>/index.html
 
    Tool basics (name, category, pricing, link, logo) come from js/data.js;
    long-form page content comes from the content file. The header, footer and
@@ -134,8 +135,13 @@ const breadcrumb = items => `<nav class="breadcrumb" aria-label="Breadcrumb">
     </ol>
   </nav>`;
 
+// A comparison links to its own page when it has one, otherwise to the popup.
+const compareLink = (x, comparePages, cls) => comparePages.has(x.slug)
+  ? `<a class="${cls}" href="/comparisons/${esc(x.slug)}/">${esc(x.title)}</a>`
+  : `<a class="${cls}" href="/#compare-${esc(x.slug)}" data-open-compare="${esc(x.slug)}" aria-haspopup="dialog">${esc(x.title)}</a>`;
+
 /* Tool page -------------------------------------------------------------- */
-function renderToolPage(t, c, pageSlugs) {
+function renderToolPage(t, c, pageSlugs, comparePages) {
   const url = `/tools/${t.slug}/`;
   const verified = c.verified || t.verified;
   const comparisons = COMPARISONS.filter(x => (x.a === t.slug || x.b === t.slug) && toolBySlug[x.a] && toolBySlug[x.b]);
@@ -194,9 +200,9 @@ function renderToolPage(t, c, pageSlugs) {
                 <div class="pair">${mark(toolBySlug[x.a], 'mark--sm')}<span class="vs" aria-hidden="true">vs</span>${mark(toolBySlug[x.b], 'mark--sm')}</div>
                 <span class="card-arrow">${icon('i-arrow-ur')}</span>
               </div>
-              <h3><a class="card-link" href="/#compare-${esc(x.slug)}" data-open-compare="${esc(x.slug)}" aria-haspopup="dialog">${esc(x.title)}</a></h3>
+              <h3>${compareLink(x, comparePages, 'card-link')}</h3>
               ${present(x.subtitle) ? `<p>${esc(x.subtitle)}</p>` : ''}
-              <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">Overview</span></div>
+              <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">${comparePages.has(x.slug) ? 'Full comparison' : 'Overview'}</span></div>
             </article>`).join('')}
           </div>` : ''),
     section('sources', 'Sources & verification', list(c.sources).length ? `<p>StackPilot writes its own descriptions and checks product details against official sources. We are not affiliated with ${esc(t.name)}, and links go to its official website.</p>
@@ -205,7 +211,8 @@ function renderToolPage(t, c, pageSlugs) {
           </ul>` : '')
   ].join('');
 
-  const firstCompare = comparisons[0];
+  // Prefer a comparison that has its own page for the hero button.
+  const firstCompare = comparisons.find(x => comparePages.has(x.slug)) || comparisons[0];
 
   return shell({
     title: c.seoTitle || `${t.name}: Features, Pricing & Alternatives`,
@@ -226,7 +233,7 @@ function renderToolPage(t, c, pageSlugs) {
     </div>
     <div class="tp-hero-actions">
       <a class="btn btn-primary" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">Visit ${esc(t.name)} ${icon('i-arrow-ur', 'icon-arrow')}<span class="sr-only">(opens official site in a new tab)</span></a>
-      ${firstCompare ? `<a class="btn btn-secondary" href="/#compare-${esc(firstCompare.slug)}" data-open-compare="${esc(firstCompare.slug)}" aria-haspopup="dialog">${esc(firstCompare.title)}</a>` : ''}
+      ${firstCompare ? compareLink(firstCompare, comparePages, 'btn btn-secondary') : ''}
     </div>
   </header>
 
@@ -244,6 +251,146 @@ function renderToolPage(t, c, pageSlugs) {
           ${verified ? `<div><dt>Last checked</dt><dd>${esc(fmtDate(verified))}</dd></div>` : ''}
         </dl>
         <a class="btn btn-primary tp-glance-btn" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">Visit official site ${icon('i-arrow-ur', 'icon-arrow')}</a>
+      </div>
+      ${toc.length > 2 ? `<nav class="tp-toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>${toc.map(([id, label]) => `<li><a href="#${id}">${esc(label)}</a></li>`).join('')}</ol>
+      </nav>` : ''}
+    </aside>
+  </div>
+</main>`
+  });
+}
+
+/* Comparison page ------------------------------------------------------- */
+// Pricing tables come from each tool's content file, so a price is written once.
+function renderComparisonPage(x, c, pageSlugs, toolContent) {
+  const A = toolBySlug[x.a], B = toolBySlug[x.b];
+  const cA = toolContent[x.a] || {}, cB = toolContent[x.b] || {};
+  const url = `/comparisons/${x.slug}/`;
+  const toolHref = s => (pageSlugs.has(s) ? `/tools/${s}/` : `/#tool-${s}`);
+  const verified = c.verified;
+  const glance = list(c.glance);
+  const priceBlock = (t, tc) => {
+    const plans = list(tc.pricing?.plans);
+    if (!plans.length) return '';
+    return `<div class="cp-price">
+            <h3>${mark(t, 'mark--sm')}<span>${esc(t.name)}</span></h3>
+            <div class="tp-table-wrap"><table class="tp-table">
+              <thead><tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">Details</th></tr></thead>
+              <tbody>${plans.map(p => `
+                <tr><th scope="row">${esc(p.name)}</th><td>${esc(p.price)}</td><td>${esc(p.note || '')}</td></tr>`).join('')}
+              </tbody>
+            </table></div>
+            <p class="tp-fineprint"><a href="${esc(tc.pricing.source || t.url)}" target="_blank" rel="noopener noreferrer">${esc(t.name)} pricing page</a></p>
+          </div>`;
+  };
+  const choose = (t, items) => list(items).length ? `<div class="cp-choose">
+            <h3>${mark(t, 'mark--sm')}<span>Choose ${esc(t.name)} if…</span></h3>
+            <ul>${list(items).map(i => `<li>${icon('i-check')}<span>${esc(i)}</span></li>`).join('')}</ul>
+            <a class="lp-more" href="${toolHref(t.slug)}"${pageSlugs.has(t.slug) ? '' : ` data-open-tool="${esc(t.slug)}" aria-haspopup="dialog"`}>About ${esc(t.name)} ${icon('i-arrow-r')}</a>
+          </div>` : '';
+  const sources = [...list(c.sources)];
+  for (const [t, tc] of [[A, cA], [B, cB]]) {
+    if (tc.pricing?.source && !sources.some(s => s.url === tc.pricing.source)) sources.push({ label: `${t.name} — Pricing`, url: tc.pricing.source });
+  }
+
+  const toc = [
+    ['overview', 'Overview', c.intro], ['verdict', 'Which to choose', list(c.chooseA).length || list(c.chooseB).length ? 1 : null],
+    ['at-a-glance', 'At a glance', glance], ['differences', 'Key differences', c.differences], ['similarities', 'What they share', c.similarities],
+    ['pricing', 'Pricing', list(cA.pricing?.plans).length || list(cB.pricing?.plans).length ? 1 : null], ['faq', 'FAQ', c.faq], ['sources', 'Sources', sources]
+  ].filter(([, , v]) => present(v));
+
+  const body = [
+    section('overview', 'Overview', list(c.intro).map(p => `<p>${esc(p)}</p>`).join('\n          ')),
+    section('verdict', 'Which should you choose?', (list(c.chooseA).length || list(c.chooseB).length) ? `<div class="cp-chooser">
+          ${choose(A, c.chooseA)}
+          ${choose(B, c.chooseB)}
+          </div>` : ''),
+    section('at-a-glance', 'At a glance', glance.length ? `<div class="tp-table-wrap"><table class="tp-table cp-table">
+            <thead><tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">${esc(A.name)}</th><th scope="col">${esc(B.name)}</th></tr></thead>
+            <tbody>${glance.map(r => `
+              <tr><th scope="row">${esc(r.label)}</th><td data-label="${esc(A.name)}">${esc(r.a)}</td><td data-label="${esc(B.name)}">${esc(r.b)}</td></tr>`).join('')}
+            </tbody>
+          </table></div>` : ''),
+    section('differences', 'Key differences', list(c.differences).length ? `<ul class="tp-features">${list(c.differences).map(f => `
+            <li><h3>${esc(f.title)}</h3><p>${esc(f.text)}</p></li>`).join('')}
+          </ul>` : ''),
+    section('similarities', 'What they have in common', list(c.similarities).length ? `<ul class="tp-checks">${list(c.similarities).map(u => `
+            <li>${icon('i-check')}<span>${esc(u)}</span></li>`).join('')}
+          </ul>` : ''),
+    section('pricing', 'Pricing side by side', (list(cA.pricing?.plans).length || list(cB.pricing?.plans).length) ? `<div class="cp-prices">
+          ${priceBlock(A, cA)}
+          ${priceBlock(B, cB)}
+          </div>
+          <p class="tp-fineprint">Prices in USD, before tax, and may vary by region or app store. Plans change often, so check each official pricing page before buying.${verified ? ` Last checked ${esc(fmtDate(verified))}.` : ''}</p>` : ''),
+    section('faq', 'Frequently asked questions', list(c.faq).length ? `<div class="cp-faq">${list(c.faq).map(f => `
+            <details><summary>${esc(f.q)}${icon('i-chev-d')}</summary><p>${esc(f.a)}</p></details>`).join('')}
+          </div>` : ''),
+    section('sources', 'Sources & verification', sources.length ? `<p>StackPilot writes its own comparisons and checks product details against official sources. We are not affiliated with ${esc(A.name)} or ${esc(B.name)}.</p>
+          <ul class="tp-sources">${sources.map(s => `
+            <li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a></li>`).join('')}
+          </ul>` : '')
+  ].join('');
+
+  const jsonLd = [{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: c.seoTitle || x.title,
+    description: c.metaDescription,
+    ...(verified ? { dateModified: verified } : {}),
+    about: [A, B].map(t => ({ '@type': 'SoftwareApplication', name: t.name, url: t.url })),
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [['Home', '/'], ['Comparisons', '/#comparisons'], [x.title, url]].map(([name, item], i) => ({
+        '@type': 'ListItem', position: i + 1, name, ...(SITE_URL ? { item: `${SITE_URL}${item}` } : {})
+      }))
+    }
+  }];
+  if (list(c.faq).length) jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: list(c.faq).map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+  });
+
+  const visit = t => `<a class="btn btn-secondary" href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">Visit ${esc(t.name)} ${icon('i-arrow-ur', 'icon-arrow')}<span class="sr-only">(opens official site in a new tab)</span></a>`;
+
+  return shell({
+    title: c.seoTitle || x.title,
+    description: c.metaDescription,
+    url,
+    ogTitle: x.title,
+    jsonLd,
+    source: `js/data.js, content/comparisons/${x.slug}.json and the two tools' content files`,
+    main: `<main id="main" class="container tool-page compare-page">
+  ${breadcrumb([['Home', '/'], ['Comparisons', '/#comparisons'], [x.title]])}
+
+  <header class="tp-hero cp-hero">
+    <div class="pair cp-pair">${mark(A, 'mark--lg')}<span class="vs" aria-hidden="true">vs</span>${mark(B, 'mark--lg')}</div>
+    <div class="tp-hero-text">
+      <h1>${esc(x.title)}</h1>
+      ${present(x.subtitle) ? `<p class="tp-tagline">${esc(x.subtitle)}</p>` : ''}
+      <div class="panel-sub">${catLabel(x.category)}${verified ? `<span class="meta-note">Last checked ${esc(fmtDate(verified))}</span>` : ''}</div>
+    </div>
+  </header>
+
+  <div class="tp-layout">
+    <div class="tp-content">${body}
+    </div>
+
+    <aside class="tp-aside" aria-label="The two tools">
+      <div class="tp-glance cp-tools">
+        <h2>Compared here</h2>
+        <ul>${[A, B].map(t => `
+          <li>
+            <a class="tp-alt" href="${toolHref(t.slug)}"${pageSlugs.has(t.slug) ? '' : ` data-open-tool="${esc(t.slug)}" aria-haspopup="dialog"`}>
+              ${mark(t, 'mark--sm')}
+              <span class="tp-alt-text"><strong>${esc(t.name)}</strong><span class="tp-alt-desc">${esc(t.startingPrice ? `Paid from ${t.startingPrice}` : t.pricing)}</span></span>
+              ${icon('i-chev-r', 'tp-alt-chev')}
+            </a>
+          </li>`).join('')}
+        </ul>
+        <div class="cp-visit">${visit(A)}${visit(B)}</div>
       </div>
       ${toc.length > 2 ? `<nav class="tp-toc" aria-label="On this page">
         <h2>On this page</h2>
@@ -462,9 +609,35 @@ if (existsSync(outDir)) {
   }
 }
 const pageSlugs = new Set(pages.map(p => p.t.slug));
+
+// Comparison pages: content/comparisons/<slug>.json → comparisons/<slug>/index.html
+const cmpDir = join(root, 'content/comparisons');
+const cmpFiles = existsSync(cmpDir) ? readdirSync(cmpDir).filter(f => f.endsWith('.json')).sort() : [];
+const cmpPages = [];
+for (const file of cmpFiles) {
+  const c = JSON.parse(readFileSync(join(cmpDir, file), 'utf8'));
+  const slug = file.replace(/\.json$/, '');
+  const x = COMPARISONS.find(y => y.slug === slug);
+  if (!x) { errors.push(`comparisons/${file}: no comparison with slug "${slug}" in js/data.js`); continue; }
+  if (!toolBySlug[x.a] || !toolBySlug[x.b]) { errors.push(`comparisons/${file}: both tools must exist in js/data.js`); continue; }
+  if (c.slug && c.slug !== slug) errors.push(`comparisons/${file}: slug "${c.slug}" does not match file name`);
+  for (const f of ['metaDescription', 'intro', 'differences', 'sources']) if (!present(c[f])) errors.push(`comparisons/${file}: missing "${f}"`);
+  list(c.glance).forEach((r, i) => { if (!present(r.label) || !present(r.a) || !present(r.b)) errors.push(`comparisons/${file}: glance[${i}] needs label, a and b`); });
+  cmpPages.push({ x, c });
+}
+if (errors.length) { console.error(`✗ Build failed:\n  - ${errors.join('\n  - ')}`); process.exit(1); }
+const comparePages = new Set(cmpPages.map(p => p.x.slug));
+const toolContent = Object.fromEntries(pages.map(p => [p.t.slug, p.c]));
+
 for (const { t, c } of pages) {
   mkdirSync(join(outDir, t.slug), { recursive: true });
-  writeFileSync(join(outDir, t.slug, 'index.html'), renderToolPage(t, c, pageSlugs));
+  writeFileSync(join(outDir, t.slug, 'index.html'), renderToolPage(t, c, pageSlugs, comparePages));
+}
+const cmpOut = join(root, 'comparisons');
+rmSync(cmpOut, { recursive: true, force: true });
+for (const { x, c } of cmpPages) {
+  mkdirSync(join(cmpOut, x.slug), { recursive: true });
+  writeFileSync(join(cmpOut, x.slug, 'index.html'), renderComparisonPage(x, c, pageSlugs, toolContent));
 }
 // /tools/ (All Tools), /categories/ and one page per category.
 for (const c of CATEGORIES) {
@@ -485,6 +658,6 @@ for (const c of LISTED_CATS) {
 }
 
 writeFileSync(join(root, 'js/pages.js'),
-  `/* Generated by scripts/build.mjs — tools that have their own page. Do not edit. */\nwindow.StackPilotPages = ${JSON.stringify([...pageSlugs])};\n`);
+  `/* Generated by scripts/build.mjs — tools and comparisons that have their own page. Do not edit. */\nwindow.StackPilotPages = ${JSON.stringify([...pageSlugs])};\nwindow.StackPilotComparePages = ${JSON.stringify([...comparePages])};\n`);
 
-console.log(`✓ Built ${pages.length} tool page(s), /tools/, /categories/ and ${LISTED_CATS.length} category page(s)`);
+console.log(`✓ Built ${pages.length} tool page(s), ${cmpPages.length} comparison page(s), /tools/, /categories/ and ${LISTED_CATS.length} category page(s)`);

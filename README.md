@@ -75,6 +75,16 @@ Netlify runs the build on every deploy, so pages always match the data. The head
 icons are copied from `index.html`, so edit them there. Pages use root-relative links (`/css/...`),
 so open them through a local server rather than by double-clicking the file.
 
+## Comparison pages
+
+Each file in `content/comparisons/<slug>.json` becomes a page at `/comparisons/<slug>/`. The
+comparison must also exist in `COMPARISONS` in `js/data.js` (that entry powers the homepage card
+and the short popup, which links to the full page once it exists).
+
+A content file holds the intro, "Choose X if…" lists, the at-a-glance table, key differences,
+what the tools share, an FAQ and sources. The pricing tables are not repeated: they come from the
+two tools' own files in `content/tools/`, so a price is only ever written in one place.
+
 ## All Tools and category pages
 
 The build also writes:

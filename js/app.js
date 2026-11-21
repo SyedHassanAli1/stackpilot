@@ -11,7 +11,7 @@
   // Shared helpers and popups from js/panel.js.
   const {
     $, h, icon, isPresent, setChildren, when, mark, priceTag, catLabel, plural,
-    toolBySlug, openTool, openComparison, openGuide, closePanel
+    toolBySlug, COMPARE_PAGES, openTool, openComparison, openGuide, closePanel
   } = window.StackPilotUI;
 
   const PAGE_SIZE = 6;
@@ -235,7 +235,7 @@
         ),
         h('h3', {}, h('button', { type: 'button', class: 'card-link', 'aria-haspopup': 'dialog', onclick: () => openComparison(c.slug) }, c.title)),
         when(c.subtitle, v => h('p', {}, v)),
-        h('div', { class: 'tool-meta' }, catLabel(c.category), h('span', { class: 'meta-note' }, 'Overview'))
+        h('div', { class: 'tool-meta' }, catLabel(c.category), h('span', { class: 'meta-note' }, COMPARE_PAGES.has(c.slug) ? 'Full comparison' : 'Overview'))
       );
     }));
   }

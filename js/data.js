@@ -274,6 +274,15 @@
   ];
 
   const COMPARISONS = [
+    { slug: 'chatgpt-vs-claude', a: 'chatgpt', b: 'claude', category: 'AI Tools', title: 'ChatGPT vs Claude',
+      subtitle: 'AI assistants for writing, research & coding',
+      fitA: 'You want a low-cost $8 plan, image creation in the same app, or free access to Codex.',
+      fitB: 'You want an ad-free assistant, a yearly-billing discount, or Claude Code from the Pro plan.',
+      differences: [
+        'ChatGPT’s paid plans start at $8/mo (Go); Claude’s start at $17/mo billed yearly (Pro).',
+        'ChatGPT includes Codex with limits on Free; Claude Code is included from Pro.',
+        'OpenAI has said ads may appear on ChatGPT Free and Go; Anthropic has said Claude will stay ad-free.'
+      ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',
       fitA: 'Your team wants the most widely adopted tool, a large plugin and community ecosystem, and built-in developer handoff.',

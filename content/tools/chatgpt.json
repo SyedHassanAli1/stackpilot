@@ -1,6 +1,6 @@
 {
   "slug": "chatgpt",
-  "verified": "2026-11-19",
+  "verified": "2026-11-21",
   "seoTitle": "ChatGPT: Features, Pricing & Alternatives",
   "metaDescription": "ChatGPT is OpenAI's AI assistant for writing, research, analysis, image creation and coding with Codex. See its features, Free, Go, Plus, Pro, Business and Enterprise pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -30,7 +30,7 @@
   ],
   "limitations": [
     "Uploads, image creation, voice, deep research and memory are limited on the free plan.",
-    "The Go plan may include ads.",
+    "OpenAI has said ads may appear on the Free and Go plans; Plus and higher plans are ad-free.",
     "Advanced reasoning models need Plus or higher, and usage limits apply.",
     "Pro starts at $100/mo, and its fastest mode needs the $500/mo tier.",
     "Business needs at least 2 users; Enterprise and Edu pricing isn't published."

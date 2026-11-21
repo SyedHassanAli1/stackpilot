@@ -1,0 +1,66 @@
+{
+  "slug": "chatgpt-vs-claude",
+  "verified": "2026-11-21",
+  "seoTitle": "ChatGPT vs Claude: Features, Pricing & Differences",
+  "metaDescription": "ChatGPT vs Claude compared side by side: free plans, paid plans from $8 and $17 a month, team pricing, coding tools (Codex and Claude Code), usage limits and ads, checked against official sources.",
+  "intro": [
+    "ChatGPT, made by OpenAI, and Claude, made by Anthropic, are two of the most widely used AI assistants. Both help with writing, research, analysis and coding, both can search the web and work with files, and both run on the web, Windows, Mac, iPhone and Android.",
+    "The differences are in the details: how the plans are priced and billed, how usage is limited, which coding tool is included, and whether ads may appear. This page sets them side by side using each company's own pricing and help pages."
+  ],
+  "chooseA": [
+    "You want a low-cost paid plan: Go is $8 a month.",
+    "You want image creation built into the same app.",
+    "You want unlimited everyday text chats, even on the free plan.",
+    "You want to try agentic coding for free: Codex is included, with limits, on the free plan."
+  ],
+  "chooseB": [
+    "You want an assistant that stays ad-free on every plan, including Free.",
+    "You prefer to pay yearly for a discount: Pro is $17 a month billed yearly.",
+    "You want connectors, memory and Artifacts on the free plan.",
+    "You write code and want Claude Code, included from the Pro plan."
+  ],
+  "glance": [
+    { "label": "Made by", "a": "OpenAI", "b": "Anthropic" },
+    { "label": "Free plan", "a": "Yes · unlimited everyday text chats", "b": "Yes · limited usage every 5 hours and every week" },
+    { "label": "Lowest paid plan", "a": "Go · $8/mo", "b": "Pro · $17/mo billed yearly, or $20 monthly" },
+    { "label": "Plans for heavy use", "a": "Pro · $100, $200 or $500/mo", "b": "Max $100/mo · Ultra $200/mo" },
+    { "label": "Yearly billing for individuals", "a": "No · Go, Plus and Pro are monthly", "b": "Pro only · Max and Ultra are monthly" },
+    { "label": "Team plan", "a": "Business · $20/user/mo yearly, $25 monthly · 2+ users", "b": "Team · $20/seat/mo yearly, $25 monthly · 2–150 seats" },
+    { "label": "Enterprise", "a": "Custom pricing", "b": "$20/seat/mo + usage at API rates · 20-seat minimum" },
+    { "label": "Coding tool", "a": "Codex · limited on Free", "b": "Claude Code · from Pro" },
+    { "label": "Image creation", "a": "Yes · limited on Free", "b": "Not listed in Claude's plans" },
+    { "label": "Ads", "a": "May appear on Free and Go", "b": "None on any plan" },
+    { "label": "Platforms", "a": "Web, Windows, macOS, iOS, Android", "b": "Web, Windows, macOS, iOS, Android" }
+  ],
+  "differences": [
+    { "title": "Plan ladder", "text": "ChatGPT has more steps between free and the top tier: Go at $8, Plus at $20 and Pro from $100 to $500 a month. Claude goes from Free to Pro ($17 billed yearly or $20 monthly), then Max at $100 and Ultra at $200." },
+    { "title": "Billing", "text": "ChatGPT's Go, Plus and Pro plans are billed monthly only. Claude Pro can be paid yearly ($200 up front) for a lower monthly price; Max and Ultra are monthly only." },
+    { "title": "Usage limits", "text": "ChatGPT includes unlimited everyday text chats on every plan, subject to guardrails, and limits tools and advanced models by plan. Claude limits usage per 5-hour window and per week on every plan, with higher limits on higher plans." },
+    { "title": "Coding", "text": "ChatGPT includes Codex, with limited use on the free plan and more on paid plans. Claude Code is included from the Pro plan and isn't available on Free." },
+    { "title": "Images", "text": "ChatGPT can create images on every plan, with limits on Free. Claude's plan pages don't list image creation." },
+    { "title": "Ads", "text": "OpenAI has said ads may appear on ChatGPT's Free and Go plans, while Plus, Pro, Business and Enterprise stay ad-free. Anthropic has said Claude will remain ad-free." },
+    { "title": "Enterprise pricing", "text": "ChatGPT Enterprise pricing isn't published. Claude Enterprise lists $20 per seat a month plus usage at API rates, with a 20-seat minimum." }
+  ],
+  "similarities": [
+    "Free plans with web search",
+    "Memory that carries context across conversations",
+    "Projects to organise chats and files",
+    "Apps for web, Windows, Mac, iPhone and Android",
+    "A $20/month standard plan when billed monthly",
+    "Team plans at $20 per user a month billed yearly, or $25 monthly"
+  ],
+  "faq": [
+    { "q": "Is ChatGPT or Claude cheaper?", "a": "Both have free plans. ChatGPT's cheapest paid plan, Go, costs $8 a month. Claude's cheapest paid plan, Pro, costs $17 a month billed yearly or $20 monthly, the same as ChatGPT Plus when paid monthly. Their team plans cost the same: $20 per user a month billed yearly, or $25 monthly." },
+    { "q": "Which one includes a coding tool?", "a": "Both. ChatGPT includes Codex, with limited use on the free plan. Claude includes Claude Code from the Pro plan; it isn't part of the free plan." },
+    { "q": "Do ChatGPT or Claude show ads?", "a": "OpenAI has said ads may appear on ChatGPT's Free and Go plans; Plus, Pro, Business and Enterprise stay ad-free. Anthropic has said Claude will remain ad-free." },
+    { "q": "Can I pay yearly?", "a": "ChatGPT's Go, Plus and Pro plans are billed monthly only; Business can be billed yearly. Claude Pro can be billed yearly for $200, and Team can be billed yearly; Max and Ultra are monthly only." }
+  ],
+  "sources": [
+    { "label": "ChatGPT — Plans and pricing", "url": "https://chatgpt.com/pricing/" },
+    { "label": "OpenAI Help — About ChatGPT Pro tiers", "url": "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers" },
+    { "label": "OpenAI — Introducing ChatGPT Go (ads)", "url": "https://openai.com/index/introducing-chatgpt-go/" },
+    { "label": "Claude — Plans & pricing", "url": "https://claude.com/pricing" },
+    { "label": "Claude Help — What is the Max plan?", "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan" },
+    { "label": "Anthropic — Claude is a space to think (ads)", "url": "https://www.anthropic.com/news/claude-is-a-space-to-think" }
+  ]
+}

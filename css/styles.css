@@ -807,20 +807,63 @@ ul, ol { margin: 0; padding: 0; }
 .tp-toc a { display: block; padding: 5px 12px; margin-left: -1px; border-left: 2px solid transparent; font-size: var(--fs-sm); color: var(--ink-3); transition: color var(--t-fast), border-color var(--t-fast); }
 .tp-toc a:hover { color: var(--ink); border-left-color: var(--line-strong); }
 
+/* Comparison pages (/comparisons/<slug>/) reuse the tool-page layout. */
+.cp-hero { grid-template-columns: auto 1fr; }
+.cp-pair .mark { box-shadow: 0 0 0 4px var(--canvas), inset 0 0 0 1px var(--mark-line, rgba(24,24,27,.05)); }
+.cp-pair .vs { width: 30px; height: 30px; margin: 0 -8px; font-size: 11px; }
+.cp-chooser { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); }
+.cp-prices { display: grid; gap: var(--s-8); }
+.cp-choose { display: flex; flex-direction: column; padding: var(--s-5) var(--s-6); border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); }
+.cp-choose h3, .cp-price h3 { display: flex; align-items: center; gap: 10px; font-size: var(--fs-base); font-weight: 600; letter-spacing: -0.015em; }
+.cp-choose ul { list-style: none; display: grid; gap: var(--s-3); margin: var(--s-4) 0 var(--s-5); }
+.cp-choose li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; color: var(--ink-2); font-size: 0.875rem; line-height: 1.6; }
+.cp-choose li .icon { width: 16px; height: 16px; margin-top: 3px; color: var(--accent); }
+.cp-choose .lp-more { margin-top: auto; }
+.cp-table th, .cp-table td { width: 37%; }
+.cp-table tbody th { width: 26%; white-space: normal; color: var(--ink-2); font-weight: 500; }
+.cp-table td:nth-child(2) { white-space: normal; font-weight: 400; color: var(--ink); }
+.cp-table td:last-child { color: var(--ink); }
+.cp-price { min-width: 0; }
+.cp-price .tp-table-wrap { margin-top: var(--s-3); }
+.cp-price .tp-fineprint { margin-top: var(--s-2); }
+.cp-faq { display: grid; gap: var(--s-2); }
+.cp-faq details { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); }
+.cp-faq summary {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s-4);
+  padding: var(--s-4) var(--s-5); cursor: pointer; list-style: none;
+  font-weight: 600; font-size: var(--fs-base); color: var(--ink);
+}
+.cp-faq summary::-webkit-details-marker { display: none; }
+.cp-faq summary .icon { width: 18px; height: 18px; flex: none; color: var(--ink-3); transition: transform var(--t-med) var(--ease); }
+.cp-faq details[open] summary .icon { transform: rotate(180deg); }
+.cp-faq details p { padding: 0 var(--s-5) var(--s-4); color: var(--ink-2); font-size: 0.9375rem; line-height: 1.7; max-width: 68ch; }
+.cp-tools ul { list-style: none; display: grid; gap: var(--s-2); }
+.cp-tools .tp-alt { min-height: 0; }
+.cp-visit { display: grid; gap: var(--s-2); margin-top: var(--s-4); }
+
 @media (max-width: 960px) {
-  .tp-layout { grid-template-columns: 1fr; gap: var(--s-10); }
+  .tp-layout { grid-template-columns: minmax(0, 1fr); gap: var(--s-10); }
   .tp-aside { position: static; grid-row: 1; }
   .tp-toc { display: none; }
   .tp-alts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .tp-hero { grid-template-columns: auto 1fr; }
   .tp-hero-actions { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+  .cp-visit { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
   .tool-page { padding-top: var(--s-4); }
   .tp-hero { grid-template-columns: 1fr; gap: var(--s-4); margin: var(--s-6) 0 var(--s-8); padding-bottom: var(--s-8); }
   .mark--xl { width: 60px; height: 60px; border-radius: 15px; font-size: 1.75rem; }
   .tp-hero-actions .btn { flex: 1 1 100%; }
-  .tp-features, .tp-proscons, .tp-alts, .tp-section .compare-grid { grid-template-columns: 1fr; }
+  .tp-features, .tp-proscons, .tp-alts, .tp-section .compare-grid, .cp-chooser { grid-template-columns: 1fr; }
+  .cp-hero { grid-template-columns: 1fr; }
+  .cp-visit { grid-template-columns: minmax(0, 1fr); }
+  /* At-a-glance table: each row stacks, and every value shows its tool name */
+  .tp-table.cp-table tr { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .tp-table.cp-table th, .tp-table.cp-table td:nth-child(n) { width: auto; text-align: left; white-space: normal; grid-column: auto; margin: 0; }
+  .tp-table.cp-table tbody th { font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+  .tp-table.cp-table td { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: var(--s-3); font-size: 0.875rem; overflow-wrap: anywhere; }
+  .tp-table.cp-table td::before { content: attr(data-label); color: var(--ink-3); font-weight: 500; }
   .tp-section + .tp-section { margin-top: var(--s-10); padding-top: var(--s-10); }
   /* Pricing table: each plan becomes a stacked block instead of squeezed columns */
   .tp-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
