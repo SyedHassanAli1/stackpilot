@@ -1,6 +1,6 @@
 {
   "slug": "ahrefs",
-  "verified": "2026-11-19",
+  "verified": "2026-11-21",
   "seoTitle": "Ahrefs: Features, Pricing & Alternatives",
   "metaDescription": "Ahrefs is an SEO platform for keyword research, backlink analysis, rank tracking, site audits and AI visibility. See its features, Free, Starter, Lite, Standard, Advanced and Enterprise pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -54,7 +54,7 @@
     "Plans above Starter range from $129 to $1,499 a month."
   ],
   "pricing": {
-    "summary": "Free account for verified sites. Starter is billed monthly only; other paid plans can be paid monthly or yearly, with 2 months free on yearly plans.",
+    "summary": "Free account for verified sites. Starter is billed monthly only; for annual billing on other plans, contact Ahrefs support. Ahrefs says it never runs discounts and doesn't list a free trial.",
     "plans": [
       {
         "name": "Free",
@@ -84,7 +84,7 @@
       {
         "name": "Enterprise",
         "price": "$1,499/mo",
-        "note": "From 3 users · unlimited additional users"
+        "note": "Annual commitment · from 3 users · unlimited additional users"
       }
     ],
     "source": "https://ahrefs.com/pricing"

@@ -47,7 +47,7 @@
       about: "Claude is an AI assistant made by Anthropic. It helps with writing, summarising long documents, analysis, research and programming, and is available on the web, desktop and mobile apps and through an API.",
       tags: ["AI assistant", "Writing", "Analysis", "Coding"] },
     { slug: "ahrefs", name: "Ahrefs", category: "Marketing", subcategory: "SEO", pricing: "Freemium", startingPrice: "$29/mo",
-      mark: "A", bg: '#E9EEFC', fg: '#3355BF', url: "https://ahrefs.com/", verified: '2026-11-18',
+      mark: "A", bg: '#E9EEFC', fg: '#3355BF', url: "https://ahrefs.com/", verified: '2026-11-21',
       description: "SEO toolkit for keyword research, backlinks and site audits.",
       about: "Ahrefs is an SEO platform covering backlink analysis, keyword research, competitor research, rank tracking and technical site audits. Ahrefs Free gives verified site owners a limited set of tools; paid plans unlock the full toolset.",
       tags: ["SEO", "Keyword research", "Backlinks", "Site audits"] },
@@ -102,7 +102,7 @@
       about: "ChatGPT is OpenAI’s conversational AI assistant for writing, brainstorming, research, analysis and coding, available on the web and in desktop and mobile apps.",
       tags: ["AI assistant", "Writing", "Brainstorming"] },
     { slug: "semrush", name: "Semrush", category: "Marketing", subcategory: "SEO", pricing: "Freemium", startingPrice: "$117.33/mo (yearly)",
-      mark: "S", bg: '#FFF0EA', fg: '#D4471B', url: "https://www.semrush.com/", verified: '2026-11-19',
+      mark: "S", bg: '#FFF0EA', fg: '#D4471B', url: "https://www.semrush.com/", verified: '2026-11-21',
       description: "Online visibility platform for SEO, content and ads research.",
       about: "Semrush is a marketing platform for SEO, content marketing, competitor research and paid search analysis. A free account gives limited access; full features need a subscription.",
       tags: ["SEO", "Competitor research", "Content marketing", "PPC"] },
@@ -291,6 +291,15 @@
         'Vercel’s free Hobby plan is for personal, non-commercial use; Netlify says its Free plan can be used for commercial projects.',
         'Vercel Pro is $20/mo per seat; Netlify Pro is $20/mo for unlimited members.',
         'Netlify bills everything from one monthly credit balance; Vercel Pro includes a $20 usage credit, then bills on demand.'
+      ] },
+    { slug: 'ahrefs-vs-semrush', a: 'ahrefs', b: 'semrush', category: 'Marketing', title: 'Ahrefs vs Semrush',
+      subtitle: 'SEO and AI search visibility platforms',
+      fitA: 'You own the site and want free audits, a $29 Starter plan, or API and MCP access from Lite.',
+      fitB: 'You want a 7-day free trial, daily AI prompt tracking from Starter, or extra toolkits for ads and local.',
+      differences: [
+        'Ahrefs Free covers only sites you verify; Semrush Free covers any site, with 10 reports a day.',
+        'Semrush has a 7-day free trial; Ahrefs doesn’t list one.',
+        'Ahrefs includes API and MCP from Lite; Semrush has MCP from Starter and API on Advanced.'
       ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',

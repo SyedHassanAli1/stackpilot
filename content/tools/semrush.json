@@ -1,11 +1,11 @@
 {
   "slug": "semrush",
-  "verified": "2026-11-19",
+  "verified": "2026-11-21",
   "seoTitle": "Semrush: Features, Pricing & Alternatives",
-  "metaDescription": "Semrush is an online visibility platform for SEO, AI visibility, content, competitor research and advertising. See its features, Semrush One and SEO Toolkit pricing, strengths, limitations and alternatives.",
+  "metaDescription": "Semrush is an online visibility platform for SEO, AI search visibility, content, competitor research and advertising. See its features, Free, SEO, Starter, Pro+ and Advanced pricing, strengths, limitations and alternatives.",
   "overview": [
     "Semrush is a marketing platform for SEO, content marketing, competitor research and paid search. It covers keyword research, site audits, rank tracking, backlinks and competitor analysis, plus separate toolkits for local SEO, content, traffic analysis and PR.",
-    "Semrush sells its tools as toolkits. Semrush One bundles the SEO Toolkit with the AI Visibility Toolkit, to track your brand in both Google and AI tools like ChatGPT and Gemini, and is the recommended starting point for most teams. The classic SEO Toolkit is still available in Pro, Guru and Business tiers, and a free account gives limited daily access."
+    "Semrush's main plans combine SEO with AI search visibility. The SEO plan covers keyword research, competitor analysis, Position Tracking and Site Audit; Starter, Pro+ and Advanced add more websites and keywords plus daily tracking of AI prompts in tools such as ChatGPT, Perplexity and Gemini. A free plan gives limited daily access, paid plans have a 7-day free trial, and other toolkits, such as Local, Content and Traffic & Market, are sold separately."
   ],
   "features": [
     {
@@ -25,12 +25,12 @@
       "text": "See competitors' organic rankings, traffic and backlinks."
     },
     {
-      "title": "AI Visibility Toolkit",
-      "text": "Track how your brand appears in AI tools like ChatGPT and Gemini."
+      "title": "AI search visibility",
+      "text": "Track how your brand appears in AI tools like ChatGPT, Perplexity and Gemini, with daily prompt tracking from Starter."
     },
     {
       "title": "Content tools",
-      "text": "SEO Writing Assistant and Topic Research on Guru and higher."
+      "text": "Content optimization tools on Pro+ and higher, plus keyword optimization tools from Starter."
     }
   ],
   "useCases": [
@@ -41,53 +41,53 @@
     "Agencies managing multiple client sites"
   ],
   "strengths": [
-    "Covers SEO, content, competitor research and ads in one platform.",
-    "Tracks visibility in both Google and AI tools.",
-    "A free account with limited daily searches.",
-    "Yearly billing lowers the monthly cost."
+    "Covers SEO, AI search visibility, content, competitor research and ads in one platform.",
+    "A free plan with one demo project and 10 reports a day.",
+    "A 7-day free trial on the SEO, Starter and Pro+ plans.",
+    "Yearly billing saves up to 17%."
   ],
   "limitations": [
-    "The free account is limited to 10 requests a day.",
-    "SEO Toolkit plans start at $139.95/mo, billed monthly.",
-    "Many tools are separate toolkits with their own prices.",
-    "Historical data and content tools need Guru or higher.",
-    "Extra users cost $45 to $100 each per month, depending on the tier."
+    "The free plan is limited to one demo project and 10 reports a day.",
+    "Paid plans start at $139/mo billed monthly, or $117.33/mo billed yearly.",
+    "Daily AI prompt tracking starts with Starter at $199/mo.",
+    "Historical data and content optimization need Pro+ or higher.",
+    "Advanced is priced through sales, and extra users cost from $45/mo each."
   ],
   "pricing": {
-    "summary": "Free account available. Prices below are billed monthly; yearly billing is cheaper (for example, SEO Toolkit Pro is $117.33/mo yearly). Other toolkits, such as Local, Content and Traffic & Market, are priced separately.",
+    "summary": "Free plan available, with no credit card needed. Prices below are billed monthly; yearly billing saves up to 17%. SEO, Starter and Pro+ have a 7-day free trial. Extra users cost from $45/mo each, and other toolkits, such as Local, Content and Traffic & Market, are priced separately.",
     "plans": [
       {
         "name": "Free",
         "price": "$0",
-        "note": "Limited access · 10 requests a day"
+        "note": "1 demo project · 10 reports a day · limited AI visibility features"
       },
       {
-        "name": "Semrush One",
-        "price": "From $199.95/mo",
-        "note": "SEO Toolkit + AI Visibility Toolkit · recommended for most teams"
+        "name": "SEO",
+        "price": "$139/mo",
+        "note": "Or $117.33/mo billed yearly · 5 websites · 500 keywords tracked daily · Site Audit · AI search tracking"
       },
       {
-        "name": "SEO Toolkit Pro",
-        "price": "$139.95/mo",
-        "note": "5 websites · 500 tracked keywords · 100,000 pages crawled/mo"
+        "name": "Starter",
+        "price": "$199/mo",
+        "note": "Or $165.17/mo billed yearly · SEO plus 50 AI prompts tracked daily · MCP access"
       },
       {
-        "name": "SEO Toolkit Guru",
-        "price": "$249.95/mo",
-        "note": "15 websites · 1,500 keywords · historical data · content tools"
+        "name": "Pro+",
+        "price": "$299/mo",
+        "note": "Or $248.17/mo billed yearly · 15 websites · 1,500 keywords · 100 prompts · historical data · content optimization"
       },
       {
-        "name": "SEO Toolkit Business",
-        "price": "$499.95/mo",
-        "note": "40 websites · 5,000 keywords · for agencies and large businesses"
+        "name": "Advanced",
+        "price": "Custom",
+        "note": "Talk to sales · 40+ websites · 5,000+ keywords · unlimited prompts · API · team users"
       },
       {
         "name": "Enterprise",
         "price": "Custom",
-        "note": "For larger organizations"
+        "note": "Unlimited projects · custom integrations and API · SSO · audit logs · enterprise SLA"
       }
     ],
-    "source": "https://www.semrush.com/kb/1547-seo-toolkit-pricing-limits"
+    "source": "https://www.semrush.com/pricing/seo-ai-search/"
   },
   "platforms": [
     "Web browser"
@@ -98,20 +98,20 @@
   ],
   "sources": [
     {
-      "label": "Semrush KB — SEO Toolkit pricing and limits",
-      "url": "https://www.semrush.com/kb/1547-seo-toolkit-pricing-limits"
+      "label": "Semrush — SEO & AI Search plans and pricing",
+      "url": "https://www.semrush.com/pricing/seo-ai-search/"
     },
     {
-      "label": "Semrush KB — Semrush One vs SEO Toolkit",
-      "url": "https://www.semrush.com/kb/1624-semrush-one-vs-seo-toolkit"
-    },
-    {
-      "label": "Semrush — Your questions answered",
-      "url": "https://www.semrush.com/semrush-questions/"
+      "label": "Semrush KB — What is Semrush One?",
+      "url": "https://www.semrush.com/kb/1608-semrush-one"
     },
     {
       "label": "Semrush KB — User management",
       "url": "https://www.semrush.com/kb/1409-user-management"
+    },
+    {
+      "label": "Semrush — Your questions answered",
+      "url": "https://www.semrush.com/semrush-questions/"
     },
     {
       "label": "Semrush Blog — Competitor keyword analysis tools",

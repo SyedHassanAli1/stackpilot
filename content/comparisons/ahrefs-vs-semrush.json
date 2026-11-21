@@ -1,0 +1,65 @@
+{
+  "slug": "ahrefs-vs-semrush",
+  "verified": "2026-11-21",
+  "seoTitle": "Ahrefs vs Semrush: Features, Pricing & Differences",
+  "metaDescription": "Ahrefs vs Semrush compared side by side: free plans, entry prices from $29 and $139 a month, free trials, extra users, API and MCP access, historical data and AI search tracking, checked against official sources.",
+  "intro": [
+    "Ahrefs and Semrush are two of the most widely used SEO platforms. Both cover keyword research, competitor research, backlink analysis, rank tracking and technical site audits, and both now track how brands appear in AI search tools such as ChatGPT and Google's AI Overviews.",
+    "They differ in how the plans are structured and what each price unlocks: entry prices, free trials, extra users, API access and how much history you can see. This page sets them side by side using each company's own pricing pages."
+  ],
+  "chooseA": [
+    "You own the site and want free site audits and backlink data: Ahrefs Free covers sites you verify.",
+    "You want a low-cost way in: Starter is $29 a month.",
+    "You want API and MCP access on every main paid plan, from Lite at $129 a month.",
+    "You want long history: Standard keeps 2 years and Advanced 5 years."
+  ],
+  "chooseB": [
+    "You want to try the full product first: SEO, Starter and Pro+ have a 7-day free trial.",
+    "You want to research any site for free, within 10 reports a day.",
+    "You want daily AI prompt tracking bundled with SEO, from Starter at $199 a month.",
+    "You also need ads, local, content or traffic research, sold as separate toolkits."
+  ],
+  "glance": [
+    { "label": "Free plan", "a": "Ahrefs Free · sites you verify you own", "b": "Free · 1 demo project, 10 reports a day" },
+    { "label": "Free trial", "a": "No", "b": "7 days on SEO, Starter and Pro+" },
+    { "label": "Lowest paid plan", "a": "Starter · $29/mo, monthly only", "b": "SEO · $139/mo, or $117.33/mo billed yearly" },
+    { "label": "Main plans", "a": "Lite $129 · Standard $249 · Advanced $449 a month", "b": "SEO $139 · Starter $199 · Pro+ $299 a month · Advanced via sales" },
+    { "label": "Yearly billing", "a": "By contacting support; Ahrefs says it never runs discounts", "b": "Saves up to 17%" },
+    { "label": "Extra users", "a": "$40–$100/mo each, depending on plan", "b": "From $45/mo each" },
+    { "label": "API and MCP", "a": "API and MCP from Lite", "b": "MCP from Starter · API on Advanced" },
+    { "label": "Historical data", "a": "6 months on Lite, up to 5 years on Advanced", "b": "From Pro+" },
+    { "label": "AI search tracking", "a": "Brand Radar and AI prompt checks on paid plans", "b": "AI visibility on every plan · daily prompt tracking from Starter" },
+    { "label": "Other toolkits", "a": "Add-ons such as Content Kit", "b": "Local, Content, Traffic & Market and Advertising, priced separately" },
+    { "label": "Enterprise", "a": "$1,499/mo, annual commitment, from 3 users", "b": "Custom pricing" }
+  ],
+  "differences": [
+    { "title": "Free access", "text": "Ahrefs Free gives site audits, backlinks and basic rankings for websites you verify you own. Semrush's free plan lets you research any site, but only one demo project and 10 reports a day." },
+    { "title": "Trials", "text": "Semrush offers a 7-day free trial on its SEO, Starter and Pro+ plans. Ahrefs doesn't list a free trial and says it never runs discounts; website owners can use Ahrefs Free instead." },
+    { "title": "Entry price", "text": "Ahrefs Starter costs $29 a month but is limited to 200 credits and one month of history. Its main plans start with Lite at $129. Semrush's paid plans start with SEO at $139 a month, or $117.33 billed yearly." },
+    { "title": "API and MCP", "text": "Ahrefs includes API and MCP access on Lite, Standard and Advanced. Semrush includes MCP access from Starter, and lists API data integration on Advanced, which is priced through sales." },
+    { "title": "History and limits", "text": "Ahrefs ties history to the plan: 6 months on Lite, 2 years on Standard and 5 years on Advanced. Semrush includes historical data from Pro+." },
+    { "title": "AI search", "text": "Both track AI search. Ahrefs includes Brand Radar and a monthly allowance of AI prompt checks on paid plans. Semrush includes AI visibility features on every plan and tracks custom prompts daily from Starter (50 a day) and Pro+ (100 a day)." },
+    { "title": "Product scope", "text": "Semrush sells other marketing toolkits alongside SEO, such as Local, Content, Traffic & Market and Advertising, each priced separately. Ahrefs focuses on SEO and search visibility, with paid add-ons for extra features." }
+  ],
+  "similarities": [
+    "Keyword research and competitor analysis",
+    "Backlink analysis, rank tracking and site audits",
+    "Tracking of brand visibility in AI search tools",
+    "A free plan with limited access",
+    "Extra users sold as paid add-ons",
+    "Custom Enterprise plans with SSO"
+  ],
+  "faq": [
+    { "q": "Which is cheaper, Ahrefs or Semrush?", "a": "Ahrefs has the lowest entry price: Starter is $29 a month, though it's limited to 200 credits and one month of history. Among the main plans, Ahrefs Lite is $129 a month and Semrush SEO is $139 a month, or $117.33 a month billed yearly." },
+    { "q": "Do Ahrefs or Semrush have a free trial?", "a": "Semrush has a 7-day free trial on its SEO, Starter and Pro+ plans. Ahrefs doesn't offer a free trial, but site owners can use Ahrefs Free for their own verified websites." },
+    { "q": "Can I use either one for free?", "a": "Yes, with limits. Ahrefs Free works for websites you verify you own. Semrush's free plan works for any site but allows one demo project and 10 reports a day." },
+    { "q": "Which one includes API access?", "a": "Ahrefs includes API and MCP access from the Lite plan. Semrush includes MCP access from Starter and API data integration on Advanced, which you buy through sales." }
+  ],
+  "sources": [
+    { "label": "Ahrefs — Plans & pricing", "url": "https://ahrefs.com/pricing" },
+    { "label": "Ahrefs Help — About the Starter plan", "url": "https://help.ahrefs.com/en/articles/9419051-about-ahrefs-starter-plan" },
+    { "label": "Semrush — SEO & AI Search plans and pricing", "url": "https://www.semrush.com/pricing/seo-ai-search/" },
+    { "label": "Semrush KB — User management", "url": "https://www.semrush.com/kb/1409-user-management" },
+    { "label": "Semrush KB — What is Semrush One?", "url": "https://www.semrush.com/kb/1608-semrush-one" }
+  ]
+}
