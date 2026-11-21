@@ -71,8 +71,8 @@
       description: "Issue tracking and product planning for software teams.",
       about: "Linear is an issue tracker and project planning tool for product and engineering teams, with cycles, roadmaps, keyboard-first navigation and integrations with GitHub and Slack.",
       tags: ["Issue tracking", "Roadmaps", "Product planning"] },
-    { slug: "make", name: "Make", category: "Productivity", subcategory: "Workflow Automation", pricing: "Freemium", startingPrice: "$9/mo",
-      mark: "M", bg: '#F0EAFF', fg: '#7C3AED', url: "https://www.make.com/", verified: '2026-11-18',
+    { slug: "make", name: "Make", category: "Productivity", subcategory: "Workflow Automation", pricing: "Freemium", startingPrice: "$9/mo (yearly)",
+      mark: "M", bg: '#F0EAFF', fg: '#7C3AED', url: "https://www.make.com/", verified: '2026-11-21',
       description: "Visual automation for apps and workflows.",
       about: "Make (formerly Integromat) is a visual automation platform. You connect apps and build multi-step workflows on a drag-and-drop canvas, with routing, filters, data transformation and AI agents.",
       tags: ["Automation", "Integrations", "No-code"] },
@@ -309,6 +309,15 @@
         'Kit’s free plan covers up to 10,000 subscribers; Mailchimp’s covers 250 contacts and 500 sends a month.',
         'Mailchimp Essentials starts at $13/mo; Kit Creator starts at $39/mo, or $33/mo billed yearly.',
         'Kit charges by subscribers; Mailchimp plans also include a monthly send limit.'
+      ] },
+    { slug: 'zapier-vs-make', a: 'zapier', b: 'make', category: 'Productivity', title: 'Zapier vs Make',
+      subtitle: 'No-code workflow automation',
+      fitA: 'You want 9,000+ app integrations, free logic steps, and Tables, Forms and Copilot in one account.',
+      fitB: 'You want a $9/mo plan (billed yearly) for 10,000 credits and complex workflows on a visual canvas.',
+      differences: [
+        'Zapier charges for completed tasks; Make charges credits, usually one per module action.',
+        'Zapier Professional starts at $19.99/mo for 750 tasks; Make Core at $9/mo for 10,000 credits (both billed yearly).',
+        'Zapier’s free plan has 100 tasks a month; Make’s has 1,000 credits a month.'
       ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',

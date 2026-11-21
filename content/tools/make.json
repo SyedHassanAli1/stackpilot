@@ -1,6 +1,6 @@
 {
   "slug": "make",
-  "verified": "2026-11-19",
+  "verified": "2026-11-21",
   "seoTitle": "Make: Features, Pricing & Alternatives",
   "metaDescription": "Make is a visual automation platform for connecting apps and building multi-step workflows and AI agents. See its features, credit-based Free, Core, Pro, Teams and Enterprise pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -44,7 +44,7 @@
     "A visual builder that makes complex, multi-step workflows easier to follow.",
     "More than 3,000 app integrations.",
     "A free plan with 1,000 credits a month and no time limit.",
-    "Paid plans start low for 10,000 credits a month."
+    "Paid plans start at $9/mo billed yearly for 10,000 credits a month."
   ],
   "limitations": [
     "Credits can run out faster when scenarios use AI tools or process lots of data.",
@@ -54,7 +54,7 @@
     "Credit-based pricing needs monitoring at higher volumes."
   ],
   "pricing": {
-    "summary": "Free plan available. Paid plans are priced by monthly credit volume. Make's pricing page lists Core from $9/mo; Make's recent articles list the monthly-billing prices below, for 10,000 credits a month. Paying yearly in advance is cheaper.",
+    "summary": "Free plan available. Paid plans are priced by monthly credit volume; prices below are for 10,000 credits a month, billed monthly. Paying yearly is cheaper: Core is $9/mo billed yearly. Extra credits can be bought when you run out.",
     "plans": [
       {
         "name": "Free",
@@ -64,7 +64,7 @@
       {
         "name": "Core",
         "price": "$12/mo",
-        "note": "10,000 credits · unlimited active scenarios · minute scheduling · Make API"
+        "note": "Or $9/mo billed yearly · 10,000 credits · unlimited active scenarios · minute scheduling · Make API"
       },
       {
         "name": "Pro",
@@ -96,12 +96,12 @@
       "url": "https://www.make.com/en/pricing"
     },
     {
-      "label": "Make Blog — Best AI agent platforms of 2026 (plan prices)",
-      "url": "https://www.make.com/blog/best-ai-agent-platforms"
+      "label": "Make Blog — Make vs Zapier (Core price on annual billing)",
+      "url": "https://www.make.com/blog/make-vs-zapier"
     },
     {
-      "label": "Make Blog — Best marketing automation tools 2026",
-      "url": "https://www.make.com/blog/best-marketing-automation-tools"
+      "label": "Make Blog — Best AI agent platforms of 2026 (plan prices)",
+      "url": "https://www.make.com/blog/best-ai-agent-platforms"
     },
     {
       "label": "Make — Make vs n8n",
