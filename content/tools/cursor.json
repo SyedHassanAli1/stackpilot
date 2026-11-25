@@ -1,6 +1,6 @@
 {
   "slug": "cursor",
-  "verified": "2026-11-19",
+  "verified": "2026-11-26",
   "seoTitle": "Cursor: Features, Pricing & Alternatives",
   "metaDescription": "Cursor is an AI coding agent and code editor for macOS, Windows and Linux, now sold through The X Subscription. See its features, Free, Plus, Premium, Super, Ultra and Teams pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -8,12 +8,30 @@
     "Since 2026 Cursor has been owned by SpaceX, and new customers buy it through The X Subscription, a single subscription that covers Grok, Cursor and X. Plans include Cursor's own models, such as Grok and Composer; higher plans add Cloud Agents, Bugbot code review and third-party models from other providers. Existing customers can stay on their legacy Cursor plans."
   ],
   "features": [
-    { "title": "Agent and Chat", "text": "Ask an AI agent to plan, write and edit code across your project, or chat about your codebase." },
-    { "title": "Tab completions", "text": "AI autocomplete that predicts your next edit as you type, on every plan including Free." },
-    { "title": "Cloud Agents and Automations", "text": "Run agents in the cloud and automate recurring tasks, from the Premium plan." },
-    { "title": "Bugbot code review", "text": "AI code review on GitHub pull requests, included from the Premium plan." },
-    { "title": "Cursor CLI", "text": "Run agents from any terminal or script on macOS, Linux and Windows." },
-    { "title": "Model choice", "text": "Cursor models such as Grok and Composer, plus third-party models at API list price on Premium and up." }
+    {
+      "title": "Agent and Chat",
+      "text": "Ask an AI agent to plan, write and edit code across your project, or chat about your codebase."
+    },
+    {
+      "title": "Tab completions",
+      "text": "AI autocomplete that predicts your next edit as you type, on every plan including Free."
+    },
+    {
+      "title": "Cloud Agents and Automations",
+      "text": "Run agents in the cloud and automate recurring tasks, from the Premium plan."
+    },
+    {
+      "title": "Bugbot code review",
+      "text": "AI code review on GitHub pull requests, included from the Premium plan."
+    },
+    {
+      "title": "Cursor CLI",
+      "text": "Run agents from any terminal or script on macOS, Linux and Windows."
+    },
+    {
+      "title": "Model choice",
+      "text": "Cursor models such as Grok and Composer, plus third-party models at API list price on Premium and up."
+    }
   ],
   "useCases": [
     "Writing and refactoring code with an AI agent",
@@ -38,23 +56,74 @@
   "pricing": {
     "summary": "Free plan available. Plans are sold through The X Subscription, which also covers Grok and X. Prices exclude tax. Existing customers can keep legacy Cursor plans such as Pro ($20/mo).",
     "plans": [
-      { "name": "Free", "price": "$0", "note": "Agent, Chat and Tab with Cursor models · limited usage" },
-      { "name": "Plus", "price": "$8/mo", "note": "Or $80/year · weekly usage pool for Cursor models · no Cloud Agents or third-party models" },
-      { "name": "Premium", "price": "$30/mo", "note": "Or $300/year · 4x Plus usage · Cloud Agents · Bugbot · third-party models" },
-      { "name": "Super", "price": "$100/mo", "note": "Or $1,000/year · 15x Plus usage · priority model access at peak times" },
-      { "name": "Ultra", "price": "$200/mo", "note": "Or $2,000/year · 50x Plus usage · earliest access to new products and models" },
-      { "name": "Teams & Enterprise", "price": "From $30/seat/mo", "note": "Teams seats at $30, $100 or $200 · Enterprise: SCIM, audit logs, invoicing" }
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Agent, Chat and Tab with Cursor models · limited usage"
+      },
+      {
+        "name": "Plus",
+        "price": "$8/mo",
+        "note": "Or $80/year · weekly usage pool for Cursor models · no Cloud Agents or third-party models"
+      },
+      {
+        "name": "Premium",
+        "price": "$30/mo",
+        "note": "Or $300/year · 4x Plus usage · Cloud Agents · Bugbot · third-party models"
+      },
+      {
+        "name": "Super",
+        "price": "$100/mo",
+        "note": "Or $1,000/year · 15x Plus usage · priority model access at peak times"
+      },
+      {
+        "name": "Ultra",
+        "price": "$200/mo",
+        "note": "Or $2,000/year · 50x Plus usage · earliest access to new products and models"
+      },
+      {
+        "name": "Teams & Enterprise",
+        "price": "From $30/seat/mo",
+        "note": "Teams seats at $30, $100 or $200 · Enterprise: SCIM, audit logs, invoicing"
+      }
     ],
     "source": "https://cursor.com/help/account-and-billing/pricing"
   },
-  "platforms": ["macOS", "Windows", "Linux", "Command line"],
-  "alternatives": ["github-copilot", "vscode", "claude"],
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux",
+    "Command line"
+  ],
+  "alternatives": [
+    "github-copilot",
+    "vscode",
+    "claude"
+  ],
   "sources": [
-    { "label": "Cursor Help — Pricing and plans", "url": "https://cursor.com/help/account-and-billing/pricing" },
-    { "label": "Cursor Docs — Models & Pricing", "url": "https://cursor.com/docs/models-and-pricing" },
-    { "label": "Cursor Docs — Legacy Cursor plans", "url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans" },
-    { "label": "Cursor Docs — Team pricing", "url": "https://cursor.com/docs/account/teams/pricing" },
-    { "label": "Cursor — Download", "url": "https://cursor.com/download" },
-    { "label": "Cursor Docs — CLI", "url": "https://cursor.com/docs/cli/overview" }
+    {
+      "label": "Cursor Help — Pricing and plans",
+      "url": "https://cursor.com/help/account-and-billing/pricing"
+    },
+    {
+      "label": "Cursor Docs — Models & Pricing",
+      "url": "https://cursor.com/docs/models-and-pricing"
+    },
+    {
+      "label": "Cursor Docs — Legacy Cursor plans",
+      "url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans"
+    },
+    {
+      "label": "Cursor Docs — Team pricing",
+      "url": "https://cursor.com/docs/account/teams/pricing"
+    },
+    {
+      "label": "Cursor — Download",
+      "url": "https://cursor.com/download"
+    },
+    {
+      "label": "Cursor Docs — CLI",
+      "url": "https://cursor.com/docs/cli/overview"
+    }
   ]
 }

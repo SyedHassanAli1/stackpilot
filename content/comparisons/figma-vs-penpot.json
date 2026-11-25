@@ -1,0 +1,164 @@
+{
+  "slug": "figma-vs-penpot",
+  "verified": "2026-11-26",
+  "seoTitle": "Figma vs Penpot: Features, Pricing & Differences",
+  "metaDescription": "Figma vs Penpot compared side by side: free plans, per-seat vs capped pricing, open source and self-hosting, Dev Mode vs Inspect, desktop apps and AI features, checked against official sources.",
+  "intro": [
+    "Figma and Penpot are browser-based design tools for interfaces, prototypes and design systems. In both, several people can work in the same file at once, build reusable components and shared libraries, and link screens into interactive prototypes.",
+    "They're built and sold very differently. Figma is a cloud service priced per seat, with one seat covering design, whiteboards, slides, AI prototyping and developer handoff. Penpot is open source: you can use its cloud, with a free plan and capped paid pricing, or run it on your own servers for free. This page sets the details side by side using each company's own pricing pages and help docs."
+  ],
+  "chooseA": [
+    "You want desktop apps for Mac and Windows as well as the browser.",
+    "You want one seat to cover design, FigJam whiteboards, Slides, Figma Make and Dev Mode.",
+    "You want a monthly allowance of AI credits with every seat.",
+    "You want to publish websites from your designs with Figma Sites, included on paid plans."
+  ],
+  "chooseB": [
+    "You want open source and the option to self-host, even in air-gapped environments.",
+    "You need more than 3 shared files on a free plan: Penpot's has no file limit within 10 GB.",
+    "You want developers to inspect SVG, CSS and HTML on every plan, including Free.",
+    "You have a large team and want paid cloud pricing capped at $175 a month."
+  ],
+  "glance": [
+    {
+      "label": "Licence",
+      "a": "Proprietary cloud service",
+      "b": "Open source (MPL 2.0)"
+    },
+    {
+      "label": "Free plan",
+      "a": "Starter · unlimited drafts, 3 team design files",
+      "b": "Professional · up to 8 members, 10 GB, no file limit"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Professional · $16/mo per Full seat yearly, $20 monthly",
+      "b": "Unlimited · $7/editor/mo, capped at $175/mo"
+    },
+    {
+      "label": "Other seat types",
+      "a": "Dev $12/mo · Collab $3/mo · View free",
+      "b": "Viewers free on every plan"
+    },
+    {
+      "label": "Self-hosting",
+      "a": "Not available",
+      "b": "Free, unlimited users · you run the server"
+    },
+    {
+      "label": "Developer handoff",
+      "a": "Dev Mode · paid plans only",
+      "b": "Inspect tab with SVG, CSS and HTML · every plan"
+    },
+    {
+      "label": "Layout",
+      "a": "Auto layout",
+      "b": "CSS Flex and Grid"
+    },
+    {
+      "label": "AI",
+      "a": "AI credits on every seat · Figma Make",
+      "b": "Free, open MCP server for AI agents"
+    },
+    {
+      "label": "Apps",
+      "a": "Web, macOS, Windows",
+      "b": "Web only · self-hosted with Docker"
+    },
+    {
+      "label": "Enterprise",
+      "a": "$90/mo per Full seat, billed yearly",
+      "b": "$25/member/mo · cloud or self-hosted"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Open source and hosting",
+      "text": "Penpot is open source and can run in its cloud or on your own servers, including air-gapped environments. Self-hosting is free for unlimited users, with community support. Figma is cloud-only, and files are stored by Figma."
+    },
+    {
+      "title": "Free plan",
+      "text": "Figma Starter gives unlimited drafts, but its team space is limited to 3 design files and 3 FigJam files, with 3 pages per file. Penpot's free cloud plan has no file limit within 10 GB of storage, and allows up to 8 team members plus unlimited viewers."
+    },
+    {
+      "title": "Paid pricing",
+      "text": "Figma Professional charges per seat: $16 a month per Full seat billed yearly ($20 monthly), $12 per Dev seat and $3 per Collab seat. Penpot Unlimited is $7 per editor a month, and the bill is capped at $175 a month whatever the team size."
+    },
+    {
+      "title": "Developer handoff",
+      "text": "Figma's Dev Mode lets developers inspect designs, compare changes and connect tools like Jira and GitHub, but it isn't on the free plan. Penpot's Inspect tab gives SVG, CSS and HTML for any element on every plan."
+    },
+    {
+      "title": "Beyond design",
+      "text": "A Figma Full seat also covers FigJam whiteboards, Figma Slides, Figma Make for AI prototypes and Figma Draw, with Figma Sites and Buzz in beta. Penpot focuses on design and prototyping, with built-in design tokens and layouts that follow CSS Flex and Grid."
+    },
+    {
+      "title": "AI",
+      "text": "Every Figma seat includes a monthly allowance of AI credits, with the most on Full seats. Penpot offers a free, open MCP server that lets AI agents read and edit Penpot files."
+    },
+    {
+      "title": "Apps",
+      "text": "Figma runs in the browser and has desktop apps for macOS and Windows. Penpot runs in the browser only, with no official desktop app."
+    }
+  ],
+  "similarities": [
+    "Browser-based design with real-time collaboration",
+    "Interactive prototyping",
+    "Reusable components and shared libraries",
+    "Free plans with unlimited viewers",
+    "Tools for developer handoff",
+    "Enterprise plans for larger organisations"
+  ],
+  "faq": [
+    {
+      "q": "Is Penpot free?",
+      "a": "Yes. Penpot's cloud has a free plan for up to 8 team members with 10 GB of storage, and self-hosting the open-source version is free for unlimited users. Paid cloud plans start at $7 per editor a month, capped at $175 a month."
+    },
+    {
+      "q": "Which is cheaper for a team?",
+      "a": "It depends on team size. Figma Professional costs $16 a month per Full seat billed yearly, plus $12 per Dev seat and $3 per Collab seat, so the cost grows with each person. Penpot Unlimited costs $7 per editor a month but never more than $175 a month in total."
+    },
+    {
+      "q": "Can I self-host Figma or Penpot?",
+      "a": "Only Penpot. It can run on your own Linux server with Docker, for free, or with Enterprise support. Figma is a cloud service with no self-hosted option."
+    },
+    {
+      "q": "Do developers need a paid seat to inspect designs?",
+      "a": "In Figma, Dev Mode needs a paid plan, and developers usually use a Dev seat ($12 a month on Professional, billed yearly). In Penpot, the Inspect tab with SVG, CSS and HTML is available on every plan, including Free."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Figma — Plans & pricing",
+      "url": "https://www.figma.com/pricing/"
+    },
+    {
+      "label": "Figma Help — Starter plan overview",
+      "url": "https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview"
+    },
+    {
+      "label": "Figma Help — Professional plan overview",
+      "url": "https://help.figma.com/hc/en-us/articles/13839214115607-Professional-plan-overview"
+    },
+    {
+      "label": "Figma Forum — Full seat $16 yearly vs $20 monthly",
+      "url": "https://forum.figma.com/report-a-problem-6/full-seat-offers-at-16-but-i-am-being-charged-20-57530"
+    },
+    {
+      "label": "Penpot — Pricing (cloud)",
+      "url": "https://penpot.app/pricing"
+    },
+    {
+      "label": "Penpot — Pricing (self-host)",
+      "url": "https://penpot.app/pricing/self-host"
+    },
+    {
+      "label": "Penpot Community — Penpot's pricing (MPL 2.0 licence)",
+      "url": "https://community.penpot.app/t/penpots-pricing-all-you-need-to-know/8131"
+    },
+    {
+      "label": "Penpot — Code and inspect mode",
+      "url": "https://penpot.app/code"
+    }
+  ]
+}

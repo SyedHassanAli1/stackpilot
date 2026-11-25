@@ -21,23 +21,23 @@
   ];
 
   const TOOLS = [
-    { slug: "figma", name: "Figma", category: "Design", subcategory: "UI/UX Design", pricing: "Freemium", startingPrice: "$16/mo per editor",
-      mark: "F", bg: '#F2F0FF', fg: '#4F46E5', url: "https://www.figma.com/", verified: '2026-11-18',
+    { slug: "figma", name: "Figma", category: "Design", subcategory: "UI/UX Design", pricing: "Freemium", startingPrice: "$16/mo per editor (yearly)",
+      mark: "F", bg: '#F2F0FF', fg: '#4F46E5', url: "https://www.figma.com/", verified: '2026-11-26',
       description: "Collaborative interface design and prototyping in the browser.",
       about: "Figma is a browser-based design tool for interfaces, with real-time multiplayer editing, interactive prototyping, shared component libraries and Dev Mode for developer handoff. Desktop apps are also available.",
       tags: ["UI design", "Prototyping", "Design systems", "Collaboration"] },
     { slug: "framer", name: "Framer", category: "Design", subcategory: "Website Builders", pricing: "Freemium", startingPrice: "$10/mo (yearly)",
-      mark: "F", bg: '#EDF2FC', fg: '#374C9B', url: "https://www.framer.com/", verified: '2026-11-19',
+      mark: "F", bg: '#EDF2FC', fg: '#374C9B', url: "https://www.framer.com/", verified: '2026-11-26',
       description: "Design and publish interactive, responsive websites.",
       about: "Framer is a website builder with a design-tool canvas. You lay out pages visually, add animations and a built-in CMS, and publish to Framer hosting without writing code.",
       tags: ["Websites", "No-code", "Animation", "Hosting"] },
     { slug: "cursor", name: "Cursor", category: "Development", subcategory: "AI Coding Assistants", pricing: "Freemium", startingPrice: "$8/mo",
-      mark: "⌘", bg: '#F4F4F5', fg: '#18181B', url: "https://cursor.com/", verified: '2026-11-18',
+      mark: "⌘", bg: '#F4F4F5', fg: '#18181B', url: "https://cursor.com/", verified: '2026-11-26',
       description: "AI-first code editor for writing, editing and understanding code.",
       about: "Cursor is a code editor built on the VS Code codebase, with AI chat, autocomplete and agents that can read and edit across a project. Since 2026 it has been owned by SpaceX and is sold through The X Subscription alongside Grok. A free plan is available.",
       tags: ["Code editor", "AI coding", "Refactoring"] },
     { slug: "notion", name: "Notion", category: "Productivity", subcategory: "Docs & Knowledge", pricing: "Freemium", startingPrice: "$10/seat/mo (yearly)",
-      mark: "N", bg: '#FFFFFF', fg: '#18181B', line: '#E4E4E7', url: "https://www.notion.so/", verified: '2026-11-19',
+      mark: "N", bg: '#FFFFFF', fg: '#18181B', line: '#E4E4E7', url: "https://www.notion.so/", verified: '2026-11-26',
       description: "Connected workspace for docs, wikis, projects and notes.",
       about: "Notion combines documents, wikis and flexible databases in one workspace, so teams can write, plan projects and organise knowledge in the same place, with real-time collaboration and built-in AI features.",
       tags: ["Docs", "Wikis", "Databases", "Project planning"] },
@@ -57,7 +57,7 @@
       about: "Penpot is an open-source design and prototyping tool that runs in the browser and can be self-hosted. It is built on open standards such as SVG, and its layouts map to CSS Flexbox and Grid. Its cloud version has a free tier.",
       tags: ["Open source", "UI design", "Self-hosting", "Prototyping"] },
     { slug: "webflow", name: "Webflow", category: "Design", subcategory: "Website Builders", pricing: "Freemium", startingPrice: "$15/mo (yearly)",
-      mark: "W", bg: '#EAF4FF', fg: '#1A68DC', url: "https://webflow.com/", verified: '2026-11-19',
+      mark: "W", bg: '#EAF4FF', fg: '#1A68DC', url: "https://webflow.com/", verified: '2026-11-26',
       description: "Visual website development with CMS and hosting.",
       about: "Webflow is a visual web development platform. It gives precise control over HTML and CSS layout through a visual interface, with a built-in CMS, interactions and managed hosting.",
       tags: ["Websites", "CMS", "Visual development", "Hosting"] },
@@ -82,12 +82,12 @@
       about: "Perplexity is an AI answer engine. It searches the web, writes an answer and cites the sources it used, and supports follow-up questions for research.",
       tags: ["Search", "Research", "Citations"] },
     { slug: "github-copilot", name: "GitHub Copilot", category: "Development", subcategory: "AI Coding Assistants", pricing: "Freemium", startingPrice: "$10/mo",
-      mark: "GC", bg: '#F4F4F5', fg: '#24292F', url: "https://github.com/features/copilot", verified: '2026-11-18',
+      mark: "GC", bg: '#F4F4F5', fg: '#24292F', url: "https://github.com/features/copilot", verified: '2026-11-26',
       description: "AI pair programmer that works inside your existing editor.",
       about: "GitHub Copilot is an AI coding assistant from GitHub. It runs as an extension in VS Code, Visual Studio, JetBrains IDEs and other editors, offering completions, chat and agent features tied into GitHub.",
       tags: ["AI coding", "IDE extension", "Code completion"] },
     { slug: "obsidian", name: "Obsidian", category: "Productivity", subcategory: "Notes & Knowledge", pricing: "Free", startingPrice: null,
-      mark: "O", bg: '#F3EEFF', fg: '#6D3FD6', url: "https://obsidian.md/", verified: '2026-11-18',
+      mark: "O", bg: '#F3EEFF', fg: '#6D3FD6', url: "https://obsidian.md/", verified: '2026-11-26',
       description: "Private, local-first notes in plain Markdown files.",
       about: "Obsidian is a note-taking app that stores notes as plain Markdown files on your own device. It offers linked notes, a graph view and a large community plugin ecosystem. The app is free for all uses, including work; Sync and Publish are optional paid add-ons.",
       tags: ["Notes", "Markdown", "Local-first", "Knowledge base"] },
@@ -321,39 +321,39 @@
       ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',
-      fitA: 'Your team wants the most widely adopted tool, a large plugin and community ecosystem, and built-in developer handoff.',
-      fitB: 'You value open source, want to self-host for data control, or prefer design layouts that map directly to CSS.',
+      fitA: 'You want desktop apps, one seat that covers design, whiteboards, slides and AI prototyping, and Dev Mode for handoff.',
+      fitB: 'You want open source, the option to self-host, code inspection on every plan, or paid cloud pricing capped at $175/mo.',
       differences: [
-        'Figma is proprietary SaaS; Penpot is open source and can be self-hosted.',
-        'Penpot is built on open standards (SVG, CSS Flexbox and Grid layouts).',
-        'Both run in the browser and support real-time collaboration and prototyping.'
+        'Penpot is open source and can be self-hosted for free; Figma is cloud-only.',
+        'Figma Professional is $16/mo per Full seat billed yearly; Penpot Unlimited is $7/editor/mo, capped at $175/mo.',
+        'Penpot’s Inspect tab is on every plan; Figma’s Dev Mode needs a paid plan.'
       ] },
     { slug: 'framer-vs-webflow', a: 'framer', b: 'webflow', category: 'Design', title: 'Framer vs Webflow',
       subtitle: 'Visual website builders',
-      fitA: 'You think like a designer and want to go from canvas to a polished, animated marketing site quickly.',
-      fitB: 'You want granular control over HTML/CSS structure and a mature CMS for content-heavy sites.',
+      fitA: 'You want to design on a free-form canvas, with a CMS from $10/mo and built-in localization.',
+      fitB: 'You want class-based control over HTML and CSS, a CMS with 20,000 items, and GSAP-powered interactions.',
       differences: [
-        'Framer works like a design tool canvas; Webflow exposes the underlying web box model.',
-        'Both include a CMS, hosting and visual interactions.',
-        'Webflow’s controls reflect HTML/CSS concepts, which suits people who know web fundamentals.'
+        'Framer is a free-form design canvas; Webflow’s Designer maps directly to HTML and CSS.',
+        'Framer Basic ($10/mo, yearly) includes a CMS; Webflow Basic ($15/mo, yearly) doesn’t.',
+        'Framer prices per site plus editors; Webflow adds Workspace plans and seats to Site plans.'
       ] },
     { slug: 'cursor-vs-github-copilot', a: 'cursor', b: 'github-copilot', category: 'Development', title: 'Cursor vs GitHub Copilot',
-      subtitle: 'AI-powered development tools',
-      fitA: 'You’re happy to switch to a dedicated AI-first editor built around project-wide AI editing.',
-      fitB: 'You want AI assistance inside the editor you already use, with tight GitHub integration.',
+      subtitle: 'AI coding agents and assistants',
+      fitA: 'You want a dedicated AI code editor with agents in the app, terminal, Slack and GitHub, from $8/mo.',
+      fitB: 'You want AI inside the editor you already use, unlimited completions from $10/mo, and free access as a student.',
       differences: [
-        'Cursor is a standalone editor (built on VS Code); Copilot is an extension for existing editors.',
-        'Copilot works across VS Code, Visual Studio, JetBrains IDEs and more.',
-        'Both offer completions, chat and agent-style multi-file edits.'
+        'Cursor is its own editor app; Copilot works inside VS Code, JetBrains IDEs, GitHub.com and the terminal.',
+        'Cursor is sold through The X Subscription with Grok and X; Copilot is part of GitHub.',
+        'Copilot Business is $19/user/mo; Cursor Teams seats start at $30/user/mo.'
       ] },
     { slug: 'notion-vs-obsidian', a: 'notion', b: 'obsidian', category: 'Productivity', title: 'Notion vs Obsidian',
       subtitle: 'Notes & knowledge management',
-      fitA: 'You need a shared team workspace with databases, real-time collaboration and project tracking.',
-      fitB: 'You want private, offline-first notes stored as Markdown files you fully own.',
+      fitA: 'You need a shared workspace with docs, databases, real-time collaboration and built-in AI.',
+      fitB: 'You want private notes stored on your device as Markdown files, free for every use.',
       differences: [
-        'Notion is cloud-based; Obsidian stores notes as local Markdown files.',
-        'Notion is built for team collaboration; Obsidian is primarily personal.',
-        'Obsidian is extended through community plugins; Notion through databases and integrations.'
+        'Notion stores your work in its cloud workspace; Obsidian stores notes on your device as Markdown files.',
+        'Obsidian is free for every use, with paid Sync and Publish; Notion teams pay per seat from $10/mo (yearly).',
+        'Notion has real-time collaboration and Notion AI; Obsidian shares vaults through Sync and adds features with community plugins.'
       ] }
   ];
 

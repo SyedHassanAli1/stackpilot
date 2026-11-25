@@ -1,6 +1,6 @@
 {
   "slug": "figma",
-  "verified": "2026-11-19",
+  "verified": "2026-11-26",
   "seoTitle": "Figma: Features, Pricing & Alternatives",
   "metaDescription": "Figma is a browser-based design platform for interfaces, prototypes and design systems. See its key features, plans and seat prices, strengths, limitations and alternatives.",
   "overview": [
@@ -8,12 +8,30 @@
     "A Figma seat covers more than the core design tool. Dev Mode handles developer handoff, FigJam is a whiteboard for workshops, Figma Slides is for presentations, Figma Make turns prompts into working prototypes and Figma Draw adds illustration tools. Newer products such as Figma Sites and Figma Buzz are in beta. The free Starter plan suits individuals and small experiments; paid plans add unlimited team files, Dev Mode and shared libraries."
   ],
   "features": [
-    { "title": "Real-time collaboration", "text": "Several people can edit, comment and present in the same file at once, directly in the browser." },
-    { "title": "Interactive prototyping", "text": "Link frames into clickable flows with transitions to test ideas and share them with reviewers." },
-    { "title": "Components and libraries", "text": "Turn any group of layers into a reusable component and share libraries across a team on paid plans." },
-    { "title": "Auto layout", "text": "Frames that resize automatically with their content, for responsive interface design." },
-    { "title": "Dev Mode", "text": "Developers inspect designs, see what changed, read annotations and connect tools like Jira, Storybook and GitHub. Paid plans only." },
-    { "title": "Figma Make and AI", "text": "Turn prompts into working code prototypes. Every seat includes a monthly allowance of AI credits." }
+    {
+      "title": "Real-time collaboration",
+      "text": "Several people can edit, comment and present in the same file at once, directly in the browser."
+    },
+    {
+      "title": "Interactive prototyping",
+      "text": "Link frames into clickable flows with transitions to test ideas and share them with reviewers."
+    },
+    {
+      "title": "Components and libraries",
+      "text": "Turn any group of layers into a reusable component and share libraries across a team on paid plans."
+    },
+    {
+      "title": "Auto layout",
+      "text": "Frames that resize automatically with their content, for responsive interface design."
+    },
+    {
+      "title": "Dev Mode",
+      "text": "Developers inspect designs, see what changed, read annotations and connect tools like Jira, Storybook and GitHub. Paid plans only."
+    },
+    {
+      "title": "Figma Make and AI",
+      "text": "Turn prompts into working code prototypes. Every seat includes a monthly allowance of AI credits."
+    }
   ],
   "useCases": [
     "Designing web and mobile app interfaces",
@@ -36,22 +54,69 @@
     "Some newer products, such as Figma Sites and Figma Buzz, are still in beta."
   ],
   "pricing": {
-    "summary": "Free Starter plan; paid plans are priced per seat.",
+    "summary": "Free Starter plan; paid plans are priced per seat. Professional prices shown are billed yearly; a Full seat is $20/mo billed monthly. View seats are free on every plan.",
     "plans": [
-      { "name": "Starter", "price": "Free", "note": "Unlimited drafts; 3 team design files and 3 FigJam files; no Dev Mode" },
-      { "name": "Professional", "price": "$16/mo per Full seat", "note": "Dev seat $12/mo · Collab seat $3/mo · unlimited files, team libraries, Dev Mode" },
-      { "name": "Organization", "price": "$55/mo per Full seat", "note": "Billed annually · Dev seat $25/mo · Collab seat $5/mo · unlimited teams, shared fonts, admin tools" },
-      { "name": "Enterprise", "price": "$90/mo per Full seat", "note": "Billed annually · Dev seat $35/mo · Collab seat $5/mo" }
+      {
+        "name": "Starter",
+        "price": "Free",
+        "note": "Unlimited drafts; 3 team design files and 3 FigJam files; no Dev Mode"
+      },
+      {
+        "name": "Professional",
+        "price": "$16/mo per Full seat",
+        "note": "Billed yearly ($20/mo per Full seat billed monthly) · Dev seat $12/mo · Collab seat $3/mo · unlimited files, team libraries, Dev Mode"
+      },
+      {
+        "name": "Organization",
+        "price": "$55/mo per Full seat",
+        "note": "Billed annually · Dev seat $25/mo · Collab seat $5/mo · unlimited teams, shared fonts, admin tools"
+      },
+      {
+        "name": "Enterprise",
+        "price": "$90/mo per Full seat",
+        "note": "Billed annually · Dev seat $35/mo · Collab seat $5/mo"
+      }
     ],
     "source": "https://www.figma.com/pricing/"
   },
-  "platforms": ["Web browser", "macOS", "Windows"],
-  "alternatives": ["penpot", "sketch", "framer"],
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows"
+  ],
+  "alternatives": [
+    "penpot",
+    "sketch",
+    "framer"
+  ],
   "sources": [
-    { "label": "Figma — Plans & Pricing", "url": "https://www.figma.com/pricing/" },
-    { "label": "Figma — Pricing FAQs", "url": "https://www.figma.com/pricing-faq/" },
-    { "label": "Figma Help — Starter plan overview", "url": "https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview" },
-    { "label": "Figma Help — Compare Figma plans and features", "url": "https://help.figma.com/hc/en-us/articles/360040328273-Compare-Figma-plans-and-features" },
-    { "label": "Figma Help — Dev Mode for admins", "url": "https://help.figma.com/hc/en-us/articles/19813618057623-Dev-Mode-for-admins" }
+    {
+      "label": "Figma — Plans & Pricing",
+      "url": "https://www.figma.com/pricing/"
+    },
+    {
+      "label": "Figma — Pricing FAQs",
+      "url": "https://www.figma.com/pricing-faq/"
+    },
+    {
+      "label": "Figma Help — Starter plan overview",
+      "url": "https://help.figma.com/hc/en-us/articles/13838684089751-Starter-plan-overview"
+    },
+    {
+      "label": "Figma Help — Compare Figma plans and features",
+      "url": "https://help.figma.com/hc/en-us/articles/360040328273-Compare-Figma-plans-and-features"
+    },
+    {
+      "label": "Figma Help — Dev Mode for admins",
+      "url": "https://help.figma.com/hc/en-us/articles/19813618057623-Dev-Mode-for-admins"
+    },
+    {
+      "label": "Figma Forum — Full seat $16 yearly vs $20 monthly",
+      "url": "https://forum.figma.com/report-a-problem-6/full-seat-offers-at-16-but-i-am-being-charged-20-57530"
+    },
+    {
+      "label": "Figma Help — Professional plan overview",
+      "url": "https://help.figma.com/hc/en-us/articles/13839214115607-Professional-plan-overview"
+    }
   ]
 }

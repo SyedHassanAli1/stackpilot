@@ -1,0 +1,156 @@
+{
+  "slug": "framer-vs-webflow",
+  "verified": "2026-11-26",
+  "seoTitle": "Framer vs Webflow: Features, Pricing & Differences",
+  "metaDescription": "Framer vs Webflow compared side by side: free plans, site plans from $10 and $15 a month billed yearly, CMS limits, editor and seat costs, localization, interactions and AI, checked against official sources.",
+  "intro": [
+    "Framer and Webflow are visual website builders: you design pages without writing code, then publish them on managed hosting with a CMS, SEO controls and AI tools built in. Both charge per site, with a free plan for trying things out on their own domain.",
+    "They differ in how you build and how you pay. Framer works like a design tool, with a free-form canvas. Webflow's Designer maps directly to HTML and CSS, with classes, flexbox and grid. On pricing, Framer adds paid editors to each site plan, while Webflow adds Workspace plans and seats on top of Site plans. This page sets the details side by side using each company's own pricing pages and help docs."
+  ],
+  "chooseA": [
+    "You think like a designer and want to build on a free-form canvas.",
+    "You want a CMS on the cheapest paid plan: Framer Basic includes 2 collections.",
+    "You need a multilingual site, with localization and AI translation built in.",
+    "You want simple team pricing: the workspace owner is free and extra editors are $20 a month."
+  ],
+  "chooseB": [
+    "You want precise control over real HTML and CSS: classes, flexbox and grid.",
+    "You run a content-heavy site: Premium includes 40 collections and 20,000 CMS items.",
+    "You want GSAP-powered interactions, such as scroll triggers and timelines.",
+    "You need more pages without a CMS: Basic includes 300 static pages."
+  ],
+  "glance": [
+    {
+      "label": "How you build",
+      "a": "Free-form canvas with components, breakpoints and styles",
+      "b": "Designer that maps to HTML and CSS: classes, flexbox, grid"
+    },
+    {
+      "label": "Free plan",
+      "a": "Framer domain · “Made in Framer” banner · 5 GB bandwidth",
+      "b": "webflow.io domain · 2 static pages · 1 GB bandwidth"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Basic · $10/mo per site, billed yearly",
+      "b": "Basic · $15/mo per site yearly, $25 monthly"
+    },
+    {
+      "label": "CMS on lowest paid plan",
+      "a": "Yes · 2 collections, 1,000 items",
+      "b": "No · CMS starts on Premium"
+    },
+    {
+      "label": "Bigger CMS plan",
+      "a": "Pro · $30/mo · 10 collections, 2,500 items",
+      "b": "Premium · $25/mo yearly, $39 monthly · 40 collections, 20,000 items"
+    },
+    {
+      "label": "Team costs",
+      "a": "Owner free · extra editors $20/mo · up to 10 with edit access",
+      "b": "Free Starter Workspace · paid Workspace from $19/mo yearly, plus seats"
+    },
+    {
+      "label": "Localization",
+      "a": "Built in · add-on on paid plans",
+      "b": "Localize · separate add-on"
+    },
+    {
+      "label": "A/B testing",
+      "a": "Add-on on Pro",
+      "b": "Optimize · separate add-on"
+    },
+    {
+      "label": "AI",
+      "a": "AI agents · credits on every plan",
+      "b": "Webflow AI and MCP server · credits in every Workspace"
+    },
+    {
+      "label": "Enterprise",
+      "a": "Custom · unlimited editors, SSO and SCIM",
+      "b": "Team $2,500/mo · Enterprise custom"
+    }
+  ],
+  "differences": [
+    {
+      "title": "How you build",
+      "text": "Framer gives you a free-form design canvas with components, breakpoints and styles, and you publish straight from it. Webflow's Designer maps directly to real HTML and CSS, so you work with classes, flexbox and grid, which suits people comfortable with web layout concepts."
+    },
+    {
+      "title": "Entry plans",
+      "text": "Framer Basic costs $10 a month per site billed yearly, with 30 pages, 2 CMS collections and 50 GB of bandwidth. Webflow Basic costs $15 a month billed yearly ($25 monthly), with 300 static pages and 10 GB of bandwidth, but no CMS."
+    },
+    {
+      "title": "CMS",
+      "text": "Framer includes a CMS on every paid plan: 2 collections on Basic and 10 collections with 2,500 items on Pro, with more items as an add-on. Webflow's CMS starts on Premium, at $25 a month billed yearly, with 40 collections and 20,000 items."
+    },
+    {
+      "title": "Team pricing",
+      "text": "On Framer, the workspace owner is free, extra editors cost $20 a month and Content Editors $10, with up to 10 people with edit access. Webflow's Site plans include a free Starter Workspace; growing teams add a paid Workspace plan (Core $19 or Growth $49 a month, billed yearly) with Full seats at $39 or Limited seats at $15 a month."
+    },
+    {
+      "title": "Multilingual sites",
+      "text": "Framer has localization built in, with AI translation that keeps locales in sync as you edit; extra locales are a paid add-on. Webflow sells localization separately through its Localize add-on."
+    },
+    {
+      "title": "Interactions and code",
+      "text": "Webflow's interactions are powered by GSAP, with scroll triggers, text splitting and timelines, and Premium adds code components. Framer is built for websites and doesn't generate application code."
+    }
+  ],
+  "similarities": [
+    "Visual, no-code website building",
+    "Managed hosting with custom domains on paid plans",
+    "A built-in CMS",
+    "SEO controls",
+    "AI tools with monthly credits",
+    "Free plans on their own domain"
+  ],
+  "faq": [
+    {
+      "q": "Is Framer or Webflow cheaper?",
+      "a": "For a single site, Framer's entry plan costs less: Basic is $10 a month billed yearly and includes a small CMS. Webflow Basic is $15 a month billed yearly and has no CMS; its first CMS plan, Premium, is $25 a month billed yearly. For teams, add Framer's $20 editor seats or Webflow's Workspace plan and seats."
+    },
+    {
+      "q": "Which has the better CMS for large sites?",
+      "a": "By the numbers on each pricing page, Webflow Premium includes 40 collections and 20,000 CMS items. Framer Pro includes 10 collections and 2,500 items, and you can add more items for a fee."
+    },
+    {
+      "q": "Can I use either one for free?",
+      "a": "Yes. Framer's free plan publishes on a Framer domain with a “Made in Framer” banner. Webflow's free Starter plan publishes on a webflow.io domain, with 2 static pages and a limited CMS."
+    },
+    {
+      "q": "Do I need to know HTML and CSS?",
+      "a": "Neither requires writing code. Webflow's Designer is built around HTML and CSS concepts, such as classes, flexbox and grid, so it helps to know them. Framer works more like a design tool."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Framer — Pricing",
+      "url": "https://www.framer.com/pricing"
+    },
+    {
+      "label": "Framer Help — Site plans overview",
+      "url": "https://www.framer.com/help/articles/site-plans-explained/"
+    },
+    {
+      "label": "Framer — Framer vs Webflow (Basic billed yearly)",
+      "url": "https://www.framer.com/compare/framer-vs-webflow"
+    },
+    {
+      "label": "Webflow — Pricing",
+      "url": "https://webflow.com/pricing"
+    },
+    {
+      "label": "Webflow Help — Updated pricing and simplified plans for May 2026",
+      "url": "https://help.webflow.com/hc/en-us/articles/51059955082387-Updated-pricing-and-simplified-plans-for-May-2026"
+    },
+    {
+      "label": "Webflow Blog — Simplified plans and updated pricing",
+      "url": "https://webflow.com/blog/simplified-plans-and-updated-pricing-2026"
+    },
+    {
+      "label": "Webflow — Interactions with GSAP",
+      "url": "https://webflow.com/feature/interactions-animations"
+    }
+  ]
+}

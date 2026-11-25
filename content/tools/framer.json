@@ -1,6 +1,6 @@
 {
   "slug": "framer",
-  "verified": "2026-11-19",
+  "verified": "2026-11-26",
   "seoTitle": "Framer: Features, Pricing & Alternatives",
   "metaDescription": "Framer is a no-code website builder with a design canvas, AI agents, CMS, localization and hosting. See its features, site plans, editor pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -54,22 +54,22 @@
     "Built for websites — not for app interface design files or generating application code."
   ],
   "pricing": {
-    "summary": "Free plan; paid plans are priced per site. The workspace owner is free, extra editors cost $20/mo and Content Editors $10/mo, and viewers are free.",
+    "summary": "Free plan; paid plans are priced per site. The workspace owner is free, extra editors cost $20/mo and Content Editors $10/mo (up to 10 people with edit access), and viewers are free.",
     "plans": [
       {
         "name": "Free",
         "price": "$0",
-        "note": "Framer domain · 1 GB bandwidth · “Made in Framer” banner · 500 AI credits/mo"
+        "note": "Framer domain · 5 GB bandwidth · “Made in Framer” banner · 500 AI credits/mo"
       },
       {
         "name": "Basic",
         "price": "$10/mo per site",
-        "note": "Billed yearly · custom domain · 2 CMS collections · 50 GB bandwidth · localization add-on"
+        "note": "Billed yearly · custom domain · 30 pages · 2 CMS collections, 1,000 items · 50 GB bandwidth · localization add-on"
       },
       {
         "name": "Pro",
         "price": "$30/mo per site",
-        "note": "10 CMS collections · 100 GB bandwidth · redirects · staging · branch previews"
+        "note": "150 pages · 10 CMS collections, 2,500 items · 100 GB bandwidth · redirects · staging · branch previews"
       },
       {
         "name": "Enterprise",

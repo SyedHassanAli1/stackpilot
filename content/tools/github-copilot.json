@@ -1,6 +1,6 @@
 {
   "slug": "github-copilot",
-  "verified": "2026-11-19",
+  "verified": "2026-11-26",
   "seoTitle": "GitHub Copilot: Features, Pricing & Alternatives",
   "metaDescription": "GitHub Copilot is GitHub's AI coding assistant for code completions, chat, agent mode, code review and a cloud agent. See its features, Free, Pro, Pro+, Max, Business and Enterprise pricing, strengths, limitations and alternatives.",
   "overview": [
@@ -64,7 +64,7 @@
       {
         "name": "Pro",
         "price": "$10/mo",
-        "note": "Unlimited completions · cloud agent · code review · $15 in monthly AI credits"
+        "note": "Unlimited completions · cloud agent · code review · third-party agents (Claude Code, Codex) · $15 in monthly AI credits"
       },
       {
         "name": "Pro+",

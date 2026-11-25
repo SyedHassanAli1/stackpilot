@@ -1,0 +1,164 @@
+{
+  "slug": "notion-vs-obsidian",
+  "verified": "2026-11-26",
+  "seoTitle": "Notion vs Obsidian: Features, Pricing & Differences",
+  "metaDescription": "Notion vs Obsidian compared side by side: cloud workspace vs local Markdown files, free plans, per-seat pricing vs paid Sync and Publish, collaboration, AI, plugins and platforms, checked against official sources.",
+  "intro": [
+    "Notion and Obsidian are both popular for notes and knowledge management, with linked pages, apps for desktop and mobile, and ways to publish pages to the web.",
+    "They take opposite approaches. Notion is a connected workspace in the cloud, bringing docs, wikis, projects and databases together for teams, with Notion AI built in. Obsidian stores your notes privately on your device as plain-text Markdown files, is free for every use, and charges only for optional Sync and Publish services. This page sets the details side by side using each company's own pricing pages and help docs."
+  ],
+  "chooseA": [
+    "You want docs, wikis, projects and databases in one shared workspace.",
+    "Your team needs to edit together in real time.",
+    "You want built-in AI: Notion Agent, AI Meeting Notes and Enterprise Search on Business.",
+    "You want a web app as well as desktop and mobile apps."
+  ],
+  "chooseB": [
+    "You want your notes stored on your device as plain Markdown files you own.",
+    "You want every feature free, including for work, with no account required.",
+    "You want to customise the app with thousands of community plugins and themes.",
+    "You use Linux: Obsidian has a Linux app."
+  ],
+  "glance": [
+    {
+      "label": "Where notes live",
+      "a": "In Notion's cloud workspace",
+      "b": "On your device, as Markdown files"
+    },
+    {
+      "label": "Free plan",
+      "a": "Free for individuals · 1,000-block limit for 2+ members",
+      "b": "The whole app, free for every use"
+    },
+    {
+      "label": "Paid plans",
+      "a": "Plus $10 · Business $20 per seat/mo, billed yearly",
+      "b": "Optional Sync from $4/user/mo · Publish $8/site/mo, billed yearly"
+    },
+    {
+      "label": "Sync across devices",
+      "a": "Built in, as a cloud workspace",
+      "b": "Paid Sync, or a method you set up yourself"
+    },
+    {
+      "label": "Collaboration",
+      "a": "Real-time editing in shared workspaces",
+      "b": "Shared vaults through Sync, for each collaborator"
+    },
+    {
+      "label": "Databases",
+      "a": "Yes · subtasks, dependencies, custom properties",
+      "b": "Links, graph view and Canvas"
+    },
+    {
+      "label": "AI",
+      "a": "Trial on Free and Plus · full Notion AI on Business",
+      "b": "Not listed in Obsidian's plans"
+    },
+    {
+      "label": "Extending it",
+      "a": "Integrations and connections to other apps",
+      "b": "Thousands of community plugins and themes"
+    },
+    {
+      "label": "Publishing",
+      "a": "Basic sites on every plan",
+      "b": "Publish · paid, per site"
+    },
+    {
+      "label": "Platforms",
+      "a": "Web, macOS, Windows, iOS, Android",
+      "b": "Windows, macOS, Linux, iOS, Android"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Where your notes live",
+      "text": "Notion keeps your docs and databases in its cloud workspace. Obsidian stores notes privately on your device as plain-text Markdown files, so you're never locked in and can work offline."
+    },
+    {
+      "title": "Pricing",
+      "text": "Notion's Free plan is free forever for individuals; teams pay per seat, with Plus at $10 and Business at $20 a month billed yearly. Obsidian's app is free for every use, including work. You pay only for optional services: Sync from $4 a month and Publish at $8 a site, both billed yearly."
+    },
+    {
+      "title": "Collaboration",
+      "text": "Notion is built for teams, with real-time collaboration, teamspaces and per-seat plans. Obsidian can share vaults through Sync, but each collaborator needs their own Sync subscription."
+    },
+    {
+      "title": "Structure",
+      "text": "Notion organises work with pages and databases, including subtasks, dependencies and custom properties. Obsidian connects notes with links, a graph view of how ideas connect, and Canvas for laying out ideas."
+    },
+    {
+      "title": "AI",
+      "text": "Free and Plus include a trial of Notion AI. Business adds Notion Agent, AI Meeting Notes and Enterprise Search, with monthly AI credits for each member. Obsidian's plans don't list built-in AI."
+    },
+    {
+      "title": "Customisation",
+      "text": "Obsidian has thousands of community plugins and themes to shape the app around how you work. Notion connects to other apps, with premium connections on Business."
+    }
+  ],
+  "similarities": [
+    "Linked notes and pages",
+    "Free to start, with no time limit",
+    "Desktop apps for Mac and Windows, plus iOS and Android",
+    "Ways to publish notes or pages to the web",
+    "Discounts or free plans for students and education",
+    "Used for personal notes and for work"
+  ],
+  "faq": [
+    {
+      "q": "Is Obsidian really free?",
+      "a": "Yes. The Obsidian app is free for every use, including work, with no account required and all features included. You pay only if you want Obsidian Sync or Obsidian Publish; a Commercial license is optional, as a way for organizations to support development."
+    },
+    {
+      "q": "Is Notion free?",
+      "a": "Notion's Free plan is free forever for individuals. Workspaces with two or more members are limited to 1,000 blocks in total, and free uploads are limited to 5 MB each. Teams usually move to Plus, at $10 per seat a month billed yearly, or $12 monthly."
+    },
+    {
+      "q": "Which is better for teams?",
+      "a": "Notion is built for team collaboration, with real-time editing, teamspaces and per-seat plans. Obsidian can share vaults through Sync, but each collaborator needs their own Sync subscription."
+    },
+    {
+      "q": "Are there discounts for students?",
+      "a": "Individual university students and teachers may be able to get Notion's Plus plan for free. Obsidian's app is free for everyone, and Obsidian offers an educational discount on its paid services."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Notion — Pricing",
+      "url": "https://www.notion.com/pricing"
+    },
+    {
+      "label": "Notion — What is Notion?",
+      "url": "https://www.notion.com/product/notion"
+    },
+    {
+      "label": "Notion Help — Change your plan",
+      "url": "https://www.notion.com/help/upgrade-or-downgrade-your-plan"
+    },
+    {
+      "label": "Notion Help — Understanding block usage",
+      "url": "https://www.notion.com/help/understanding-block-usage"
+    },
+    {
+      "label": "Notion — Notion AI",
+      "url": "https://www.notion.com/product/ai"
+    },
+    {
+      "label": "Obsidian — Pricing",
+      "url": "https://obsidian.md/pricing"
+    },
+    {
+      "label": "Obsidian — Sync",
+      "url": "https://obsidian.md/sync"
+    },
+    {
+      "label": "Obsidian Blog — Obsidian is now free for work",
+      "url": "https://obsidian.md/blog/free-for-work/"
+    },
+    {
+      "label": "Obsidian Blog — Publish pricing (educational discount)",
+      "url": "https://obsidian.md/blog/obsidian-publish-now-offers-more-for-less/"
+    }
+  ]
+}

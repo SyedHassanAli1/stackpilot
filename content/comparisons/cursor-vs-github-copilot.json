@@ -1,0 +1,161 @@
+{
+  "slug": "cursor-vs-github-copilot",
+  "verified": "2026-11-26",
+  "seoTitle": "Cursor vs GitHub Copilot: Features, Pricing & Differences",
+  "metaDescription": "Cursor vs GitHub Copilot compared side by side: free plans, paid plans from $8 and $10 a month, editors supported, models, usage limits, code review, team pricing and student access, checked against official sources.",
+  "intro": [
+    "Cursor and GitHub Copilot are AI coding tools with completions as you type, chat about your code, and agents that can plan and make changes across a project. Both also run in the terminal and review pull requests on GitHub.",
+    "They're packaged very differently. Cursor is its own code editor, and new customers buy it through The X Subscription, which also covers Grok and X. GitHub Copilot works inside the editors you already use, such as VS Code and JetBrains IDEs, and on GitHub.com. This page sets the details side by side using each company's own pricing pages and docs."
+  ],
+  "chooseA": [
+    "You want a dedicated AI code editor, with agents also in the terminal, Slack and GitHub.",
+    "You want a low-cost paid plan: Plus is $8 a month, or $80 a year.",
+    "You want to pay yearly: every individual Cursor plan has annual billing.",
+    "You also use Grok or X: your usage pool is shared across Cursor and Grok."
+  ],
+  "chooseB": [
+    "You want to keep your current editor, such as VS Code or a JetBrains IDE.",
+    "You want unlimited completions and third-party models from $10 a month.",
+    "You're a verified student: Copilot is free for you.",
+    "You're buying for a company: Business is $19 per user a month."
+  ],
+  "glance": [
+    {
+      "label": "What it is",
+      "a": "Its own code editor, plus CLI",
+      "b": "Works inside VS Code, JetBrains IDEs, GitHub.com and the terminal"
+    },
+    {
+      "label": "Free plan",
+      "a": "Agent, Chat and Tab · limited usage",
+      "b": "2,000 completions a month · limited chat and agent"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Plus · $8/mo or $80/yr · Grok models only",
+      "b": "Pro · $10/mo · unlimited completions"
+    },
+    {
+      "label": "How it's sold",
+      "a": "The X Subscription, with Grok and X",
+      "b": "Through GitHub"
+    },
+    {
+      "label": "Usage",
+      "a": "Weekly pool for Cursor models, shared with Grok",
+      "b": "Monthly AI credits · completions don't use credits"
+    },
+    {
+      "label": "Third-party models",
+      "a": "From Premium ($30/mo), at API list price",
+      "b": "Model selection from Pro · premium models from Pro+"
+    },
+    {
+      "label": "Cloud agents",
+      "a": "From Premium",
+      "b": "From Pro"
+    },
+    {
+      "label": "Code review",
+      "a": "Bugbot · from Premium",
+      "b": "From Pro"
+    },
+    {
+      "label": "Team plans",
+      "a": "Teams · $30, $100 or $200 per seat/mo",
+      "b": "Business $19 · Enterprise $39 per user/mo"
+    },
+    {
+      "label": "Students",
+      "a": "Not listed on its pricing pages",
+      "b": "Free for verified students"
+    },
+    {
+      "label": "Platforms",
+      "a": "macOS, Windows, Linux · command line",
+      "b": "VS Code, JetBrains IDEs, GitHub.com · command line"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Editor",
+      "text": "Cursor is a standalone editor with an agent-first experience, plus a CLI, a Slack app and pull request reviews on GitHub. Copilot plugs into the editors you already use, such as VS Code and JetBrains IDEs, and works on GitHub.com and in the terminal."
+    },
+    {
+      "title": "How it's sold",
+      "text": "Since 2026, Cursor has been owned by SpaceX, and new customers buy it through The X Subscription, which also covers Grok and X. Existing customers can keep their legacy Cursor plans. Copilot is sold by GitHub, with plans for individuals, organizations and enterprises."
+    },
+    {
+      "title": "Entry plans",
+      "text": "Cursor Plus costs $8 a month or $80 a year, but only includes Cursor's own models, without Cloud Agents, Bugbot or third-party models. Copilot Pro costs $10 a month, with unlimited completions, cloud agent, code review, model selection and third-party agents such as Claude Code and Codex."
+    },
+    {
+      "title": "Models and usage",
+      "text": "Cursor plans include a weekly pool of usage for its own models, such as Grok and Composer, shared across Cursor and Grok; third-party models are billed at API list price from prepaid credit, from Premium. Copilot plans include monthly GitHub AI Credits for chat, agents and code review, while completions don't use credits."
+    },
+    {
+      "title": "Teams",
+      "text": "Cursor Teams seats cost the same as individual plans: $30, $100 or $200 per user a month. Copilot Business costs $19 per user a month, and Enterprise $39 per user a month, which requires GitHub Enterprise Cloud."
+    },
+    {
+      "title": "Free access",
+      "text": "Both have free plans with limited usage. Copilot is also free for verified students, and its free plan includes 2,000 completions a month."
+    }
+  ],
+  "similarities": [
+    "AI completions, chat and agents that edit across a project",
+    "A free plan with limited usage",
+    "Cloud agents and AI code review on pull requests",
+    "A command-line tool",
+    "A choice of models on higher plans",
+    "Plans for teams and enterprises"
+  ],
+  "faq": [
+    {
+      "q": "Is Cursor or GitHub Copilot cheaper?",
+      "a": "Cursor's cheapest paid plan, Plus, costs $8 a month but includes only Cursor's own models. Copilot Pro costs $10 a month with unlimited completions, cloud agent, code review and model selection. For teams, Copilot Business is $19 per user a month, while Cursor Teams seats start at $30."
+    },
+    {
+      "q": "Do I have to switch editors?",
+      "a": "For Cursor, yes: it's its own code editor, though it also has a CLI. Copilot works inside the editors you already use, such as VS Code and JetBrains IDEs, as well as on GitHub.com and in the terminal."
+    },
+    {
+      "q": "What is The X Subscription?",
+      "a": "It's the single subscription new Cursor customers buy since Cursor became part of SpaceX. It covers Cursor, Grok and X, with a weekly usage pool shared across Cursor and Grok. Existing customers can stay on legacy Cursor plans."
+    },
+    {
+      "q": "Is either one free for students?",
+      "a": "GitHub Copilot is free for verified students. Cursor has a free plan with limited usage, and its pricing pages don't list a student plan."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cursor — Pricing",
+      "url": "https://cursor.com/pricing"
+    },
+    {
+      "label": "Cursor Help — Pricing and plans",
+      "url": "https://cursor.com/help/account-and-billing/pricing"
+    },
+    {
+      "label": "Cursor Docs — Models & Pricing",
+      "url": "https://cursor.com/docs/models-and-pricing"
+    },
+    {
+      "label": "Cursor Docs — Team pricing",
+      "url": "https://cursor.com/docs/account/teams/pricing"
+    },
+    {
+      "label": "GitHub — Copilot plans & pricing",
+      "url": "https://github.com/features/copilot/plans"
+    },
+    {
+      "label": "GitHub Docs — Plans for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/get-started/plans"
+    },
+    {
+      "label": "GitHub Docs — GitHub Copilot licenses",
+      "url": "https://docs.github.com/en/billing/concepts/product-billing/github-copilot-licenses"
+    }
+  ]
+}
