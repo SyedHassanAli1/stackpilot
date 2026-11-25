@@ -135,7 +135,14 @@
     $('#panelClose').focus();
   }
 
-  function closePanel() { const panel = dialog(); if (panel?.open) panel.close(); }
+  function closePanel() {
+    const panel = dialog();
+    if (!panel?.open) return;
+    panel.close();
+    // Unlock scrolling now: the dialog's 'close' event fires a moment later,
+    // which is too late when the page is being left (see initPanel).
+    document.documentElement.classList.remove('is-locked');
+  }
 
   // "Full details" is shown when the tool has a page — except on that page itself.
   const pageHref = slug => {
@@ -249,6 +256,18 @@
     $('#panelClose')?.addEventListener('click', closePanel);
     panel.addEventListener('click', e => { if (e.target === panel) closePanel(); });
     panel.addEventListener('close', () => document.documentElement.classList.remove('is-locked'));
+
+    // Browsers keep recently left pages in a back/forward cache and restore
+    // them exactly as they were, so a popup left open (e.g. after "Full
+    // details") would reappear on Back. Close it as the page is left, and
+    // again if a page comes back from that cache with it still open.
+    // Closing a modal <dialog> returns focus to the card that opened it.
+    window.addEventListener('pagehide', closePanel);
+    window.addEventListener('pageshow', e => {
+      if (!e.persisted) return;
+      closePanel();
+      document.documentElement.classList.remove('is-locked');
+    });
   }
   /* Header "Categories" dropdown (shared by every page). CSS opens it on hover
      and focus; this adds tool counts, the current page, aria-expanded and
