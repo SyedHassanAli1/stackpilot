@@ -1,0 +1,144 @@
+{
+  "slug": "google-analytics-vs-plausible",
+  "verified": "2026-11-27",
+  "seoTitle": "Google Analytics vs Plausible: Features, Pricing & Differences",
+  "metaDescription": "Google Analytics vs Plausible compared side by side: free vs paid, privacy, cookies, GDPR compliance, dashboard complexity and pricing, checked against official sources.",
+  "intro": [
+    "Google Analytics and Plausible are web analytics tools that answer different questions about your website traffic. Google Analytics (GA4), made by Google, is the default analytics platform used by over 50 million websites. It offers deep data collection, audience segmentation and integration with Google's advertising tools. Plausible, made by Plausible Analytics, is a lightweight, privacy-first alternative that tracks pageviews and visitors without cookies or personal data.",
+    "The fundamental trade-off is depth versus simplicity. Google Analytics is free and powerful but complex, requires cookie consent banners in the EU and sends data to Google. Plausible costs from $9 a month but needs no cookies, no consent banner, and keeps data ownership with you. This page sets the details side by side using each product's own documentation."
+  ],
+  "chooseA": [
+    "You need detailed audience segmentation, conversion funnels and e-commerce tracking at no cost.",
+    "You run Google Ads and need direct integration between analytics and your ad campaigns.",
+    "You want cross-device tracking, cohort analysis and predictive metrics powered by machine learning.",
+    "You need a free tool and your team has the technical knowledge to configure GA4."
+  ],
+  "chooseB": [
+    "You want privacy-first analytics with no cookies and no need for a consent banner.",
+    "You want a simple, one-page dashboard you can understand in under a minute.",
+    "You need GDPR, CCPA and PECR compliance without legal review of your analytics setup.",
+    "You want to own your data, with the option to self-host on your own infrastructure."
+  ],
+  "glance": [
+    {
+      "label": "Developer",
+      "a": "Google",
+      "b": "Plausible Analytics"
+    },
+    {
+      "label": "Price",
+      "a": "Free (GA4) · Analytics 360 from $12,500/mo",
+      "b": "From $9/mo (Starter, 10K pageviews) · no free plan"
+    },
+    {
+      "label": "Cookies",
+      "a": "Uses cookies · consent banner required in EU",
+      "b": "No cookies · no consent banner needed"
+    },
+    {
+      "label": "Dashboard",
+      "a": "Multi-page reports with customisable dimensions and segments",
+      "b": "Single-page dashboard with key metrics at a glance"
+    },
+    {
+      "label": "Data ownership",
+      "a": "Data stored on Google's servers, used for Google products",
+      "b": "Data owned by you · EU-hosted · option to self-host"
+    },
+    {
+      "label": "Open source",
+      "a": "No",
+      "b": "Yes · AGPL-licensed · can self-host for free"
+    },
+    {
+      "label": "Script size",
+      "a": "~90 KB (gtag.js)",
+      "b": "< 1 KB"
+    },
+    {
+      "label": "Conversion tracking",
+      "a": "Full funnel visualisation, e-commerce tracking, goal flow",
+      "b": "Custom event goals and revenue tracking on paid plans"
+    },
+    {
+      "label": "Integrations",
+      "a": "Google Ads, Search Console, BigQuery, Looker Studio and hundreds more",
+      "b": "Search Console, WordPress, Ghost, and common CMS plugins"
+    },
+    {
+      "label": "Learning curve",
+      "a": "Steep · GA4's event-based model requires configuration",
+      "b": "Minimal · dashboard is usable immediately"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Privacy and cookies",
+      "text": "Google Analytics uses cookies to track users across sessions and devices, which means sites in the EU, UK and other jurisdictions need a cookie consent banner. Many visitors decline cookies, creating a data gap. Plausible uses no cookies and collects no personal data, so no consent banner is needed. Your analytics see every visitor, not just those who accept cookies."
+    },
+    {
+      "title": "Pricing model",
+      "text": "Google Analytics (GA4) is completely free for most websites. The enterprise tier, Analytics 360, starts at $12,500 a month. Plausible has no free plan — pricing starts at $9 a month for up to 10,000 monthly pageviews (Starter), with Growth at $14, Business at $19, and Enterprise at custom pricing. However, Plausible is open source and can be self-hosted for free."
+    },
+    {
+      "title": "Dashboard complexity",
+      "text": "Google Analytics has dozens of reports across multiple sections — acquisition, engagement, monetisation, retention — with customisable dimensions, segments and explorations. It is powerful but takes time to learn, especially after the shift from Universal Analytics to GA4's event-based model. Plausible shows everything on a single page: visitors, pageviews, bounce rate, visit duration, sources, pages and locations."
+    },
+    {
+      "title": "Data ownership and hosting",
+      "text": "Google Analytics stores data on Google's servers, and Google uses aggregated data across its products. Plausible stores data in the EU by default and does not share it with any third party. You own your data entirely. If you want full control, Plausible's open-source codebase lets you self-host on your own servers."
+    },
+    {
+      "title": "Page speed impact",
+      "text": "Google's tracking script (gtag.js) is roughly 90 KB and can affect page load times, especially on slower connections. Plausible's script is under 1 KB — about 90 times smaller — with negligible impact on page speed. For sites where every millisecond of load time matters, this is a meaningful difference."
+    },
+    {
+      "title": "Advertising integration",
+      "text": "Google Analytics integrates directly with Google Ads, allowing you to track ad performance, build remarketing audiences and attribute conversions to specific campaigns. Plausible has no advertising integrations. If you run paid advertising through Google, the analytics-to-ads pipeline is a significant advantage for GA4."
+    },
+    {
+      "title": "Advanced analysis",
+      "text": "Google Analytics offers cohort analysis, path exploration, funnel visualisation, predictive metrics and BigQuery export for custom SQL queries on raw data. Plausible offers custom event tracking, goal conversions and basic revenue tracking, but it does not have the same depth of exploratory analysis tools."
+    }
+  ],
+  "similarities": [
+    "Real-time visitor data and traffic monitoring",
+    "Traffic source and referral tracking",
+    "Geographic and device breakdown of visitors",
+    "UTM campaign parameter tracking",
+    "Google Search Console integration",
+    "API access for custom reporting"
+  ],
+  "faq": [
+    {
+      "q": "Is Plausible a full replacement for Google Analytics?",
+      "a": "For most small to mid-size websites, yes. Plausible covers pageviews, visitors, sources, top pages, goals and basic conversions. If you need advanced features like funnel visualisation, cohort analysis, e-commerce tracking or Google Ads integration, you will miss GA4's depth."
+    },
+    {
+      "q": "Do I need a cookie consent banner with Plausible?",
+      "a": "No. Plausible uses no cookies and collects no personal data, so it does not require a consent banner under GDPR, CCPA or PECR. This is one of its main selling points — you see all visitors, not just those who accept cookies."
+    },
+    {
+      "q": "Can I use both?",
+      "a": "Yes. Some sites run Plausible for day-to-day traffic monitoring (simple dashboard, no consent banner) and Google Analytics for deeper analysis when needed. This gives you full visitor visibility through Plausible and advanced segmentation through GA4 for consenting users."
+    },
+    {
+      "q": "Is Google Analytics really free?",
+      "a": "GA4 is free for most websites with no pageview limits. The enterprise tier, Analytics 360, costs from $12,500 a month and adds higher data limits, BigQuery export and dedicated support. For the vast majority of sites, the free tier is more than sufficient."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Google — Analytics",
+      "url": "https://marketingplatform.google.com/about/analytics/"
+    },
+    {
+      "label": "Plausible — Pricing",
+      "url": "https://plausible.io/#pricing"
+    },
+    {
+      "label": "Plausible — vs Google Analytics",
+      "url": "https://plausible.io/vs-google-analytics"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "slug": "claude-vs-gemini",
+  "verified": "2026-11-27",
+  "seoTitle": "Claude vs Gemini: Features, Pricing & Differences",
+  "metaDescription": "Claude vs Gemini compared side by side: free plans, paid tiers, writing quality, coding tools, context windows, Google integration and pricing, checked against official sources.",
+  "intro": [
+    "Claude and Gemini are the two AI assistants gaining the most ground alongside ChatGPT in 2026, but they take different approaches. Claude, made by Anthropic, is built for careful reasoning, long-document analysis and coding. Gemini, made by Google DeepMind, is built into Google's ecosystem — Search, Gmail, Docs, Drive and Android — with native multimodal support for text, images, video and audio.",
+    "Both have free plans and paid tiers at $20 a month. The core difference is philosophy: Claude focuses on writing quality, instruction-following and deep reasoning, while Gemini focuses on Google integration, multimodal input and a massive context window. This page sets the details side by side using each company's own pricing pages and documentation."
+  ],
+  "chooseA": [
+    "You want the strongest writing quality, careful reasoning and instruction-following precision.",
+    "You want Claude Code for autonomous coding agents in the terminal, with top SWE-bench scores.",
+    "You want extended thinking that shows its reasoning chain on complex problems.",
+    "You want Pro at $17/mo (yearly) or Max at $100–$200/mo for the highest usage limits."
+  ],
+  "chooseB": [
+    "You live in Google Workspace and want AI inside Gmail, Docs, Sheets and Drive.",
+    "You want native video and audio understanding — not just text and images.",
+    "You want a context window of up to 1 million tokens for processing very large documents.",
+    "You want Google AI Pro ($19.99/mo) bundled with 5 TB storage and YouTube Premium Lite."
+  ],
+  "glance": [
+    {
+      "label": "Developer",
+      "a": "Anthropic",
+      "b": "Google DeepMind"
+    },
+    {
+      "label": "Free plan",
+      "a": "Limited Sonnet access, basic features",
+      "b": "Gemini with daily usage limits, image generation"
+    },
+    {
+      "label": "Cheapest paid plan",
+      "a": "Pro · $20/mo ($17/mo yearly) · all models, Claude Code, extended thinking",
+      "b": "Google AI Plus · $4.99/mo · 2× usage limits, 200 GB storage"
+    },
+    {
+      "label": "Mid-tier plan",
+      "a": "Max 5x · $100/mo · 5× Pro usage, all features",
+      "b": "Google AI Pro · $19.99/mo · 4× limits, 5 TB, YouTube Premium Lite"
+    },
+    {
+      "label": "Top-tier plan",
+      "a": "Max 20x · $200/mo · 20× Pro usage",
+      "b": "Google AI Ultra · $99.99/mo · 5× limits, 30 TB, YouTube Premium"
+    },
+    {
+      "label": "Context window",
+      "a": "Up to 200K tokens",
+      "b": "Up to 1 million tokens"
+    },
+    {
+      "label": "Multimodal input",
+      "a": "Text, images, documents",
+      "b": "Text, images, video, audio natively"
+    },
+    {
+      "label": "Coding tools",
+      "a": "Claude Code — terminal-based coding agent",
+      "b": "Code generation in app, Gemini CLI"
+    },
+    {
+      "label": "App integration",
+      "a": "Standalone app, desktop and mobile",
+      "b": "Built into Gmail, Docs, Sheets, Drive, Search and Android"
+    },
+    {
+      "label": "Apps",
+      "a": "Web, macOS, Windows, iOS, Android",
+      "b": "Web, iOS, Android · inside Google apps on all platforms"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Writing quality and reasoning",
+      "text": "Claude is widely regarded as the stronger writer. Its outputs tend to be more natural, nuanced and carefully structured. Claude's extended thinking feature shows its reasoning chain on complex problems, and it consistently scores higher on instruction-following benchmarks. Gemini is capable but tends toward more generic, information-dense output."
+    },
+    {
+      "title": "Ecosystem and integration",
+      "text": "Gemini is built into Google's products: it works inside Gmail, Google Docs, Sheets, Drive, Search and Android. If you already live in Google Workspace, Gemini can draft emails, summarise documents and analyse spreadsheets without leaving those apps. Claude is a standalone tool with its own desktop and mobile apps, plus Claude Code for terminal-based coding."
+    },
+    {
+      "title": "Context window",
+      "text": "Gemini supports context windows of up to 1 million tokens, letting it process very large documents, entire codebases or long transcripts in a single conversation. Claude's context window is up to 200K tokens — still substantial, but significantly smaller than Gemini's for very large inputs."
+    },
+    {
+      "title": "Multimodal capabilities",
+      "text": "Gemini supports native video and audio understanding alongside text and images. You can upload a video and ask questions about it, or have it process audio recordings. Claude handles text, images and documents, but does not natively process video or audio files."
+    },
+    {
+      "title": "Coding and development",
+      "text": "Claude leads on coding benchmarks, scoring 64.3% on SWE-bench Pro compared to Gemini's 54.2%. Claude Code is a mature terminal-based coding agent that can work autonomously on multi-step tasks. Gemini has code generation in its app and Gemini CLI, but Claude's coding tools are more established for professional development workflows."
+    },
+    {
+      "title": "Pricing structure",
+      "text": "Claude Pro costs $20 a month ($17 billed yearly). Google AI Plus starts at $4.99 a month, with AI Pro at $19.99. At the top tier, Claude Max 20x is $200 a month for maximum usage; Google AI Ultra is $99.99 with bundled storage and YouTube Premium. Google's plans include extras like storage and streaming; Claude's plans are purely for AI features."
+    },
+    {
+      "title": "Bundled extras",
+      "text": "Google AI plans include storage (200 GB to 30 TB), YouTube Premium Lite or full YouTube Premium, and Google Home Premium. Claude plans are focused entirely on AI capabilities — there are no bundled storage or streaming services, but all paid tiers include Claude Code, design tools and collaborative features."
+    }
+  ],
+  "similarities": [
+    "Free plans with basic AI features",
+    "Paid tiers around $20 a month",
+    "AI image generation on paid plans",
+    "Advanced reasoning and extended thinking capabilities",
+    "Mobile apps for iOS and Android",
+    "Enterprise and team plans for businesses"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for writing?",
+      "a": "Claude is generally considered the stronger writer. It produces more natural, nuanced prose and follows complex instructions more precisely. Gemini is good at information-dense writing and research summaries, especially when pulling from Google Search."
+    },
+    {
+      "q": "Which is better for coding?",
+      "a": "Claude leads on coding benchmarks and has Claude Code, a dedicated terminal-based coding agent. Gemini can generate and explain code but doesn't have an equivalent standalone coding tool. For professional development work, Claude currently offers more."
+    },
+    {
+      "q": "Which is cheaper?",
+      "a": "Google AI Plus starts at $4.99 a month, the cheapest entry point. Claude Pro is $20 a month ($17 yearly). At the top tier, Google AI Ultra is $99.99 with bundled storage and YouTube; Claude Max 20x is $200 for maximum AI usage. Google's bundles may offer more value if you use those services."
+    },
+    {
+      "q": "Can I use both?",
+      "a": "Yes. A common approach is using Claude for writing, coding and careful reasoning, and Gemini for tasks inside Google Workspace — drafting emails, summarising docs, analysing sheets. Both free tiers let you try without commitment."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Claude — Pricing",
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "label": "Google — AI subscriptions",
+      "url": "https://one.google.com/about/google-ai-plans/"
+    },
+    {
+      "label": "DataCamp — Claude vs Gemini",
+      "url": "https://www.datacamp.com/blog/claude-vs-gemini"
+    },
+    {
+      "label": "Vellum — Is Claude Better Than Gemini?",
+      "url": "https://www.vellum.ai/blog/is-claude-better-than-gemini"
+    }
+  ]
+}

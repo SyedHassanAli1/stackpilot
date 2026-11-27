@@ -1,0 +1,148 @@
+{
+  "slug": "chatgpt-vs-gemini",
+  "verified": "2026-11-27",
+  "seoTitle": "ChatGPT vs Gemini: Features, Pricing & Differences",
+  "metaDescription": "ChatGPT vs Gemini compared side by side: free plans, paid tiers, AI models, image and video generation, Google integration, coding tools and pricing, checked against official sources.",
+  "intro": [
+    "ChatGPT and Gemini are the two most-used AI assistants. ChatGPT, made by OpenAI, is a standalone AI app for writing, research, coding and image generation. Gemini, made by Google, is an AI assistant that runs inside Google's products — Search, Gmail, Docs, Drive and Android — as well as in its own app.",
+    "Both have free plans, paid tiers around $20 a month and access to advanced reasoning models. The biggest difference is where they live: ChatGPT is an independent tool you go to, while Gemini is a layer built into the Google apps many people already use. This page sets the details side by side using each company's own pricing pages and documentation."
+  ],
+  "chooseA": [
+    "You want an independent AI tool that works the same everywhere, not tied to one ecosystem.",
+    "You want Codex for coding agents, or ChatGPT Sites for building hosted web pages.",
+    "You want an $8/mo Go plan with custom GPTs, advanced voice and image generation.",
+    "You want ad-free on Plus ($20/mo) while still getting the full feature set."
+  ],
+  "chooseB": [
+    "You live in Google Workspace and want AI inside Gmail, Docs, Sheets and Drive.",
+    "You want a $4.99/mo entry plan with higher usage limits and 200 GB of storage.",
+    "You want built-in video generation with Veo and AI image editing with Imagen.",
+    "You want Google AI Pro ($19.99/mo) bundled with 5 TB storage and YouTube Premium Lite."
+  ],
+  "glance": [
+    {
+      "label": "Developer",
+      "a": "OpenAI",
+      "b": "Google DeepMind"
+    },
+    {
+      "label": "Free plan",
+      "a": "Limited GPT-5.5 access, basic image generation",
+      "b": "Gemini with daily usage limits, image generation"
+    },
+    {
+      "label": "Cheapest paid plan",
+      "a": "Go · $8/mo · custom GPTs, advanced voice, image generation",
+      "b": "Google AI Plus · $4.99/mo · 2× usage limits, 200 GB storage"
+    },
+    {
+      "label": "Mid-tier plan",
+      "a": "Plus · $20/mo · ad-free, GPT-5.5 Thinking, Deep Research, Codex",
+      "b": "Google AI Pro · $19.99/mo · 4× limits, 5 TB, YouTube Premium Lite"
+    },
+    {
+      "label": "Top-tier plan",
+      "a": "Pro · $200/mo · highest limits, Pro model",
+      "b": "Google AI Ultra · $99.99/mo · 5× limits, 30 TB, YouTube Premium"
+    },
+    {
+      "label": "Video generation",
+      "a": "Sora retired April 2026 · no current video tool",
+      "b": "Veo video generation on paid plans"
+    },
+    {
+      "label": "Coding tools",
+      "a": "Codex agent for coding tasks on Go and above",
+      "b": "Code generation in Gemini app, no dedicated coding agent"
+    },
+    {
+      "label": "App integration",
+      "a": "Standalone app · plugins and custom GPTs",
+      "b": "Built into Gmail, Docs, Sheets, Drive, Search and Android"
+    },
+    {
+      "label": "Ads",
+      "a": "Ads on Free and Go plans · Plus and Pro are ad-free",
+      "b": "No ads on any plan"
+    },
+    {
+      "label": "Apps",
+      "a": "Web, macOS, Windows, iOS, Android",
+      "b": "Web, iOS, Android · inside Google apps on all platforms"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Ecosystem and integration",
+      "text": "ChatGPT is a standalone AI tool — you open it separately and use it alongside your other apps. Gemini is built into Google's products: it works inside Gmail, Google Docs, Sheets, Drive, Search and Android. If you already live in Google Workspace, Gemini can draft emails, summarise documents and analyse spreadsheets without leaving those apps. ChatGPT connects to third-party apps through plugins and custom GPTs."
+    },
+    {
+      "title": "Entry-level paid plans",
+      "text": "ChatGPT Go costs $8 a month and adds custom GPTs, advanced voice, and image generation, but it may show ads. Google AI Plus costs $4.99 a month and doubles the free plan's usage limits while adding 200 GB of Google storage. For $20, ChatGPT Plus is ad-free with GPT-5.5 Thinking and Deep Research; Google AI Pro is $19.99 and includes 5 TB of storage, YouTube Premium Lite, and Google Home Premium."
+    },
+    {
+      "title": "Video generation",
+      "text": "OpenAI retired its Sora video generator in April 2026 and has not replaced it. Google offers Veo for AI video generation on paid Gemini plans, making video creation a clear differentiator for Gemini."
+    },
+    {
+      "title": "Coding and development",
+      "text": "ChatGPT includes Codex, a coding agent that can work on tasks autonomously, available from the Go plan up. Gemini can generate and explain code in conversation, but it doesn't have a dedicated coding agent. For developers who want AI coding assistance as a core feature, ChatGPT currently offers more."
+    },
+    {
+      "title": "Bundled extras",
+      "text": "Google AI plans bundle extras beyond the AI itself: storage (200 GB to 30 TB), YouTube Premium Lite or full YouTube Premium, Google Home Premium and Health Premium. ChatGPT plans are purely for AI features — there are no bundled storage or streaming services."
+    },
+    {
+      "title": "Ads",
+      "text": "OpenAI has introduced ads on ChatGPT's Free and Go plans, with Plus and Pro remaining ad-free. Gemini does not show ads on any plan, including the free tier."
+    },
+    {
+      "title": "Context window",
+      "text": "Gemini's higher-end models support context windows of up to 1 million tokens, allowing them to process very large documents or codebases. ChatGPT's models have smaller but still substantial context windows."
+    }
+  ],
+  "similarities": [
+    "Free plans with text generation, image creation and web browsing",
+    "Paid tiers around $20 a month with advanced reasoning models",
+    "AI image generation included on paid plans",
+    "Advanced voice mode for spoken conversations",
+    "Web, desktop and mobile apps",
+    "Enterprise plans for businesses"
+  ],
+  "faq": [
+    {
+      "q": "Which is cheaper?",
+      "a": "Gemini's cheapest paid plan (Google AI Plus) is $4.99 a month, while ChatGPT Go is $8 a month. At the mid-tier, they're nearly identical: ChatGPT Plus is $20 and Google AI Pro is $19.99. Google AI plans bundle storage and YouTube perks that may offset the cost if you'd pay for those separately."
+    },
+    {
+      "q": "Which is better for coding?",
+      "a": "ChatGPT currently offers more for developers. Its Codex agent can work on coding tasks autonomously, and it's available from the Go plan. Gemini can generate and explain code in conversation but doesn't have a dedicated coding agent."
+    },
+    {
+      "q": "Can I use both?",
+      "a": "Yes. Many people use Gemini for tasks inside Google Workspace — drafting emails, summarising docs, analysing sheets — and ChatGPT as a standalone tool for writing, research and coding. The free tiers of both are generous enough to try without commitment."
+    },
+    {
+      "q": "Does ChatGPT have ads?",
+      "a": "Yes. OpenAI shows ads on ChatGPT's Free and Go ($8/mo) plans. ChatGPT Plus ($20/mo), Pro ($200/mo), Business and Enterprise are ad-free. Gemini does not show ads on any plan."
+    }
+  ],
+  "sources": [
+    {
+      "label": "ChatGPT — Pricing",
+      "url": "https://chatgpt.com/pricing/"
+    },
+    {
+      "label": "OpenAI — Introducing ChatGPT Go",
+      "url": "https://openai.com/index/introducing-chatgpt-go"
+    },
+    {
+      "label": "Google — AI subscriptions",
+      "url": "https://one.google.com/about/google-ai-plans/"
+    },
+    {
+      "label": "Google Blog — Google AI subscriptions at I/O 2026",
+      "url": "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions"
+    }
+  ]
+}

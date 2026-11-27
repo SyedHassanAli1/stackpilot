@@ -319,6 +319,42 @@
         'Zapier Professional starts at $19.99/mo for 750 tasks; Make Core at $9/mo for 10,000 credits (both billed yearly).',
         'Zapier’s free plan has 100 tasks a month; Make’s has 1,000 credits a month.'
       ] },
+    { slug: 'claude-vs-gemini', a: 'claude', b: 'gemini', category: 'AI Tools', title: 'Claude vs Gemini',
+      subtitle: 'Reasoning depth vs Google integration',
+      fitA: 'You want the strongest writing, careful reasoning and Claude Code for terminal-based coding, from $17/mo yearly.',
+      fitB: 'You want AI inside Gmail, Docs, Sheets and Drive, with video understanding and 1M-token context, from $4.99/mo.',
+      differences: [
+        'Claude leads on writing quality and coding benchmarks; Gemini integrates into Google Workspace.',
+        'Claude Pro is $20/mo ($17 yearly); Google AI Plus starts at $4.99/mo with 200 GB storage.',
+        'Gemini supports native video and audio input with a 1M-token context window; Claude handles up to 200K tokens.'
+      ] },
+    { slug: 'chatgpt-vs-perplexity', a: 'chatgpt', b: 'perplexity', category: 'AI Tools', title: 'ChatGPT vs Perplexity',
+      subtitle: 'AI assistant vs AI answer engine',
+      fitA: 'You need a general-purpose assistant for writing, coding, analysis and creative tasks, starting at $8/mo.',
+      fitB: 'You need research answers with inline citations and access to GPT, Claude and Gemini models, for $20/mo.',
+      differences: [
+        'Perplexity cites every source inline; ChatGPT draws on training data with optional web search.',
+        'ChatGPT Go is $8/mo (with ads); Perplexity Pro is $20/mo (no ads, multiple AI models).',
+        'ChatGPT has Codex for coding and image generation; Perplexity has Pro Search for deep research.'
+      ] },
+    { slug: 'chatgpt-vs-gemini', a: 'chatgpt', b: 'gemini', category: 'AI Tools', title: 'ChatGPT vs Gemini',
+      subtitle: 'AI assistants for work and research',
+      fitA: 'You want an independent AI tool with Codex coding agents, custom GPTs and ChatGPT Sites, starting at $8/mo.',
+      fitB: 'You want AI built into Gmail, Docs, Sheets and Drive, with bundled storage and YouTube Premium, starting at $4.99/mo.',
+      differences: [
+        'ChatGPT is a standalone AI app; Gemini is built into Google Workspace.',
+        'ChatGPT Go is $8/mo with ads; Google AI Plus is $4.99/mo with no ads and 200 GB storage.',
+        'ChatGPT has Codex for autonomous coding; Gemini has Veo for video generation.'
+      ] },
+    { slug: 'canva-vs-figma', a: 'canva', b: 'figma', category: 'Design', title: 'Canva vs Figma',
+      subtitle: 'Graphic design vs interface design',
+      fitA: 'You need social media posts, presentations or marketing materials fast, with 1 million+ templates and no design training.',
+      fitB: 'You design app or website interfaces and need auto layout, interactive prototyping, design systems and Dev Mode.',
+      differences: [
+        'Canva is a drag-and-drop editor for marketing visuals; Figma is a vector editor for UI/UX design.',
+        'Canva Pro is $15/mo per person billed yearly; Figma Professional is $16/mo per Full seat billed yearly.',
+        'Figma has interactive prototyping and Dev Mode for developer handoff; Canva has basic presentation mode.'
+      ] },
     { slug: 'figma-vs-penpot', a: 'figma', b: 'penpot', category: 'Design', title: 'Figma vs Penpot',
       subtitle: 'Interface design & collaboration',
       fitA: 'You want desktop apps, one seat that covers design, whiteboards, slides and AI prototyping, and Dev Mode for handoff.',
@@ -354,6 +390,15 @@
         'Notion stores your work in its cloud workspace; Obsidian stores notes on your device as Markdown files.',
         'Obsidian is free for every use, with paid Sync and Publish; Notion teams pay per seat from $10/mo (yearly).',
         'Notion has real-time collaboration and Notion AI; Obsidian shares vaults through Sync and adds features with community plugins.'
+      ] },
+    { slug: 'google-analytics-vs-plausible', a: 'google-analytics', b: 'plausible', category: 'Marketing', title: 'Google Analytics vs Plausible',
+      subtitle: 'Web analytics: depth vs privacy',
+      fitA: 'You need free, full-featured analytics with audience segments, conversion funnels and Google Ads integration.',
+      fitB: 'You want cookie-free, privacy-first analytics with a simple dashboard and no consent banner, from $9/mo.',
+      differences: [
+        'Google Analytics uses cookies and needs a consent banner; Plausible is cookie-free and needs no consent banner.',
+        'Google Analytics (GA4) is free; Plausible starts at $9/mo for 10K monthly pageviews.',
+        'Plausible is open source and can be self-hosted; Google Analytics is proprietary and cloud-only.'
       ] }
   ];
 

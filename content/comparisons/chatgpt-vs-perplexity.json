@@ -1,0 +1,148 @@
+{
+  "slug": "chatgpt-vs-perplexity",
+  "verified": "2026-11-27",
+  "seoTitle": "ChatGPT vs Perplexity: Features, Pricing & Differences",
+  "metaDescription": "ChatGPT vs Perplexity compared side by side: free plans, paid tiers, citation styles, research depth, coding tools and pricing, checked against official sources.",
+  "intro": [
+    "ChatGPT and Perplexity are both AI tools you can talk to, but they are built for different jobs. ChatGPT, made by OpenAI, is a general-purpose AI assistant for writing, coding, analysis and image generation. Perplexity, made by Perplexity AI, is an AI-powered answer engine that searches the web in real time and cites every source it uses.",
+    "Both have free plans and $20-a-month paid tiers. The core difference is approach: ChatGPT generates answers from its training and shows confidence, while Perplexity searches live sources and shows its citations. This page sets the details side by side using each company's own pricing pages and documentation."
+  ],
+  "chooseA": [
+    "You need a general-purpose assistant for writing, coding, analysis and creative tasks beyond search.",
+    "You want Codex for autonomous coding agents and ChatGPT Sites for building hosted web pages.",
+    "You want an $8/mo Go plan with custom GPTs, advanced voice and image generation.",
+    "You want a single tool that handles writing, image creation, data analysis and conversation."
+  ],
+  "chooseB": [
+    "You need research answers with inline citations and links to every source used.",
+    "You want Pro Search that reads multiple pages, cross-references facts and synthesises findings.",
+    "You want access to multiple AI models (GPT, Claude, Gemini) from a single $20/mo subscription.",
+    "You want the Comet browser with built-in AI search on every page you visit."
+  ],
+  "glance": [
+    {
+      "label": "Developer",
+      "a": "OpenAI",
+      "b": "Perplexity AI"
+    },
+    {
+      "label": "Core purpose",
+      "a": "General-purpose AI assistant",
+      "b": "AI-powered answer engine with live citations"
+    },
+    {
+      "label": "Free plan",
+      "a": "Limited GPT-5.5 access, basic image generation",
+      "b": "5 Pro searches per day, standard search unlimited"
+    },
+    {
+      "label": "Cheapest paid plan",
+      "a": "Go · $8/mo · custom GPTs, advanced voice, image gen (has ads)",
+      "b": "Pro · $20/mo · unlimited Pro searches, all AI models, no ads"
+    },
+    {
+      "label": "Mid-tier plan",
+      "a": "Plus · $20/mo · ad-free, GPT-5.5 Thinking, Deep Research, Codex",
+      "b": "Pro · $20/mo (same tier — no mid-tier)"
+    },
+    {
+      "label": "Top-tier plan",
+      "a": "Pro · $200/mo · highest limits, Pro model",
+      "b": "Max · $200/mo · unlimited everything, early features"
+    },
+    {
+      "label": "Citations",
+      "a": "Can search the web; citations optional and less prominent",
+      "b": "Every answer includes inline citations with numbered source links"
+    },
+    {
+      "label": "Coding tools",
+      "a": "Codex agent for autonomous coding tasks",
+      "b": "Perplexity Computer for agentic coding tasks (Max plan)"
+    },
+    {
+      "label": "AI models",
+      "a": "OpenAI models only (GPT-5.5, GPT-5.4)",
+      "b": "Multiple providers: GPT, Claude, Gemini on Pro and above"
+    },
+    {
+      "label": "Apps",
+      "a": "Web, macOS, Windows, iOS, Android",
+      "b": "Web, iOS, Android, Comet browser (Mac and Windows)"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Search and citations",
+      "text": "Perplexity was built as a search tool first. Every answer includes numbered inline citations linking to the sources it used, so you can verify claims immediately. ChatGPT can search the web when needed, but its answers default to drawing on training data, and citations are less prominent. If you need to trace every fact back to its source, Perplexity is purpose-built for that."
+    },
+    {
+      "title": "General-purpose capabilities",
+      "text": "ChatGPT is a broader tool. Beyond answering questions, it writes long-form content, generates and edits images, analyses uploaded files, runs code, and builds hosted web pages with ChatGPT Sites. Perplexity focuses on research and question-answering; it can generate images and analyse files on paid plans, but its creative and coding features are narrower."
+    },
+    {
+      "title": "Pricing structure",
+      "text": "ChatGPT offers a budget Go plan at $8 a month (with ads) before its Plus tier at $20. Perplexity has no budget tier — its first paid plan is Pro at $20 a month. Both top out at $200 a month (ChatGPT Pro and Perplexity Max). For students, Perplexity offers Education Pro at $10 a month."
+    },
+    {
+      "title": "AI model access",
+      "text": "ChatGPT uses only OpenAI's own models. Perplexity Pro and Max let you choose between models from OpenAI, Anthropic (Claude) and Google (Gemini) within the same subscription, so you can pick the best model for each query without maintaining separate subscriptions."
+    },
+    {
+      "title": "Browser integration",
+      "text": "Perplexity offers the Comet browser, a full web browser with AI search built into every page. It's free, with a $5 Comet Plus add-on. ChatGPT has browser extensions and a desktop app, but no standalone browser product."
+    },
+    {
+      "title": "Research depth",
+      "text": "Both tools offer deep research features on paid plans. Perplexity's Pro Search reads multiple web pages, cross-references facts and builds a synthesised answer with sources. ChatGPT's Deep Research can spend several minutes on a question, browsing dozens of pages and producing a detailed report. Both go well beyond a simple search."
+    },
+    {
+      "title": "Ads",
+      "text": "ChatGPT shows ads on its Free and Go plans; Plus and Pro are ad-free. Perplexity does not show ads on any plan, though it experimented with sponsored follow-up questions in 2024–2025."
+    }
+  ],
+  "similarities": [
+    "Free plans with web search and basic AI features",
+    "Paid tiers at $20 a month and $200 a month",
+    "Deep research modes that read multiple sources",
+    "AI image generation on paid plans",
+    "File upload and analysis capabilities",
+    "Mobile apps for iOS and Android"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for research?",
+      "a": "Perplexity is purpose-built for research. Every answer includes inline citations, and Pro Search reads multiple pages to cross-reference facts. ChatGPT's Deep Research is also thorough, but Perplexity's citation-first approach makes it easier to verify and share findings."
+    },
+    {
+      "q": "Which is better for writing and coding?",
+      "a": "ChatGPT is stronger for writing and coding. It has better long-form content generation, more creative flexibility, and the Codex agent for autonomous coding tasks. Perplexity can help with writing and has Perplexity Computer for coding on the Max plan, but these are secondary to its research focus."
+    },
+    {
+      "q": "Can I use both?",
+      "a": "Yes, and many professionals do. A common workflow is using Perplexity for research and fact-finding, then ChatGPT for writing, coding and creative work. Both free tiers are generous enough to try without commitment."
+    },
+    {
+      "q": "Which has the cheaper paid plan?",
+      "a": "ChatGPT Go at $8 a month is the cheapest paid AI plan between the two, though it includes ads. If you want an ad-free plan, both ChatGPT Plus and Perplexity Pro cost $20 a month."
+    }
+  ],
+  "sources": [
+    {
+      "label": "ChatGPT — Pricing",
+      "url": "https://chatgpt.com/pricing/"
+    },
+    {
+      "label": "Perplexity — Pricing",
+      "url": "https://www.perplexity.ai/hub/pricing"
+    },
+    {
+      "label": "Zapier — Perplexity vs ChatGPT (2026)",
+      "url": "https://zapier.com/blog/perplexity-vs-chatgpt"
+    },
+    {
+      "label": "G2 — Perplexity vs ChatGPT (2026)",
+      "url": "https://learn.g2.com/perplexity-vs-chatgpt"
+    }
+  ]
+}

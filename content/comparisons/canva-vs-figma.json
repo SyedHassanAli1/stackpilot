@@ -1,0 +1,152 @@
+{
+  "slug": "canva-vs-figma",
+  "verified": "2026-11-27",
+  "seoTitle": "Canva vs Figma: Features, Pricing & Differences",
+  "metaDescription": "Canva vs Figma compared side by side: graphic design vs UI/UX design, templates vs components, free plans, AI features, collaboration and pricing, checked against official sources.",
+  "intro": [
+    "Canva and Figma are both browser-based design tools with free plans, but they're built for different jobs. Canva is a drag-and-drop editor for social media graphics, presentations, videos and print — aimed at marketers, small businesses and anyone who needs polished visuals without learning design. Figma is a collaborative interface-design tool for apps and websites — aimed at UI/UX designers, product teams and developers.",
+    "Some features overlap: both run in the browser, support real-time collaboration, offer AI tools and have free plans. But the template libraries, design controls, prototyping depth and pricing models are very different. This page sets the details side by side using each company's own pricing pages and documentation."
+  ],
+  "chooseA": [
+    "You need quick social media posts, presentations or marketing materials from ready-made templates.",
+    "You want a drag-and-drop editor that works from the first session with no design training.",
+    "You need video editing, content scheduling and brand kits in the same tool.",
+    "You want one app for graphic design, documents, whiteboards and websites."
+  ],
+  "chooseB": [
+    "You design user interfaces for apps or websites and need auto layout, components and design systems.",
+    "You need interactive prototyping with smart animate, scroll triggers and variables.",
+    "Your developers need Dev Mode to inspect designs and export CSS, iOS or Android code.",
+    "You want FigJam whiteboards, Figma Slides and Figma Make for AI prototyping in one seat."
+  ],
+  "glance": [
+    {
+      "label": "Best for",
+      "a": "Social media, marketing, presentations, print",
+      "b": "UI/UX design, product design, prototyping"
+    },
+    {
+      "label": "Free plan",
+      "a": "Unlimited designs, 5 GB storage, 50 AI uses/month",
+      "b": "Starter · unlimited drafts, 3 team design files"
+    },
+    {
+      "label": "Lowest paid plan",
+      "a": "Pro · $15/mo yearly ($18 monthly), 1 person",
+      "b": "Professional · $16/mo per Full seat yearly, $20 monthly"
+    },
+    {
+      "label": "Templates",
+      "a": "1 million+ ready-made templates across 100+ categories",
+      "b": "Community UI kits, wireframes and component libraries"
+    },
+    {
+      "label": "Learning curve",
+      "a": "Very easy — drag-and-drop, no design knowledge needed",
+      "b": "Moderate — auto layout, variants and tokens take time to learn"
+    },
+    {
+      "label": "Prototyping",
+      "a": "Basic presentation mode and frame linking",
+      "b": "Interactive prototyping with smart animate, scroll triggers and variables"
+    },
+    {
+      "label": "Developer handoff",
+      "a": "Not available",
+      "b": "Dev Mode with CSS, iOS and Android code on paid plans"
+    },
+    {
+      "label": "AI features",
+      "a": "Magic Design, Magic Write, background remover, text-to-image",
+      "b": "Figma Make, AI-assisted layout and prototyping, AI credits per seat"
+    },
+    {
+      "label": "Apps",
+      "a": "Web, macOS, Windows, iOS, Android",
+      "b": "Web, macOS, Windows"
+    },
+    {
+      "label": "Team plan",
+      "a": "Business · $21/mo per person yearly ($25 monthly)",
+      "b": "Professional · $16/mo per Full seat yearly, Dev $12, Collab $3"
+    }
+  ],
+  "differences": [
+    {
+      "title": "Target audience and design approach",
+      "text": "Canva is a graphic-design tool built for non-designers: marketers, teachers, small business owners and social media managers. Its drag-and-drop editor and template library let anyone create polished visuals. Figma is an interface-design tool built for product teams: UI/UX designers, frontend developers and design system architects. Its vector editor, auto layout and component system support complex app and website design."
+    },
+    {
+      "title": "Templates vs components",
+      "text": "Canva has over a million ready-made templates for social media, presentations, videos, documents and print. Users pick a template and customise the text and images. Figma's community offers UI kits, wireframe libraries and component sets, but they're starting points for designers, not finished layouts. Figma's strength is reusable components with variants and design tokens that keep a product's design system consistent."
+    },
+    {
+      "title": "Prototyping and developer handoff",
+      "text": "Figma has interactive prototyping with smart animate, scroll triggers, conditional logic and variables. Its Dev Mode lets developers inspect designs, compare changes and export CSS, iOS and Android measurements. Canva has basic presentation mode and simple frame linking, but no interactive prototyping or developer handoff tools."
+    },
+    {
+      "title": "Collaboration model",
+      "text": "Both tools support real-time co-editing. Canva focuses on marketing workflows: brand kits enforce brand colours and fonts, approval workflows manage content sign-off, and a Content Planner schedules social media posts. Figma focuses on product workflows: shared design system libraries keep components in sync, branching lets designers work in parallel, and design reviews connect to developer tools."
+    },
+    {
+      "title": "AI features",
+      "text": "Canva's Magic Studio includes Magic Design (generate layouts from prompts), Magic Write (AI text generation), background remover, text-to-image and Magic Resize. These need no design knowledge. Figma's AI includes Figma Make for generating designs and prototypes from prompts, plus AI-assisted auto layout suggestions. Every Figma seat includes a monthly AI credit allowance."
+    },
+    {
+      "title": "Pricing model",
+      "text": "Canva Pro is $15 a month per person billed yearly ($18 monthly) and is a single-user plan. Adding more people moves to Business at $21 a month per person billed yearly ($25 monthly). Figma Professional charges per editor seat: $16 a month for a Full seat billed yearly ($20 monthly), $12 for a Dev seat and $3 for a Collab seat, with unlimited free viewers."
+    },
+    {
+      "title": "Beyond design",
+      "text": "Canva includes video editing, document creation, website publishing, QR codes and print ordering in every plan. Figma includes FigJam whiteboards, Figma Slides, Figma Draw, Figma Sites (beta) and Figma Buzz in a single seat, alongside Dev Mode for developer handoff."
+    }
+  ],
+  "similarities": [
+    "Browser-based with real-time collaboration",
+    "Free plans with no time limit",
+    "AI-powered design features",
+    "Desktop apps for macOS and Windows",
+    "Brand and asset management on paid plans",
+    "Enterprise plans with SSO and admin controls"
+  ],
+  "faq": [
+    {
+      "q": "Can I use Canva for UI/UX design?",
+      "a": "Canva can create simple mockups and wireframes, but it doesn't have auto layout, component variants, interactive prototyping or developer handoff. For app and website design with a team, Figma is the more capable tool."
+    },
+    {
+      "q": "Can I use Figma for social media graphics?",
+      "a": "Yes, Figma can create social media graphics, but it doesn't have Canva's template library, stock photo collection, video editor or content scheduling. For high-volume marketing content, Canva is faster."
+    },
+    {
+      "q": "Which is cheaper for a team?",
+      "a": "It depends on team size and what you need. Canva Business is $21 a month per person billed yearly. Figma Professional charges $16 a month per Full seat billed yearly, but also offers cheaper Dev ($12) and Collab ($3) seats, with unlimited free viewers."
+    },
+    {
+      "q": "Do I need both?",
+      "a": "Many teams use both. Product designers use Figma for UI/UX work, prototyping and developer handoff, while marketing teams use Canva for social media, presentations and brand materials. The two tools solve different problems."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Canva — Plans & pricing",
+      "url": "https://www.canva.com/pricing/"
+    },
+    {
+      "label": "Canva — Features overview",
+      "url": "https://www.canva.com/features/"
+    },
+    {
+      "label": "Figma — Plans & pricing",
+      "url": "https://www.figma.com/pricing/"
+    },
+    {
+      "label": "Figma — Pricing FAQ",
+      "url": "https://www.figma.com/pricing-faq/"
+    },
+    {
+      "label": "Figma Help — Professional plan overview",
+      "url": "https://help.figma.com/hc/en-us/articles/13839214115607-Professional-plan-overview"
+    }
+  ]
+}
