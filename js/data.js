@@ -455,6 +455,24 @@
         'Slack excels at messaging and third-party integrations; Teams is built around Microsoft 365 document collaboration.',
         'Teams includes full video meetings and webinars; Slack offers Huddles but most teams add Zoom or Meet.',
         'Teams is included in Microsoft 365 business plans; Slack is always a separate cost.'
+      ] },
+    { slug: 'todoist-vs-notion', a: 'todoist', b: 'notion', category: 'Productivity', title: 'Todoist vs Notion',
+      subtitle: 'Task management: focus vs flexibility',
+      fitA: 'You want a fast, focused task manager with natural language input and smart scheduling, from $5/mo (yearly).',
+      fitB: 'You need tasks, docs, wikis and databases in one connected workspace, from $10/seat/mo (yearly).',
+      differences: [
+        'Todoist is a focused task manager; Notion is a full workspace combining docs, databases and projects.',
+        'Todoist parses natural language for dates, priorities and labels; Notion requires manual setup but offers six project views.',
+        'Todoist Pro costs $5/mo (yearly); Notion Plus costs $10/seat/mo (yearly) but replaces multiple tools.'
+      ] },
+    { slug: 'miro-vs-figma', a: 'miro', b: 'figma', category: 'Design', title: 'Miro vs Figma',
+      subtitle: 'Visual collaboration: whiteboard vs design',
+      fitA: 'You need a digital whiteboard for workshops, brainstorming and diagramming, from $8/member/mo (yearly).',
+      fitB: 'You need UI design, prototyping and dev handoff with FigJam whiteboarding included, from $16/editor/mo (yearly).',
+      differences: [
+        'Miro is a whiteboard for brainstorming and planning; Figma is a UI design tool with prototyping and dev handoff.',
+        'Miro has 7,000+ templates for business frameworks and workshops; Figma has components, variants and design systems.',
+        'FigJam (simple whiteboard) is included free with Figma; Miro has no native UI design capabilities.'
       ] }
   ];
 

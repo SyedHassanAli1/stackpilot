@@ -1,0 +1,92 @@
+{
+  "slug": "miro-vs-figma",
+  "verified": "2026-11-28",
+  "seoTitle": "Miro vs Figma: Features, Pricing & Differences",
+  "metaDescription": "Miro vs Figma compared side by side: whiteboards, UI design, prototyping, collaboration, AI features, pricing tiers and FigJam, checked against official sources.",
+  "intro": [
+    "Miro and Figma are both visual collaboration platforms, but they serve different primary jobs. Miro, founded in 2011, is a digital whiteboard for brainstorming, diagramming, workshops and planning. Figma, founded in 2012, is a collaborative interface design tool for creating UI mockups, prototypes and design systems. The overlap has grown since Figma launched FigJam, its own whiteboard product, but their core strengths remain distinct.",
+    "Both offer free plans. Miro Starter starts at $8 per member per month billed yearly. Figma Professional starts at $16 per editor per month billed yearly (FigJam is included with every Figma plan). The fundamental question: do you need a whiteboard, a design tool, or both?"
+  ],
+  "chooseA": [
+    "You need a digital whiteboard for workshops, brainstorming, retrospectives and planning sessions.",
+    "Your team includes non-designers who need to collaborate visually — PMs, engineers, strategists.",
+    "You want 7,000+ templates covering business frameworks, agile ceremonies and diagrams.",
+    "You need advanced diagramming with smart connectors, flowcharts and technical diagrams."
+  ],
+  "chooseB": [
+    "You need to design user interfaces, create interactive prototypes and maintain design systems.",
+    "You want a tool purpose-built for pixel-perfect UI design with auto layout, components and variants.",
+    "You need developer handoff with inspect mode, CSS values and exportable assets.",
+    "You want FigJam (whiteboarding) included at no extra cost with your Figma plan."
+  ],
+  "glance": [
+    { "label": "Company", "a": "Miro (founded 2011)", "b": "Figma (founded 2012)" },
+    { "label": "Core purpose", "a": "Digital whiteboard and visual collaboration", "b": "Interface design, prototyping and design systems" },
+    { "label": "Free plan", "a": "Unlimited members, 3 editable boards", "b": "3 Figma files, unlimited FigJam files" },
+    { "label": "Starting paid price", "a": "$8/member/mo (yearly)", "b": "$16/editor/mo (yearly)" },
+    { "label": "Whiteboarding", "a": "Core product — advanced whiteboard", "b": "FigJam (included, simpler whiteboard)" },
+    { "label": "UI design", "a": "No native UI design tools", "b": "Full UI design with auto layout, components, variants" },
+    { "label": "Prototyping", "a": "No interactive prototyping", "b": "Interactive prototypes with transitions and smart animate" },
+    { "label": "Templates", "a": "7,000+ templates across business and design", "b": "Community templates focused on design and FigJam" },
+    { "label": "AI features", "a": "Miro AI (content generation, clustering, summaries)", "b": "Figma AI (UI generation, asset search, text rewrite)" },
+    { "label": "Dev handoff", "a": "No native dev handoff", "b": "Dev Mode with inspect, code snippets and assets" }
+  ],
+  "differences": [
+    {
+      "title": "Core purpose",
+      "text": "Miro is a whiteboard. You brainstorm, run workshops, map user journeys, draw diagrams and plan sprints on an infinite canvas with sticky notes, shapes and connectors. Figma is a design tool. You design app screens, build component libraries, create interactive prototypes and hand off specs to developers. These are fundamentally different jobs, and each tool is best at its own."
+    },
+    {
+      "title": "Whiteboarding: Miro vs FigJam",
+      "text": "Miro's whiteboard is its entire product — advanced diagramming with smart connectors, 7,000+ templates, voting, timers, breakout frames and presentation mode for running workshops. FigJam, included free with Figma, is a simpler whiteboard focused on quick collaboration — sticky notes, stamps, drawing tools and basic connectors. For serious workshop facilitation and diagramming, Miro is more capable. For quick team brainstorms alongside design work, FigJam is convenient and free."
+    },
+    {
+      "title": "UI design and prototyping",
+      "text": "Figma is the industry-standard UI design tool. Auto layout, components with variants, design tokens, interactive prototyping with smart animate, and Dev Mode for developer handoff. Miro has no native UI design or prototyping capabilities — it is a whiteboard and diagramming surface. If you need to design and ship product interfaces, Figma is the only choice between the two."
+    },
+    {
+      "title": "Audience and collaboration",
+      "text": "Miro is built for cross-functional teams: product managers, engineers, strategists, researchers and designers all collaborate on the same boards. Its templates cover business frameworks, agile ceremonies, strategy mapping and technical diagrams. Figma's collaboration is centred on the design process — designers, developers and stakeholders reviewing and commenting on design work."
+    },
+    {
+      "title": "AI features",
+      "text": "Miro AI can generate content on boards, cluster sticky notes, summarise workshop outputs and create diagrams from text prompts. AI credits vary by plan (25 per member on Starter, more on Business and Enterprise). Figma AI can generate UI layouts, search for design assets, rewrite text layers and automate repetitive design tasks. Both are investing heavily in AI, but applied to their respective domains."
+    },
+    {
+      "title": "Pricing model",
+      "text": "Miro Starter is $8 per member per month (yearly) and charges for every member. Figma Professional is $16 per editor per month (yearly) but charges only for editors — viewers are free. For design teams where most collaborators are viewers, Figma's model can be cheaper despite the higher per-seat price. Miro's free plan allows unlimited members but limits editable boards to three."
+    }
+  ],
+  "similarities": [
+    "Real-time collaboration with multiple users on the same canvas",
+    "Free plans for getting started",
+    "Integrations with Slack, Jira, Confluence and other tools",
+    "Commenting and feedback features",
+    "Organisation-level admin controls and SSO on higher plans",
+    "Web-based with desktop apps for macOS and Windows"
+  ],
+  "faq": [
+    {
+      "q": "Do I need both Miro and Figma?",
+      "a": "Many product teams use both: Figma for UI design and prototyping, Miro for workshops, brainstorming and planning. If your team does both, using both tools is common. FigJam (free with Figma) can replace Miro for simpler whiteboarding needs."
+    },
+    {
+      "q": "Is FigJam a replacement for Miro?",
+      "a": "For simple brainstorming and sticky-note sessions, FigJam works well and is free with Figma. For advanced workshops, complex diagramming, 7,000+ templates and facilitation features like voting and timers, Miro is more capable."
+    },
+    {
+      "q": "Which is better for product managers?",
+      "a": "Miro is typically the better fit for PMs. It supports roadmap planning, user story mapping, retrospectives, stakeholder workshops and strategic frameworks with ready-made templates. Figma is essential for reviewing designs but is not a PM planning tool."
+    },
+    {
+      "q": "Which is cheaper for a team?",
+      "a": "It depends on your team structure. Miro Starter at $8 per member per month charges everyone. Figma Professional at $16 per editor per month charges only editors — viewers are free. A 5-person design team with 20 stakeholder viewers costs less on Figma than Miro, since the 20 viewers are free."
+    }
+  ],
+  "sources": [
+    { "label": "Miro — Pricing", "url": "https://miro.com/pricing" },
+    { "label": "Figma — Pricing", "url": "https://www.figma.com/pricing/" },
+    { "label": "ToolRadar — Miro vs Figma 2026", "url": "https://toolradar.com/compare/miro-vs-figma" },
+    { "label": "ClickUp — FigJam vs Miro", "url": "https://clickup.com/blog/figmajam-vs-miro/" }
+  ]
+}
