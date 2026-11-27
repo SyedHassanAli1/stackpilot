@@ -81,6 +81,10 @@ Each file in `content/comparisons/<slug>.json` becomes a page at `/comparisons/<
 comparison must also exist in `COMPARISONS` in `js/data.js` (that entry powers the homepage card
 and the short popup, which links to the full page once it exists).
 
+All comparisons are listed at `/comparisons/`, grouped by category with a filter box. That page
+is generated from `COMPARISONS` too, so a new comparison appears there automatically. The header,
+mobile menu, homepage section, footer and comparison breadcrumbs all link to it.
+
 A content file holds the intro, "Choose X if…" lists, the at-a-glance table, key differences,
 what the tools share, an FAQ and sources. The pricing tables are not repeated: they come from the
 two tools' own files in `content/tools/`, so a price is only ever written in one place.
@@ -108,7 +112,7 @@ All Tools. The header links are written by hand in `index.html`, so a new catego
 If any of these is missing, the build stops with an error.
 
 In the mobile menu, a chevron (›) marks links that open a page of their own. It comes from the
-`data-page` attribute, so when a page such as `/comparisons/` exists, change that link's `href`
+`data-page` attribute, so when a section gets its own page (as Comparisons now has), change that link's `href`
 and add `data-page` to show its chevron.
 
 Categories in the mobile menu is a section that expands and collapses: the word "Categories" opens

@@ -321,13 +321,15 @@
 
   function initScrollSpy() {
     const links = [...document.querySelectorAll('.nav-links a[data-spy]')];
-    const ids = ['tools', 'comparisons', 'guides'];
+    const ids = ['tools', 'guides'];
     const sections = ids.map(id => document.getElementById(id));
     const onScroll = () => {
       els.header.classList.toggle('is-scrolled', window.scrollY > 8);
       const y = window.scrollY + window.innerHeight * 0.35;
       let current = null;
-      sections.forEach(s => { if (s.offsetTop <= y) current = s.id; });
+      // Only highlight a link while its own section is in view (the
+      // Comparisons section between them has its own page, not a spy link).
+      sections.forEach(s => { if (s.offsetTop <= y && y < s.offsetTop + s.offsetHeight) current = s.id; });
       if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = 'guides';
       links.forEach(a => {
         if (a.dataset.spy === current) a.setAttribute('aria-current', 'true');

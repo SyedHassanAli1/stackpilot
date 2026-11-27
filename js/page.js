@@ -78,10 +78,11 @@
     chipRow.scrollLeft = currentChip.offsetLeft - (chipRow.clientWidth - currentChip.offsetWidth) / 2;
   }
 
-  // All Tools page: filter the cards in place as you type.
+  // All Tools and Comparisons pages: filter the cards in place as you type.
   const listSearch = $('#listSearch');
   if (listSearch) {
-    const cards = [...document.querySelectorAll('.tool-card[data-search]')];
+    // Works for tool cards (All Tools) and comparison cards (/comparisons/).
+    const cards = [...document.querySelectorAll('.card[data-search]')];
     const groups = [...document.querySelectorAll('.lp-group')];
     const count = $('#listCount');
     const empty = $('#listEmpty');
@@ -94,8 +95,10 @@
         card.hidden = !match;
         if (match) shown++;
       });
-      groups.forEach(g => { g.hidden = !g.querySelector('.tool-card:not([hidden])'); });
-      if (count) count.textContent = terms.length ? `${shown} of ${total} tools` : `${total} tools`;
+      groups.forEach(g => { g.hidden = !g.querySelector('.card[data-search]:not([hidden])'); });
+      const noun = count?.dataset.noun || 'tool';
+      const label = n => `${n} ${noun}${n === 1 ? '' : 's'}`;
+      if (count) count.textContent = terms.length ? `${shown} of ${label(total)}` : label(total);
       if (empty) empty.hidden = shown > 0;
     };
     listSearch.addEventListener('input', apply);

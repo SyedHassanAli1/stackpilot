@@ -140,6 +140,21 @@ const compareLink = (x, comparePages, cls) => comparePages.has(x.slug)
   ? `<a class="${cls}" href="/comparisons/${esc(x.slug)}/">${esc(x.title)}</a>`
   : `<a class="${cls}" href="/#compare-${esc(x.slug)}" data-open-compare="${esc(x.slug)}" aria-haspopup="dialog">${esc(x.title)}</a>`;
 
+// Comparison card (tool pages, category pages and /comparisons/).
+const compareCard = (x, comparePages, indent = '            ') => {
+  const search = [x.title, x.subtitle, x.category, toolBySlug[x.a]?.name, toolBySlug[x.b]?.name].filter(present).join(' ').toLowerCase();
+  return `
+${indent}<article class="card compare-card" data-search="${esc(search)}">
+${indent}  <div class="compare-top">
+${indent}    <div class="pair">${mark(toolBySlug[x.a], 'mark--sm')}<span class="vs" aria-hidden="true">vs</span>${mark(toolBySlug[x.b], 'mark--sm')}</div>
+${indent}    <span class="card-arrow">${icon('i-arrow-ur')}</span>
+${indent}  </div>
+${indent}  <h3>${compareLink(x, comparePages, 'card-link')}</h3>
+${indent}  ${present(x.subtitle) ? `<p>${esc(x.subtitle)}</p>` : ''}
+${indent}  <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">${comparePages.has(x.slug) ? 'Full comparison' : 'Overview'}</span></div>
+${indent}</article>`;
+};
+
 /* Tool page -------------------------------------------------------------- */
 function renderToolPage(t, c, pageSlugs, comparePages) {
   const url = `/tools/${t.slug}/`;
@@ -194,16 +209,7 @@ function renderToolPage(t, c, pageSlugs, comparePages) {
               ${icon('i-chev-r', 'tp-alt-chev')}
             </a></li>`).join('')}
           </ul>` : ''),
-    section('comparisons', 'Comparisons', comparisons.length ? `<div class="compare-grid">${comparisons.map(x => `
-            <article class="card compare-card">
-              <div class="compare-top">
-                <div class="pair">${mark(toolBySlug[x.a], 'mark--sm')}<span class="vs" aria-hidden="true">vs</span>${mark(toolBySlug[x.b], 'mark--sm')}</div>
-                <span class="card-arrow">${icon('i-arrow-ur')}</span>
-              </div>
-              <h3>${compareLink(x, comparePages, 'card-link')}</h3>
-              ${present(x.subtitle) ? `<p>${esc(x.subtitle)}</p>` : ''}
-              <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">${comparePages.has(x.slug) ? 'Full comparison' : 'Overview'}</span></div>
-            </article>`).join('')}
+    section('comparisons', 'Comparisons', comparisons.length ? `<div class="compare-grid">${comparisons.map(x => compareCard(x, comparePages)).join('')}
           </div>` : ''),
     section('sources', 'Sources & verification', list(c.sources).length ? `<p>StackPilot writes its own descriptions and checks product details against official sources. We are not affiliated with ${esc(t.name)}, and links go to its official website.</p>
           <ul class="tp-sources">${list(c.sources).map(s => `
@@ -342,7 +348,7 @@ function renderComparisonPage(x, c, pageSlugs, toolContent) {
     about: [A, B].map(t => ({ '@type': 'SoftwareApplication', name: t.name, url: t.url })),
     breadcrumb: {
       '@type': 'BreadcrumbList',
-      itemListElement: [['Home', '/'], ['Comparisons', '/#comparisons'], [x.title, url]].map(([name, item], i) => ({
+      itemListElement: [['Home', '/'], ['Comparisons', '/comparisons/'], [x.title, url]].map(([name, item], i) => ({
         '@type': 'ListItem', position: i + 1, name, ...(SITE_URL ? { item: `${SITE_URL}${item}` } : {})
       }))
     }
@@ -363,7 +369,7 @@ function renderComparisonPage(x, c, pageSlugs, toolContent) {
     jsonLd,
     source: `js/data.js, content/comparisons/${x.slug}.json and the two tools' content files`,
     main: `<main id="main" class="container tool-page compare-page">
-  ${breadcrumb([['Home', '/'], ['Comparisons', '/#comparisons'], [x.title]])}
+  ${breadcrumb([['Home', '/'], ['Comparisons', '/comparisons/'], [x.title]])}
 
   <header class="tp-hero cp-hero">
     <div class="pair cp-pair">${mark(A, 'mark--lg')}<span class="vs" aria-hidden="true">vs</span>${mark(B, 'mark--lg')}</div>
@@ -490,6 +496,71 @@ ${groups.map(([c, ts]) => `
   });
 }
 
+function renderComparisonsPage(comparePages) {
+  const url = '/comparisons/';
+  const all = COMPARISONS.filter(x => toolBySlug[x.a] && toolBySlug[x.b]);
+  const groups = LISTED_CATS.map(c => [c, all.filter(x => x.category === c.id)]).filter(([, xs]) => xs.length);
+  const description = `Side-by-side comparisons of popular tools, including ${all.slice(0, 3).map(x => x.title).join(', ')}: features, pricing and key differences, checked against official sources.`;
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Tool Comparisons',
+    description,
+    ...(SITE_URL ? { url: `${SITE_URL}${url}` } : {}),
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: all.length,
+      itemListElement: all.map((x, i) => ({
+        '@type': 'ListItem', position: i + 1, name: x.title,
+        ...(SITE_URL && comparePages.has(x.slug) ? { url: `${SITE_URL}/comparisons/${x.slug}/` } : {})
+      }))
+    }
+  };
+  return shell({
+    title: 'Tool Comparisons', description, url, jsonLd,
+    source: 'js/data.js (COMPARISONS)',
+    main: `<main id="main" class="container listing-page">
+  ${breadcrumb([['Home', '/'], ['Comparisons']])}
+
+  <header class="lp-head">
+    <h1>Comparisons</h1>
+    <p class="lp-intro">Popular tools side by side: what each costs, what the free plans include and where they differ. Every comparison is checked against the companies' own pricing pages and docs.</p>
+  </header>
+
+  <nav class="chips-wrap lp-chips" aria-label="Jump to a category">
+    <div class="chips">
+      <a class="chip" href="#main" aria-current="page"><span class="chip-label">All</span><span class="chip-count">${all.length}</span></a>${groups.map(([c, xs]) => `
+      <a class="chip" href="#group-${c.slug}"><span class="chip-label">${esc(c.label)}</span><span class="chip-count">${xs.length}</span></a>`).join('')}
+    </div>
+  </nav>
+
+  <div class="lp-toolbar">
+    <div class="search-field lp-search">
+      ${icon('i-search')}
+      <label for="listSearch" class="sr-only">Filter comparisons</label>
+      <input id="listSearch" class="search-input" type="search" placeholder="Filter by tool name or category…" autocomplete="off" spellcheck="false" aria-describedby="listCount">
+    </div>
+    <p class="result-count" id="listCount" data-noun="comparison" aria-live="polite">${plural(all.length, 'comparison')}</p>
+  </div>
+${groups.map(([c, xs]) => `
+  <section class="lp-group" aria-labelledby="group-${c.slug}">
+    <div class="lp-group-head">
+      <h2 id="group-${c.slug}">${esc(c.label)}</h2>
+      <a class="lp-more" href="${catHref(c.id)}">View ${esc(c.label)} ${icon('i-arrow-r')}</a>
+    </div>
+    <div class="compare-grid">${xs.map(x => compareCard(x, comparePages, '      ')).join('')}
+    </div>
+  </section>`).join('')}
+
+  <div class="empty lp-empty" id="listEmpty" role="status" hidden>
+    <div class="empty-icon">${icon('i-search')}</div>
+    <h3>No comparisons found</h3>
+    <p>No comparisons match your filter. Try a tool name, such as Figma.</p>
+  </div>
+</main>`
+  });
+}
+
 function renderCategoriesPage() {
   const url = '/categories/';
   const description = `Browse StackPilot's tools by category: ${LISTED_CATS.map(c => c.label).join(', ')}.`;
@@ -522,7 +593,7 @@ function renderCategoriesPage() {
   });
 }
 
-function renderCategoryPage(c, pageSlugs) {
+function renderCategoryPage(c, pageSlugs, comparePages) {
   const info = CAT_CONTENT[c.id];
   const url = catHref(c.id);
   const ts = TOOLS.filter(t => t.category === c.id).sort(byName);
@@ -563,16 +634,7 @@ ${subs.map(s => {
 ${comparisons.length ? `
   <section class="lp-group" aria-labelledby="cat-compare-title">
     <div class="lp-group-head"><h2 id="cat-compare-title">Comparisons</h2></div>
-    <div class="compare-grid">${comparisons.map(x => `
-      <article class="card compare-card">
-        <div class="compare-top">
-          <div class="pair">${mark(toolBySlug[x.a], 'mark--sm')}<span class="vs" aria-hidden="true">vs</span>${mark(toolBySlug[x.b], 'mark--sm')}</div>
-          <span class="card-arrow">${icon('i-arrow-ur')}</span>
-        </div>
-        <h3><a class="card-link" href="/#compare-${esc(x.slug)}" data-open-compare="${esc(x.slug)}" aria-haspopup="dialog">${esc(x.title)}</a></h3>
-        ${present(x.subtitle) ? `<p>${esc(x.subtitle)}</p>` : ''}
-        <div class="tool-meta">${catLabel(x.category)}<span class="meta-note">Overview</span></div>
-      </article>`).join('')}
+    <div class="compare-grid">${comparisons.map(x => compareCard(x, comparePages, '      ')).join('')}
     </div>
   </section>` : ''}
 </main>`
@@ -635,6 +697,8 @@ for (const { t, c } of pages) {
 }
 const cmpOut = join(root, 'comparisons');
 rmSync(cmpOut, { recursive: true, force: true });
+mkdirSync(cmpOut, { recursive: true });
+writeFileSync(join(cmpOut, 'index.html'), renderComparisonsPage(comparePages));
 for (const { x, c } of cmpPages) {
   mkdirSync(join(cmpOut, x.slug), { recursive: true });
   writeFileSync(join(cmpOut, x.slug, 'index.html'), renderComparisonPage(x, c, pageSlugs, toolContent));
@@ -654,10 +718,10 @@ mkdirSync(catDir, { recursive: true });
 writeFileSync(join(catDir, 'index.html'), renderCategoriesPage());
 for (const c of LISTED_CATS) {
   mkdirSync(join(catDir, c.slug), { recursive: true });
-  writeFileSync(join(catDir, c.slug, 'index.html'), renderCategoryPage(c, pageSlugs));
+  writeFileSync(join(catDir, c.slug, 'index.html'), renderCategoryPage(c, pageSlugs, comparePages));
 }
 
 writeFileSync(join(root, 'js/pages.js'),
   `/* Generated by scripts/build.mjs — tools and comparisons that have their own page. Do not edit. */\nwindow.StackPilotPages = ${JSON.stringify([...pageSlugs])};\nwindow.StackPilotComparePages = ${JSON.stringify([...comparePages])};\n`);
 
-console.log(`✓ Built ${pages.length} tool page(s), ${cmpPages.length} comparison page(s), /tools/, /categories/ and ${LISTED_CATS.length} category page(s)`);
+console.log(`✓ Built ${pages.length} tool page(s), ${cmpPages.length} comparison page(s), /comparisons/, /tools/, /categories/ and ${LISTED_CATS.length} category page(s)`);

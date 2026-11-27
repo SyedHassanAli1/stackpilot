@@ -283,6 +283,12 @@
     document.querySelectorAll('.nav-dd-menu li a, .mobile-subnav a').forEach(a => {
       if (a.getAttribute('href') === here) a.setAttribute('aria-current', 'page');
     });
+    // Top-level links to a section's own pages (e.g. /comparisons/) stay
+    // highlighted anywhere inside that section.
+    document.querySelectorAll('.nav-links > a[href^="/"], .mobile-nav > a[href^="/"]').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href !== '/' && here.startsWith(href)) a.setAttribute('aria-current', 'page');
+    });
 
     const dd = document.getElementById('catNav');
     if (!dd || dd.dataset.ready) return;
