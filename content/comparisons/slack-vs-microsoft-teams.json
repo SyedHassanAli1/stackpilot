@@ -1,0 +1,92 @@
+{
+  "slug": "slack-vs-microsoft-teams",
+  "verified": "2026-11-27",
+  "seoTitle": "Slack vs Microsoft Teams: Features, Pricing & Differences",
+  "metaDescription": "Slack vs Microsoft Teams compared side by side: messaging, video calls, integrations, AI features, pricing tiers and enterprise controls, checked against official sources.",
+  "intro": [
+    "Slack and Microsoft Teams are the two dominant workplace communication platforms. Slack, founded in 2013 and acquired by Salesforce in 2021, pioneered the channel-based messaging model that replaced email for many teams. Microsoft Teams, launched in 2017, is Microsoft's hub for teamwork — tightly integrated with the Microsoft 365 ecosystem.",
+    "Both offer free plans. Slack Pro starts at $7.25 per user per month billed yearly. Microsoft Teams Essentials starts at $4 per user per month billed yearly. The fundamental difference: Slack is a messaging-first platform that excels at integrations and developer workflows; Teams is a collaboration hub built around Microsoft 365 apps like Word, Excel, SharePoint and OneDrive."
+  ],
+  "chooseA": [
+    "You want a fast, channel-based messaging experience with threaded conversations and rich formatting.",
+    "You rely on a wide range of third-party integrations — especially developer tools like GitHub, Jira and PagerDuty.",
+    "You are part of the Salesforce ecosystem and want native CRM integration.",
+    "You value a polished, focused chat experience over an all-in-one collaboration suite."
+  ],
+  "chooseB": [
+    "Your organisation already uses Microsoft 365 and you want seamless integration with Word, Excel, SharePoint and OneDrive.",
+    "You need built-in video conferencing, webinars and meeting features without a separate tool.",
+    "You want a free plan with unlimited chat history and group meetings up to 60 minutes.",
+    "You prefer a single platform for chat, calls, file sharing and document collaboration."
+  ],
+  "glance": [
+    { "label": "Company", "a": "Salesforce (acquired 2021)", "b": "Microsoft (launched 2017)" },
+    { "label": "Free plan", "a": "90 days of message history, 1:1 calls", "b": "Unlimited chat history, group meetings up to 60 min" },
+    { "label": "Starting paid price", "a": "$7.25/user/mo (yearly)", "b": "$4/user/mo (yearly)" },
+    { "label": "Video conferencing", "a": "Huddles (audio/video), screen sharing", "b": "Full meetings, webinars, town halls" },
+    { "label": "AI features", "a": "Slack AI (search, summaries, channel recaps)", "b": "Microsoft Copilot (summaries, meeting notes, content generation)" },
+    { "label": "File storage", "a": "Via integrations (Google Drive, Dropbox, Box)", "b": "Built-in via OneDrive and SharePoint" },
+    { "label": "Integrations", "a": "2,600+ apps in Slack Marketplace", "b": "700+ apps, deep Microsoft 365 integration" },
+    { "label": "Threads", "a": "Native threaded conversations in channels", "b": "Reply threads in channels (added later)" },
+    { "label": "Guest access", "a": "Slack Connect (cross-organisation channels)", "b": "Guest access and shared channels" },
+    { "label": "Desktop apps", "a": "macOS, Windows, Linux", "b": "macOS, Windows, Linux" }
+  ],
+  "differences": [
+    {
+      "title": "Messaging experience",
+      "text": "Slack was designed from the ground up as a messaging platform. Its threaded conversations, channel organisation, emoji reactions and rich formatting are polished and intuitive. Teams' chat has improved significantly but historically felt secondary to its meetings and document collaboration features. For teams where messaging is the primary workflow, Slack's experience is typically preferred."
+    },
+    {
+      "title": "Microsoft 365 integration",
+      "text": "Teams is deeply integrated with the Microsoft 365 suite. You can co-author Word documents, edit Excel spreadsheets and present PowerPoint decks without leaving Teams. Files are stored in SharePoint and OneDrive by default. Slack integrates with Microsoft 365 apps too, but the experience is not as seamless — files typically open in separate browser tabs."
+    },
+    {
+      "title": "Video and meetings",
+      "text": "Teams has a full-featured meetings platform built in: scheduled meetings, webinars, town halls, breakout rooms, meeting recordings with transcription, and Microsoft Copilot for meeting summaries. Slack offers Huddles for quick audio and video conversations with screen sharing, but it is not a replacement for a dedicated meetings platform. Most Slack teams pair it with Zoom or Google Meet."
+    },
+    {
+      "title": "Integrations and app ecosystem",
+      "text": "Slack's marketplace has over 2,600 apps with deep integrations for developer tools (GitHub, Jira, PagerDuty, Datadog), project management and automation. Slack's Workflow Builder makes it easy to create automations without code. Teams has a growing app ecosystem with over 700 apps and strong Power Automate integration, but Slack's third-party integration ecosystem is broader, especially for developer-oriented tools."
+    },
+    {
+      "title": "AI assistants",
+      "text": "Slack AI provides search answers, channel recaps, thread summaries and daily digests powered by the conversation context in your workspace. Microsoft Copilot in Teams summarises meetings, generates meeting notes, drafts messages and answers questions across your Microsoft 365 data. Copilot's scope is broader because it draws on emails, documents and calendar alongside chat."
+    },
+    {
+      "title": "Pricing and bundling",
+      "text": "Teams Essentials at $4 per user per month is the cheapest entry point and Teams is included in most Microsoft 365 business plans. Slack Pro at $7.25 per user per month is a standalone cost. For organisations already paying for Microsoft 365, Teams is effectively free — which is why it has seen massive adoption in enterprises. Slack is a separate line item regardless of your existing tools."
+    }
+  ],
+  "similarities": [
+    "Channel-based messaging with direct messages and group chats",
+    "File sharing and search across conversations",
+    "Mobile apps for iOS and Android",
+    "Enterprise security, compliance and admin controls",
+    "Bot and automation frameworks",
+    "Guest and external collaboration features"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for developers?",
+      "a": "Slack is widely preferred by developer teams for its rich integration ecosystem (GitHub, Jira, PagerDuty, CI/CD tools), polished API, Workflow Builder and fast messaging experience. Teams works well for developers in Microsoft-centric organisations, but its developer tool integrations are not as deep."
+    },
+    {
+      "q": "Which is better for large enterprises?",
+      "a": "Teams dominates in large enterprises, largely because it is included in Microsoft 365 licences that most enterprises already have. Its built-in meetings, SharePoint integration and compliance features make it a natural fit. Slack is used by many enterprises too, especially in tech, but it is a separate cost."
+    },
+    {
+      "q": "Can I use Slack and Teams together?",
+      "a": "Yes. Many organisations use both — Teams for company-wide communication and meetings, Slack for engineering and product teams. Slack and Teams can be connected via third-party bridges, though the experience is not seamless."
+    },
+    {
+      "q": "Which free plan is better?",
+      "a": "Teams' free plan is more generous: unlimited message history and group video meetings up to 60 minutes. Slack's free plan limits message history to 90 days and restricts calls to 1:1. For teams that cannot afford a paid plan, Teams Free offers more."
+    }
+  ],
+  "sources": [
+    { "label": "Slack — Pricing", "url": "https://slack.com/pricing" },
+    { "label": "Microsoft — Teams Pricing", "url": "https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options" },
+    { "label": "Slack — Why Slack", "url": "https://slack.com/why-slack" },
+    { "label": "TechRadar — Slack vs Teams", "url": "https://www.techradar.com/best/slack-vs-microsoft-teams" }
+  ]
+}

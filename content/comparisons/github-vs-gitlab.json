@@ -1,0 +1,92 @@
+{
+  "slug": "github-vs-gitlab",
+  "verified": "2026-11-27",
+  "seoTitle": "GitHub vs GitLab: Features, Pricing & Differences",
+  "metaDescription": "GitHub vs GitLab compared side by side: repositories, CI/CD, security, AI features, pricing tiers and self-hosting, checked against official sources.",
+  "intro": [
+    "GitHub and GitLab are the two dominant platforms for hosting Git repositories, running CI/CD pipelines and collaborating on code. GitHub, acquired by Microsoft in 2018, is the world's largest code hosting platform with over 100 million developers. GitLab, founded in 2011, is a single-application DevSecOps platform that bundles source control, CI/CD, security scanning and project management in one interface.",
+    "Both offer free tiers for public and private repositories. GitHub's paid plans start at $4 per user per month (Team). GitLab Premium starts at $29 per user per month. The core philosophical difference: GitHub is a code hosting platform with a marketplace of integrations; GitLab aims to be the entire DevOps toolchain in one product."
+  ],
+  "chooseA": [
+    "You want the largest open-source community and ecosystem for discovering and contributing to projects.",
+    "You use GitHub Actions and prefer a marketplace of thousands of pre-built workflow actions.",
+    "You want GitHub Copilot deeply integrated into your code review and development workflow.",
+    "You are a small team that wants a generous free tier with unlimited public and private repos."
+  ],
+  "chooseB": [
+    "You want CI/CD, security scanning, container registry and project management in a single platform.",
+    "You need self-managed deployment on your own infrastructure for compliance or data sovereignty.",
+    "You prefer a single vendor for the entire DevSecOps lifecycle rather than assembling integrations.",
+    "You want built-in SAST, DAST and dependency scanning without third-party tools."
+  ],
+  "glance": [
+    { "label": "Company", "a": "Microsoft (acquired GitHub 2018)", "b": "GitLab Inc. (founded 2011, public)" },
+    { "label": "Free tier", "a": "Unlimited public/private repos, 2,000 CI min/mo", "b": "Unlimited public/private repos (5 users private), 400 CI min/mo" },
+    { "label": "Starting paid price", "a": "$4/user/mo (Team)", "b": "$29/user/mo (Premium)" },
+    { "label": "Enterprise", "a": "$21/user/mo (Enterprise)", "b": "Custom (Ultimate)" },
+    { "label": "Self-hosting", "a": "GitHub Enterprise Server (separate licence)", "b": "Yes (self-managed, free Community Edition available)" },
+    { "label": "CI/CD", "a": "GitHub Actions (YAML workflows, marketplace)", "b": "GitLab CI/CD (built-in, YAML pipelines)" },
+    { "label": "AI features", "a": "GitHub Copilot (code completion, chat, review)", "b": "GitLab Duo (code suggestions, chat, root cause analysis)" },
+    { "label": "Security scanning", "a": "Dependabot, code scanning (via Actions)", "b": "Built-in SAST, DAST, dependency and container scanning" },
+    { "label": "Container registry", "a": "GitHub Packages (GHCR)", "b": "Built-in container registry" },
+    { "label": "Project management", "a": "Issues, Projects (boards, tables, roadmaps)", "b": "Issues, boards, epics, milestones, roadmaps" }
+  ],
+  "differences": [
+    {
+      "title": "Platform philosophy",
+      "text": "GitHub is a code hosting and collaboration hub with a marketplace model — you assemble your toolchain from GitHub Actions, third-party integrations and partner services. GitLab is a single-application platform that bundles source control, CI/CD, security, monitoring and project management into one product, reducing the need for external tools."
+    },
+    {
+      "title": "CI/CD approach",
+      "text": "GitHub Actions uses YAML workflow files and a marketplace of thousands of community and official actions. GitLab CI/CD is built directly into the platform with a single .gitlab-ci.yml file and native runners. Both are powerful, but GitLab's CI/CD is more tightly integrated and often requires less configuration for complex pipelines. GitHub's marketplace offers more pre-built actions."
+    },
+    {
+      "title": "Security and compliance",
+      "text": "GitLab includes SAST, DAST, dependency scanning, container scanning and licence compliance as built-in features (Premium and Ultimate). GitHub provides Dependabot for dependency alerts and code scanning via CodeQL, but advanced security features (like secret scanning push protection for private repos) require GitHub Advanced Security, which is an add-on to Enterprise."
+    },
+    {
+      "title": "AI coding assistants",
+      "text": "GitHub Copilot is the market leader in AI code completion, with deep integration into VS Code, JetBrains, and GitHub itself for code review and chat. GitLab Duo offers code suggestions, chat, root cause analysis and vulnerability explanation, but has a smaller user base. Both are actively expanding their AI capabilities."
+    },
+    {
+      "title": "Self-hosting and open source",
+      "text": "GitLab offers a free, open-source Community Edition (CE) for self-hosting, plus self-managed Premium and Ultimate tiers. GitHub Enterprise Server is available only as a paid licence. For teams that need on-premises deployment for compliance or data sovereignty, GitLab's self-hosting story is stronger and more accessible."
+    },
+    {
+      "title": "Pricing and value",
+      "text": "GitHub's Team plan at $4 per user per month is significantly cheaper than GitLab Premium at $29 per user per month. However, GitLab Premium includes CI/CD minutes, security scanning and project management features that would require paid add-ons on GitHub. The total cost depends on which features you need beyond basic code hosting."
+    }
+  ],
+  "similarities": [
+    "Git-based version control with pull/merge requests",
+    "Built-in CI/CD pipeline capabilities",
+    "Issue tracking and project boards",
+    "Container and package registries",
+    "API access and webhook integrations",
+    "Wiki and documentation features"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for open-source projects?",
+      "a": "GitHub is the de facto home for open source, with the largest developer community, discoverability through GitHub Explore, and features like Sponsors for funding. GitLab supports open-source projects too and offers free Ultimate-tier features for qualifying open-source projects, but most open-source activity happens on GitHub."
+    },
+    {
+      "q": "Which has better CI/CD?",
+      "a": "Both have excellent CI/CD. GitLab CI/CD is more tightly integrated and often simpler for complex multi-stage pipelines. GitHub Actions has a larger marketplace of pre-built actions. Teams already on GitHub often find Actions convenient; teams wanting an all-in-one platform prefer GitLab CI."
+    },
+    {
+      "q": "Can I use both together?",
+      "a": "Yes. Some teams host code on GitHub for community and open-source visibility while using GitLab CI/CD for pipelines, or mirror repositories between the two platforms. GitLab has built-in GitHub import and mirroring features."
+    },
+    {
+      "q": "Which is cheaper for a small team?",
+      "a": "GitHub is cheaper at the entry level: its free tier includes 2,000 CI minutes per month and unlimited collaborators on private repos. GitLab's free tier is limited to 5 users on private repos and 400 CI minutes. GitHub Team at $4/user/mo is also much cheaper than GitLab Premium at $29/user/mo."
+    }
+  ],
+  "sources": [
+    { "label": "GitHub — Pricing", "url": "https://github.com/pricing" },
+    { "label": "GitLab — Pricing", "url": "https://about.gitlab.com/pricing/" },
+    { "label": "GitHub — About", "url": "https://github.com/about" },
+    { "label": "GitLab — GitHub vs GitLab", "url": "https://about.gitlab.com/competition/github/" }
+  ]
+}

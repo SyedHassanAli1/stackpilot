@@ -1,0 +1,92 @@
+{
+  "slug": "supabase-vs-firebase",
+  "verified": "2026-11-27",
+  "seoTitle": "Supabase vs Firebase: Features, Pricing & Differences",
+  "metaDescription": "Supabase vs Firebase compared side by side: databases, auth, storage, real-time features, pricing tiers and open-source flexibility, checked against official sources.",
+  "intro": [
+    "Supabase and Firebase are the two most popular Backend-as-a-Service (BaaS) platforms for developers who want to ship fast without managing infrastructure. Firebase, launched by Google in 2014, is a mature, proprietary platform built around a NoSQL document database (Firestore). Supabase, launched in 2020, positions itself as an open-source Firebase alternative built on PostgreSQL.",
+    "Both offer generous free tiers. Supabase's Pro plan starts at $25 per month per project. Firebase uses a pay-as-you-go model (Blaze plan) with no fixed monthly fee — you pay only for what you use beyond free quotas. The fundamental difference: Supabase gives you a full Postgres database with SQL; Firebase gives you a managed NoSQL document store with real-time sync baked in."
+  ],
+  "chooseA": [
+    "You want a relational database with full SQL, joins, foreign keys and row-level security.",
+    "You value open source and the ability to self-host or migrate your data without lock-in.",
+    "You need PostGIS for geospatial queries or pgvector for AI embeddings.",
+    "You prefer a Postgres-native workflow with extensions, triggers and stored procedures."
+  ],
+  "chooseB": [
+    "You need battle-tested real-time sync across web and mobile with offline support.",
+    "You are building on the Google Cloud ecosystem and want tight integration with GCP services.",
+    "You want a mature, pay-as-you-go model with no fixed monthly cost.",
+    "You need built-in analytics, crash reporting, A/B testing and push notifications in one platform."
+  ],
+  "glance": [
+    { "label": "Company", "a": "Supabase (founded 2020, open source)", "b": "Google (acquired Firebase 2014)" },
+    { "label": "Database", "a": "PostgreSQL (relational, SQL)", "b": "Firestore / Realtime DB (NoSQL, document)" },
+    { "label": "Free tier", "a": "2 projects, 500 MB database, 1 GB storage", "b": "Spark plan: generous free quotas across services" },
+    { "label": "Starting paid price", "a": "$25/mo per project (Pro)", "b": "Pay-as-you-go (Blaze), no fixed fee" },
+    { "label": "Self-hosting", "a": "Yes (Docker, fully open source)", "b": "No" },
+    { "label": "Real-time", "a": "Postgres Changes (via websockets)", "b": "Built-in real-time sync with offline support" },
+    { "label": "Auth", "a": "Built-in (email, OAuth, phone, SAML)", "b": "Firebase Auth (email, OAuth, phone, anonymous)" },
+    { "label": "Edge Functions", "a": "Deno-based Edge Functions", "b": "Cloud Functions for Firebase (Node.js, Python)" },
+    { "label": "Storage", "a": "S3-compatible object storage", "b": "Cloud Storage for Firebase" },
+    { "label": "AI / Vector", "a": "pgvector extension for embeddings", "b": "Vertex AI integration, Genkit" }
+  ],
+  "differences": [
+    {
+      "title": "Database model",
+      "text": "Supabase runs PostgreSQL — a full relational database with SQL queries, joins, foreign keys, indexes and thousands of extensions. Firebase uses Firestore, a NoSQL document database designed for hierarchical data and real-time sync. If your data is relational or you need complex queries, Supabase is the natural fit. If your data is document-shaped and you want automatic client sync, Firebase excels."
+    },
+    {
+      "title": "Real-time capabilities",
+      "text": "Firebase's real-time sync is its signature feature: clients subscribe to documents or collections and receive updates instantly, with built-in offline support and conflict resolution. Supabase offers real-time via Postgres Changes (websocket subscriptions to database changes), but it is newer and does not include offline-first sync out of the box."
+    },
+    {
+      "title": "Vendor lock-in and portability",
+      "text": "Supabase is fully open source (MIT licensed) and can be self-hosted with Docker. Your data lives in a standard Postgres database that you can export, migrate or connect to with any Postgres-compatible tool. Firebase is proprietary and tightly coupled to Google Cloud — migrating away requires rewriting data access patterns and often the data model itself."
+    },
+    {
+      "title": "Pricing model",
+      "text": "Supabase charges a flat $25 per month per project on Pro, with usage-based overages. Firebase's Blaze plan has no fixed fee — you pay only for reads, writes, storage and bandwidth beyond free quotas. For predictable workloads, Supabase's flat fee is simpler. For spiky or low-volume workloads, Firebase's pure pay-as-you-go model can be cheaper."
+    },
+    {
+      "title": "Ecosystem and extras",
+      "text": "Firebase offers a broader suite of mobile-focused services: Analytics, Crashlytics, Remote Config, A/B Testing, Cloud Messaging (push notifications) and App Distribution. Supabase focuses on core backend services — database, auth, storage, edge functions and real-time — and relies on the Postgres extension ecosystem for additional capabilities."
+    },
+    {
+      "title": "AI and vector search",
+      "text": "Supabase supports pgvector natively, making it straightforward to store and query AI embeddings alongside your application data in the same Postgres database. Firebase integrates with Google's Vertex AI and offers Genkit for AI workflows, but does not have a built-in vector database — you typically add a separate service for embeddings."
+    }
+  ],
+  "similarities": [
+    "Authentication with email, OAuth providers and phone sign-in",
+    "Object storage for files and media",
+    "Serverless functions at the edge",
+    "Client libraries for JavaScript, Flutter, Swift and Kotlin",
+    "Dashboard for managing data, users and settings",
+    "Generous free tiers for getting started"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for a mobile app?",
+      "a": "Firebase has a longer track record for mobile with offline sync, push notifications, crash reporting and analytics built in. Supabase works well for mobile too, especially if you want SQL and row-level security, but you may need to add offline support and push notifications separately."
+    },
+    {
+      "q": "Can I migrate from Firebase to Supabase?",
+      "a": "Yes. Supabase provides migration guides and tools for moving Firestore data to Postgres and Firebase Auth users to Supabase Auth. The main challenge is restructuring document data into relational tables and rewriting queries from Firestore's API to SQL."
+    },
+    {
+      "q": "Which is cheaper for a side project?",
+      "a": "Both have generous free tiers. Firebase's Spark plan is free with no time limit and no fixed cost on Blaze. Supabase's free tier allows two projects. For very low traffic, Firebase's pay-as-you-go may cost less than Supabase's $25/month Pro plan."
+    },
+    {
+      "q": "Which is better for AI applications?",
+      "a": "Supabase has an edge for AI use cases: pgvector lets you store and query embeddings directly in your Postgres database with SQL. Firebase requires a separate vector database or Vertex AI integration for similar functionality."
+    }
+  ],
+  "sources": [
+    { "label": "Supabase — Pricing", "url": "https://supabase.com/pricing" },
+    { "label": "Firebase — Pricing", "url": "https://firebase.google.com/pricing" },
+    { "label": "Supabase — Firebase comparison", "url": "https://supabase.com/alternatives/supabase-vs-firebase" },
+    { "label": "LogRocket — Supabase vs Firebase 2026", "url": "https://blog.logrocket.com/supabase-vs-firebase/" }
+  ]
+}

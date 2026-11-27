@@ -1,0 +1,105 @@
+{
+  "slug": "jira",
+  "verified": "2026-11-27",
+  "seoTitle": "Jira: Features, Pricing & Alternatives",
+  "metaDescription": "Jira is Atlassian's issue-tracking and agile project management tool for software teams. See its features, Free, Standard, Premium and Enterprise pricing, strengths and limitations.",
+  "overview": [
+    "Jira is a project management and issue-tracking tool made by Atlassian, used primarily by software development teams. It supports Scrum and Kanban boards, sprint planning, backlogs, roadmaps, automation rules and customisable workflows for tracking bugs, tasks, stories and epics.",
+    "Jira integrates natively with Confluence, Bitbucket, Jira Service Management and thousands of Marketplace apps. AI-powered agents can plan, track and move work forward on paid plans. The free plan supports up to 10 users with 2 GB of storage."
+  ],
+  "features": [
+    {
+      "title": "Scrum and Kanban boards",
+      "text": "Plan sprints, manage backlogs and visualise work in progress with customisable boards."
+    },
+    {
+      "title": "Roadmaps",
+      "text": "Plan and track work across teams with timeline views at the project and cross-project level."
+    },
+    {
+      "title": "Automation",
+      "text": "Automate repetitive tasks with no-code rules triggered by events, schedules or conditions."
+    },
+    {
+      "title": "Custom workflows",
+      "text": "Define statuses, transitions and conditions to match your team's development process."
+    },
+    {
+      "title": "Reports and dashboards",
+      "text": "Burndown charts, velocity reports, cumulative flow diagrams and customisable dashboards."
+    },
+    {
+      "title": "AI agents",
+      "text": "Assign tasks to AI agents that plan, track and move work forward on paid plans."
+    }
+  ],
+  "useCases": [
+    "Agile software development",
+    "Bug and issue tracking",
+    "Sprint planning and backlog management",
+    "Cross-team project coordination",
+    "IT service and operations workflows"
+  ],
+  "strengths": [
+    "The most mature agile backlog and sprint management in the category.",
+    "Thousands of Marketplace apps and native Atlassian integrations.",
+    "Highly customisable workflows, fields and permissions.",
+    "Free plan available for small teams of up to 10 users.",
+    "AI agents included on paid plans for automated task handling."
+  ],
+  "limitations": [
+    "Complex setup and navigation, especially for non-technical teams.",
+    "Performance can slow down at scale with large boards and backlogs.",
+    "The free plan is limited to 10 users and 2 GB of storage.",
+    "Per-user pricing rises with team size; costs add up quickly for large organisations.",
+    "Enterprise pricing is not published."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per user. Prices below are US list prices on monthly billing. Annual billing is cheaper. Atlassian raised cloud prices on 13 October 2026.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Up to 10 users · 2 GB storage · community support"
+      },
+      {
+        "name": "Standard",
+        "price": "$9.70/user/mo",
+        "note": "Monthly billing, 1–100 users · 250 GB storage · 9/5 support"
+      },
+      {
+        "name": "Premium",
+        "price": "$19.60/user/mo",
+        "note": "Monthly billing, 1–100 users · unlimited storage · 24/7 support · advanced roadmaps"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "note": "Annual billing only · unlimited sites · advanced security and compliance"
+      }
+    ],
+    "source": "https://www.atlassian.com/software/jira/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Atlassian — Jira Pricing",
+      "url": "https://www.atlassian.com/software/jira/pricing"
+    },
+    {
+      "label": "Atlassian — Future Cloud list pricing tables",
+      "url": "https://www.atlassian.com/licensing/future-pricing/cloud/list/pricing-tables"
+    },
+    {
+      "label": "Atlassian — Jira Summer 2026 Release",
+      "url": "https://www.atlassian.com/software/jira/release"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "slug": "microsoft-teams",
+  "verified": "2026-11-27",
+  "seoTitle": "Microsoft Teams: Features, Pricing & Alternatives",
+  "metaDescription": "Microsoft Teams is a communication platform with chat, video meetings and file sharing integrated with Microsoft 365. See its features, Free, Essentials and Business pricing, strengths and limitations.",
+  "overview": [
+    "Microsoft Teams is a communication and collaboration platform that combines chat, video conferencing, file sharing and app integrations. It is included in Microsoft 365 Business and Enterprise plans and integrates with Word, Excel, PowerPoint, Outlook, SharePoint and OneDrive.",
+    "A free plan is available with chat, 30-hour meetings for up to 300 participants and 10 GB of cloud storage per user. Teams Essentials starts at $4 per user per month billed yearly. Microsoft 365 Business Basic at $7 per user per month adds custom business email, 1 TB of cloud storage and the full suite of Microsoft 365 web apps."
+  ],
+  "features": [
+    {
+      "title": "Chat and channels",
+      "text": "Persistent chat with channels, threads, file sharing, GIFs and inline translation."
+    },
+    {
+      "title": "Video meetings",
+      "text": "Meetings up to 30 hours with 300 participants, recordings, transcripts and live captions in 30+ languages."
+    },
+    {
+      "title": "File sharing and collaboration",
+      "text": "Co-author Word, Excel and PowerPoint files in real time, stored in OneDrive and SharePoint."
+    },
+    {
+      "title": "Apps and integrations",
+      "text": "250+ built-in business apps including Bookings, Shifts, Forms and third-party integrations."
+    },
+    {
+      "title": "Webinars",
+      "text": "Host webinars with attendee registration and reporting on Business Standard and higher."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "text": "AI assistant for meeting summaries, chat recaps and content generation, available as an add-on."
+    }
+  ],
+  "useCases": [
+    "Team communication and chat",
+    "Video meetings and conferencing",
+    "Remote and hybrid work collaboration",
+    "File sharing and real-time co-authoring",
+    "Frontline worker coordination with Shifts and Bookings"
+  ],
+  "strengths": [
+    "Deep integration with the Microsoft 365 suite.",
+    "Free plan with generous meeting limits (30 hours, 300 participants).",
+    "Included in Microsoft 365 Business plans at no extra cost.",
+    "Available on all major platforms including desktop apps.",
+    "Enterprise-grade security, compliance and admin controls."
+  ],
+  "limitations": [
+    "Can feel overwhelming with many features and settings.",
+    "Notifications across channels and chats can be noisy without tuning.",
+    "The free plan is limited to 10 GB of cloud storage per user.",
+    "Some features, like webinars and advanced analytics, need higher-tier Microsoft 365 plans.",
+    "Copilot AI features require an additional paid add-on."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Paid plans are priced per user, billed yearly. Teams is also included in Microsoft 365 Business and Enterprise plans.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "Chat · 30-hour meetings · 300 participants · 10 GB storage per user"
+      },
+      {
+        "name": "Teams Essentials",
+        "price": "$4/user/mo",
+        "note": "Billed yearly · 10 GB storage per user · scheduled meetings · 250+ app integrations"
+      },
+      {
+        "name": "Microsoft 365 Business Basic",
+        "price": "$7/user/mo",
+        "note": "Billed yearly · 1 TB storage per user · custom business email · Word, Excel, PowerPoint for web"
+      },
+      {
+        "name": "Microsoft 365 Business Standard",
+        "price": "$14/user/mo",
+        "note": "Billed yearly · desktop apps · webinars · price as of July 2026"
+      }
+    ],
+    "source": "https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options"
+  },
+  "platforms": [
+    "Web browser",
+    "macOS",
+    "Windows",
+    "Linux",
+    "iOS",
+    "Android"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Microsoft — Compare Teams options",
+      "url": "https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options"
+    },
+    {
+      "label": "Microsoft — Teams Business options",
+      "url": "https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-business-options"
+    }
+  ]
+}

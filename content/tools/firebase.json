@@ -1,0 +1,92 @@
+{
+  "slug": "firebase",
+  "verified": "2026-11-27",
+  "seoTitle": "Firebase: Features, Pricing & Alternatives",
+  "metaDescription": "Firebase is Google's app development platform with hosting, databases, authentication, cloud functions and analytics. See its features, Spark and Blaze pricing, strengths and limitations.",
+  "overview": [
+    "Firebase is Google's platform for building and running web and mobile apps. It includes Cloud Firestore and Realtime Database, Authentication, Cloud Functions, Hosting, Cloud Storage, Analytics, Crashlytics and App Distribution, plus newer services like App Hosting, App Check and Firebase Studio.",
+    "Firebase has two plans: Spark (free) and Blaze (pay-as-you-go). The Spark plan has generous no-cost quotas with no payment method needed. The Blaze plan charges only for usage beyond the free quotas, with no fixed monthly fee. Eligible developers can claim $300 in free Google Cloud credits when upgrading to Blaze."
+  ],
+  "features": [
+    {
+      "title": "Cloud Firestore",
+      "text": "A flexible, scalable NoSQL document database with real-time sync and offline support."
+    },
+    {
+      "title": "Authentication",
+      "text": "Sign-in with email, phone, Google, Apple, GitHub and other providers, with no-code setup."
+    },
+    {
+      "title": "Cloud Functions",
+      "text": "Run server-side code in response to events triggered by Firebase and Google Cloud services."
+    },
+    {
+      "title": "Hosting and App Hosting",
+      "text": "Fast, secure hosting for static content and full-stack web apps with framework support."
+    },
+    {
+      "title": "Crashlytics",
+      "text": "Real-time crash reporting with automatic alerts and detailed stack traces."
+    },
+    {
+      "title": "Firebase AI Logic",
+      "text": "Build AI-powered features using the Gemini API directly from your Firebase project."
+    }
+  ],
+  "useCases": [
+    "Mobile app backends",
+    "Real-time web applications",
+    "Serverless APIs and microservices",
+    "User authentication and identity",
+    "App performance monitoring and crash reporting"
+  ],
+  "strengths": [
+    "Generous free tier with no payment method required.",
+    "Pay-as-you-go pricing with no fixed monthly cost.",
+    "Deep integration with Google Cloud infrastructure.",
+    "Real-time data sync across clients with offline support.",
+    "Comprehensive platform covering backend, hosting, analytics and monitoring."
+  ],
+  "limitations": [
+    "Vendor lock-in to Google Cloud; migration can be complex.",
+    "Cloud Firestore is a NoSQL database; not suited for all query patterns.",
+    "Cloud Functions cold starts can add latency.",
+    "Costs can be unpredictable at scale without usage monitoring.",
+    "Some advanced features, like Cloud Functions, require the Blaze plan."
+  ],
+  "pricing": {
+    "summary": "Two plans: Spark (free) and Blaze (pay-as-you-go). No fixed monthly fee. Blaze includes all Spark free quotas and charges only for usage beyond them. Eligible developers can claim $300 in Google Cloud credits.",
+    "plans": [
+      {
+        "name": "Spark",
+        "price": "$0",
+        "note": "No payment method needed · generous free quotas · most Firebase features included"
+      },
+      {
+        "name": "Blaze",
+        "price": "Pay-as-you-go",
+        "note": "No fixed monthly fee · Spark free quotas included · access to Cloud Functions and all Google Cloud services"
+      }
+    ],
+    "source": "https://firebase.google.com/pricing"
+  },
+  "platforms": [
+    "Web browser",
+    "iOS",
+    "Android",
+    "Flutter",
+    "Unity",
+    "C++"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "Firebase — Pricing",
+      "url": "https://firebase.google.com/pricing"
+    },
+    {
+      "label": "Firebase — Pricing Plans documentation",
+      "url": "https://firebase.google.com/docs/projects/billing/firebase-pricing-plans"
+    }
+  ]
+}

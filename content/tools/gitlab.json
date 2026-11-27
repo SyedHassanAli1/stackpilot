@@ -1,0 +1,97 @@
+{
+  "slug": "gitlab",
+  "verified": "2026-11-27",
+  "seoTitle": "GitLab: Features, Pricing & Alternatives",
+  "metaDescription": "GitLab is an open-core DevSecOps platform with Git repos, CI/CD pipelines, security scanning and project management. See its features, Free, Premium and Ultimate pricing, strengths and limitations.",
+  "overview": [
+    "GitLab is an open-core DevSecOps platform that combines source code management, CI/CD pipelines, container registry, security scanning, issue tracking and project planning in a single application. It can be self-hosted or used as a managed cloud service on GitLab.com.",
+    "GitLab offers three tiers: Free, Premium at $29 per user per month, and Ultimate with custom pricing. AI-powered features are available through GitLab Duo, and the platform includes 50,000 compute minutes per month on the Free plan for running CI/CD pipelines."
+  ],
+  "features": [
+    {
+      "title": "Source code management",
+      "text": "Git repositories with merge requests, code review, branching strategies and protected branches."
+    },
+    {
+      "title": "CI/CD pipelines",
+      "text": "Built-in continuous integration and delivery with auto-scaling runners and 50,000 free compute minutes per month."
+    },
+    {
+      "title": "Security scanning",
+      "text": "SAST, DAST, dependency scanning, container scanning and secret detection on Ultimate."
+    },
+    {
+      "title": "Issue tracking and planning",
+      "text": "Issues, boards, milestones, epics and roadmaps for project management within the same platform."
+    },
+    {
+      "title": "Container registry",
+      "text": "Built-in container registry for storing and managing Docker images alongside your code."
+    },
+    {
+      "title": "GitLab Duo AI",
+      "text": "AI-powered code suggestions, chat, vulnerability explanation and merge request summaries."
+    }
+  ],
+  "useCases": [
+    "End-to-end software development lifecycle",
+    "CI/CD pipeline automation",
+    "DevSecOps and security compliance",
+    "Self-hosted Git repositories",
+    "Enterprise source code management"
+  ],
+  "strengths": [
+    "Single platform for the entire DevSecOps lifecycle, from planning to monitoring.",
+    "Can be self-hosted for full control over data and infrastructure.",
+    "Built-in CI/CD with generous free compute minutes.",
+    "Open-core model; the core platform is open source.",
+    "Comprehensive security scanning on the Ultimate tier."
+  ],
+  "limitations": [
+    "Premium at $29/user/mo is significantly more expensive than GitHub's paid plans.",
+    "The free plan limits private namespaces to five users.",
+    "Ultimate pricing is not published; requires contacting sales.",
+    "The interface can feel complex for teams new to DevOps tooling.",
+    "Performance on large repositories can be slower than GitHub."
+  ],
+  "pricing": {
+    "summary": "Free plan available. Premium is priced per user per month. Ultimate requires contacting sales. AI features (GitLab Duo) are available as add-ons.",
+    "plans": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "note": "5 users per private namespace · 5 GB storage · 50,000 compute minutes/mo"
+      },
+      {
+        "name": "Premium",
+        "price": "$29/user/mo",
+        "note": "Up to 100,000 users · merge request approvals · push rules · code quality reports"
+      },
+      {
+        "name": "Ultimate",
+        "price": "Custom",
+        "note": "Annual billing · advanced security scanning · compliance management · vulnerability management"
+      }
+    ],
+    "source": "https://about.gitlab.com/pricing/"
+  },
+  "platforms": [
+    "Web browser",
+    "Self-hosted (Linux)"
+  ],
+  "alternatives": [],
+  "sources": [
+    {
+      "label": "GitLab — Pricing",
+      "url": "https://about.gitlab.com/pricing/"
+    },
+    {
+      "label": "GitLab — Feature comparison",
+      "url": "https://about.gitlab.com/pricing/feature-comparison/"
+    },
+    {
+      "label": "GitLab Handbook — Pricing model",
+      "url": "https://handbook.gitlab.com/handbook/company/pricing"
+    }
+  ]
+}

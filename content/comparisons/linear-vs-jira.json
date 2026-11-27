@@ -1,0 +1,91 @@
+{
+  "slug": "linear-vs-jira",
+  "verified": "2026-11-27",
+  "seoTitle": "Linear vs Jira: Features, Pricing & Differences",
+  "metaDescription": "Linear vs Jira compared side by side: free plans, paid tiers, speed, workflows, AI features, integrations and pricing, checked against official sources.",
+  "intro": [
+    "Linear and Jira are the two most-discussed project trackers for software teams in 2026, but they represent different philosophies. Linear, founded in 2019, is built for speed and simplicity — keyboard-first navigation, opinionated workflows and fast cycles. Jira, launched in 2002 by Atlassian, is built for scale and customisation — configurable workflows, advanced reporting and deep enterprise controls.",
+    "Both offer free plans and cloud-hosted options. Linear starts at $10 per user per month billed yearly. Jira's Standard plan starts at $9.70 per user per month for teams of 1–100 (monthly billing, as of October 2026). The core trade-off: Linear trades configurability for speed; Jira trades simplicity for flexibility."
+  ],
+  "chooseA": [
+    "You want a fast, keyboard-driven interface that requires minimal configuration.",
+    "You ship in cycles with automatic issue rollover and velocity-based estimates.",
+    "You are a startup or small-to-mid-size product team that values speed over customisation.",
+    "You want built-in AI agents for triage, summarisation and issue drafting."
+  ],
+  "chooseB": [
+    "You need fully customisable workflows, field schemes and permission controls.",
+    "You run Scrum, Kanban or a hybrid methodology with detailed sprint reporting.",
+    "You are an enterprise team that needs compliance, audit logs and cross-team release planning.",
+    "You want a free plan for up to 10 users with no time limit."
+  ],
+  "glance": [
+    { "label": "Company", "a": "Linear (founded 2019)", "b": "Atlassian (founded 2002)" },
+    { "label": "Free plan", "a": "Up to 250 issues, unlimited members", "b": "Up to 10 users, unlimited issues" },
+    { "label": "Starting paid price", "a": "$10/user/mo (yearly)", "b": "$9.70/user/mo (monthly, 1–100 users)" },
+    { "label": "Enterprise", "a": "Custom pricing, annual only", "b": "Custom pricing, annual only" },
+    { "label": "Methodology", "a": "Cycles (opinionated sprints)", "b": "Scrum, Kanban or custom" },
+    { "label": "Self-hosting", "a": "No", "b": "Yes (Data Center)" },
+    { "label": "AI features", "a": "AI agents for triage, summaries, drafting", "b": "Atlassian Rovo AI for search, summaries, automation" },
+    { "label": "Integrations", "a": "GitHub, GitLab, Slack, Figma and more", "b": "3,000+ Marketplace apps" },
+    { "label": "Apps", "a": "Web, macOS, Windows, iOS, Android", "b": "Web, iOS, Android" }
+  ],
+  "differences": [
+    {
+      "title": "Speed and interface",
+      "text": "Linear is built for speed. Its keyboard-first interface, global command menu and sub-100ms interactions are designed for developers who want to manage issues without leaving the keyboard. Jira's interface is feature-rich but requires more clicks and configuration to navigate. Teams that value raw speed consistently favour Linear."
+    },
+    {
+      "title": "Workflow customisation",
+      "text": "Jira offers deep workflow customisation: custom fields, issue types, permission schemes, automation rules and configurable boards. Linear takes an opinionated approach with predefined workflows that work well out of the box but offer less room to tailor. If your team has complex, non-standard processes, Jira is the more flexible choice."
+    },
+    {
+      "title": "Reporting and analytics",
+      "text": "Jira provides advanced sprint reports, burndown charts, velocity tracking, cumulative flow diagrams and custom dashboards. Linear offers cycle reports with velocity tracking and progress views, but its reporting is simpler and less configurable than Jira's."
+    },
+    {
+      "title": "Scale and enterprise features",
+      "text": "Jira is built for enterprise scale: multi-project portfolios, cross-team dependencies, Advanced Roadmaps, compliance controls, audit logs and Data Center for self-hosting. Linear is growing its enterprise offering with SAML, SCIM and migration support, but Jira has a much longer track record at large scale."
+    },
+    {
+      "title": "AI and automation",
+      "text": "Linear's AI agents can triage incoming issues, write summaries and draft issue descriptions. Jira's Atlassian Rovo layer provides AI-powered search, task summaries and automation suggestions across the Atlassian suite. Both are investing heavily in AI, but they take different approaches: Linear's is tightly integrated into the issue workflow; Jira's spans the broader Atlassian ecosystem."
+    },
+    {
+      "title": "Pricing model",
+      "text": "Linear's paid plans start at $10 per user per month billed yearly, with Plus at $10 and Business higher. Jira's Standard plan is $9.70 per user per month (monthly billing, 1–100 users, as of the October 2026 price increase). Jira's free plan supports up to 10 users with no time limit; Linear's free plan is limited to 250 issues. For small teams, Jira's free tier is more generous; for mid-size teams, pricing is comparable."
+    }
+  ],
+  "similarities": [
+    "Issue tracking with boards, backlogs and priorities",
+    "GitHub and GitLab integrations for code linking",
+    "Slack and other communication tool integrations",
+    "Roadmap and planning views",
+    "Mobile apps for iOS and Android",
+    "API access for custom integrations"
+  ],
+  "faq": [
+    {
+      "q": "Which is better for startups?",
+      "a": "Linear is widely preferred by startups for its fast setup, clean interface and opinionated workflows that need little configuration. Jira's free plan for up to 10 users is more generous, but most startups find Linear's speed worth the cost."
+    },
+    {
+      "q": "Which is better for enterprise teams?",
+      "a": "Jira is the established enterprise choice with deep workflow customisation, cross-team planning, compliance controls and self-hosting via Data Center. Linear is growing its enterprise features but has a shorter track record at large scale."
+    },
+    {
+      "q": "Can I migrate from Jira to Linear?",
+      "a": "Yes. Linear offers a Jira importer that brings over issues, comments and attachments. The migration is generally smooth for small-to-mid-size projects. Larger migrations with heavily customised Jira workflows may need more planning."
+    },
+    {
+      "q": "Which is cheaper?",
+      "a": "Jira's free plan is more generous (10 users, unlimited issues vs Linear's 250-issue limit). On paid plans, Jira Standard starts at $9.70 per user per month and Linear Plus at $10 per user per month (yearly), making them comparable. Jira's per-user rate decreases with team size."
+    }
+  ],
+  "sources": [
+    { "label": "Linear — Pricing", "url": "https://linear.app/pricing" },
+    { "label": "Atlassian — Jira Pricing", "url": "https://www.atlassian.com/software/jira/pricing" },
+    { "label": "TechRepublic — Linear vs Jira 2026", "url": "https://www.techrepublic.com/article/linear-vs-jira/" },
+    { "label": "ClickUp — Linear vs Jira", "url": "https://clickup.com/blog/linear-vs-jira/" }
+  ]
+}

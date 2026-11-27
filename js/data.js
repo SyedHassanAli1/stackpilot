@@ -270,7 +270,27 @@
       mark: "b", bg: '#FFF4E6', fg: '#D9480F', url: "https://www.beehiiv.com/", verified: '2026-11-19',
       description: "Newsletter platform with website, growth tools and monetisation.",
       about: "beehiiv is a newsletter platform with a built-in website, growth tools such as a recommendation network, and ways to earn through ads, paid subscriptions and digital products. The free plan supports up to 2,500 subscribers.",
-      tags: ["Newsletters", "Email", "Monetisation"] }
+      tags: ["Newsletters", "Email", "Monetisation"] },
+    { slug: "jira", name: "Jira", category: "Productivity", subcategory: "Project Management", pricing: "Freemium", startingPrice: "$7.92/user/mo (yearly)",
+      mark: "J", bg: '#E9F2FF', fg: '#1868DB', url: "https://www.atlassian.com/software/jira", verified: '2026-11-27',
+      description: "Issue tracking and agile project management for software teams.",
+      about: "Jira is a project management tool made by Atlassian. It tracks issues, bugs and tasks using Scrum and Kanban boards, with sprint planning, backlogs, roadmaps and automation. It is widely used by software development teams and integrates with Confluence, Bitbucket and thousands of Marketplace apps.",
+      tags: ["Issue tracking", "Agile", "Scrum", "Kanban"] },
+    { slug: "firebase", name: "Firebase", category: "Development", subcategory: "Backend & Databases", pricing: "Freemium", startingPrice: null,
+      mark: "F", bg: '#FFF8E1', fg: '#F57C00', url: "https://firebase.google.com/", verified: '2026-11-27',
+      description: "Google's app development platform with hosting, databases and authentication.",
+      about: "Firebase is Google's platform for building and running web and mobile apps. It includes Cloud Firestore and Realtime Database, Authentication, Cloud Functions, Hosting, Cloud Storage, Analytics and Crashlytics. The Spark plan is free with generous quotas; the Blaze plan is pay-as-you-go with no fixed monthly fee.",
+      tags: ["Backend", "Databases", "Authentication", "Hosting"] },
+    { slug: "gitlab", name: "GitLab", category: "Development", subcategory: "Version Control", pricing: "Freemium", startingPrice: "$29/user/mo",
+      mark: "G", bg: '#FDF1EE', fg: '#E24329', url: "https://about.gitlab.com/", verified: '2026-11-27',
+      description: "DevSecOps platform with Git repos, CI/CD, security scanning and project management.",
+      about: "GitLab is an open-core DevSecOps platform that combines source code management, CI/CD pipelines, container registry, security scanning, issue tracking and project planning in a single application. It can be self-hosted or used as a managed cloud service.",
+      tags: ["Git", "CI/CD", "DevOps", "Security scanning"] },
+    { slug: "microsoft-teams", name: "Microsoft Teams", category: "Productivity", subcategory: "Team Communication", pricing: "Freemium", startingPrice: "$4/user/mo (yearly)",
+      mark: "T", bg: '#E8EAFF', fg: '#5B5FC7', url: "https://www.microsoft.com/microsoft-teams/", verified: '2026-11-27',
+      description: "Chat, video meetings and file sharing integrated with Microsoft 365.",
+      about: "Microsoft Teams is a communication and collaboration platform that combines chat, video conferencing, file sharing and app integration. It is included in Microsoft 365 Business and Enterprise plans and integrates with Word, Excel, PowerPoint, Outlook, SharePoint and OneDrive. A free plan and standalone Teams Essentials plan are also available.",
+      tags: ["Chat", "Video meetings", "Collaboration", "Microsoft 365"] }
   ];
 
   const COMPARISONS = [
@@ -399,6 +419,42 @@
         'Google Analytics uses cookies and needs a consent banner; Plausible is cookie-free and needs no consent banner.',
         'Google Analytics (GA4) is free; Plausible starts at $9/mo for 10K monthly pageviews.',
         'Plausible is open source and can be self-hosted; Google Analytics is proprietary and cloud-only.'
+      ] },
+    { slug: 'linear-vs-jira', a: 'linear', b: 'jira', category: 'Productivity', title: 'Linear vs Jira',
+      subtitle: 'Issue tracking: speed vs scale',
+      fitA: 'You want a fast, keyboard-driven issue tracker built for product teams, from $10/user/mo (yearly).',
+      fitB: 'You need customisable workflows, enterprise controls and a free plan for up to 10 users.',
+      differences: [
+        'Linear is keyboard-first with sub-100ms interactions; Jira prioritises deep workflow customisation.',
+        "Jira offers a free plan for up to 10 users; Linear's free plan limits to 250 issues.",
+        'Linear uses opinionated Cycles; Jira supports Scrum, Kanban or custom methodologies with advanced reporting.'
+      ] },
+    { slug: 'supabase-vs-firebase', a: 'supabase', b: 'firebase', category: 'Development', title: 'Supabase vs Firebase',
+      subtitle: 'Backend-as-a-Service: SQL vs NoSQL',
+      fitA: 'You want an open-source backend with full PostgreSQL, row-level security and pgvector, from $25/mo.',
+      fitB: 'You need battle-tested real-time sync with offline support and pay-as-you-go pricing on Google Cloud.',
+      differences: [
+        'Supabase runs PostgreSQL (relational, SQL); Firebase uses Firestore (NoSQL, document-based).',
+        'Supabase is fully open source and self-hostable; Firebase is proprietary and Google Cloud-only.',
+        'Firebase has built-in analytics, crash reporting and push notifications; Supabase focuses on core backend services.'
+      ] },
+    { slug: 'github-vs-gitlab', a: 'github', b: 'gitlab', category: 'Development', title: 'GitHub vs GitLab',
+      subtitle: 'Code hosting: ecosystem vs all-in-one',
+      fitA: 'You want the largest developer community, GitHub Actions marketplace and Copilot AI, from $4/user/mo.',
+      fitB: 'You want a single DevSecOps platform with built-in CI/CD and security scanning, from $29/user/mo.',
+      differences: [
+        'GitHub is a code hosting hub with a marketplace model; GitLab bundles the full DevOps toolchain in one app.',
+        'GitLab includes built-in SAST, DAST and dependency scanning; GitHub requires Advanced Security add-ons for private repos.',
+        'GitLab offers a free self-managed Community Edition; GitHub Enterprise Server requires a paid licence.'
+      ] },
+    { slug: 'slack-vs-microsoft-teams', a: 'slack', b: 'microsoft-teams', category: 'Productivity', title: 'Slack vs Microsoft Teams',
+      subtitle: 'Team messaging: integrations vs Microsoft 365',
+      fitA: 'You want fast channel-based messaging with 2,600+ integrations, especially for dev teams, from $7.25/user/mo (yearly).',
+      fitB: 'You want a collaboration hub with built-in meetings and Microsoft 365, included in most M365 plans or from $4/user/mo.',
+      differences: [
+        'Slack excels at messaging and third-party integrations; Teams is built around Microsoft 365 document collaboration.',
+        'Teams includes full video meetings and webinars; Slack offers Huddles but most teams add Zoom or Meet.',
+        'Teams is included in Microsoft 365 business plans; Slack is always a separate cost.'
       ] }
   ];
 
